@@ -7,10 +7,6 @@ build:
   tools:
     python: "3.9"
 
-# No Python API documentation generated yet, so this section commented out
-#python:
-#  install:
-#  - method: pip
-#    path: .
-#  - requirements: docs/requirements.txt
-#  - requirements: requirements.txt  # so that mkapi can inspect the API
+python:
+  install:
+  - requirements: docs/requirements.txt
