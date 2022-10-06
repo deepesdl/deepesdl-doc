@@ -1,0 +1,3 @@
+# .readthedocs-custom-steps.yml
+steps:
+- python -m "$@"

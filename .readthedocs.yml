@@ -1,0 +1,16 @@
+version: 2
+
+mkdocs: {}  # tell readthedocs to use mkdocs, not Sphinx
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.9"
+
+# No Python API documentation generated yet, so this section commented out
+#python:
+#  install:
+#  - method: pip
+#    path: .
+#  - requirements: docs/requirements.txt
+#  - requirements: requirements.txt  # so that mkapi can inspect the API
