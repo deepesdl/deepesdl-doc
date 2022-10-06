@@ -1,0 +1,18 @@
+site_name: "DeepESDL"
+site_url: "http://127.0.0.1:8000/"   # TODO!
+copyright: Copyright (c) 2022 by the DeepESDL Team
+theme: readthedocs
+# theme: mkdocs
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+  - mkapi
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      baselevel: 2
+  - attr_list
