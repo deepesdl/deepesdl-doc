@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="img/logo.png" alt="DeepESDL Logo" style="height: 200px; width:200px;"/>
+    <img src="img/logo.png" alt="DeepESDL Logo" style="height: 200px; width:300px;"/>
 </p>
 
 # Deep Earth System Datalab Documentation
