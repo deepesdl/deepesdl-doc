@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="img/avl-logo.jpg" alt="AVL Logo" style="height: 200px; width:200px;"/>
+    <img src="img/logo.jpg" alt="AVL Logo" style="height: 200px; width:200px;"/>
 </p>
 
 # Deep Earth System Datalab Documentation
@@ -9,9 +9,8 @@
 Intro goes here
 
 
-## Contents
 
-### User guide
+## User Guide
 
 This section provides a guide for scientific users of the Agriculture Virtual
 Laboratory, including both the thematic processing and exploitation subsystems,
@@ -20,7 +19,7 @@ and descriptions of the AVL-specific command-line and Python interfaces.
 1.  [Exploitation subsystem: JupyterLab](guide/user-guide.md)
 
 
-### Datasets
+## Datasets
 
 AVL provides a variety of EO data products from multiple sources (or
 collections). They follow a well-defined dataset convention and are grouped
@@ -29,7 +28,7 @@ according to sensor type.
 1.  [Baltic Sea](datasets/baltic-sea.md) for raster datasets
 
 
-### Design
+## System Architecture
 
 This section documents the system design, development resources, test
 procedures, and test results.
@@ -43,7 +42,7 @@ procedures, and test results.
 7.  [Processing system test procedures and results](design/testing/processing.md)
 8.  [Exploitation system test procedures and results](design/testing/exploitation.md)
 
-### About the project
+## About the project
 
 1.  [About the project](about/index.md)
 2.  [License](about/license.md)
