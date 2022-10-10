@@ -17,7 +17,7 @@ This section provides a guide for scientific users of the Agriculture Virtual
 Laboratory, including both the thematic processing and exploitation subsystems,
 and descriptions of the AVL-specific command-line and Python interfaces.
 
-1.  [Exploitation subsystem: JupyterLab](guide/index.md)
+1.  [Exploitation subsystem: JupyterLab](guide/user-guide.md)
 
 
 ### Datasets

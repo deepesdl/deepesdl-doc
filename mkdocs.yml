@@ -5,7 +5,7 @@ theme: readthedocs
 # theme: mkdocs
 
 nav:
-  - Home: index.md
+  - Home: user-guide.md
 
 plugins:
   - search
