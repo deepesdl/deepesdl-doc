@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import Dict, Any
+from typing import Dict, Any, List
 import yaml
 import click
 import re
@@ -9,43 +9,65 @@ import os
 
 @click.command()
 @click.option('-o', '--output-dir', 'output_dir', type=str, nargs=1)
-@click.argument('yaml_files', type=str, nargs=-1)
-def main(output_dir, yaml_files):
-    for yaml_file in yaml_files:
+@click.argument('json_files', type=str, nargs=-1)
+def main(output_dir, json_files):
+    for yaml_file in json_files:
         with open(yaml_file, 'r') as fh:
             metadata = yaml.safe_load(fh)
-        basename = yaml_file.removesuffix('-metadata.yaml')
+        basename = yaml_file.removesuffix('.geojson')
         output_filename = basename + '.md'
         with open(os.path.join(output_dir, output_filename), 'w') as output:
-            output.write(f'# {metadata["global"]["title"]}\n\n')
-            output.write('## Dataset metadata\n\n')
-            output.write(make_table(metadata['global']))
-            output.write('## Variable list')
-            output.write(make_variable_list_table(metadata['local']))
+            props = metadata['properties']
+            output.write(f'# {props["title"]}\n\n')
+            output.write('## Basic information\n\n')
+            output.write(make_basic_info(props))
+            output.write('## Variable list\n\n')
+            output.write(make_variable_list_table(props['variables']))
             output.write('## Full variable metadata\n\n')
-            for variable in metadata['local']:
-                variable_source_filename = basename + '-' + variable + '.md'
+            for variable in props['variables']:
+                variable_source_filename = \
+                    basename + '-' + variable['name'] + '.md'
                 variable_source_path = os.path.join(
                     output_dir, variable_source_filename
                 )
-                output.write(f'## {variable}\n\n')
-                var_metadata = metadata['local'][variable]
+                output.write(f'## <a name="{variable["name"]}"></a>'
+                             f'{variable["long_name"]}\n\n')
                 output.write(
                     make_table(
-                        var_metadata, source_link=variable_source_filename
+                        variable, source_link=variable_source_filename
                     )
                 )
-                if 'source' in var_metadata:
+                if 'source' in variable:
                     with open(variable_source_path, 'w') as fh:
-                        fh.write(f'`{var_metadata["source"]}`\n')
+                        fh.write(f'`{variable["source"]}`\n')
+            output.write('## <a name="full-metadata"></a>'
+                         'Full dataset metadata\n\n')
+            output.write(make_table({k: v for k, v in props.items()
+                                     if k != 'variables'}))
 
 
-def make_variable_list_table(variables: Dict[str, Dict[str, Any]]):
-    lines = ['| Variable | Long name | Units |', '| ---- | ---- | ---- |']
-    for variable, metadata in variables.items():
-        long_name = metadata.get('long_name', '[none]')
-        units = metadata.get('units', '[none]')
-        lines.append(f'| {variable} | {long_name} | {units} |')
+def make_basic_info(props: Dict[str, Any]) -> str:
+    lines = []
+    lines.append(f'| Parameter | Minimum | Maximum |')
+    lines.append(f'| ---- | ---- | ---- |')
+    lines.append(f'| Bounding box latitude | {props["geospatial_lat_min"]} | '
+                 f'{props["geospatial_lat_max"]} |')
+    lines.append(f'| Bounding box longitude | {props["geospatial_lon_min"]} | '
+                 f'{props["geospatial_lon_max"]} |')
+    lines.append(f'| Time range | {props["time_coverage_start"]} | '
+                 f'{props["time_coverage_end"]} |')
+    lines.append(f'\nPublisher: {props["publisher_name"]}\n')
+    lines.append('[Click here for full dataset metadata.](#full-metadata)')
+    return '\n'.join(lines) + '\n\n'
+
+
+def make_variable_list_table(variables: List[Dict[str, Any]]) -> str:
+    lines = ['| Variable | Identifier | Units |', '| ---- | ---- | ---- |']
+    for variable in variables:
+        long_name = escape_for_markdown(variable.get('long_name', '[none]'))
+        name = escape_for_markdown(variable.get('name', '[none]'))
+        units = escape_for_markdown(variable.get('units', '[none]'))
+        lines.append(f'| [{long_name}](#{name}) | {name} | {units} |')
     return '\n'.join(lines) + '\n\n'
 
 
@@ -61,12 +83,14 @@ def make_table(metadata: Dict[str, Any], source_link: str = None) -> str:
     return '\n'.join(lines) + '\n\n'
 
 
-def escape_for_markdown(text: str) -> str:
-    escaped_text = text.replace('\\', '\\\\').replace('_', '\\_')
-    if re.match('https?://', text):
-        return f'[{escaped_text}]({text})'
-    elif re.match('www[.]', text):
-        return f'[{escaped_text}](http://{text})'
+def escape_for_markdown(content: Any) -> Any:
+    if type(content) != str:
+        return content
+    escaped_text = content.replace('\\', '\\\\').replace('_', '\\_')
+    if re.match('https?://', content):
+        return f'[{escaped_text}]({content})'
+    elif re.match('www[.]', content):
+        return f'[{escaped_text}](http://{content})'
     else:
         return escaped_text
 
