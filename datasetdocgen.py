@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import Dict
+from typing import Dict, Any
 import yaml
 import click
 import re
@@ -20,7 +20,9 @@ def main(output_dir, yaml_files):
             output.write(f'# {metadata["global"]["title"]}\n\n')
             output.write('## Dataset metadata\n\n')
             output.write(make_table(metadata['global']))
-            output.write('## Variable metadata\n\n')
+            output.write('## Variable list')
+            output.write(make_variable_list_table(metadata['local']))
+            output.write('## Full variable metadata\n\n')
             for variable in metadata['local']:
                 variable_source_filename = basename + '-' + variable + '.md'
                 variable_source_path = os.path.join(
@@ -38,7 +40,16 @@ def main(output_dir, yaml_files):
                         fh.write(f'`{var_metadata["source"]}`\n')
 
 
-def make_table(metadata: Dict[str, str], source_link: str = None) -> str:
+def make_variable_list_table(variables: Dict[str, Dict[str, Any]]):
+    lines = ['| Variable | Long name | Units |', '| ---- | ---- | ---- |']
+    for variable, metadata in variables.items():
+        long_name = metadata.get('long_name', '[none]')
+        units = metadata.get('units', '[none]')
+        lines.append(f'| {variable} | {long_name} | {units} |')
+    return '\n'.join(lines) + '\n\n'
+
+
+def make_table(metadata: Dict[str, Any], source_link: str = None) -> str:
     lines = ['| Field | Value |', '| ---- | ---- |']
     for field, raw_value in metadata.items():
         value = (
