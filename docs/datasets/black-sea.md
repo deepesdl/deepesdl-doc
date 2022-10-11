@@ -2,6 +2,8 @@
 
 ## Basic information
 
+![Bounding box map](black-sea.png)
+
 | Parameter | Minimum | Maximum |
 | ---- | ---- | ---- |
 | Bounding box latitude | 39.001500000000156 | 47.9985 |
