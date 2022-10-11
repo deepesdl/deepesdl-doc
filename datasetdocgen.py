@@ -22,27 +22,30 @@ def main(output_dir, yaml_files):
             output.write(make_table(metadata['global']))
             output.write('## Variable metadata\n\n')
             for variable in metadata['local']:
-                variable_source_filename = \
-                    basename + '-' + variable + '.md'
-                variable_source_path = os.path.join(output_dir,
-                                                    variable_source_filename)
+                variable_source_filename = basename + '-' + variable + '.md'
+                variable_source_path = os.path.join(
+                    output_dir, variable_source_filename
+                )
                 output.write(f'## {variable}\n\n')
                 var_metadata = metadata['local'][variable]
-                output.write(make_table(var_metadata,
-                                        source_link=variable_source_filename
-                                        ))
+                output.write(
+                    make_table(
+                        var_metadata, source_link=variable_source_filename
+                    )
+                )
                 if 'source' in var_metadata:
                     with open(variable_source_path, 'w') as fh:
                         fh.write(f'`{var_metadata["source"]}`\n')
 
 
-def make_table(metadata: Dict[str, str],
-               source_link: str = None) -> str:
+def make_table(metadata: Dict[str, str], source_link: str = None) -> str:
     lines = ['| Field | Value |', '| ---- | ---- |']
     for field, raw_value in metadata.items():
-        value = f'[Click here for source.]({source_link})' \
-            if field == 'source' and source_link is not None \
+        value = (
+            f'[Click here for source.]({source_link})'
+            if field == 'source' and source_link is not None
             else f'{escape_for_markdown(raw_value)}'
+        )
         lines.append(f'| {escape_for_markdown(field)} | {value} |')
     return '\n'.join(lines) + '\n\n'
 
