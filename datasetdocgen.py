@@ -5,6 +5,11 @@ import yaml
 import click
 import re
 import os
+import matplotlib.pyplot as plt
+
+import cartopy
+import cartopy.io.img_tiles
+import matplotlib.patches as patches
 
 
 @click.command()
@@ -16,10 +21,12 @@ def main(output_dir, json_files):
             metadata = yaml.safe_load(fh)
         basename = yaml_file.removesuffix('.geojson')
         output_filename = basename + '.md'
+        bbox_image_path = os.path.join(output_dir, basename + '.png')
         with open(os.path.join(output_dir, output_filename), 'w') as output:
             props = metadata['properties']
             output.write(f'# {props["title"]}\n\n')
             output.write('## Basic information\n\n')
+            output.write(f'![Bounding box map]({basename + ".png"})\n\n')
             output.write(make_basic_info(props))
             output.write('## Variable list\n\n')
             output.write(make_variable_list_table(props['variables']))
@@ -44,6 +51,7 @@ def main(output_dir, json_files):
                          'Full dataset metadata\n\n')
             output.write(make_table({k: v for k, v in props.items()
                                      if k != 'variables'}))
+        make_map(props, bbox_image_path)
 
 
 def make_basic_info(props: Dict[str, Any]) -> str:
@@ -93,6 +101,29 @@ def escape_for_markdown(content: Any) -> Any:
         return f'[{escaped_text}](http://{content})'
     else:
         return escaped_text
+
+
+def make_map(props: Dict[str, Any], output_path):
+    x0 = props['geospatial_lon_min']
+    x1 = props['geospatial_lon_max']
+    y0 = props['geospatial_lat_min']
+    y1 = props['geospatial_lat_max']
+    w = x1 - x0
+    h = y1 - y0
+    margin_factor = 0.2
+    tiles = cartopy.io.img_tiles.Stamen('terrain-background')
+    fig = plt.figure()
+    ax = fig.add_subplot(1, 1, 1, projection=tiles.crs)
+    ax.set_extent([x0 - margin_factor * w, x1 + margin_factor * w,
+                   y0 - margin_factor * h, y1 + margin_factor * h],
+                  crs=cartopy.crs.Geodetic())
+    ax.add_image(tiles, 6)
+    rect = patches.Rectangle((x0, y0), w, h, linewidth=1,
+                             edgecolor='r', facecolor='none',
+                             transform=cartopy.crs.Geodetic())
+    ax.add_patch(rect)
+    plt.tight_layout(pad=0)
+    plt.savefig(output_path, bbox_inches='tight', pad_inches=0.1)
 
 
 if __name__ == '__main__':
