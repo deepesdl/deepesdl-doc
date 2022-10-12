@@ -30,7 +30,7 @@ Publisher: Brockmann Consult GmbH
 
 ## Full variable metadata
 
-## <a name="VHM0"></a>Spectral Significant Wave Height (Hm0)
+### <a name="VHM0"></a>Spectral Significant Wave Height (Hm0)
 
 | Field | Value |
 | ---- | ---- |
@@ -50,7 +50,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1H |
 | processing\_steps | ['Temporal daily mean aggregation', 'Spatial nearest neighbor interpolation'] |
 
-## <a name="chl"></a>Chlorophyll Concentration
+### <a name="chl"></a>Chlorophyll Concentration
 
 | Field | Value |
 | ---- | ---- |
@@ -70,7 +70,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1D |
 | processing\_steps | ['Multiplying original scale factor'] |
 
-## <a name="sla"></a>Sea Level Anomaly
+### <a name="sla"></a>Sea Level Anomaly
 
 | Field | Value |
 | ---- | ---- |
@@ -90,7 +90,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1D |
 | processing\_steps | ['Spatial nearest neighbor interpolation'] |
 
-## <a name="sss"></a>Sea Surface Salinity
+### <a name="sss"></a>Sea Surface Salinity
 
 | Field | Value |
 | ---- | ---- |
@@ -110,7 +110,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1D |
 | processing\_steps | ['Spatial nearest neighbor interpolation'] |
 
-## <a name="sst"></a>Sea Surface Temperature
+### <a name="sst"></a>Sea Surface Temperature
 
 | Field | Value |
 | ---- | ---- |
@@ -130,7 +130,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1D |
 | processing\_steps | ['Spatial nearest neighbor interpolation'] |
 
-## <a name="ugos"></a>Absolute Geostrophic Velocity: Zonal Component
+### <a name="ugos"></a>Absolute Geostrophic Velocity: Zonal Component
 
 | Field | Value |
 | ---- | ---- |
@@ -150,7 +150,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1D |
 | processing\_steps | ['Spatial nearest neighbor interpolation'] |
 
-## <a name="ugosa"></a>Geostrophic Velocity Anomalies: Zonal Component
+### <a name="ugosa"></a>Geostrophic Velocity Anomalies: Zonal Component
 
 | Field | Value |
 | ---- | ---- |
@@ -170,7 +170,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1D |
 | processing\_steps | ['Spatial nearest neighbor interpolation'] |
 
-## <a name="vgos"></a>Absolute Geostrophic Velocity: Meridian Component
+### <a name="vgos"></a>Absolute Geostrophic Velocity: Meridian Component
 
 | Field | Value |
 | ---- | ---- |
@@ -190,7 +190,7 @@ Publisher: Brockmann Consult GmbH
 | original\_time\_period | 1D |
 | processing\_steps | ['Spatial nearest neighbor interpolation'] |
 
-## <a name="vgosa"></a>Geostrophic Velocity Anomalies: Meridian Component
+### <a name="vgosa"></a>Geostrophic Velocity Anomalies: Meridian Component
 
 | Field | Value |
 | ---- | ---- |

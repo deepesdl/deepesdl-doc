@@ -37,7 +37,7 @@ def main(output_dir, json_files):
                 variable_source_path = os.path.join(
                     output_dir, variable_source_filename
                 )
-                output.write(f'## <a name="{variable["name"]}"></a>'
+                output.write(f'### <a name="{variable["name"]}"></a>'
                              f'{variable["long_name"]}\n\n')
                 output.write(
                     make_table(

@@ -6,7 +6,10 @@ theme: readthedocs
 
 nav:
   - Home: index.md
-  - Black sea: datasets/black-sea.md
+  - User Guide: guide/user-guide.md
+  - Design: design/index.md
+  - Datasets:
+    - Black sea: datasets/black-sea.md
 
 plugins:
   - search
