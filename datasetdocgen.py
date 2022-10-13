@@ -118,12 +118,20 @@ def make_map(props: Dict[str, Any], output_path):
                    y0 - margin_factor * h, y1 + margin_factor * h],
                   crs=cartopy.crs.Geodetic())
     ax.add_image(tiles, 6)
-    rect = patches.Rectangle((x0, y0), w, h, linewidth=1,
-                             edgecolor='r', facecolor='none',
-                             transform=cartopy.crs.Geodetic())
+    ax.gridlines(draw_labels=True, color='white')
+    rect = patches.Rectangle(
+        (x0, y0), w, h, linewidth=1,
+        edgecolor='r', facecolor='none',
+        transform=cartopy.crs.Geodetic(),
+        zorder=1e6
+    )
     ax.add_patch(rect)
     plt.tight_layout(pad=0)
-    plt.savefig(output_path, bbox_inches='tight', pad_inches=0.1)
+    plt.savefig(
+        output_path,
+        bbox_inches='tight',
+        pad_inches=0.1
+    )
 
 
 if __name__ == '__main__':
