@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+"""Generate description in Markdown and map image for a dataset from geojson"""
+
 from typing import Dict, Any, List
 import yaml
 import click
@@ -32,44 +34,66 @@ def main(output_dir, json_files):
             output.write(make_variable_list_table(props['variables']))
             output.write('## Full variable metadata\n\n')
             for variable in props['variables']:
-                variable_source_filename = \
+                variable_source_filename = (
                     basename + '-' + variable['name'] + '.md'
+                )
                 variable_source_path = os.path.join(
                     output_dir, variable_source_filename
                 )
-                output.write(f'### <a name="{variable["name"]}"></a>'
-                             f'{variable["long_name"]}\n\n')
                 output.write(
-                    make_table(
-                        variable, source_link=variable_source_filename
-                    )
+                    f'### <a name="{variable["name"]}"></a>'
+                    f'{variable["long_name"]}\n\n'
+                )
+                output.write(
+                    make_table(variable, source_link=variable_source_filename)
                 )
                 if 'source' in variable:
                     with open(variable_source_path, 'w') as fh:
                         fh.write(f'`{variable["source"]}`\n')
-            output.write('## <a name="full-metadata"></a>'
-                         'Full dataset metadata\n\n')
-            output.write(make_table({k: v for k, v in props.items()
-                                     if k != 'variables'}))
+            output.write(
+                '## <a name="full-metadata"></a>' 'Full dataset metadata\n\n'
+            )
+            output.write(
+                make_table(
+                    {k: v for k, v in props.items() if k != 'variables'}
+                )
+            )
         make_map(props, bbox_image_path)
 
 
 def make_basic_info(props: Dict[str, Any]) -> str:
-    lines = []
-    lines.append(f'| Parameter | Minimum | Maximum |')
-    lines.append(f'| ---- | ---- | ---- |')
-    lines.append(f'| Bounding box latitude | {props["geospatial_lat_min"]} | '
-                 f'{props["geospatial_lat_max"]} |')
-    lines.append(f'| Bounding box longitude | {props["geospatial_lon_min"]} | '
-                 f'{props["geospatial_lon_max"]} |')
-    lines.append(f'| Time range | {props["time_coverage_start"]} | '
-                 f'{props["time_coverage_end"]} |')
-    lines.append(f'\nPublisher: {props["publisher_name"]}\n')
-    lines.append('[Click here for full dataset metadata.](#full-metadata)')
-    return '\n'.join(lines) + '\n\n'
+    """Create a brief summary from a dictionary of dataset properties.
+
+    Args:
+        props: dictionary of dataset properties
+
+    Returns:
+        Markdown source containing information about the dataset
+    """
+    return (
+        f'| Parameter | Minimum | Maximum |\n'
+        f'| ---- | ---- | ---- |\n'
+        f'| Bounding box latitude | {props["geospatial_lat_min"]} | '
+        f'{props["geospatial_lat_max"]} |\n'
+        f'| Bounding box longitude | {props["geospatial_lon_min"]} | '
+        f'{props["geospatial_lon_max"]} |\n'
+        f'| Time range | {props["time_coverage_start"]} | '
+        f'{props["time_coverage_end"]} |\n\n'
+        f'Publisher: {props["publisher_name"]}\n\n'
+        '[Click here for full dataset metadata.](#full-metadata)\n\n'
+    )
 
 
 def make_variable_list_table(variables: List[Dict[str, Any]]) -> str:
+    """Create a table with brief information about the variables in a dataset
+
+    Args:
+        variables: a list of dictionaries of variable properties
+
+    Returns:
+        Markdown source for a table summarizing the variables
+
+    """
     lines = ['| Variable | Identifier | Units |', '| ---- | ---- | ---- |']
     for variable in variables:
         long_name = escape_for_markdown(variable.get('long_name', '[none]'))
@@ -79,9 +103,20 @@ def make_variable_list_table(variables: List[Dict[str, Any]]) -> str:
     return '\n'.join(lines) + '\n\n'
 
 
-def make_table(metadata: Dict[str, Any], source_link: str = None) -> str:
+def make_table(data: Dict[str, Any], source_link: str = None) -> str:
+    """Create a table showing the entries in a dictionary
+
+    Args:
+        data: the data to be displayed
+        source_link: if supplied and if a `source` key is present, the
+            value for "source" in the table will be replaced with a
+            Markdown link to this location.
+
+    Returns:
+        Markdown source for a table
+    """
     lines = ['| Field | Value |', '| ---- | ---- |']
-    for field, raw_value in metadata.items():
+    for field, raw_value in data.items():
         value = (
             f'[Click here for source.]({source_link})'
             if field == 'source' and source_link is not None
@@ -92,6 +127,17 @@ def make_table(metadata: Dict[str, Any], source_link: str = None) -> str:
 
 
 def escape_for_markdown(content: Any) -> Any:
+    """Turn a string into valid Markdown source by escaping special characters
+
+    Additionally, if the string begins with "http://", "https://", or
+    "www." it will be turned into a Markdown link.
+
+    Args:
+        content: any string
+
+    Returns:
+        Markdown source which will produce the input string when processed
+    """
     if type(content) != str:
         return content
     escaped_text = content.replace('\\', '\\\\').replace('_', '\\_')
@@ -103,35 +149,51 @@ def escape_for_markdown(content: Any) -> Any:
         return escaped_text
 
 
-def make_map(props: Dict[str, Any], output_path):
+def make_map(props: Dict[str, Any], output_path: str) -> None:
+    """Create a bounding box map from a dataset's properties
+
+    The map shows the dataset's bounding box at the centre of a map covering a
+    larger area.
+
+    Args:
+        props: property dictionary for a dataset
+        output_path: the path to which to write the map. The output format
+            is determined by the file extension of this path.
+    """
     x0 = props['geospatial_lon_min']
     x1 = props['geospatial_lon_max']
     y0 = props['geospatial_lat_min']
     y1 = props['geospatial_lat_max']
     w = x1 - x0
     h = y1 - y0
-    margin_factor = 0.2
+    margin_factor = 0.2  # how much margin to include around the bbox
     tiles = cartopy.io.img_tiles.Stamen('terrain-background')
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1, projection=tiles.crs)
-    ax.set_extent([x0 - margin_factor * w, x1 + margin_factor * w,
-                   y0 - margin_factor * h, y1 + margin_factor * h],
-                  crs=cartopy.crs.Geodetic())
+    ax.set_extent(
+        [
+            x0 - margin_factor * w,
+            x1 + margin_factor * w,
+            y0 - margin_factor * h,
+            y1 + margin_factor * h,
+        ],
+        crs=cartopy.crs.Geodetic(),
+    )
     ax.add_image(tiles, 6)
     ax.gridlines(draw_labels=True, color='white')
     rect = patches.Rectangle(
-        (x0, y0), w, h, linewidth=1,
-        edgecolor='r', facecolor='none',
+        (x0, y0),
+        w,
+        h,
+        linewidth=1,
+        edgecolor='r',
+        facecolor='none',
         transform=cartopy.crs.Geodetic(),
-        zorder=1e6
+        zorder=1e6,
     )
     ax.add_patch(rect)
     plt.tight_layout(pad=0)
-    plt.savefig(
-        output_path,
-        bbox_inches='tight',
-        pad_inches=0.1
-    )
+    plt.savefig(output_path, bbox_inches='tight', pad_inches=0.1)
 
 
 if __name__ == '__main__':
