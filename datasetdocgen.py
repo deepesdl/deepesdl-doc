@@ -18,10 +18,10 @@ import matplotlib.patches as patches
 @click.option('-o', '--output-dir', 'output_dir', type=str, nargs=1)
 @click.argument('json_files', type=str, nargs=-1)
 def main(output_dir, json_files):
-    for yaml_file in json_files:
-        with open(yaml_file, 'r') as fh:
+    for json_file in json_files:
+        with open(json_file, 'r') as fh:
             metadata = yaml.safe_load(fh)
-        basename = yaml_file.removesuffix('.geojson')
+        basename = os.path.basename(json_file).removesuffix('.geojson')
         output_filename = basename + '.md'
         bbox_image_path = os.path.join(output_dir, basename + '.png')
         with open(os.path.join(output_dir, output_filename), 'w') as output:
