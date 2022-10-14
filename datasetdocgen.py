@@ -167,9 +167,12 @@ def make_map(props: Dict[str, Any], output_path: str) -> None:
     w = x1 - x0
     h = y1 - y0
     margin_factor = 0.2  # how much margin to include around the bbox
-    tiles = cartopy.io.img_tiles.Stamen('terrain-background')
+    image_tiles = cartopy.io.img_tiles.Stamen('terrain-background')
     fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1, projection=tiles.crs)
+    projection = cartopy.crs.LambertAzimuthalEqualArea(
+        (x0 + x1) / 2, (y0 + y1) / 2  # centre the projection over our bbox
+    )
+    ax = fig.add_subplot(1, 1, 1, projection=projection)
     ax.set_extent(
         [
             x0 - margin_factor * w,
@@ -179,19 +182,25 @@ def make_map(props: Dict[str, Any], output_path: str) -> None:
         ],
         crs=cartopy.crs.Geodetic(),
     )
-    ax.add_image(tiles, 6)
+    ax.add_image(image_tiles, 6)
     ax.gridlines(draw_labels=True, color='white')
-    rect = patches.Rectangle(
-        (x0, y0),
-        w,
-        h,
-        linewidth=1,
-        edgecolor='r',
+    rectangle_patch = patches.Rectangle((x0, y0), w, h)
+    # Since projected rectangle sides may not be straight, we interpolate
+    # them into many short line segments which can be projected separately. In
+    # some cases cartopy can do this automatically, but it doesn't seem to work
+    # for our projection and parameters (as of cartopy 0.21.0), so we use the
+    # manual approach.
+    path_patch = patches.PathPatch(
+        rectangle_patch.get_path()
+        .transformed(rectangle_patch.get_patch_transform())
+        .interpolated(100),
+        linewidth=2,
+        edgecolor='red',
         facecolor='none',
         transform=cartopy.crs.Geodetic(),
-        zorder=1e6,
+        zorder=1e6,  # on top
     )
-    ax.add_patch(rect)
+    ax.add_patch(path_patch)
     plt.tight_layout(pad=0)
     plt.savefig(output_path, bbox_inches='tight', pad_inches=0.1)
 
