@@ -28,7 +28,15 @@ def main(output_dir, json_files):
             props = metadata['properties']
             output.write(f'# {props["title"]}\n\n')
             output.write('## Basic information\n\n')
-            output.write(f'![Bounding box map]({basename + ".png"})\n\n')
+            output.write(f'![Bounding box map]({basename + ".png"})<br>\n')
+            output.write('<span style="font-size: x-small">Map tiles by <a href="http://stamen.com">'
+                         'Stamen Design</a>, under '
+                         '<a href="http://creativecommons.org/licenses/by/3.0">'
+                         'CC BY 3.0</a>. Data by '
+                         '<a href="http://openstreetmap.org">OpenStreetMap</a>,'
+                         ' under '
+                         '<a href="http://www.openstreetmap.org/copyright">'
+                         'ODbL</a>.</span>\n\n')
             output.write(make_basic_info(props))
             output.write('## Variable list\n\n')
             output.write(make_variable_list_table(props['variables']))
