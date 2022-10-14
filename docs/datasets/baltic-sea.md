@@ -1,1 +1,1 @@
-### User Guide
+# Baltic Sea Data Cube
