@@ -5,13 +5,12 @@
 ![Bounding box map](black-sea.png)<br>
 <span style="font-size: x-small">Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.</span>
 
-| Parameter | Minimum | Maximum |
-| ---- | ---- | ---- |
-| Bounding box latitude | 39.001500000000156 | 47.9985 |
-| Bounding box longitude | 26.0015 | 41.997499999999725 |
-| Time range | 2016-01-01T00:00:00.000000000 | 2017-12-31T00:00:00.000000000 |
-
-Publisher: Brockmann Consult GmbH
+| Parameter | Value |
+| ---- | ---- |
+| Bounding box latitude | 39.001500000000156 to 47.9985 |
+| Bounding box longitude | 26.0015 to 41.997499999999725 |
+| Time range | 2016-01-01T00:00:00.000000000 to 2017-12-31T00:00:00.000000000 |
+| Publisher | Brockmann Consult GmbH |
 
 [Click here for full dataset metadata.](#full-metadata)
 
@@ -49,7 +48,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1H |
-| processing\_steps | ['Temporal daily mean aggregation', 'Spatial nearest neighbor interpolation'] |
+| processing\_steps | Temporal daily mean aggregation, Spatial nearest neighbor interpolation |
 
 ### <a name="chl"></a>Chlorophyll Concentration
 
@@ -69,7 +68,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 0.01 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Multiplying original scale factor'] |
+| processing\_steps | Multiplying original scale factor |
 
 ### <a name="sla"></a>Sea Level Anomaly
 
@@ -89,7 +88,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Spatial nearest neighbor interpolation'] |
+| processing\_steps | Spatial nearest neighbor interpolation |
 
 ### <a name="sss"></a>Sea Surface Salinity
 
@@ -109,7 +108,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Spatial nearest neighbor interpolation'] |
+| processing\_steps | Spatial nearest neighbor interpolation |
 
 ### <a name="sst"></a>Sea Surface Temperature
 
@@ -129,7 +128,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Spatial nearest neighbor interpolation'] |
+| processing\_steps | Spatial nearest neighbor interpolation |
 
 ### <a name="ugos"></a>Absolute Geostrophic Velocity: Zonal Component
 
@@ -149,7 +148,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Spatial nearest neighbor interpolation'] |
+| processing\_steps | Spatial nearest neighbor interpolation |
 
 ### <a name="ugosa"></a>Geostrophic Velocity Anomalies: Zonal Component
 
@@ -169,7 +168,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Spatial nearest neighbor interpolation'] |
+| processing\_steps | Spatial nearest neighbor interpolation |
 
 ### <a name="vgos"></a>Absolute Geostrophic Velocity: Meridian Component
 
@@ -189,7 +188,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Spatial nearest neighbor interpolation'] |
+| processing\_steps | Spatial nearest neighbor interpolation |
 
 ### <a name="vgosa"></a>Geostrophic Velocity Anomalies: Meridian Component
 
@@ -209,7 +208,7 @@ Publisher: Brockmann Consult GmbH
 | original\_scale\_factor | 1.0 |
 | original\_add\_offset | 0.0 |
 | original\_time\_period | 1D |
-| processing\_steps | ['Spatial nearest neighbor interpolation'] |
+| processing\_steps | Spatial nearest neighbor interpolation |
 
 ## <a name="full-metadata"></a>Full dataset metadata
 

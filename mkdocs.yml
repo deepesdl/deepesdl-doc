@@ -12,8 +12,8 @@ nav:
     - Index: design/index.md
   - Datasets:
     - List of datasets: datasets/datasets.md
-    - ESDC: datasets/ESDC.md
-    - Black Sea: datasets/black-sea.md
+    - Earth System Data Cube: datasets/ESDC.md
+    - Black Sea Cube: datasets/black-sea.md
 
 plugins:
   - search

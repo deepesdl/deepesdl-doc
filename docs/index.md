@@ -2,7 +2,7 @@
     <img src="img/logo.png" alt="DeepESDL Logo" style="height: 200px; width:300px;"/>
 </p>
 
-# Deep Earth System Datalab Documentation
+# Deep Earth System Data Lab Documentation
 
 ## Introduction
 

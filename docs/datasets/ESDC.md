@@ -5,13 +5,13 @@
 ![Bounding box map](ESDC.png)<br>
 <span style="font-size: x-small">Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.</span>
 
-| Parameter | Minimum | Maximum |
-| ---- | ---- | ---- |
-| Bounding box latitude | -89.875 | 89.875 |
-| Bounding box longitude | -179.875 | 179.875 |
-| Time range | 1979-01-05T00:00:00.000000000 | 2021-12-31T00:00:00.000000000 |
-
-Publisher: DeepESDL Team
+| Parameter | Value |
+| ---- | ---- |
+| Bounding box latitude | -89.875 to 89.875 |
+| Bounding box longitude | -179.875 to 179.875 |
+| Time range | 1979-01-05T00:00:00.000000000 to 2021-12-31T00:00:00.000000000 |
+| Time period | 8D |
+| Publisher | DeepESDL Team |
 
 [Click here for full dataset metadata.](#full-metadata)
 

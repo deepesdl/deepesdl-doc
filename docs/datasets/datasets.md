@@ -1,4 +1,4 @@
 # Datasets
 
--   [Black Sea](black-sea.md)
--   [ESDC](ESDC.md)
+-   [Black Sea Cube](black-sea.md)
+-   [Earth System Data Cube](ESDC.md)

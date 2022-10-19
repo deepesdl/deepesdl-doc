@@ -86,15 +86,17 @@ def make_basic_info(props: Dict[str, Any]) -> str:
         Markdown source containing information about the dataset
     """
     return (
-        f'| Parameter | Minimum | Maximum |\n'
-        f'| ---- | ---- | ---- |\n'
-        f'| Bounding box latitude | {props["geospatial_lat_min"]} | '
+        f'| Parameter | Value |\n'
+        f'| ---- | ---- |\n'
+        f'| Bounding box latitude | {props["geospatial_lat_min"]} to '
         f'{props["geospatial_lat_max"]} |\n'
-        f'| Bounding box longitude | {props["geospatial_lon_min"]} | '
+        f'| Bounding box longitude | {props["geospatial_lon_min"]} to '
         f'{props["geospatial_lon_max"]} |\n'
-        f'| Time range | {props["time_coverage_start"]} | '
-        f'{props["time_coverage_end"]} |\n\n'
-        f'Publisher: {props["publisher_name"]}\n\n'
+        f'| Time range | {props["time_coverage_start"]} to '
+        f'{props["time_coverage_end"]} |\n' +
+        (f'| Time period | {props["time_period"]} |\n'
+         if 'time_period' in props else '') +
+        f'| Publisher | {props["publisher_name"]} |\n\n'
         '[Click here for full dataset metadata.](#full-metadata)\n\n'
     )
 
