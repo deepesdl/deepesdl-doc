@@ -16,12 +16,17 @@ import matplotlib.patches as patches
 
 @click.command()
 @click.option('-o', '--output-dir', 'output_dir', type=str, nargs=1)
+@click.option('-n', '--name', 'name', type=str, nargs=1)
 @click.argument('json_files', type=str, nargs=-1)
-def main(output_dir, json_files):
+def main(output_dir, name, json_files):
     for json_file in json_files:
         with open(json_file, 'r') as fh:
             metadata = yaml.safe_load(fh)
-        basename = os.path.basename(json_file).removesuffix('.geojson')
+        basename = (
+            name
+            if name is not None
+            else os.path.basename(json_file).removesuffix('.geojson')
+        )
         output_filename = basename + '.md'
         bbox_image_path = os.path.join(output_dir, basename + '.png')
         with open(os.path.join(output_dir, output_filename), 'w') as output:
@@ -29,14 +34,16 @@ def main(output_dir, json_files):
             output.write(f'# {props["title"]}\n\n')
             output.write('## Basic information\n\n')
             output.write(f'![Bounding box map]({basename + ".png"})<br>\n')
-            output.write('<span style="font-size: x-small">Map tiles by <a href="http://stamen.com">'
-                         'Stamen Design</a>, under '
-                         '<a href="http://creativecommons.org/licenses/by/3.0">'
-                         'CC BY 3.0</a>. Data by '
-                         '<a href="http://openstreetmap.org">OpenStreetMap</a>,'
-                         ' under '
-                         '<a href="http://www.openstreetmap.org/copyright">'
-                         'ODbL</a>.</span>\n\n')
+            output.write(
+                '<span style="font-size: x-small">Map tiles by <a href="http://stamen.com">'
+                'Stamen Design</a>, under '
+                '<a href="http://creativecommons.org/licenses/by/3.0">'
+                'CC BY 3.0</a>. Data by '
+                '<a href="http://openstreetmap.org">OpenStreetMap</a>,'
+                ' under '
+                '<a href="http://www.openstreetmap.org/copyright">'
+                'ODbL</a>.</span>\n\n'
+            )
             output.write(make_basic_info(props))
             output.write('## Variable list\n\n')
             output.write(make_variable_list_table(props['variables']))
@@ -146,15 +153,18 @@ def escape_for_markdown(content: Any) -> Any:
     Returns:
         Markdown source which will produce the input string when processed
     """
-    if type(content) != str:
-        return content
-    escaped_text = content.replace('\\', '\\\\').replace('_', '\\_')
-    if re.match('https?://', content):
-        return f'[{escaped_text}]({content})'
-    elif re.match('www[.]', content):
-        return f'[{escaped_text}](http://{content})'
+    if type(content) == list:
+        return ', '.join(map(escape_for_markdown, content))
+    elif type(content) == str:
+        escaped_text = content.replace('\\', '\\\\').replace('_', '\\_')
+        if re.match('https?://', content):
+            return f'[{escaped_text}]({content})'
+        elif re.match('www[.]', content):
+            return f'[{escaped_text}](http://{content})'
+        else:
+            return escaped_text
     else:
-        return escaped_text
+        return content
 
 
 def make_map(props: Dict[str, Any], output_path: str) -> None:
@@ -183,11 +193,14 @@ def make_map(props: Dict[str, Any], output_path: str) -> None:
     image_tiles = cartopy.io.img_tiles.Stamen('terrain-background')
     plt.figure()
     projection = (
-        cartopy.crs.Mollweide(central_longitude=(x0 + x1) / 2) if large else
-        cartopy.crs.LambertAzimuthalEqualArea(
-            (x0 + x1) / 2, (y0 + y1) / 2
+        cartopy.crs.Mollweide(central_longitude=(x0 + x1) / 2)
+        if large
+        else cartopy.crs.LambertAzimuthalEqualArea(
+            (x0 + x1) / 2,
+            (y0 + y1) / 2
             # centre the projection over our bbox
-        ))
+        )
+    )
     ax = plt.axes(projection=projection)
     if large:
         ax.set_global()
