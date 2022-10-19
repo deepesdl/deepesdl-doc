@@ -174,33 +174,48 @@ def make_map(props: Dict[str, Any], output_path: str) -> None:
     y1 = props['geospatial_lat_max']
     w = x1 - x0
     h = y1 - y0
+
+    # Above a certain size, we switch from a regional LAEA projection to
+    # a global Mollweide projection.
+    large = w > 45 or h > 45
+
     margin_factor = 0.2  # how much margin to include around the bbox
     image_tiles = cartopy.io.img_tiles.Stamen('terrain-background')
-    fig = plt.figure()
-    projection = cartopy.crs.LambertAzimuthalEqualArea(
-        (x0 + x1) / 2, (y0 + y1) / 2  # centre the projection over our bbox
-    )
-    ax = fig.add_subplot(1, 1, 1, projection=projection)
-    ax.set_extent(
-        [
-            x0 - margin_factor * w,
-            x1 + margin_factor * w,
-            y0 - margin_factor * h,
-            y1 + margin_factor * h,
-        ],
-        crs=cartopy.crs.Geodetic(),
-    )
-    ax.add_image(image_tiles, 6)
-    ax.gridlines(draw_labels=True, color='white')
-    rectangle_patch = patches.Rectangle((x0, y0), w, h)
+    plt.figure()
+    projection = (
+        cartopy.crs.Mollweide(central_longitude=(x0 + x1) / 2) if large else
+        cartopy.crs.LambertAzimuthalEqualArea(
+            (x0 + x1) / 2, (y0 + y1) / 2
+            # centre the projection over our bbox
+        ))
+    ax = plt.axes(projection=projection)
+    if large:
+        ax.set_global()
+    else:
+        ax.set_extent(
+            [
+                x0 - margin_factor * w,
+                x1 + margin_factor * w,
+                y0 - margin_factor * h,
+                y1 + margin_factor * h,
+            ],
+            crs=cartopy.crs.Geodetic(),
+        )
+
+    # We use a crude test to choose the tile resolution; ideally we should
+    # calculate this more carefully from the bbox size and final image
+    # resolution.
+    ax.add_image(image_tiles, 3 if large else 6)
+
+    bbox_rect_patch = patches.Rectangle((x0, y0), w, h)
     # Since projected rectangle sides may not be straight, we interpolate
     # them into many short line segments which can be projected separately. In
     # some cases cartopy can do this automatically, but it doesn't seem to work
     # for our projection and parameters (as of cartopy 0.21.0), so we use the
     # manual approach.
-    path_patch = patches.PathPatch(
-        rectangle_patch.get_path()
-        .transformed(rectangle_patch.get_patch_transform())
+    bbox_path_patch = patches.PathPatch(
+        bbox_rect_patch.get_path()
+        .transformed(bbox_rect_patch.get_patch_transform())
         .interpolated(100),
         linewidth=2,
         edgecolor='red',
@@ -208,7 +223,8 @@ def make_map(props: Dict[str, Any], output_path: str) -> None:
         transform=cartopy.crs.Geodetic(),
         zorder=1e6,  # on top
     )
-    ax.add_patch(path_patch)
+    ax.add_patch(bbox_path_patch)
+    ax.gridlines(draw_labels=not large, color='white')
     plt.tight_layout(pad=0)
     plt.savefig(output_path, bbox_inches='tight', pad_inches=0.1)
 
