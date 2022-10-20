@@ -144,21 +144,30 @@ def make_table(data: Dict[str, Any], source_link: str = None) -> str:
 
 
 def escape_for_markdown(content: Any) -> Any:
-    """Turn a string into valid Markdown source by escaping special characters
+    """Turn a string or list into a Markdown source string
 
-    Additionally, if the string begins with "http://", "https://", or
-    "www." it will be turned into a Markdown link.
+    For a string, characters which have special meaning in Markdown will
+    be escaped to ensure that they display correctly. Additionally, if the
+    string begins with "http://", "https://", or "www." it will be turned into
+    a Markdown link.
+
+    For a list, each element will be processed recursively with another call
+    to this function, and they will be joined into a single string with ", "
+    as separator.
+
+    For any other type, the output is the same as the input.
 
     Args:
-        content: any string
+        content: anything
 
     Returns:
-        Markdown source which will produce the input string when processed
+        For strings and lists: Markdown source which will produce a
+        representation of the input. For any other type: the input value.
     """
     if type(content) == list:
         return ', '.join(map(escape_for_markdown, content))
     elif type(content) == str:
-        escaped_text = content.replace('\\', '\\\\').replace('_', '\\_')
+        escaped_text = re.sub(r'[][({`*_#+.!})\\-]', r'\\\g<0>', content)
         if re.match('https?://', content):
             return f'[{escaped_text}]({content})'
         elif re.match('www[.]', content):
