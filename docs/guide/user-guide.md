@@ -143,7 +143,7 @@ in the DeepESDL dataset-spec GitHub repository:
 ### Cube generation recipe
 
 The cube generation recipe ensures, that an existing dataset provided by 
-DeepESDL can be reproduced by following the recipe. Here we describe the 
+DeepESDL can be reproduced by following the documented steps and specifications. Here we describe the 
 recipe structure of the provided datasets within DeepESDL.
 
 Each predefined DeepESDL data cube is fully described in a transparent and 
