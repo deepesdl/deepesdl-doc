@@ -85,8 +85,8 @@ https://viewer.earthsystemdatalab.net .
 The viewer contains public datasets only, but will later also provide user/team 
 cubes when logged in. TThe login will be the same as for the DeepESDL JupyterLab.
 
-For the functionality of the viewer, please refer to the documentation:
-https://xcube.readthedocs.io/en/latest/viewer.html#functionality
+For a more detailed description of the viewer functionality, please refer to a dedicated section in the
+[xcube documentation](https://xcube.readthedocs.io/en/latest/viewer.html#functionality).
 
 
 # DeepESDL datacubes
