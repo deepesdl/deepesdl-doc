@@ -161,7 +161,7 @@ After a cube has been released and published, we record the changes in
 In each data cube sub-folder, further
 sub-folders may exist that contain resources and sources such as 
 configuration files and Python modules.
-We have defined the following common sub-folders, but others may be used 
+We have defined the following common sub-folder structure, but others may be used 
 too:   
 *    `cube-gen/${cube-name}/input-collect/`     
       Fetch, download,or copy inputs.
