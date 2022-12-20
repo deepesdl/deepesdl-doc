@@ -118,7 +118,7 @@ To access the documentation of available datasets, please have a look in the
 # DeepESDL data cube generation
 
 The datasets provided by DeepESDL as data resource might not be sufficient 
-for your science case. However, this should not stop you from creating the  
+for your science case. However, this should not stop you from creating the 
 resources you need from source input data and enable you to do your research. 
 DeepESDL carefully adheres to the reproducibility of dataset resources. Therefore, 
 there are two approaches to generate datasets. 
@@ -190,22 +190,22 @@ the data can be “frozen” and can be assigned a version and/or a DOI. In
 addition, access to static data cubes persisted in cloud object storage 
 usually is fast and scalable. 
 
-However, there are several issues and challenges with static cubes.  Data 
+However, there are several issues and challenges with static cubes. Data 
 sources of data cubes can become outdated,
 or are simply updated, like it is the case for new EO data observations 
 added to an existing product archive. In such cases, related data cubes should 
 be updated too, hereby creating considerable maintenance effort. In addition,
 the generation of static data cubes is in many cases a plain duplication of 
 data that is actually defined and described elsewhere. The data cube must 
-ensure to  stay  in  sync  with  original  data  sources and  metadata.
-Finally,  static  cubes  can  only  satisfy requirements of one user or use 
+ensure to stay in sync with original data sources and metadata.
+Finally, static cubes can only satisfy requirements of one user or use 
 casein an optimal way. By definition, they do not allow for streamlined and 
 tailored datasets. 
 
-A  possible solution to mitigate these  issues  and address 
-the challenges  are dynamic  data  cubes. Dynamic data cubes exist in-memory 
-only and will provide data in a “lazy” way. That is, chunks of a data  cube  
-are fetched  on-demand, hence computed  on-the-fly,  including  all  the  
+A possible solution to mitigate these issues and address 
+the challenges are dynamic data cubes. Dynamic data cubes exist in-memory 
+only and will provide data in a “lazy” way. That is, chunks of a data cube 
+are fetched on-demand, hence computed on-the-fly, including all the 
 required transformation steps starting with the ingestion of source data. 
 Dynamic cubes are generated for a given configuration that describes the 
 data cube to be generated. 
@@ -226,7 +226,7 @@ cube = store.open_data("S2L2A",
                        )
 ```
 
-Dynamic  cubes are application-specific and configured  by individual users.
+Dynamic cubes are application-specific and configured by individual users.
 
 Overview of the possible xcube data stores that can be 
 used to create dynamic cubes:
