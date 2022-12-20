@@ -133,7 +133,7 @@ cube’s characteristics. We use a special GeoJSON Feature format for this
 purpose so each cube definition is both human- and machine-readable and can 
 be ingested and rendered by many existing tools. The GeoJSON 
 Feature’s geometry represents the geographical coverage of the cube, while the 
-GeoJSONFeature’s properties provide the remaining details. To describe many 
+GeoJSONFeature’s properties provide numerous further details. To describe many 
 similar cubes, e.g., for using multiple spatial resolutions for same 
 variables, a GeoJSON FeatureCollection may be used instead. To validate the 
 JSON cube specification files, we provide a dedicated online JSON Schema 
