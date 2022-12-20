@@ -6,8 +6,8 @@ DeepESDL.
 The growing set of DeepESDL's general functionalities comprises:
 1. [DeepESDL JupyterLab](#deepesdl-jupyterlab)
 2. [DeepESDL xcube viewer](#deepesdl-xcube-viewer)
-3. [DeepESDL datacubes](#deepesdl-datacube-resources)
-4. [DeepESDL data cube generation](#deepesdl-datacube-generation)
+3. [DeepESDL datacubes](#deepesdl-datacubes)
+4. [DeepESDL datacube generation](#deepesdl-datacube-generation)
 
 # DeepESDL JupyterLab
 
@@ -115,7 +115,7 @@ To access the documentation of available datasets, please have a look in the
 [datasets section](../datasets/datasets.md).
 
 
-# DeepESDL data cube generation
+# DeepESDL datacube generation
 
 The datasets provided by DeepESDL as data resource might not be sufficient 
 for your science case. However, this should not stop you from creating the 
