@@ -182,7 +182,7 @@ Persistently stored data cubes have the advantage that they have a physical
 representation, i.e. they “exist” at a given storage location. That way 
 the data can be “frozen” and can be assigned a version and/or a DOI. In 
 addition, access to static data cubes persisted in cloud object storage 
-usually is fast and scalable. 
+is usually fast and scalable. 
 
 However, there are several issues and challenges with static cubes. Data 
 sources of data cubes can become outdated,
