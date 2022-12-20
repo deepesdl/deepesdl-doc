@@ -116,7 +116,7 @@ for your application. However, this should not stop you from creating the
 resources you need from source input data and enable you to do your research. 
 DeepESDL carefully adheres to the reproducibility of dataset resources. Therefore, 
 there are two approaches to generate datasets. 
-One is fetching the data from an existing datastore without persisting the 
+In the simpler one, the data is retrieved from an existing datastore without persisting the 
 dataset, usually using a Jupyter notebook. 
 If a dataset is persisted and furthermore based on input data that 
 needs to be e.g. downloaded beforehand or other preprocessing steps are 
