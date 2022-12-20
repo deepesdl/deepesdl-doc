@@ -131,7 +131,7 @@ sources used to generate the cube’s target data variables. To specify each
 cube, a dedicated JSON format is created that fully describes the target 
 cube’s characteristics. We use a special GeoJSON Feature format for this 
 purpose so each cube definition is both human- and machine-readable and can 
-be ingested and rendered by a magnitude of existing tools. The GeoJSON 
+be ingested and rendered by many existing tools. The GeoJSON 
 Feature’s geometry represents the geographical coverage of a cube, while the 
 GeoJSONFeature’s properties provide the remaining details. To describe many 
 similar cubes, e.g., for using multiple spatial resolutions for same 
