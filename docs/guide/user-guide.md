@@ -158,7 +158,7 @@ detailed human-readable information about the cube including how to generate
 it from sources in `cube-gen/${cube-name}/README.md`.  
 After a cube has been released and published, we record the changes in 
 `cube-gen/${cube-name}/CHANGES.md`.  
-In each data cube sub-folder, other 
+In each data cube sub-folder, further
 sub-folders may exist that contain resources and sources such as 
 configuration files and Python modules.
 We have defined the following common sub-folders, but others may be used 
