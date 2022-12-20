@@ -120,7 +120,7 @@ In the simpler one, the data is retrieved from an existing datastore without per
 dataset, usually using a Jupyter notebook. 
 If a dataset shall be persisted, maybe even re-published,  and is furthermore based on input data that 
 needs to be e.g. downloaded beforehand or other preprocessing steps are 
-performed, then the cube generation recipe approach is the suitable one. 
+performed, then the cube generation recipe approach is recommended.  Note that the Cube Gen team follows this approach for all cubes generated and published by DeepESDL. 
 
 ## Cube generation recipe approach for static data cubes
 
