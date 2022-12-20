@@ -65,7 +65,7 @@ Cube generation recipes are designed to be comprehensive, transparent,
 reproducible, and relocatable. That is, with very little configuration 
 changes, they should be executable in different environments.
 
-### Dynamic data cubes from Data Stores
+## Dynamic data cubes from Data Stores
 
 Persistently stored data cubes have the advantage that they have a physical 
 representation, i.e. they “exist” at a given storage location. That way 

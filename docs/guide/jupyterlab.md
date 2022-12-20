@@ -7,7 +7,7 @@ the JupyterLab environment as offered by DeepESDL.
 For more in-depth documentation on the various components, see the links in the
 section [Further Information](further-information.md).
 
-### Logging in and starting the JupyterLab profile
+## Logging in and starting the JupyterLab profile
 
 To use the DeepESDL JupyterLab environment, navigate to
 <https://deep.earthsystemdatalab.net/> with a web browser (a recent version of
@@ -34,7 +34,7 @@ The JupyterLab interface will then appear in your web browser, ready for
 use.
 
 
-### Changing a JupyterLab profile
+## Changing a JupyterLab profile
 
 If you have already started your session and need to change the JupyterLab profile, 
 you can do this by selecting *Hub control panel* from the *File* menu within
@@ -42,7 +42,7 @@ JupyterLab. Then click the `Stop my server` button and wait for your current
 server to shut down. When the `Start my server` button appears, you can click
 on it to return to the user JupyterLab profiles menu.
 
-### Logging out
+## Logging out
 
 To log out, select *Log out* from the *File* menu within JupyterLab. 
 
@@ -52,7 +52,7 @@ If you wish to stop your session explicitly,
 you can use the hub control panel as described in the 
 [Changing a JupyterLab profile](#changing-a-jupyterlab-profile) section above.
 
-### Python environment selection of the Jupyter Kernel
+## Python environment selection of the Jupyter Kernel
 
 If you wish to use a special set of python packages, you can adjust it in the 
 top right corner of the notebook. Next, a drop-down menu will appear, and you 
