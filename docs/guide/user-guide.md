@@ -188,7 +188,7 @@ However, there are several issues and challenges with static cubes. Data
 sources of data cubes can become outdated,
 or are simply updated, like it is the case for new EO data observations 
 added to an existing product archive. In such cases, related data cubes should 
-be updated too, hereby creating considerable maintenance effort. In addition,
+be updated too, hereby creating considerable maintenance effort and risks for the integrity of the data cube. In addition,
 the generation of static data cubes is in many cases a plain duplication of 
 data that is actually defined and described elsewhere. The data cube must 
 ensure to stay in sync with original data sources and metadata.
