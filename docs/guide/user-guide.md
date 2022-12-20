@@ -47,7 +47,7 @@ use.
 
 ### Changing a JupyterLab profile
 
-If you have already started your session and need to change JupyterLab profiles, 
+If you have already started your session and need to change the JupyterLab profile, 
 you can do this by selecting *Hub control panel* from the *File* menu within
 JupyterLab. Then click the ‘Stop my server’ button and wait for your current
 server to shut down. When the ‘Start my server’ button appears, you can click
