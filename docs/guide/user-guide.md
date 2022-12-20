@@ -47,7 +47,7 @@ A user JupyterLab profiles provides a particular combination of pre-installed
 package versions and resource settings. 
 
 If you have already started your session and need to change JupyterLab profiles, 
-you can do this by selecting ‘Hub control panel’ from the ‘File’ menu within
+you can do this by selecting *Hub control panel* from the *File* menu within
 JupyterLab. Then click the ‘Stop my server’ button and wait for your current
 server to shut down. When the ‘Start my server’ button appears, you can click
 on it to return to the user JupyterLab profiles menu.
