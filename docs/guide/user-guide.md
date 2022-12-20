@@ -49,13 +49,13 @@ use.
 
 If you have already started your session and need to change JupyterLab profiles, 
 you can do this by selecting *Hub control panel* from the *File* menu within
-JupyterLab. Then click the ‘Stop my server’ button and wait for your current
-server to shut down. When the ‘Start my server’ button appears, you can click
+JupyterLab. Then click the `Stop my server` button and wait for your current
+server to shut down. When the `Start my server` button appears, you can click
 on it to return to the user JupyterLab profiles menu.
 
 ### Logging out
 
-To log out, select ‘Log out’ from the ‘File’ menu within JupyterLab. 
+To log out, select *Log out* from the *File* menu within JupyterLab. 
 
 Note that your JupyterLab session will continue in the background even after
 you have logged out, but will eventually be terminated due to inactivity. 
