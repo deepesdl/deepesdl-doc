@@ -112,7 +112,7 @@ To access the documentation of available datasets, please have a look in the
 # DeepESDL datacube generation
 
 The data cubes already provided by DeepESDL might not be sufficient 
-for your science case. However, this should not stop you from creating the 
+for your application. However, this should not stop you from creating the 
 resources you need from source input data and enable you to do your research. 
 DeepESDL carefully adheres to the reproducibility of dataset resources. Therefore, 
 there are two approaches to generate datasets. 
