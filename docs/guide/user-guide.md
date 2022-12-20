@@ -29,7 +29,7 @@ DeepESDL user, please use your GitHub account to log in.
 If your Jupyter server is not already running, you may be presented
 with a menu of user JupyterLab profiles to use for your session; there might be 
 one or more JupyterLab profiles to choose from, depending on the computational 
-resources needs of your team. Please select an adequate JupyterLab profiles for 
+resources needs of your team. Please select a suitable profile for 
 your current task; it might not always require the strongest computational 
 resources available.
 After choosing your environment, you will see a progress bar appear for a few 
