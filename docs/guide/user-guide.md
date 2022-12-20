@@ -47,7 +47,7 @@ use.
 
 ### Changing a JupyterLab profile
 
-If you have already started your session and need to change JupyterLab profiles, 
+If you have already started your session and need to change the JupyterLab profile, 
 you can do this by selecting *Hub control panel* from the *File* menu within
 JupyterLab. Then click the `Stop my server` button and wait for your current
 server to shut down. When the `Start my server` button appears, you can click
@@ -85,8 +85,8 @@ https://viewer.earthsystemdatalab.net .
 The viewer contains public datasets only, but will later also provide user/team 
 cubes when logged in. TThe login will be the same as for the DeepESDL JupyterLab.
 
-For the functionality of the viewer, please refer to the documentation:
-https://xcube.readthedocs.io/en/latest/viewer.html#functionality
+For a more detailed description of the viewer functionality, please refer to a dedicated section in the
+[xcube documentation](https://xcube.readthedocs.io/en/latest/viewer.html#functionality).
 
 
 # DeepESDL datacubes
