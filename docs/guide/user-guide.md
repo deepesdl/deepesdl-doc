@@ -45,13 +45,7 @@ The JupyterLab interface will then appear in your web browser, ready for
 use.
 
 
-### Choosing a JupyterLab profile
-
-If you don't already have a running DeepESDL Jupyter session, you will be 
-presented with a list of one or more available user JupyterLab profiles when 
-you log in. 
-A user JupyterLab profile provides a particular combination of pre-installed 
-package versions and resource settings. 
+### Changing a JupyterLab profile
 
 If you have already started your session and need to change JupyterLab profiles, 
 you can do this by selecting *Hub control panel* from the *File* menu within
@@ -67,7 +61,7 @@ Note that your JupyterLab session will continue in the background even after
 you have logged out, but will eventually be terminated due to inactivity. 
 If you wish to stop your session explicitly,
 you can use the hub control panel as described in the 
-[Choosing a JupyterLab profile](#choosing-a-jupyterlab-profile) section above.
+[Changing a JupyterLab profile](#changing-a-jupyterlab-profile) section above.
 
 ### Python environment selection of the Jupyter Kernel
 
