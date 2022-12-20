@@ -193,7 +193,7 @@ the generation of static data cubes is in many cases a plain duplication of
 data that is actually defined and described elsewhere. The data cube must 
 ensure to stay in sync with original data sources and metadata.
 Finally, static cubes can only satisfy requirements of one user or use 
-casein an optimal way. By definition, they do not allow for streamlined and 
+case in an optimal way. By definition, they do not allow for streamlined and 
 tailored datasets. 
 
 A possible solution to mitigate these issues and address 
