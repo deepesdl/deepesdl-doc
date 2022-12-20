@@ -6,7 +6,7 @@ DeepESDL.
 There are three components of DeepESDL: 
 1. [DeepESDL JupyterLab](#deepesdl-jupyterlab)
 2. [DeepESDL xcube viewer](#deepesdl-xcube-viewer)
-3. [DeepESDL datacube resources](#deepesdl-datacube-resources)
+3. [DeepESDL datacubes](#deepesdl-datacube-resources)
 
 
 # DeepESDL JupyterLab
