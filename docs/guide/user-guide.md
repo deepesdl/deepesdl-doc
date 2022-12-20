@@ -1,6 +1,6 @@
 # User guide
 
-In the user guide you can find a description of all components belonging to 
+This user guide helps you getting started with the main components of 
 DeepESDL.
 
 There are three components of DeepESDL: 
