@@ -79,7 +79,7 @@ For the functionality of the viewer, please refer to the documentation:
 https://xcube.readthedocs.io/en/latest/viewer.html#functionality
 
 
-# DeepESDL datacube resources
+# DeepESDL datacubes
 
 DeepESDL provides a growing list of relevant variables for Earth System Science. 
 Most of them have been derived from Earth Observation, but the compilation also 
