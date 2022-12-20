@@ -16,7 +16,7 @@ There are three components of DeepESDL:
 This section provides a brief introduction for users to the basic features of
 the JupyterLab environment as deployed on the DeepESDL system. 
 For more in-depth documentation on the various components, see the links in the
-[‘Further information’ section](#further-information).
+section [Further Information](#further-information).
 
 ### Logging in and starting the JupyterLab profile
 
