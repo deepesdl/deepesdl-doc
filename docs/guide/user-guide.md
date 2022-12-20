@@ -184,7 +184,7 @@ the data can be “frozen” and can be assigned a version and/or a DOI. In
 addition, access to static data cubes persisted in cloud object storage 
 is usually fast and scalable. 
 
-However, there are several issues and challenges with static cubes. Data 
+However, there are potential issues and challenges with static cubes. Data 
 sources of data cubes can become outdated,
 or are simply updated, like it is the case for new EO data observations 
 added to an existing product archive. In such cases, related data cubes should 
