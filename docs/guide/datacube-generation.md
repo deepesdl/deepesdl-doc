@@ -26,8 +26,8 @@ GeoJSONFeature’s properties provide numerous further details. To describe many
 similar cubes, e.g., for using multiple spatial resolutions for same 
 variables, a GeoJSON FeatureCollection may be used instead. To validate the 
 JSON cube specification files, we provide a dedicated online JSON Schema 
-in the DeepESDL dataset-spec GitHub repository:
- https://github.com/deepesdl/dataset-spec/blob/main/dataset-defs/template.schema.json
+in the [DeepESDL dataset-spec GitHub repository]( https://github.com/deepesdl/dataset-spec/blob/main/dataset-defs/template.schema.json
+).
 
 ### Cube generation recipe
 
@@ -38,7 +38,7 @@ recipe structure of the provided datasets within DeepESDL.
 Each predefined DeepESDL data cube is fully described in a transparent and 
 comprehensive way by a dedicated sub-folder in the DeepESDL GitHub [repository 
 cube-gen](https://github.com/deepesdl/cube-gen). 
-Such sub-folder is what we call a cube generation recipe:
+Such sub-folder is what we call a cube generation recipe:  
    `cube-gen/${cube-name}/`
 
 It contains the machine-readable GeoJSON file that fully specifies the data 
@@ -51,13 +51,17 @@ In each data cube sub-folder, further
 sub-folders may exist that contain resources and sources such as 
 configuration files and Python modules.
 We have defined the following common sub-folder structure, but others may be used 
-too:   
+too:
+
 *    `cube-gen/${cube-name}/input-collect/`     
       Fetch, download,or copy inputs.
+
 *    `cube-gen/${cube-name}/input-preprocess/`   
       Transform, concatenate, convert to interm. Zarr.
+
 *    `cube-gen/${cube-name}/output-merge/`  
       Merge interm. Zarrs to target cube.
+
 *    `cube-gen/${cube-name}/output-postprocess/`   
       Apply any postprocessing.  
 
@@ -114,7 +118,8 @@ Dynamic cubes are application-specific and configured by individual users.
 Below is an overview of the possible xcube data stores that can be 
 used to create dynamic cubes together with the title of an example notebook, 
 if there is one available. A description of how the example notebooks can be 
-accessed is in section [DeepESDL JupyterLab](jupyterlab.md#getting-started-notebooks):
+accessed is in section  
+[DeepESDL JupyterLab](jupyterlab.md#getting-started-notebooks).
 
 | Data store ID | Content                               | Example Notebook        | Access                            |
 |---------------|---------------------------------------|-------------------------|-----------------------------------|
