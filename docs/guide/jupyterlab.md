@@ -69,6 +69,7 @@ You can find example notebooks in DeepESDL JupyterLab to help you to get
 started. 
 
 To access them:
+
 1. Head to the JupyterLab `Launcher`
    ![img.png](../img/launcher.png)  
    If your `Launcher` is not visible right away, you can open it via the `plus` 
