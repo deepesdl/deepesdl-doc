@@ -111,17 +111,15 @@ cube = store.open_data("S2L2A",
 
 Dynamic cubes are application-specific and configured by individual users.
 
-Overview of the possible xcube data stores that can be 
-used to create dynamic cubes:
+Below is an overview of the possible xcube data stores that can be 
+used to create dynamic cubes together with the title of an example notebook, 
+if there is one available. A description of how the example notebooks can be 
+accessed is in section [DeepESDL JupyterLab](jupyterlab.md#getting-started-notebooks):
 
-| Data store ID | Content                               | Access                            |
-|---------------|---------------------------------------|-----------------------------------|
-| sentinelhub   | Sentinel 1 to 3, Landsat, ...         | Requires registration, with costs |
-| cmems         | CMEMS datasets                        | Requires registration, free       |
-| cds           | Climate data store                    | Requires registration, free       |
-| cciodp        | All ESA CCI datasets                  | Free                              |
-| s3            | Any Zarr dataset on AWS S3 or similar | Depends on permissions            |
-
-
-DeepESDL provides example notebooks for the different stores, which can be a 
-good starting point for exploring the data stores. 
+| Data store ID | Content                               | Example Notebook        | Access                            |
+|---------------|---------------------------------------|-------------------------|-----------------------------------|
+| s3            | Any Zarr dataset on AWS S3 or similar | 01 Access public cubes  | Depends on permissions            |
+| cmems         | CMEMS datasets                        | 02 Generate CMEMS cubes | Requires registration, free       |
+| cciodp        | All ESA CCI datasets                  | 03 Generate CCI Cubes   | Free                              |
+| cds           | Climate data store                    |                         | Requires registration, free       |
+| sentinelhub   | Sentinel 1 to 3, Landsat, ...         |                         | Requires registration, with costs |
