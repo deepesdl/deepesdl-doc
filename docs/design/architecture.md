@@ -2,7 +2,7 @@
 
 The DeepESDL system comprises numerous distributed services and 
 applications as introduced in the [DeepESDL Context](./concept.md). 
-All of them are containerized and will be executed in a common cloud 
+All of them are containerized and are executed in a common cloud 
 environment. 
 To orchestrate, monitor, maintain, and scale the variety of 
 DeepESDL services and applications, we use today’s most popular 
@@ -18,8 +18,8 @@ reliability of DeepESDL.
 To be able to meet the ambitious requirements for the service, 
 we must base the solution mainly on existing technologies. 
 Many of the DeepESDL system components have been developed in former 
-(mostly ESA) projects and will be thus reused, 
-adapted, extended, and branded for DeepESDL. Examples are
+(mostly ESA) projects and are thus reused, adapted, extended, and branded 
+for DeepESDL. Examples are
 
 * **DeepESDL Hub** is based on EOxHub developed by EOX and used for
   example in the ESA EuroDataCube project;

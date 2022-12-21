@@ -23,7 +23,7 @@ The toolkit offers the following:
 
 * Implementations of sampling mechanisms and online repartitioning methods 
   suited for the data cube files which are stored in chunks. 
-  This element is essential, as it will enable deep learning that respects 
+  This element is essential, as it enables deep learning that respects 
   the basic principles of geo data way beyond naïve applications of
   machine learning in the Earth system context. 
 

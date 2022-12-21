@@ -71,7 +71,7 @@ The *DeepESDL Published Project Data* is backed by a subset of the
 applications and services granted to each 
 project, that is, a common **xcube Server** and **geoDB** is provided
 to serve the public catalogue and visualisation tools; 
-a public **REST API** will allow accessing the services programmatically. 
+a public **REST API** allows accessing the services programmatically. 
 Public services will later also comprise a Jupyter Book  (JB) 
 or Notebook Viewer  (NBviewer) service, so that selected Project-JNBs 
 can be elaborated into published, story-telling books. 

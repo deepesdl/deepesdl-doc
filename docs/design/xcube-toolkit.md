@@ -32,14 +32,14 @@ Its is planned to develop data stores for the **geoDB** service,
 so users can retrieve vector datasets and rasterized vector data 
 sources as gridded ARDCs. 
 Other data stores that are needed by DeepESDL Projects will be added 
-as required by specific use cases.
+as required by specific use cases during the project.
 
 The **xcube Python API** provides various high-level functions for 
 data analysis that operate on ARDCs and comprises programmatical 
 access to all other xcube Components mentioned above. 
-Users will utilize the Python API from their own programs, scripts, JNBs, 
+Users call the Python API from their own programs, scripts, JNBs, 
 or from user code executed in the xcube ARDC Generator. 
-For DeepESDL, we will add generic functions to the Python API 
+During the project, generic functions will be added to the Python API 
 to support ML using the ARDCs (see [ML Toolkit](ml-toolkit.md)), 
 as well as new use case specific functions as desired in the 
 different DeepESDL Projects. 
