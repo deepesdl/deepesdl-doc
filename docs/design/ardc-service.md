@@ -8,8 +8,7 @@ manipulated by user-provided Python code
 (BYOA concept: bring-your-own-algorithm) before the resulting 
 ARDC is written into another data store, for example AWS S3.
 
-|   ![xcube Generator schema](../img/ardc-gen.png)    |
-|                 xcube Generator schema              |    
+![xcube Generator schema](../img/ardc-gen.png)
 
 The current features of the xcube Generator are:
 

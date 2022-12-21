@@ -33,8 +33,7 @@ Service access and application deployments are managed by the
 *Control Plane* of the DeepESDL Hub. Actual workloads are 
 scaled on the *Worker Plane*.
 
-| ![DeepESDL High-level Design](../img/concept.png) |
-|                  DeepESDL High-level Design              |
+![DeepESDL High-level Design](../img/concept.png)
 
 Applications available to users within DeepESDL comprise:
 
