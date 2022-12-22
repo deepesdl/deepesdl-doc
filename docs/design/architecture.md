@@ -6,11 +6,12 @@ All of them are containerized and are executed in a common cloud
 environment. 
 To orchestrate, monitor, maintain, and scale the variety of 
 DeepESDL services and applications, we use today’s most popular 
-container orchestrator Kubernetes  (K8s). This supports the idea 
+container orchestrator Kubernetes (K8s). This supports the idea 
 that the DeepESDL system is deployable on any Cloud environment that 
 can run a K8s service (this is, AWS, Google, Microsoft Azure, and 
-many others including all DIAS instances). We envisage to deploy the 
-initial system on Amazon Web Services (AWS) in the EU-Central-1 region, 
+many others including all DIAS instances). The 
+initial system is deployed on Amazon Web Services (AWS) in the EU-Central-1 
+region, 
 which is physically located in Frankfurt, Germany, Europe using the 
 managed K8s service EKS, which is critical for cost-efficiency and 
 reliability of DeepESDL. 

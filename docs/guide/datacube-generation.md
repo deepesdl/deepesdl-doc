@@ -6,10 +6,12 @@ resources you need from source input data and enable you to do your research.
 DeepESDL carefully adheres to the reproducibility of dataset resources. Therefore, 
 there are two approaches to generate datasets. 
 In the simpler one, the data is retrieved from an existing datastore without persisting the 
-dataset, usually using a Jupyter notebook. 
-If a dataset shall be persisted, maybe even re-published,  and is furthermore based on input data that 
+dataset, usually using the [DeepESDL JupyterLab](jupyterlab.md). 
+If a dataset shall be persisted, maybe even re-published,and is furthermore based on input data that 
 needs to be e.g. downloaded beforehand or other preprocessing steps are 
-performed, then the cube generation recipe approach is recommended.  Note that the Cube Gen team follows this approach for all cubes generated and published by DeepESDL. 
+performed, then the cube generation recipe approach is recommended.
+Note that the Cube Gen team follows this approach for all cubes generated 
+and published by DeepESDL. 
 
 ## Cube generation recipe approach for static data cubes
 

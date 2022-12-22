@@ -5,27 +5,26 @@ theme: readthedocs  # alternative: mkdocs
 
 nav:
   - Home:
-    - Index: index.md
+    - About DeepESDL: index.md
   - User guide:
-    - Getting Started: guide/user-guide.md
-    - DeepESDL JupyterLab: guide/jupyterlab.md
-    - DeepESDL xcube viewer: guide/xcube-viewer.md
-    - DeepESDL datacubes: guide/datacubes.md
-    - DeepESDL datacube generation: guide/datacube-generation.md
+    - Overview: guide/overview.md
+    - JupyterLab: guide/jupyterlab.md
+    - xcube Viewer: guide/xcube-viewer.md
+    - Datacubes: guide/datacubes.md
+    - Datacube generation: guide/datacube-generation.md
     - Further information: guide/further-information.md
+  - Datasets:
+    - List of datasets: datasets/datasets.md
+    - Earth System Data Cube: datasets/ESDC.md
+    - Baltic Sea Cube: datasets/baltic-sea.md
+    - Black Sea Cube: datasets/black-sea.md
   - Design:
-    - Overview: design/index.md
     - Concept: design/concept.md
     - Architecture: design/architecture.md
     - Hub: design/hub.md
     - ARDC Service: design/ardc-service.md
     - xcube Toolkit: design/xcube-toolkit.md
     - ML Toolkit: design/ml-toolkit.md
-  - Datasets:
-    - List of datasets: datasets/datasets.md
-    - Earth System Data Cube: datasets/ESDC.md
-    - Baltic Sea Cube: datasets/baltic-sea.md
-    - Black Sea Cube: datasets/black-sea.md
 
 plugins:
   - search

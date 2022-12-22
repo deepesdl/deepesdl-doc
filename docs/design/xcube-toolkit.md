@@ -35,7 +35,7 @@ Other data stores that are needed by DeepESDL Projects will be added
 as required by specific use cases during the project.
 
 The **xcube Python API** provides various high-level functions for 
-data analysis that operate on ARDCs and comprises programmatical 
+data analysis that operate on ARDCs and comprises programmatic 
 access to all other xcube Components mentioned above. 
 Users call the Python API from their own programs, scripts, JNBs, 
 or from user code executed in the xcube ARDC Generator. 

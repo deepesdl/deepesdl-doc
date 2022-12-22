@@ -2,9 +2,7 @@
     <img src="img/logo.png" alt="DeepESDL Logo" style="height: 200px; width:300px;"/>
 </p>
 
-# Deep Earth System Data Lab Documentation
-
-## Introduction
+# About Deep Earth System Data Lab
 
 Welcome to the online documentation of DeepESDL – ESA’s platform providing
 analysis-ready data cube in a powerful, virtual laboratory to the Earth Science
@@ -18,8 +16,8 @@ and access to the lab: [www.earthsystemdatalab.net](www.earthsystemdatalab.net).
 
 The DeepESDL online documentation contains:
 
--   The [User Guide](guide/user-guide.md) for all DeepESDL services – the starting
+-   The [User Guide](guide/overview.md) for all DeepESDL services – the starting
     point for new users and the reference for any technical questions.
 -   An overview of [public, pre-generated data cubes](datasets/datasets.md)
-    available in DeepESDL with detailed metadata and specifications
--   A [description of DeepESDL’s architecture](design/index.md)
+    available in DeepESDL with detailed metadata and specifications.
+-   A [description of DeepESDL’s architecture](design/index.md).

@@ -1,13 +1,13 @@
 # Context
 
-It is focused on the idea of on-boarding new 
+The design of DeepESDL is focused on the idea of on-boarding new 
 *DeepESDL user projects* with the help of the 
 *DeepESDL Hub* which can be seen as an implementation of the 
 [ESA Earth Science Hub](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Boosting_Earth_science). 
 Accordingly, a DeepESDL user project may support specific 
 [ESA EO for Society](https://eo4society.esa.int/) 
 research projects and activities that are aggregated in *Science Clusters* 
-such as the
+such as
 
 * [ESA Atmosphere Science Cluster](https://eo4society.esa.int/communities/scientists/esa-atmosphere-science-cluster/).
 * [ESA Carbon Science Cluster](https://eo4society.esa.int/communities/scientists/esa-carbon-science-cluster/).
@@ -15,15 +15,16 @@ such as the
 * [ESA Polar Science Cluster](https://eo4society.esa.int/communities/scientists/esa-polar-science-cluster/).
 
 
-The DeepESDL Hub manages the user projects and their users. 
+The DeepESDL Hub manages user projects and their users. 
 The Hub provides for each project a workspace or tenant, 
 assigns project resources, hosts project artifacts, provides a dashboard 
 for result dissemination, and integrates team collaboration tools. 
 It also controls visibility of results of individual user projects so 
 that they can be made part of a *DeepESDL public portrayal*.
 
-A DeepESDL user projects in the below comprises numerous own applications, 
-interfaces, services, and data available in the provided workspace. 
+A DeepESDL user projects in the figure below comprises numerous own 
+applications, interfaces, services, and data available in the provided 
+workspace. 
 Service access and application deployments are managed by the 
 *Control Plane* of the DeepESDL Hub. Actual workloads are 
 scaled on the *Worker Plane*.
@@ -38,8 +39,9 @@ Applications available to users within DeepESDL comprise:
   [ESA EuroDataCube Collections](https://collections.eurodatacube.com/).) 
 * Visualisation tools such as adapted versions of the **xcube Viewer** 
   and a **4D Viewer**.
-* a **Jupyter Notebook (JNB) service** so that users can run 
-  Jupyter Notebooks with project-specific **ML environments**. 
+* A **Jupyter Notebook (JNB) service** so that users can run 
+  Jupyter Notebooks with project-specific **Machine Learning (ML) 
+  environments**. 
 
 Services available to users within DeepESDL comprise:
 
@@ -70,4 +72,4 @@ Public services will later also comprise a Jupyter Book  (JB)
 or Notebook Viewer  (NBviewer) service, so that selected Project-JNBs 
 can be elaborated into published, story-telling books. 
 This service together with catalogue and visualisations tools 
-are important bits of the DeepESDL scientific information dissemination.
+are important parts of the DeepESDL scientific information dissemination.

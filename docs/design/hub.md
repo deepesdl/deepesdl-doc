@@ -2,8 +2,8 @@
 
 The DeepESDL Hub is based on the existing software named EOxHub, 
 which is also used to power, e.g., the 
-[EuroDataCube (EDC) Marketplace](https://eurodatacube.com/marketplace)  
-as well as the 
+[EuroDataCube (EDC) Marketplace](https://eurodatacube.com/marketplace) as 
+well as the 
 [EDC EOxHub Workspace](https://eurodatacube.com/marketplace/infra/edc_eoxhub_workspace).
 
 EOxHub is a platform and workflow management runtime for Earth Observation 
@@ -22,13 +22,13 @@ The Control Plane is configured to provide the following:
 * Workspace Dashboard
 * Service subscription management
 * Marketplace
-* allocation functions for cloud resources and Data Services
-* deployment service
-* workload management functions
+* Allocation functions for cloud resources and Data Services
+* Deployment service
+* Workload management functions
 * Docker Image administration/assignment
 * Example notebook catalogue supporting user contributions
-* automated verification of example notebooks
-* accounting and billing (voucher handling)
+* Automated verification of example notebooks
+* Accounting and billing (voucher handling)
 
 Deploying user workloads on the Worker Plane is performed on configured 
 autoscaling groups using the managed Elastic Container Service (ECS) of AWS. 
