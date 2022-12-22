@@ -4,8 +4,7 @@ copyright: Copyright © 2022 by the DeepESDL Team
 theme: readthedocs  # alternative: mkdocs
 
 nav:
-  - Home:
-    - About DeepESDL: index.md
+  - About: index.md
   - User guide:
     - Overview: guide/overview.md
     - JupyterLab: guide/jupyterlab.md
