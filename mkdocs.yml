@@ -14,7 +14,13 @@ nav:
     - DeepESDL datacube generation: guide/datacube-generation.md
     - Further information: guide/further-information.md
   - Design:
-    - Index: design/index.md
+    - Overview: design/index.md
+    - Concept: design/concept.md
+    - Architecture: design/architecture.md
+    - Hub: design/hub.md
+    - ARDC Service: design/ardc-service.md
+    - xcube Toolkit: design/xcube-toolkit.md
+    - ML Toolkit: design/ml-toolkit.md
   - Datasets:
     - List of datasets: datasets/datasets.md
     - Earth System Data Cube: datasets/ESDC.md
