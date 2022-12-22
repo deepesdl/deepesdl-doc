@@ -22,9 +22,7 @@ nav:
     - Concept: design/concept.md
     - Architecture: design/architecture.md
     - Hub: design/hub.md
-    - ARDC Service: design/ardc-service.md
-    - xcube Toolkit: design/xcube-toolkit.md
-    - ML Toolkit: design/ml-toolkit.md
+    - Services and Tools: design/services-and-tools.md
 
 plugins:
   - search

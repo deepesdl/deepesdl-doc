@@ -29,7 +29,7 @@ Services available to users within DeepESDL comprise:
 
 Each project has access to the DeepESDL common resources that comprise 
 a cluster of worker nodes as well as a common 
-**xcube ARDC Generator Service**, that can access a variety of data 
+**xcube ARDC Service**, that can access a variety of data 
 access services and turns provided data into analysis-ready data cubes (ARDC).
 DeepESDL data cubes share a consistent structure and use a uniform format. 
 
@@ -73,7 +73,7 @@ for DeepESDL. Examples are
   example in the ESA EuroDataCube project;
 * The xcube cube generator tools, xcube Server, xcube Viewer 
   are derived from already available components in the
-  [xcube Toolkit](./xcube-toolkit.md) 
+  [xcube Toolkit](./services-and-tools.md) 
   developed and used in several activities by the development team;
 * The Cube 4D Viewer will be an adopted version of Earthwave’s 4D Viewer.
 
