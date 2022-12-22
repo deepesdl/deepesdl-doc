@@ -12,13 +12,13 @@ code, and publish results. Special emphasize is put on improving the support
 for machine learning and artificial intelligence approaches, which includes 
 the preparation of AI-ready datasets, providing a programming environment 
 with relevant libraries and packages, and the resources to execute processing 
-pipelines. Please visit our webportal for more information and access to the 
-lab: [www.earthsystemdatalab.net](www.earthsystemdatalab.net).
+pipelines. For more information and access to the lab please visit the
+[DeepESDL website](https://www.earthsystemdatalab.net/).
 
 The DeepESDL documentation contains:
 
--   The [User Guide](guide/overview.md) for all DeepESDL services – the starting
-    point for new users and the reference for any technical questions.
--   An overview of [public, pre-generated data cubes](datasets/datasets.md)
-    available in DeepESDL with detailed metadata and specifications.
--   A [description of DeepESDL’s architecture](design/index.md).
+* The [User Guide](guide/overview.md) for all DeepESDL services. 
+  This is the starting point for new users.
+* An overview of [public, pre-generated data cubes](datasets/datasets.md)
+  available in DeepESDL with detailed metadata and specifications.
+* A [description of DeepESDL’s architecture](design/overview.md).

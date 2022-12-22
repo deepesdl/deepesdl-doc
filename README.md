@@ -3,3 +3,8 @@
 # DeepESDL documentation
 
 This repository contains the source files for the DeepESDL documentation.
+
+
+## Building the docs
+
+    $ conda install -c conda-forge mkdocs mkapi

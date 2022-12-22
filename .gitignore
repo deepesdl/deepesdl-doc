@@ -1,4 +1,3 @@
+site/
 .idea/
-
-# Jupyter Notebook
 .ipynb_checkpoints

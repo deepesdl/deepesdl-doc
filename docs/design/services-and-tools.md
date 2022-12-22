@@ -167,5 +167,7 @@ detection on time series.
 The toolkit is currently for Python only, but Julia will also be 
 considered to address a small but growing community of data scientists.
 
+<!--
 Please refer to the [ML Tools Documentation](../ml-tools/index.md)
 for details.
+-->
