@@ -1,8 +1,3 @@
-# High-level design
-
-The following schema depicts the technical high-level concept of the DeepESDL 
-system. 
-
 # Context
 
 It is focused on the idea of on-boarding new 
