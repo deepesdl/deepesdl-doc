@@ -19,7 +19,7 @@ nav:
     - Baltic Sea Cube: datasets/baltic-sea.md
     - Black Sea Cube: datasets/black-sea.md
   - Design:
-    - Concept: design/concept.md
+    - Context: design/context.md
     - Architecture: design/architecture.md
     - Hub: design/hub.md
     - Services and Tools: design/services-and-tools.md
