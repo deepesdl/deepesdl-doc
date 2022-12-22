@@ -111,8 +111,7 @@ cube = store.open_data("S2L2A",
                        bbox=..., 
                        spatial_res=...,
                        time_range=..., 
-                       time_period=...
-                       )
+                       time_period=...)
 ```
 
 Dynamic cubes are application-specific and configured by individual users.
