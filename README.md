@@ -9,8 +9,7 @@ This repository contains the source files for the DeepESDL documentation.
 
 Prepare environment:
 
-    $ conda install -c conda-forge mkdocs mkapi 
-    $ pip install mkdocs-with-pdf
+    $ pip install mkdocs mkapi mkdocs-with-pdf
 
 Run generator:
 
