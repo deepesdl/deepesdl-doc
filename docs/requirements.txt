@@ -6,3 +6,5 @@
 
 mkdocs==1.4.0
 mkapi==1.0.14
+pango==1.50.12
+mkdocs-with-pdf==0.9.3

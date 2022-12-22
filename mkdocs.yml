@@ -29,6 +29,15 @@ nav:
 plugins:
   - search
   - mkapi
+  - with-pdf:
+      cover: true
+      back_cover: false
+      cover_title: DeepESDL Documentation
+      cover_subtitle: Version 2012.12.1
+      toc_level: 3
+      ordered_chapter_level: 2
+      #enabled_if_env: ENABLE_PDF_EXPORT
+      verbose: false
 
 markdown_extensions:
   - toc:
