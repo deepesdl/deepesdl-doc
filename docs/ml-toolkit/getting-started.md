@@ -19,6 +19,6 @@ All Jupyter Notebooks follow the same architecture involving the five major sect
 	
 
 
-It is mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of 
+<!--It is mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of 
 machine learning in the Earth system context. To avoid auto-correlation during the training phase of the model, data sampling is 
-guided by a block sampling strategy. Data blocks are rectangularly shaped varying in size and amount of data points. 
+guided by a block sampling strategy. Data blocks are rectangularly shaped varying in size and amount of data points. -->
