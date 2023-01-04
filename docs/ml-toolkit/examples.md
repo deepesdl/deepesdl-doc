@@ -14,7 +14,8 @@ temperature values.
 
 In a first step we introduce a random sampling on the ESDC, which is a straight forward procedure in classical machine learning applications. This is done by randomly assigning train and test data on the cube level, followed by a random iteration through all chunks of the cube and chunk-wise model training and testing. As Fig. XX shows, this leads to a spiky model response which has mainly two reasons:
 
-(1) The random iteration through chunks of the ESDC can cause significant changes in the data between the iterations by, e.g. analyzing temperature values of a chunk close to the equator followed by a chunk in polar regions. 
+(1) The random iteration through chunks of the ESDC can cause significant changes in the data between the iterations by, e.g. analyzing temperature values of a chunk close to the equator followed by a chunk in polar regions.
+
 (2) Within every chunk data may be auto-correlated, as data points of parameters (here the temperature) are likely to be similar in the Earth system context in their spatio-temporal vicinity.
 
 It is therefore mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of machine learning in the Earth system context. To avoid auto-correlation during the training phase of the model, data sampling should rather be guided by a block sampling strategy. Generally speaking, data blocks can be masks of any kind (e.g., data thresholds, temporally restricted or spatially shaped). Here we use blocks that are may rectangularly shaped varying in size and amount of data points.
