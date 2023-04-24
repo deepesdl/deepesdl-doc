@@ -2,7 +2,7 @@
 
 ## Bounding box map
 
-![Bounding box map](esdc-8d-0-25deg-1x720x1440-3-0-1-zarr.png)<br>
+![Bounding box map](ESDC.png)<br>
 <span style="font-size: x-small">Map tiles and data from <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">the ODbL</a>.</span>
 
 ## Basic information
