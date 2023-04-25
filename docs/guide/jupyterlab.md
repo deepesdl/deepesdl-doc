@@ -63,6 +63,53 @@ can select the desired kernel environment from it.
 To get a custom environment which suits your needs, please contact the DeepESDL
 team directly. 
 
+## Creating custom team python environment
+
+To create a custom python conda environment for a team, up to two 
+team-members may get special permissions to do so. Please inform the 
+DeepESDL Team to grant your user who of your team should be granted these 
+permissions.
+
+Steps to get custom team conda environments: 
+1. Head over to https://deep.earthsystemdatalab.net/conda-store
+2. Login with your GitHub Account which you also use to access the DeepESDL 
+   Jupyter Lab
+3. If you have never created a custom environment, there will be none listed.
+4. Click on the Plus-sign next to *Environments*
+5. In the top section, please adjust the namespace via the dropdown menu to the 
+   team number of the team for which you wish to create the custom 
+   environment. There might be more than one if you are part of several 
+   teams. If you are unsure which namespace you need to adjust, you find the 
+   information in the Server Options overview of the DeepESDL JupyterLab.
+6. You may either choose an environment.yml file to upload or paste your 
+   environment configuration into the window directly. 
+7. Make sure to give it a meaningful name, so also your teammates will know 
+   what it is about. 
+8. Once you are happy with your environment hit submit and grab a coffee. It 
+   will take some time to create your custom envrionment. 
+9. After submission, it will appear in the overview on 
+   https://deep.earthsystemdatalab.net/conda-store/
+10. You can click on the name of your newly created environment and see its 
+    status. There are three different statuses: Building, Completed, Failed
+11. In case the build is failed, click on the build number and have a look 
+    into the logs, what went wrong. 
+12. Once the build is completed, you need to refresh your browser window, and 
+    it will be available in the kernel selection. Instructions how to change 
+    the kernel to your custom environment are provided 
+    [here](#python-environment-selection-of-the-jupyter-kernel)
+
+You can modify an envrionment, and the conda-store keeps a history of builds.
+It will look similar to the screenshot below. 
+![conda-builds.png](../img/conda-builds.png)
+
+The conda-build highlighted in green is the one, which you will use in you 
+DeepESDL JupyterLab, per default it is the latest successful build. If you 
+wish to make a different build the one to be used in DeepESDL Jupyterlab, 
+select the checkmark in the blue button panel of the desired conda-build. 
+The reload button in the blue button panel will trigger a rebuild of the 
+conda-environment specification of the selected conda-build. The bin button 
+deletes the conda-build of the selected conda-build. 
+
 ## Getting-started notebooks
 
 You can find example notebooks in DeepESDL JupyterLab to help you to get 
