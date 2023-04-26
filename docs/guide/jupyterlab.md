@@ -118,22 +118,22 @@ started.
 
 To access them:
 
-1. Head to the JupyterLab `Launcher`
-   ![img.png](../img/launcher.png)  
-   If your `Launcher` is not visible right away, you can open it via the `plus` 
-   button in the top left corner, which is highlighted in blue in the 
-   screenshot.  
-
-2. On the bottom of the Launcher you see a tile called `CATALOG DeeESDL`. 
-   Please select this tile. 
-
-3. Once selected you see several example notebooks:
-   ![img_2.png](../img/catalog.png) 
-
-4. Select one of them, and you will see a preview of the notebook, to execute 
-   the selected notebook click on `EXECUTE NOTEBOOK` in the top right corner. 
-   ![img_3.png](../img/notebook.png)
-
-5. The notebook is copied into your workspace, and you can run it and adjust 
-   it according to your needs.
+1.  Head to the JupyterLab `Launcher`
+    ![img.png](../img/launcher.png)
+    If your `Launcher` is not visible right away, you can open it via the `plus` 
+    button in the top left corner, which is highlighted in blue in the 
+    screenshot.
+    
+2.  On the bottom of the Launcher you see a tile called `CATALOG DeeESDL`. 
+    Please select this tile. 
+    
+3.  Once selected you see several example notebooks:
+    ![img_2.png](../img/catalog.png) 
+    
+4.  Select one of them, and you will see a preview of the notebook, to execute 
+    the selected notebook click on `EXECUTE NOTEBOOK` in the top right corner. 
+    ![img_3.png](../img/notebook.png)
+    
+5.  The notebook is copied into your workspace, and you can run it and adjust 
+    it according to your needs.
 
