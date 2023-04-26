@@ -90,8 +90,8 @@ Steps to get custom team conda environments:
    https://deep.earthsystemdatalab.net/conda-store/
 10. You can click on the name of your newly created environment and see its 
     status. There are three different statuses: Building, Completed, Failed
-11. In case the build is failed, click on the build number and have a look 
-    into the logs, what went wrong. 
+11. If you click on the build number you can see the logs. This might be
+      useful if the build has failed. 
 12. Once the build is completed, you need to refresh your browser window
     to make it available in the kernel selection. Instructions how to change 
     the kernel to your custom environment are provided 
