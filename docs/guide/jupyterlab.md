@@ -104,7 +104,7 @@ It will look similar to the screenshot below.
 
 The conda-build highlighted in green is the one, which you will use in you 
 DeepESDL JupyterLab, per default it is the latest successful build. If you 
-wish to make a different build the one to be used in DeepESDL Jupyterlab, 
+wish to make a different build the one to be used in DeepESDL JupyterLab, 
 select the checkmark in the blue button panel of the desired conda-build. 
 The reload button in the blue button panel will trigger a rebuild of the 
 conda-environment specification of the selected conda-build. The bin button 
