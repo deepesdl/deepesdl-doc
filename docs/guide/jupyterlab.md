@@ -75,11 +75,10 @@ Steps to get custom team conda environments:
    JupyterLab
 3. If you have never created a custom environment, there will be none listed.
 4. Click on the Plus-sign next to *Environments*
-5. In the top section, please adjust the namespace via the dropdown menu to the 
-   team number of the team for which you wish to create the custom 
+5. In the top section, select the namespace for which to create the custom 
    environment. There might be more than one if you are part of several 
-   teams. If you are unsure which namespace you need to adjust, you find the 
-   information in the Server Options overview of the DeepESDL JupyterLab.
+   teams. If you are unsure which namespace you should use, have a look 
+   at the Server Options overview of the DeepESDL JupyterLab.
 6. You may either choose an environment.yml file to upload or paste your 
    [environment configuration](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually) 
    into the window directly. 
