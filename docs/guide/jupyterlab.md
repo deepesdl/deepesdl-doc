@@ -98,7 +98,7 @@ Steps to get custom team conda environments:
     the kernel to your custom environment are provided 
     [here](#python-environment-selection-of-the-jupyter-kernel)
 
-You can modify an environment, and the conda-store keeps a history of builds.
+You can also modify an existing environment and rebuild it; the conda-store will keep all the builds' logs.
 It will look similar to the screenshot below. 
 ![conda-builds.png](../img/conda-builds.png)
 
