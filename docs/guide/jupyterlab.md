@@ -69,33 +69,33 @@ Up to two team members may create a custom python conda
 environment for a team. Please inform the DeepESDL Team 
 who should be granted these permissions.
 
-Steps to create custom team conda environments: 
-1. Head over to https://deep.earthsystemdatalab.net/conda-store
+Steps to create custom team conda environments:   
+1. Head over to https://deep.earthsystemdatalab.net/conda-store  
 2. Login with your GitHub Account which you also use to access the DeepESDL 
-   JupyterLab
+   JupyterLab  
 3. If you have never created a custom environment, there will be none listed.
-4. Click on the Plus-sign next to *Environments*
+4. Click on the Plus-sign next to *Environments*  
 5. In the top section, select the namespace for which to create the custom 
    environment. There might be more than one if you are part of several 
    teams. If you are unsure which namespace you should use, have a look 
-   at the Server Options overview of the DeepESDL JupyterLab.
+   at the Server Options overview of the DeepESDL JupyterLab.  
 6. You may either choose an environment.yml file to upload or paste your 
    [environment configuration](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually) 
-   into the window directly. 
+   into the window directly.   
 7. Make sure to set a meaningful value to the environment's `name` property,
-   so also your teammates will know what it is about. 
+   so also your teammates will know what it is about.   
 8. Once you are happy with your environment hit submit and grab a coffee. It 
-   will take some time to create your custom environment. 
+   will take some time to create your custom environment.   
 9. After submission, it will appear in the overview on 
-   https://deep.earthsystemdatalab.net/conda-store/
+   https://deep.earthsystemdatalab.net/conda-store/  
 10. You can click on the name of your newly created environment and see its 
     status. There are three different statuses: Building, Completed, Failed
 11. If you click on the build number you can see the logs. This might be
-      useful if the build has failed. 
+    useful if the build has failed.   
 12. Once the build is completed, you need to refresh your browser window
     to make it available in the kernel selection. Instructions how to change 
     the kernel to your custom environment are provided 
-    [here](#python-environment-selection-of-the-jupyter-kernel)
+    [here](#python-environment-selection-of-the-jupyter-kernel)  
 
 You can also modify an existing environment and rebuild it; the conda-store 
 will keep all the builds' logs.
