@@ -69,7 +69,7 @@ Up to two team members may create a custom python conda
 environment for a team. Please inform the DeepESDL Team 
 who should be granted these permissions.
 
-Steps to get custom team conda environments: 
+Steps to create custom team conda environments: 
 1. Head over to https://deep.earthsystemdatalab.net/conda-store
 2. Login with your GitHub Account which you also use to access the DeepESDL 
    JupyterLab
@@ -82,8 +82,8 @@ Steps to get custom team conda environments:
 6. You may either choose an environment.yml file to upload or paste your 
    [environment configuration](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually) 
    into the window directly. 
-7. Make sure to set a meaningful value to the environment's `name` property, so also your teammates will know 
-   what it is about. 
+7. Make sure to set a meaningful value to the environment's `name` property,
+   so also your teammates will know what it is about. 
 8. Once you are happy with your environment hit submit and grab a coffee. It 
    will take some time to create your custom environment. 
 9. After submission, it will appear in the overview on 
@@ -97,7 +97,8 @@ Steps to get custom team conda environments:
     the kernel to your custom environment are provided 
     [here](#python-environment-selection-of-the-jupyter-kernel)
 
-You can also modify an existing environment and rebuild it; the conda-store will keep all the builds' logs.
+You can also modify an existing environment and rebuild it; the conda-store 
+will keep all the builds' logs.
 It will look similar to the screenshot below. 
 ![conda-builds.png](../img/conda-builds.png)
 
