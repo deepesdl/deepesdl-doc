@@ -65,10 +65,9 @@ team directly.
 
 ## Creating custom team python environment
 
-To create a custom python conda environment for a team, up to two 
-team-members may get special permissions to do so. Please inform the 
-DeepESDL Team to grant your user who of your team should be granted these 
-permissions.
+Up to two team members may create a custom python conda 
+environment for a team. Please inform the DeepESDL Team 
+who should be granted these permissions.
 
 Steps to get custom team conda environments: 
 1. Head over to https://deep.earthsystemdatalab.net/conda-store
