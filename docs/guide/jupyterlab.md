@@ -87,7 +87,7 @@ Steps to create custom team conda environments:
     8. Once you are happy with your environment hit submit and grab a coffee. It 
        will take some time to create your custom environment.   
     9. After submission, it will appear in the overview on 
-      https://deep.earthsystemdatalab.net/conda-store/  
+       https://deep.earthsystemdatalab.net/conda-store/  
     10. You can click on the name of your newly created environment and see its 
         status. There are three different statuses: Building, Completed, Failed
     11. If you click on the build number you can see the logs. This might be
@@ -95,7 +95,7 @@ Steps to create custom team conda environments:
     12. Once the build is completed, you need to refresh your browser window
         to make it available in the kernel selection. Instructions how to change 
         the kernel to your custom environment are provided 
-        [here](#python-environment-selection-of-the-jupyter-kernel)  
+        in the section [python environment selection of the jupyter kernel](#python-environment-selection-of-the-jupyter-kernel).
 
 You can also modify an existing environment and rebuild it; the conda-store 
 will keep all the builds' logs.
