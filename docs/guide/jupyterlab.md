@@ -86,7 +86,7 @@ Steps to get custom team conda environments:
 7. Make sure to set a meaningful value to the environment's `name` property, so also your teammates will know 
    what it is about. 
 8. Once you are happy with your environment hit submit and grab a coffee. It 
-   will take some time to create your custom envrionment. 
+   will take some time to create your custom environment. 
 9. After submission, it will appear in the overview on 
    https://deep.earthsystemdatalab.net/conda-store/
 10. You can click on the name of your newly created environment and see its 
