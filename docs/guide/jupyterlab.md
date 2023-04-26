@@ -93,8 +93,8 @@ Steps to get custom team conda environments:
     status. There are three different statuses: Building, Completed, Failed
 11. In case the build is failed, click on the build number and have a look 
     into the logs, what went wrong. 
-12. Once the build is completed, you need to refresh your browser window, and 
-    it will be available in the kernel selection. Instructions how to change 
+12. Once the build is completed, you need to refresh your browser window
+    to make it available in the kernel selection. Instructions how to change 
     the kernel to your custom environment are provided 
     [here](#python-environment-selection-of-the-jupyter-kernel)
 
