@@ -15,4 +15,4 @@ Model evaluation is realized through the implementation of TensorBoard and ML Fl
 ## Overview
 1. [Getting Started](getting-started.md)    
 2. [API Reference](api-reference.md)    
-3. [Examples](examples.md)  
+3. [Example Use Case](example.md)  
