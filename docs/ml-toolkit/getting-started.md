@@ -13,7 +13,7 @@ All Jupyter Notebooks follow the same architecture involving the five major sect
 	5. Iteration over blocks and subsequent random sampling
 		* Preprocessing (filtering NaNs, standardization, normalization)
 		* Get train/test data
-		* Generate training batches Using existing data loading and transformation mechanisms from Keras and PyTorch (DataGenerator, DataLoader)
+		* Generate training batches using existing data loading and transformation mechanisms from Keras and PyTorch (DataGenerator, DataLoader)
 		* Train model, return error and loss
 		* Evaluate Model
 	
