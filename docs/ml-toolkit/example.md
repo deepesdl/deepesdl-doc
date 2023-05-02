@@ -1,4 +1,4 @@
-# ML Toolkit Example Use Case
+# ML Toolkits - Example Use Case
 
 **LST prediction**
 
