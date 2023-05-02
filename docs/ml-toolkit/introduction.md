@@ -12,6 +12,8 @@ Each Jupyter Notebook involves a self-contained workflow, markdown cells, commen
 
 Model evaluation is realized through the implementation of TensorBoard and MLFlow.
 
+One may also want to reuse information gained during model training for a second related task, especially when it comes to a lack of data. A PyTorch based Jupyter Notebook provides the implementation of [Transfer Learning](https://github.com/deepesdl/ML-Toolkit/blob/master/src/...). 
+
 ## Overview
 1. [Getting Started](getting-started.md)    
 2. [Example Use Case](example.md)  
