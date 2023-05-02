@@ -9,7 +9,7 @@ All Jupyter Notebooks follow the same architecture involving the five major sect
 	3. Train/test split
 		* Random sampling
 		* Block sampling
-	4. Model set-up (linear regression with 1 node/ shallow neural network)
+	4. Model set-up and Training (linear regression with 1 node/ shallow neural network)
 	5. Iteration over chunks of the ESDC and subsequent sampling
 		* Preprocessing (filtering NaNs, standardization, normalization)
 		* Get train/test data
