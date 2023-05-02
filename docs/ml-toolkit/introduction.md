@@ -1,4 +1,4 @@
-# ML Toolkit Introduction
+# ML Toolkits - Introduction
 
 AI is becoming increasingly important in Earth observations as most parts of the Earth system are continuously monitored by sensors and AI is able to cope  with both the volume of data and the heterogeneous data characteristics. For instance, satellites monitor the atmosphere, land, and ocean with unprecedented accuracy. In course of DeepESDL, the Earth System Data Lab (ESDL) capabilities have been extended to support the application of 
 machine learning (ML) methods on Earth System Data Cubes (ESDC). 
@@ -10,7 +10,7 @@ Each Jupyter Notebook involves a self-contained workflow, markdown cells, commen
 (2) [PyTorch](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_pytorch_mlflow.ipynb)\
 (3) [TensorFlow](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_tensorflow_tensorboard.ipynb)
 
-Model evaluation is realized through the implementation of TensorBoard and ML Flow.
+Model evaluation is realized through the implementation of TensorBoard and MLFlow.
 
 ## Overview
 1. [Getting Started](getting-started.md)    
