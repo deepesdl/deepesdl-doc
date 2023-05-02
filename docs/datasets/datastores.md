@@ -1,6 +1,6 @@
-# xcube DataStores
+# xcube Data Stores
 
-The xcube DataStores Framework is described in the xcube documentation(#TODO 
+The xcube data stores Framework is described in the xcube documentation(#TODO 
 Link).
 In this section the currently available data stores are presented with an 
 example for each of them. For more detailed examples, please refer to the 
@@ -130,7 +130,7 @@ dataset = store.open_data('esacci.SST.day.L4.SSTdepth.multi-sensor.multi-platfor
 The xcube Sentinel Hub (SH) data store allows to read and explore data from the 
 [Sentinel Hub cloud API](https://www.sentinel-hub.com/).
 
-Please note: In order to access data from Sentinel Hub, you need Sentinel 
+**Please note:** In order to access data from Sentinel Hub, you need Sentinel 
 Hub API credentials. 
 
 Within DeepESDL there is the possibility to apply for Sentinel Hub access - 
@@ -169,19 +169,23 @@ The xcube [Climate Data Store](https://cds.climate.copernicus.eu) (CDS)
 allows to read and explore temperature data from the Copernicus Climate 
 Change Service (C3S). 
 
-To access data from the Climate Data Store, you need a CDS API key. You can obtain the UID and API key as follows:
+To access data from the Climate Data Store, you need a CDS API key. You can 
+obtain the UID and API key as follows:
 
 1.    Create a user account on the [CDS Website](https://cds.climate.copernicus.
 eu/user/register).
 2.    Log in to the website with your user name and password.
-3.    Navigate to your user profile on the website. Your API key is shown at the bottom of the page.
+3.    Navigate to your user profile on the website. Your API key is shown 
+      at the bottom of the page.
 
-Then export the `CDSAPI_URL` and `CDSAPI_KEY` environment variables, replacing `[UID]` and `[API-KEY]` with the actual values from your account:
+Then export the `CDSAPI_URL` and `CDSAPI_KEY` environment variables, 
+replacing `[UID]` and `[API-KEY]` with the actual values from your account:
 
 ```bash
 export CDSAPI_URL=https://cds.climate.copernicus.eu/api/v2
 export CDSAPI_KEY=[UID]:[API-KEY]
 ```
+
 For DeepESDL Jupyter Lab default credentials are configured, but due to 
 bandwidth limitation by CDS they might not be performant when used by several 
 people simultaneously. 
