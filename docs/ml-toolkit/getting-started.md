@@ -1,4 +1,4 @@
-# Getting Started with ML Toolkit
+# Getting Started with ML Toolkits
 
 All Jupyter Notebooks follow the same architecture involving the five major sections, which are supported by markdown cells, comments and plots:
 
