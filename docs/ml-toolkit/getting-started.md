@@ -1,16 +1,16 @@
 # Getting Started with ML Toolkit
 
-All Jupyter Notebooks follow the same architecture involving the five major sections:
+All Jupyter Notebooks follow the same architecture involving the five major sections, which are supported by markdown cells, comments and plots:
 
 
 	1. Import necessary libraries and helperfunctions
 	2. Load data (Earth System Data Cube, s3 object store)
-		* Air Temperature
-		* Land Surface Temperature
-	3. Train/test split (0.8/0.2)
-		* efficient block sampling
+		* Initialize data mask
+	3. Train/test split
+		* Random sampling
+		* Block sampling
 	4. Model set-up (linear regression with 1 node/ shallow neural network)
-	5. Iteration over blocks and subsequent random sampling
+	5. Iteration over chunks of the ESDC and subsequent sampling
 		* Preprocessing (filtering NaNs, standardization, normalization)
 		* Get train/test data
 		* Generate training batches using existing data loading and transformation mechanisms from Keras and PyTorch (DataGenerator, DataLoader)
