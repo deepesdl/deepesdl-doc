@@ -23,7 +23,3 @@ In a first step we introduce a random sampling on the ESDC, which is a straight 
 _Block Sampling_
 
 It is therefore mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of machine learning in the Earth system context. To avoid auto-correlation during the training phase of the model, data sampling should rather be guided by a block sampling strategy. Generally speaking, data blocks can be masks of any kind (e.g., data thresholds, temporally restricted or spatially shaped). Here we use blocks that are rectangularly shaped varying in size and amount of data points.
-
-_Transfer Learning_
-
-We can store the information gained during model training and reuse them later on another related task. An exemplary workflow is provided ...
