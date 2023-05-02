@@ -14,7 +14,7 @@ temperature values.
 
 _Random Sampling_
 
-In a first step we introduce a random sampling on the ESDC, which is a straight forward procedure in classical machine learning applications. This is done by randomly assigning train and test data on cube level, followed by a random iteration through all chunks of the cube and finally, a chunk-wise model training and testing. As Fig. XX shows, this procedure of random sampling leads to a spiky model response which has mainly two reasons:
+In a first step we introduce a random sampling on the ESDC, which is a straight forward procedure in classical machine learning applications. This is done by randomly assigning train and test data on cube level, followed by a random iteration through all chunks of the cube and finally, a chunk-wise model training and testing. This procedure of random sampling often leads to a spiky model response which has mainly two reasons:
 
 (1) Randomly assigning train and test data together with a random iteration through chunks of the ESDC can cause significant changes in the data between the iterations due to great spatio-temporal distances. For example, the model may be fed with data points of a chunk representaing equatorial temperature values followed by data of a chunk from polar regions.
 
