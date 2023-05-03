@@ -134,7 +134,8 @@ The xcube Sentinel Hub (SH) data store allows to read and explore data from the
 Hub API credentials. 
 
 DeepESDL users may apply for sponsored Sentinel Hub subscriptions - 
-please contact the DeepESDL team.
+please contact the DeepESDL team or directly appy via the [Network of Resources portal](https://nor-discover.cloudeo.group/Service/EDC-Sentinel-Hub/SponsoringWizardPricelist).
+
 
 Initializing the xcube datastore for Sentinel Hub:
 
