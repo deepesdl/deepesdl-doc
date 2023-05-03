@@ -108,7 +108,7 @@ store = new_data_store('cciodp')
 ```
 
 The cci datastore offers many datasets, therefore listing all available ones 
-will not be very useful. The store can be searched by specific search 
+will reveal a long list of results. The store can thus be searched by specific 
 parameters, which can be listed:
 
 ```python
