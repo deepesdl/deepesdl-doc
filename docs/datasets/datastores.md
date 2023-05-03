@@ -94,7 +94,7 @@ dataset = store.open_data('dataset-bal-reanalysis-wav-hourly',
 
 ## xcube ESA CCI data store
 The xcube ESA Climate Change Initiative (CCI) data store allows for reading and 
-explore data from the 
+exploring data from the 
 [ESA Climate Change Initiative](https://climate.esa.int/en/esa-climate/esa-cci/).
 More information on the data sets offered can be found in the
 [Open Data Portal](https://climate.esa.int/en/odp/#/dashboard).
