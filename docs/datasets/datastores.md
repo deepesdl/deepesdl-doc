@@ -127,7 +127,7 @@ dataset = store.open_data('esacci.SST.day.L4.SSTdepth.multi-sensor.multi-platfor
 
 ## xcube Sentinel Hub data store
 
-The xcube Sentinel Hub (SH) data store allows to read and explore data from the 
+The xcube Sentinel Hub (SH) data store allows for reading and exploring data provided by the 
 [Sentinel Hub cloud API](https://www.sentinel-hub.com/).
 
 **Please note:** In order to access data from the commercial Sentinel Hub service, you need Sentinel 
