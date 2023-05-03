@@ -47,7 +47,7 @@ The xcube Copernicus Marine Data Store (CMEMS) data store allows for reading and
 exploring data from the 
 [Copernicus Marine Data Store](https://data.marine.copernicus.eu/products).
 
-A user login is mandatory to access the data provided by CMEMS.
+A user login is required to access the data provided by CMEMS.
 If you do not have cmems user yet, you can register for an 
 [account](https://resources.marine.copernicus.eu/registration-form). 
 For DeepESDL Jupyter Lab default credentials are configured, but due to 
