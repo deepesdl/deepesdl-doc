@@ -52,7 +52,7 @@ If you do not have cmems user yet, you can register for an
 [account](https://resources.marine.copernicus.eu/registration-form). 
 For DeepESDL Jupyter Lab default credentials are configured, but due to 
 bandwidth 
-limitation by CMEMS they might not be performant when used by several people
+limitation by CMEMS performance may impair when used by several people
 simultaneously. 
 
 To use your own CMEMS account:
