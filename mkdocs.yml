@@ -16,7 +16,9 @@ nav:
     - Datacube generation: guide/datacube-generation.md
     - Further information: guide/further-information.md
   - ML Toolkit:
-    - Overview: ml-toolkit/index.md
+    - Overview: ml-toolkit/introduction.md
+    - Getting Started: ml-toolkit/getting-started.md
+    - Example Use Case: ml-toolkit/example.md
   - Datasets:
     - List of datasets: datasets/datasets.md
     - Earth System Data Cube: datasets/ESDC.md
