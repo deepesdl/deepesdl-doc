@@ -1,6 +1,6 @@
 # xcube Data Stores
 
-The xcube data stores Framework is described in the xcube documentation(#TODO 
+The xcube data stores Framework is described in detail in the xcube documentation(#TODO 
 Link).
 In this section the currently available data stores are presented with an 
 example for each of them. For more detailed examples, please refer to the 
