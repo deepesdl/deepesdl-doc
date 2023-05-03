@@ -130,7 +130,7 @@ dataset = store.open_data('esacci.SST.day.L4.SSTdepth.multi-sensor.multi-platfor
 The xcube Sentinel Hub (SH) data store allows to read and explore data from the 
 [Sentinel Hub cloud API](https://www.sentinel-hub.com/).
 
-**Please note:** In order to access data from Sentinel Hub, you need Sentinel 
+**Please note:** In order to access data from the commercial Sentinel Hub service, you need Sentinel 
 Hub API credentials. 
 
 Within DeepESDL there is the possibility to apply for Sentinel Hub access - 
