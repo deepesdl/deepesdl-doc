@@ -1,5 +1,10 @@
 # Datasets
 
+Data access is possible in two main manners within DeepESDL. xcube 
+data stores provide on-the-fly access to datasets via the data stores framework.
+Other datasets are made anaylsis-ready and persisted in object storage for fastest access. 
+
+-   [xcube Data Stores](datastores.md)
 -   [Earth System Data Cube](ESDC.md)
 -   [Baltic Sea Cube](baltic-sea.md)
 -   [Black Sea Cube](black-sea.md)
