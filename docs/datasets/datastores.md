@@ -115,7 +115,7 @@ parameters, which can be listed:
 store.get_search_params_schema()
 ```
 
-Once one has decided which dataset to access, it can be opened similar to the 
+A target data set can then be be opened following the below schema  
 example below:
 
 ```python
