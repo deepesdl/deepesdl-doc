@@ -187,7 +187,7 @@ export CDSAPI_KEY=[UID]:[API-KEY]
 ```
 
 For DeepESDL Jupyter Lab default credentials are configured, but due to 
-bandwidth limitation by CDS they might not be performant when used by several 
+bandwidth limitation by CDS performance may impair when used by several 
 people simultaneously. 
 
 Initializing the xcube datastore for C3S:
