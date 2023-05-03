@@ -43,7 +43,7 @@ dataset = store.open_data('black-sea-1x1024x1024.zarr')
 ```
 
 ## xcube CMEMS data store
-The xcube Copernicus Marine Data Store (CMEMS) data store allows to read and 
+The xcube Copernicus Marine Data Store (CMEMS) data store allows for reading and 
 explore data from the 
 [Copernicus Marine Data Store](https://data.marine.copernicus.eu/products).
 
