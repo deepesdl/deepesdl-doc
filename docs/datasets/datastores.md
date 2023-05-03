@@ -133,7 +133,7 @@ The xcube Sentinel Hub (SH) data store allows to read and explore data from the
 **Please note:** In order to access data from the commercial Sentinel Hub service, you need Sentinel 
 Hub API credentials. 
 
-Within DeepESDL there is the possibility to apply for Sentinel Hub access - 
+DeepESDL users may apply for sponsored Sentinel Hub subscriptions - 
 please contact the DeepESDL team.
 
 Initializing the xcube datastore for Sentinel Hub:
