@@ -14,9 +14,10 @@ nav:
     - xcube Viewer: guide/xcube-viewer.md
     - Datacubes: guide/datacubes.md
     - Datacube generation: guide/datacube-generation.md
+    - ML Toolkits: guide/ml-toolkits.md
     - Further information: guide/further-information.md
   - ML Toolkit:
-    - Overview: ml-toolkit/introduction.md
+    - Introduction: ml-toolkit/introduction.md
     - Getting Started: ml-toolkit/getting-started.md
     - Example Use Case: ml-toolkit/example.md
   - Datasets:
