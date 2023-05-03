@@ -1,27 +1,35 @@
-site_name: DeepESDL
-site_url: http://127.0.0.1:8000/
+site_name: DeepESDL Documentation
+site_url: https://deepesdl.readthedocs.io
+repo_url: https://github.com/deepesdl/deepesdl-doc
+edit_uri: edit/main/docs
 copyright: Copyright © 2022 by the DeepESDL Team
 theme: readthedocs  # alternative: mkdocs
 
 nav:
   - Home:
-    - Index: index.md
+    - About DeepESDL: index.md
   - User guide:
-    - Getting Started: guide/user-guide.md
-    - DeepESDL JupyterLab: guide/jupyterlab.md
-    - DeepESDL xcube viewer: guide/xcube-viewer.md
-    - DeepESDL datacubes: guide/datacubes.md
-    - DeepESDL datacube generation: guide/datacube-generation.md
+    - Overview: guide/overview.md
+    - JupyterLab: guide/jupyterlab.md
+    - xcube Viewer: guide/xcube-viewer.md
+    - Datacubes: guide/datacubes.md
+    - Datacube generation: guide/datacube-generation.md
     - Further information: guide/further-information.md
-  - Design:
-    - Index: design/index.md
   - ML Toolkit:
-    - Index: ml-toolkit/index.md
+    - Overview: ml-toolkit/index.md
   - Datasets:
     - List of datasets: datasets/datasets.md
     - Earth System Data Cube: datasets/ESDC.md
     - Baltic Sea Cube: datasets/baltic-sea.md
     - Black Sea Cube: datasets/black-sea.md
+    - Land Cover Cube: datasets/LC-1x2160x2160-1-0-0-zarr.md
+    - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
+    - SMOS freeze/thaw Cube: datasets/SMOS-snow-4267x10x10-1-0-1-zarr.md
+  - Design:
+    - Context: design/context.md
+    - Architecture: design/architecture.md
+    - Hub: design/hub.md
+    - Services and Tools: design/services-and-tools.md
 
 plugins:
   - search

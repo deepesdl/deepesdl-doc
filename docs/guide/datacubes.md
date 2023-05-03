@@ -8,7 +8,8 @@ and allowing us to process, and redistribute them free of charge.
 All datacubes generated and distributed by DeepESDL come without any warranty, 
 neither from the owners, from the DeepESDL, nor from ESA.
 
-At ingestion into the DeepESDL, data sets are typically transformed in space and 
+During ingestion into the DeepESDL, data sets are typically transformed in 
+space and 
 time to fit to the common grid of the data cube, a process that necessarily 
 modifies the original data. If you are looking for the original data, please 
 follow the links within the dataset attributes for each variable and contact 
