@@ -1,7 +1,7 @@
 # Datasets
 
 Data access is possible in two main manners within DeepESDL. xcube 
-data stores provide on the fly access to datasets via the data stores framework.
+data stores provide on-the-fly access to datasets via the data stores framework.
 Other datasets are persisted and made analysis-ready. 
 
 -   [xcube Data Stores](datastores.md)
