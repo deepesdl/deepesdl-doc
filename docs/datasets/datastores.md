@@ -1,7 +1,7 @@
 # xcube Data Stores
 
-The xcube data stores Framework is described in detail in the xcube documentation(#TODO 
-Link).
+The xcube data stores Framework is described in detail in the xcube 
+[documentation](https://xcube.readthedocs.io/en/latest/dataaccess.html).
 In this section, the currently available data stores are presented with an 
 example for each of them. For more detailed examples, please refer to the 
 getting started notebook section of the jupyterlab 
