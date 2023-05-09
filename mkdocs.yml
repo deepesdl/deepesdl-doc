@@ -22,6 +22,7 @@ nav:
     - Example Use Case: ml-toolkit/example.md
   - Datasets:
     - List of datasets: datasets/datasets.md
+    - xcube Data Stores: datasets/datastores.md
     - Earth System Data Cube: datasets/ESDC.md
     - Baltic Sea Cube: datasets/baltic-sea.md
     - Black Sea Cube: datasets/black-sea.md
