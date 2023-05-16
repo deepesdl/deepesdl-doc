@@ -172,7 +172,7 @@ class Catalogue:
                 (
                     'deepesdl',
                     'deepESDL',
-                    'FIXME',
+                    'store',
                     dict(
                         data_store_id="s3",
                         root="deep-esdl-public/",
@@ -306,10 +306,10 @@ class Catalogue:
         with open(path / 'index.md', 'w') as fh:
             # fh.write(f'# Data store: {store_id}\n\n')
             var_name = self.store_records[store_id].var_name
-            fh.write(
-                f'## Store variable name in JupyterLab: `{var_name}` &emsp;'
-                f'{self._make_copy_button("variable name", var_name)}\n\n'
-            )
+            # fh.write(
+            #     f'## Store variable name in JupyterLab: `{var_name}` &emsp;'
+            #     f'{self._make_copy_button("variable name", var_name)}\n\n'
+            # )
             empty = True
             for data_id in filter_ids(data_ids):
                 if empty:
@@ -361,17 +361,20 @@ class Catalogue:
             )
             # TODO: link to open in viewer?
             open_command = store_record.get_code_snippet(data_id)
-            # fh.write(
-            #     f'## How to open this dataset in AVL JupyterLab '
-            #     f'&emsp;{self._make_copy_button("code", open_command)}\n'
-            #     f'```python\n{open_command}\n```\n\n'
-            # )
+            fh.write(
+                f'## How to open this dataset in DeepESDL JupyterLab\n'
+                f'```python\nfrom xcube.core.store import new_data_store\nstore = new_data_store("s3", root="deep-esdl-public", storage_options=dict(anon=True))\n{open_command}\n```\n\n'
+            )
             valid_attrs = hasattr(desc, 'attrs') and isinstance(
                 desc.attrs, dict
             )
 
             if 'SMOS' in data_id:
                 bbox = (-180, 0, 180, 85)
+            elif 'polar' in data_id:
+                bbox = (-109.3, -70, -100, -77)
+            elif 'permafrost' in data_id:
+                bbox = ( -180, 0, 180, 90)
             elif hasattr(desc, 'bbox') and desc.bbox is not None:
                 bbox = desc.bbox
             elif valid_attrs:

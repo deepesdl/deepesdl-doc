@@ -1,8 +1,15 @@
 # SMOS Freeze and Thaw Processing and Dissemination Service
 
+## How to open this dataset in DeepESDL JupyterLab
+```python
+from xcube.core.store import new_data_store
+store = new_data_store("s3", root="deep-esdl-public", storage_options=dict(anon=True))
+ds = store.open_data('SMOS-snow-1x720x720-1.0.1.zarr')
+```
+
 ## Bounding box map
 
-![Bounding box map](SMOS-snow-4267x10x10-1-0-1-zarr.png)<br>
+![Bounding box map](SMOS-snow-1x720x720-1-0-1-zarr.png)<br>
 <span style="font-size: x-small">Map tiles and data from <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">the ODbL</a>.</span>
 
 ## Basic information

@@ -1,5 +1,12 @@
 # Earth System Data Cube (ESDC) v3.0.1
 
+## How to open this dataset in DeepESDL JupyterLab
+```python
+from xcube.core.store import new_data_store
+store = new_data_store("s3", root="deep-esdl-public", storage_options=dict(anon=True))
+ds = store.open_data('esdc-8d-0.25deg-1x720x1440-3.0.1.zarr')
+```
+
 ## Bounding box map
 
 ![Bounding box map](ESDC.png)<br>
@@ -1382,4 +1389,3 @@ Click on a variable name to jump to the variable’s full metadata.
 | time\_period | 8D |
 | time\_period\_reported\_day | 5\.0 |
 | title | Earth System Data Cube \(ESDC\) v3\.0\.1 |
-
