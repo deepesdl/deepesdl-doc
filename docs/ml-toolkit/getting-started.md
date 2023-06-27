@@ -1,6 +1,6 @@
 # Getting Started with ML Toolkits
 
-All Jupyter Notebooks follow the same  architecture involving the five major 
+All Jupyter Notebooks follow the same architecture involving the five major 
 sections, which are supported by markdown cells, comments and plots:
 
 
@@ -20,6 +20,10 @@ sections, which are supported by markdown cells, comments and plots:
       - Evaluate model
       - Plot results
 	
-<!--It is mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of 
-machine learning in the Earth system context. To avoid auto-correlation during the training phase of the model, data sampling is 
-guided by a block sampling strategy. Data blocks are rectangularly shaped varying in size and amount of data points. -->
+It is mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of 
+machine learning in the Earth system context. To avoid auto-correlation during the training phase of the model, data sampling is preferably guided 
+by a block sampling strategy. Data blocks are rectangularly shaped varying in size and amount of data points.
+
+The workflow is implemented for three python-based Machine Learning libraries (scikit-learn, PyTorch, TensorFlow) based on a generic use case and provided as [Jupyter Notebooks](example.md)
+
+
