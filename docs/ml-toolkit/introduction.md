@@ -27,7 +27,7 @@ on one of the three well established open source ML libraries respectively:
 Model evaluation is realized through the implementation of [TensorBoard](https://www.tensorflow.org/tensorboard) and 
 [mlflow](https://mlflow.org/).
 
-![ML Toolkit Scheme](https://github.com/deepesdl/deepesdl-doc/blob/anja-xxx-ml_toolkit/docs/img/mltoolkit_scheme.png){width=50%}
+![ML Toolkit Scheme](https://github.com/deepesdl/deepesdl-doc/blob/anja-xxx-ml_toolkit/docs/img/mltoolkit_scheme.png)Machine Learning workflow on Analysis Ready Data Cubes
 
 One may also want to reuse information gained during model training for a 
 second related task, especially when it comes to a lack of data. A PyTorch 
