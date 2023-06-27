@@ -32,6 +32,14 @@ second related task, especially when it comes to a lack of data. A PyTorch
 based Jupyter Notebook provides the implementation of 
 [Transfer Learning](https://github.com/deepesdl/ML-Toolkit/blob/master/src/transfer_learning.ipynb). 
 
+<p align="center">
+<img src="../img/transfer_learning.png" width="75%" height="75%">
+</p>
+<p align = "center"><i>
+Concept of Transfer Learning</i>
+</p>
+
+
 ## Overview
 1. [Getting Started](getting-started.md)    
 2. [Example Use Case and Juypter Notebooks](example.md)
