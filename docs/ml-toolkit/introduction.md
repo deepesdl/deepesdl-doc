@@ -33,8 +33,8 @@ Model evaluation is realized through the implementation of [TensorBoard](https:/
 <p align="center">
 <img src="https://github.com/deepesdl/deepesdl-doc/blob/anja-xxx-ml_toolkit/docs/img/mltoolkit_scheme.png" width="50%" height="50%">
 </p>
-<p align = "center">
-Machine Learning workflow on Analysis Ready Data Cubes
+<p align = "center"><i>
+Machine Learning workflow on Analysis Ready Data Cubes</i>
 </p>
 
       
