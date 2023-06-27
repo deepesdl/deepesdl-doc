@@ -38,6 +38,13 @@ a spiky model response which has mainly two reasons:
       points of parameters (here temperature) are likely to be similar in 
       the Earth system context in their spatio-temporal vicinity.
 
+<p align="center">
+<img src="../img/train_test_assignment_rnd.png" width="70%" height="70%">
+</p>
+<p align = "center"><i>
+Random Assignment of Train/Test Split</i>
+</p>
+
 ### Block Sampling
 
 It is therefore mandatory to enable machine learning that respects the basic 
@@ -48,6 +55,13 @@ sampling strategy. Generally speaking, data blocks can be masks of any kind
 (e.g., data thresholds, temporally restricted or spatially shaped). Here we 
 use blocks that are rectangularly shaped varying in size and amount of data 
 points.
+
+<p align="center">
+<img src="../img/train_test_assignment_bs.png" width="70%" height="70%">
+</p>
+<p align = "center"><i>
+Block Assignment of Train/Test Split</i>
+</p>
 
 ### Example Notebooks
 
