@@ -19,11 +19,17 @@ sections, which are supported by markdown cells, comments and plots:
       - Train model, return error and loss
       - Evaluate model
       - Plot results
-	
+ 
 It is mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of 
 machine learning in the Earth system context. To avoid auto-correlation during the training phase of the model, data sampling is preferably guided 
 by a block sampling strategy. Data blocks are rectangularly shaped varying in size and amount of data points.
 
 The workflow is implemented for three python-based Machine Learning libraries (scikit-learn, PyTorch, TensorFlow) based on a generic use case and provided as [Jupyter Notebooks](example.md)
 
-
+<p align="center">
+<img src="../img/mltoolkit_scheme.png" width="70%" height="70%">
+</p>
+<p align = "center"><i>
+Machine Learning workflow on Analysis Ready Data Cubes</i>
+</p>
+   
