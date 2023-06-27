@@ -24,8 +24,8 @@ on one of the three well established open source ML libraries respectively:
 3.    [TensorFlow](https://www.tensorflow.org/overview)<br>
       Keras provides a high-level API that can be run on the popular execution backend TensorFlow. Due to its simplicity, it fits well to the requirements of those Earth system scientist that do not           require to newly develop neuronal network architectures. As PyTorch, TensorFlow is python-based, allows for GPU computation and it supports Deep Learning applications including transfer learning         or domain adaptation.
 
-Model evaluation is realized through the implementation of TensorBoard and 
-MLFlow.
+Model evaluation is realized through the implementation of [TensorBoard](https://www.tensorflow.org/tensorboard) and 
+[mlflow](https://mlflow.org/).
 
 One may also want to reuse information gained during model training for a 
 second related task, especially when it comes to a lack of data. A PyTorch 
@@ -34,5 +34,5 @@ based Jupyter Notebook provides the implementation of
 
 ## Overview
 1. [Getting Started](getting-started.md)    
-2. [Example Use Case](example.md)
+2. [Example Use Case and Juypter Notebooks](example.md)
    
