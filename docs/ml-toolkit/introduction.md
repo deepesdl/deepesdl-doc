@@ -30,7 +30,7 @@ Model evaluation is realized through the implementation of [TensorBoard](https:/
 <!--![ML Toolkit Scheme](https://github.com/deepesdl/deepesdl-doc/blob/anja-xxx-ml_toolkit/docs/img/mltoolkit_scheme.png)
 *Machine Learning workflow on Analysis Ready Data Cubes*-->
 
-<img src="https://github.com/deepesdl/deepesdl-doc/blob/anja-xxx-ml_toolkit/docs/img/mltoolkit_scheme.png" width="50%" height="50%">
+<img src="https://github.com/deepesdl/deepesdl-doc/blob/anja-xxx-ml_toolkit/docs/img/mltoolkit_scheme.png" width="50%" height="50%" align="center" title="*Machine Learning workflow on Analysis Ready Data Cubes*">
 
 
 One may also want to reuse information gained during model training for a 
