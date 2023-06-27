@@ -48,3 +48,12 @@ sampling strategy. Generally speaking, data blocks can be masks of any kind
 (e.g., data thresholds, temporally restricted or spatially shaped). Here we 
 use blocks that are rectangularly shaped varying in size and amount of data 
 points.
+
+### Example Notebooks
+
+The workflow is demonstrated for the three ML libraries scikit-learn, PyTorch and TensorFlow and can be accessed via Jupyter Notebooks:
+
+1. [Example Notebook *scikit-learn*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_scikit-learn_mlflow.ipynb)
+2. [Example Notebook *PyTorch*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_pytorch_mlflow.ipynb)
+3. [Example Notebook *TensorFlow*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_tensorflow_tensorboard.ipynb)
+4. [Example Notebook *Transfer Learning with PyTorch*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/transfer_learning.ipynb)
