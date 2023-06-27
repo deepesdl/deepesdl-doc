@@ -24,7 +24,6 @@ nav:
     - List of datasets: datasets/datasets.md
     - xcube Data Stores: datasets/datastores.md
     - Earth System Data Cube: datasets/ESDC.md
-    - Baltic Sea Cube: datasets/baltic-sea.md
     - Black Sea Cube: datasets/black-sea.md
     - Land Cover Cube: datasets/LC-1x2160x2160-1-0-0-zarr.md
     - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md

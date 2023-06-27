@@ -6,7 +6,6 @@ Other datasets are made anaylsis-ready and persisted in object storage for faste
 
 -   [xcube Data Stores](datastores.md)
 -   [Earth System Data Cube](ESDC.md)
--   [Baltic Sea Cube](baltic-sea.md)
 -   [Black Sea Cube](black-sea.md)
 -   [Land Cover Cube](LC-1x2160x2160-1-0-0-zarr.md)
 -   [Ocean Cube](ocean-1M-9km-1x1080x1080-1-4-0-zarr.md)

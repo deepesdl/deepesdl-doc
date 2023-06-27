@@ -4,7 +4,13 @@
 ```python
 from xcube.core.store import new_data_store
 store = new_data_store("s3", root="deep-esdl-public", storage_options=dict(anon=True))
-ds = store.open_data('black-sea-1x1024x1024.zarr')
+# The cube is saved as a multilevel cube, the level 0 is the base layer with 
+# the highest resolution
+ml_dataset = store.open_data('black-sea-1x1024x1024.levels')
+# Chek how many levels are present
+ml_dataset.num_levels
+# Open dataset at a certain level, here level 0
+ds = ml_dataset.get_dataset(0)
 ```
 
 ## Bounding box map
