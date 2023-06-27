@@ -46,4 +46,5 @@ based Jupyter Notebook provides the implementation of
 ## Overview
 1. [Getting Started](getting-started.md)    
 2. [Example Use Case and Juypter Notebooks](example.md)
+3. [Recommendations and Considerations](recommendations.md)
    
