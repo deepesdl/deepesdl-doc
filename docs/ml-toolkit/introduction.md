@@ -28,6 +28,13 @@ Model evaluation is realized through the implementation of [TensorBoard](https:/
 [mlflow](https://mlflow.org/). These tools offer science teams an easy-to-use platform allowing to run and scale their Machine Learning workloads in a collaborative environment supporting versioning and sharing of code, data, models, artefacts, results, etc. within the team and potentially external users.
 mlflow supports the MLOps pipelines particularly to log and evaluate experiment runs as well as to store models in a registry​. Persistent mlflow deployments are made available on team level to allow each team member to compare their experiments with those of the other team members and to use the trained models of others.
 TensorBoard as another collaborative tool in this MLOPs space is currently evaluated by the science teams and available as part of the TensorFlow conda kernel to individual users within their JupyterLab session.
+
+<p align="center">
+<img src="../img/mlflow.png" width="75%" height="75%">
+</p>
+<p align = "center"><i>
+Collaborative Experiment Tracking with mlflow.</i>
+</p>
   
 One may also want to reuse information gained during model training for a 
 second related task, especially when it comes to a lack of data. A PyTorch 
@@ -38,7 +45,7 @@ based Jupyter Notebook provides the implementation of
 <img src="../img/transfer_learning.png" width="75%" height="75%">
 </p>
 <p align = "center"><i>
-Concept of Transfer Learning</i>
+The Basic Concept of Transfer Learning.</i>
 </p>
 
 
