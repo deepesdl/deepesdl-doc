@@ -18,6 +18,14 @@ Here, we propose a shallow neural network (Linear Regression) to predict
 missing values of land surface temperature from consistent air 
 temperature values.
 
+<p align="center">
+<img src="../img/xcubeviewer3.png" width="75%" height="75%">
+</p>
+<p align = "center"><i>
+ML prediction of missing Land Surface Temperature values from Air Temperature values (xcube viewer)</i>
+</p>
+
+
 ### Random Sampling
 
 In a first step we introduce a random sampling on the ESDC, which is a 
