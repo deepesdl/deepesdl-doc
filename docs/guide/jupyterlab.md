@@ -85,10 +85,10 @@ Steps to create custom team conda environments:
     into the window directly.
     It should look something like this example: 
 
-    ```
-    channels:
+        ```
+        channels:
         - conda-forge
-    dependencies:
+        dependencies:
         - xcube=1.1.1
         - xcube-cds
         - xcube-sh
@@ -99,8 +99,8 @@ Steps to create custom team conda environments:
         - rasterio>=1.3.6
         - cartopy
         - ipykernel
-    name: xcube-1.1.1
-    ```
+        name: xcube-1.1.1
+        ```
     
 7.  Make sure to set a meaningful value to the environment's `name` property,
     so also your teammates will know what it is about.
