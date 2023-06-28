@@ -83,11 +83,12 @@ Steps to create custom team conda environments:
 6.  You may either choose an environment.yml file to upload or paste your
     [environment configuration](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually)
     into the window directly.
-    It should look something like this example:  
-        ```
-        channels:
-            - conda-forge
-        dependencies:
+    It should look something like this example: 
+
+    ```
+    channels:
+       - conda-forge
+    dependencies:
             - xcube=1.1.1
             - xcube-cds
             - xcube-sh
@@ -98,8 +99,8 @@ Steps to create custom team conda environments:
             - rasterio>=1.3.6
             - cartopy
             - ipykernel
-        name: xcube-1.1.1
-        ```
+    name: xcube-1.1.1
+    ```
 7.  Make sure to set a meaningful value to the environment's `name` property,
     so also your teammates will know what it is about.
 8.  Once you are happy with your environment hit submit and grab a coffee. It
