@@ -99,7 +99,7 @@ dependencies:
     - cartopy
     - ipykernel
 name: xcube-1.1.1
- ```
+```
 7.  Make sure to set a meaningful value to the environment's `name` property,
     so also your teammates will know what it is about.
 8.  Once you are happy with your environment hit submit and grab a coffee. It
