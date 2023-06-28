@@ -85,7 +85,6 @@ Steps to create custom team conda environments:
     into the window directly.
     It should look something like this example: 
 
-        ```yaml
         channels:
             - conda-forge
         dependencies:
@@ -100,7 +99,6 @@ Steps to create custom team conda environments:
             - cartopy
             - ipykernel
         name: xcube-1.1.1
-        ```
     
 7.  Make sure to set a meaningful value to the environment's `name` property,
     so also your teammates will know what it is about.
