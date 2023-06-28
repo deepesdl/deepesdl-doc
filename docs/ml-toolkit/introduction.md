@@ -24,13 +24,13 @@ on one of the three well established open source ML libraries respectively:
 3.    [TensorFlow](https://www.tensorflow.org/overview)<br>
       Keras provides a high-level API that can be run on the popular execution backend TensorFlow. Due to its simplicity, it fits well to the requirements of those Earth system scientist that do not           require to newly develop neuronal network architectures. As PyTorch, TensorFlow is python-based, allows for GPU computation and it supports Deep Learning applications including transfer learning         or domain adaptation.
 
-Model evaluation is realized through the implementation of [TensorBoard](https://www.tensorflow.org/tensorboard) and 
-[mlflow](https://mlflow.org/). These tools offer science teams an easy-to-use platform allowing to run and scale their Machine Learning workloads in a collaborative environment supporting versioning and sharing of code, data, models, artefacts, results, etc. within the team and potentially external users.
-mlflow supports the MLOps pipelines particularly to log and evaluate experiment runs as well as to store models in a registry​. Persistent mlflow deployments are made available on team level to allow each team member to compare their experiments with those of the other team members and to use the trained models of others.
+Model tracking is realized through the usage of [TensorBoard](https://www.tensorflow.org/tensorboard) and 
+[mlflow](https://mlflow.org/). These tools offer science teams an easy-to-use platform allowing to run and scale their Machine Learning workloads in a collaborative environment supporting versioning and sharing of parameters, models, artefacts, results, etc. within the team and potentially external users.
+Mlflow supports the MLOps pipelines particularly to log and evaluate experiment runs as well as to store models in a registry​. Persistent mlflow deployments are made available on team level to allow each team member to compare their experiments with those of the other team members and to use the trained models of others.
 TensorBoard as another collaborative tool in this MLOPs space is currently evaluated by the science teams and available as part of the TensorFlow conda kernel to individual users within their JupyterLab session.
 
 <p align="center">
-<img src="../img/mlflow.png" width="75%" height="75%">
+<img src="../img/mlflow.png" width="85%" height="85%">
 </p>
 <p align = "center"><i>
 Collaborative Experiment Tracking with mlflow.</i>
