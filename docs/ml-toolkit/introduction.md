@@ -8,7 +8,7 @@ ocean with unprecedented accuracy. In course of DeepESDL, the Earth System
 Data Lab (ESDL) capabilities have been extended to support the application of 
 machine learning (ML) methods on Earth System Data Cubes (ESDC). 
 
-We provide three Python-based best practice Jupyter Notebooks based on a 
+We provide three Python-based best practice [Jupyter Notebooks](example.md#example-notebooks) based on a 
 generic use case to showcase the implementation of state-of-the-art machine 
 learning libraries on ESDCs in the DeepESDL Hub environment. 
 Each Jupyter Notebook involves a self-contained workflow, markdown cells, 
