@@ -21,7 +21,7 @@ on one of the three well established open source ML libraries respectively:
       For larger neural networks and support for Deep Learning additional ML toolchains are necessary, for example the python-based ML stack PyTorch. With PyTorch, experienced users are supported. It
       provides low-level API and allows for flexibility to develop and customize deep learning models. It allows for GPU computation and supports transfer learning, domain adaptation, or diverse methods
       for fine tuning of models.
-3.    [TensorFlow](https://www.tensorflow.org/overview)<br>
+3.    [TensorFlow/Keras](https://www.tensorflow.org/guide)<br>
       Keras provides a high-level API that can be run on the popular execution backend TensorFlow. Due to its simplicity, it fits well to the requirements of those Earth system scientist that do not           require to newly develop neuronal network architectures. As PyTorch, TensorFlow is python-based, allows for GPU computation and it supports Deep Learning applications including transfer learning         or domain adaptation.
 
 Model tracking is realized through the usage of [TensorBoard](https://www.tensorflow.org/tensorboard) and 
