@@ -83,7 +83,7 @@ Steps to create custom team conda environments:
 6.  You may either choose an environment.yml file to upload or paste your
     [environment configuration](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually)
     into the window directly.
-    It should look something like this example:
+    It should look something like this example:  
     ```yaml
     channels:
         - conda-forge
