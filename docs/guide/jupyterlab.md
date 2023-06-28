@@ -84,7 +84,7 @@ Steps to create custom team conda environments:
     [environment configuration](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually)
     into the window directly.
     It should look something like this example:  
-        ```yaml
+        ```
         channels:
             - conda-forge
         dependencies:
