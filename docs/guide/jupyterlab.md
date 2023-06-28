@@ -93,7 +93,7 @@ Steps to create custom team conda environments:
             - xcube-sh
             - xcube-cmems
             - xcube-cci
-            - xcube\_geodb
+            - xcube_geodb
             - boto3
             - rasterio>=1.3.6
             - cartopy
