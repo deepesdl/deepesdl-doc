@@ -1,4 +1,4 @@
-Ideally, classical operations on the Analysis Ready Data Cubes could be extended by Machine Learning applications in order to sustain interoperability. 
+Ideally, classical operations on the Analysis Ready Data Cubes (ARDC) could be extended by Machine Learning applications in order to sustain interoperability. 
 However, there is a conflict between the nature of remotely-sensed data, the structure of the ARDCs and the requirements for meaningful Machine Learning applications which need to be addressed:
 
 1. Sampling the Earth naturally leads to an uneven distribution of data points as a result of its spherical shape.
