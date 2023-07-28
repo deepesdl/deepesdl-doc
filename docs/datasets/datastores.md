@@ -42,7 +42,7 @@ desired dataset, which was listed in `store.list_data_ids()`
 dataset = store.open_data('black-sea-1x1024x1024.zarr')
 ```
 
-### Contribute datacubes to the public
+## Contribute datacubes to the public
 
 If you have created your own dataset and wish to make it available to the 
 public in the **deep-esdl-public** cloud bucket, that's fantastic!
@@ -230,7 +230,7 @@ dataset = store.open_data('reanalysis-era5-single-levels-monthly-means:monthly_a
                           time_range=['2001-01-01', '2010-12-31'])
 ``` 
 
-### Contribute a xcube plugin for a new datastore
+## Contribute a xcube plugin for a new datastore
 Do you have an API or a data source which you wish to make available via the 
 xcube data stores framework? We would be very happy if you like to 
 contribute to the open source xcube software ecosystem! 
