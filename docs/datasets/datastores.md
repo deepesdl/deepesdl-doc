@@ -42,6 +42,16 @@ desired dataset, which was listed in `store.list_data_ids()`
 dataset = store.open_data('black-sea-1x1024x1024.zarr')
 ```
 
+### Contribute datacubes to the public
+
+If you have created your own dataset and wish to make it available to the 
+public in the **deep-esdl-public** cloud bucket, that's fantastic!
+For onboarding new data cubes to deep-esdl-public, you need to make sure 
+your dataset creation is documented and reproducible, and that the 
+documentation is accessible. This can be e.g. your own GitHub repository, or 
+you could contribute to the [DeepESDL cube-gen repository](https://github.com/deepesdl/cube-gen).
+
+
 ## xcube CMEMS data store
 The xcube Copernicus Marine Data Store (CMEMS) data store allows for reading and 
 exploring data from the 
@@ -219,3 +229,19 @@ dataset = store.open_data('reanalysis-era5-single-levels-monthly-means:monthly_a
                           spatial_res=0.25, 
                           time_range=['2001-01-01', '2010-12-31'])
 ``` 
+
+### Contribute a xcube plugin for a new datastore
+Do you have an API or a data source which you wish to make available via the 
+xcube data stores framework? We would be very happy if you like to 
+contribute to the open source xcube software ecosystem! 
+The xcube data stores framework is described in detail in the xcube 
+[documentation](https://xcube.readthedocs.io/en/latest/dataaccess.html). 
+There you can have a look at the details of what is mandatory for a data 
+store. Furthermore, you can get inspiration from existing data store plugins:
+- [xcube-cds](https://github.com/dcs4cop/xcube-cds)
+- [xcube-cci](https://github.com/dcs4cop/xcube-cci)
+- [xcube-cmems](https://github.com/dcs4cop/xcube-cmems)
+- [xcube-sh](https://github.com/dcs4cop/xcube-sh)
+
+In case of questions, please feel free to reach out to us! We will give 
+our best to support you :)
