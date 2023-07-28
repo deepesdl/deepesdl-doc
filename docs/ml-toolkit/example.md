@@ -18,6 +18,14 @@ Here, we propose a shallow neural network (Linear Regression) to predict
 missing values of land surface temperature from consistent air 
 temperature values.
 
+<p align="center">
+<img src="../img/xcubeviewer3.png" width="75%" height="75%">
+</p>
+<p align = "center"><i>
+ML prediction of missing Land Surface Temperature values from Air Temperature values (xcube viewer)</i>
+</p>
+
+
 ### Random Sampling
 
 In a first step we introduce a random sampling on the ESDC, which is a 
@@ -38,6 +46,13 @@ a spiky model response which has mainly two reasons:
       points of parameters (here temperature) are likely to be similar in 
       the Earth system context in their spatio-temporal vicinity.
 
+<p align="center">
+<img src="../img/train_test_assignment_rnd.png" width="70%" height="70%">
+</p>
+<p align = "center"><i>
+Random Assignment of Train/Test Split</i>
+</p>
+
 ### Block Sampling
 
 It is therefore mandatory to enable machine learning that respects the basic 
@@ -48,3 +63,19 @@ sampling strategy. Generally speaking, data blocks can be masks of any kind
 (e.g., data thresholds, temporally restricted or spatially shaped). Here we 
 use blocks that are rectangularly shaped varying in size and amount of data 
 points.
+
+<p align="center">
+<img src="../img/train_test_assignment_bs.png" width="70%" height="70%">
+</p>
+<p align = "center"><i>
+Block Assignment of Train/Test Split</i>
+</p>
+
+### Example Notebooks
+
+The workflow is demonstrated for the three ML libraries scikit-learn, PyTorch and TensorFlow and can be accessed via Jupyter Notebooks:
+
+1. [Example Notebook *scikit-learn*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_scikit-learn_mlflow.ipynb)
+2. [Example Notebook *PyTorch*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_pytorch_mlflow.ipynb)
+3. [Example Notebook *TensorFlow*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/use_case_lst_at_tensorflow_tensorboard.ipynb)
+4. [Example Notebook *Transfer Learning with PyTorch*](https://github.com/deepesdl/ML-Toolkit/blob/master/src/transfer_learning.ipynb)
