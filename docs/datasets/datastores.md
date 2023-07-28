@@ -71,7 +71,7 @@ To use your own CMEMS account:
 #cmemsuser='your-user-name'
 #cmemspwd='your-user-password'
 ```
-Initializing the xcube datastore for CMEMS:
+Initializing the xcube data store for CMEMS:
 
 ```python
 from xcube.core.store import new_data_store
@@ -110,14 +110,14 @@ More information on the data sets offered can be found in the
 [Open Data Portal](https://climate.esa.int/en/odp/#/dashboard).
 
 
-Initializing the xcube datastore for CCI:
+Initializing the xcube data store for CCI:
 
 ```python
 from xcube.core.store import new_data_store
 store = new_data_store('cciodp')
 ```
 
-The cci datastore offers many datasets, therefore listing all available ones 
+The cci data store offers many datasets, therefore listing all available ones 
 will reveal a long list of results. The store can thus be searched by specific 
 parameters, which can be listed:
 
@@ -147,7 +147,7 @@ DeepESDL users may apply for sponsored Sentinel Hub subscriptions -
 please contact the DeepESDL team or directly appy via the [Network of Resources portal](https://nor-discover.cloudeo.group/Service/EDC-Sentinel-Hub/SponsoringWizardPricelist).
 
 
-Initializing the xcube datastore for Sentinel Hub:
+Initializing the xcube data store for Sentinel Hub:
 
 ```python
 from xcube.core.store import new_data_store
@@ -201,7 +201,7 @@ For DeepESDL Jupyter Lab default credentials are configured, but due to
 bandwidth limitation by CDS performance may impair when used by several 
 people simultaneously. 
 
-Initializing the xcube datastore for C3S:
+Initializing the xcube data store for C3S:
 
 ```python
 from xcube.core.store import new_data_store
@@ -230,7 +230,7 @@ dataset = store.open_data('reanalysis-era5-single-levels-monthly-means:monthly_a
                           time_range=['2001-01-01', '2010-12-31'])
 ``` 
 
-## Contribute a xcube plugin for a new datastore
+## Contribute a xcube plugin for a new data store
 Do you have an API or a data source which you wish to make available via the 
 xcube data stores framework? We would be very happy if you like to 
 contribute to the open source xcube software ecosystem! 
