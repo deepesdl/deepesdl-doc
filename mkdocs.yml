@@ -30,6 +30,7 @@ nav:
     - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
     - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
     - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
+    - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
   - Design:
     - Context: design/context.md
     - Architecture: design/architecture.md
