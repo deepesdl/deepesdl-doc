@@ -1,35 +1,41 @@
-# Getting Started with ML Toolkits
+# Getting Started 
 
-All Jupyter Notebooks follow the same architecture involving five major 
-sections, which are supported by markdown cells, comments and plots:
+`ml4xcube` is a comprehensive Python-based toolkit designed for researchers and developers in the field of machine learning with an emphasis on `xarray` data cubes. This toolkit is engineered to provide specialized and robust support for data cube management and analysis, operating with the state-of-the-art machine learning libraries (1) `scikit-learn`, (2) `PyTorch` and (3) `TensorFlow`. 
+
+## Installation
+
+Get started with `ml4xcube` effortlessly by installing it directly through pip:
+```bash
+pip install ml4xcube
+```
+or conda:
+```bash
+conda install -c conda-forge ml4xcube
+```
+
+## Features
+
+- Data preprocessing and postprocessing functions
+- Filling masked data and gap filling features
+- Dataset creation and train-/ test splitting techniques
+- Trainer classes for `sklearn`, `TensorFlow` and `PyTorch`
+- Distributed training framework compatible with `PyTorch`
+- chunk utilities for working with data cubes
 
 
-1. Import necessary libraries and mltools
-2.    Load data (Earth System Data Cube, s3 object store) 
-      - Initialize data mask
-3.    Assign train/test split
-      - Random sampling
-      - Block sampling
-4.    Model set-up (linear regression with 1 node/ shallow neural network)
-5.    Model training and testing 
-      - Iteration over chunks of the ESDC and subsequent sampling
-      - Preprocessing (filtering NaNs, standardization, normalization)
-      - Get train/test data
-      - Generate training batches using existing data loading and transformation mechanisms from Keras and PyTorch (DataGenerator, DataLoader)
-      - Train model, return error and loss
-      - Evaluate model
-      - Plot results
- 
-It is mandatory to enable machine learning that respects the basic principles of geo-data way beyond naive applications of 
-machine learning in the Earth system context. To avoid auto-correlation during the training phase of the model, data sampling is preferably guided 
-by a block sampling strategy. Data blocks are rectangularly shaped varying in size and amount of data points.
+## Requirements
 
-The workflow is implemented for three python-based Machine Learning libraries (scikit-learn, PyTorch, TensorFlow) based on a generic use case and provided as [Jupyter Notebooks](example.md)
+| Package        | Versions     |
+|----------------|--------------|
+| dask           | &ge;2023.2.0 |
+| numpy          | &ge;1.24     |
+| pandas         | &ge;2.2      |
+| scikit-learn   | &gt;1.3.1    |
+| xarray         | &gt;2023.8.0 |
+| zarr           | &gt;2.11     |
+| rechunker      | &ge;0.5.1    |
 
-<p align="center">
-<img src="../img/mltoolkit_scheme.png" width="70%" height="70%">
-</p>
-<p align = "center"><i>
-Machine Learning workflow on Analysis Ready Data Cubes</i>
-</p>
    
+Make sure you have Python version 3.8 or higher.
+
+If you're planning to use `ml4xcube` with TensorFlow or PyTorch, set up these frameworks properly in your conda environment. 
