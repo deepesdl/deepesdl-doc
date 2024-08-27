@@ -32,7 +32,7 @@ In the example, each point in the dataset is randomly assigned to the train set 
 with a 30% probability. The random split is demonstrated in the image below:
 
 <p align="center">
-<img src="../../img/train_test_assignment_rnd.png" width="70%" height="70%">
+<img src="../train_test_assignment_rnd.png" width="70%" height="70%">
 </p>
 <p align = "center"><i>
 Random Assignment of Train/Test Split</i>

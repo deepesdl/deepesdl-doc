@@ -207,7 +207,8 @@ allows for normalization or can be set to None for manual adjustments. If `None`
 introduced using the `callback parameter`, enabling further preprocessing flexibility with costum functions.
 
 By default, missing values are omitted from the dataset. To apply alternative imputation strategies, adjust the `drop_nan` 
-parameter of the `XrDataset`. For comprehensive guidance on these options, please consult the [ml4xcube API description](api-reference.md#6-datasets) description.
+parameter of the `XrDataset`. For comprehensive guidance on these options, please consult the 
+[ml4xcube API description](api-reference.md#6-datasets) description.
 
 Following preprocessing, the data is allocated into training and testing sets based on the previously determined block 
 split strategy, ensuring readiness for the subsequent training phase.
@@ -284,7 +285,7 @@ Mlflow supports the MLOps pipelines particularly to log and evaluate experiment 
 TensorBoard as another collaborative tool in this MLOPs space is currently evaluated by the science teams and available as part of the TensorFlow conda kernel to individual users within their JupyterLab session.
 
 <p align="center">
-<img src="../img/mlflow.png" width="85%" height="85%">
+<img src="mlflow.png" width="85%" height="85%">
 </p>
 <p align = "center"><i>
 Collaborative Experiment Tracking with mlflow.</i>
@@ -391,13 +392,10 @@ trainer = Trainer(
 
 ## 3. Transfer Learning
   
-Transfer learning corresponds to a way to reuse information obtained by 
-previous model training for a 
-second related task. This can be necessary when only a concise amount of data is available. 
-Therefore, a PyTorch based Jupyter Notebook provides the implementation of Transfer Learning.
-This technique was illustrated  for the same setting as the 
-[first example](#1-land-surface-temperature-prediction),
-predicting missing land surface temperature values.
+Transfer learning corresponds to a way to reuse information obtained by previous model training for a second related 
+task. This can be necessary when only a concise amount of data is available. Therefore, a PyTorch based Jupyter 
+Notebook provides the implementation of Transfer Learning. This technique was illustrated  for the same setting as the 
+[first example](#1-land-surface-temperature-prediction), predicting missing land surface temperature values.
 
 ### Demo Notebook
 6. [Transfer Learning](https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/transfer_learning.ipynb). 
@@ -420,7 +418,7 @@ functions to assess the completeness and distribution of data within the cube.
 The corresponding Jupyter notebook containing the entire workflow can be accessed here:
 
 
-7. [Landsurface Temperature Insights](https...)
+7. [Landsurface Temperature Insights](https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/cube_insights.ipynb)
 
 The detailed workflow in order to analyze the specifics of a data cube is demonstrated in the following:
 
@@ -485,7 +483,7 @@ plot_slice(
 Running this example results in an illustration as the following:
 
 <p align="center">
-    <img src="../img/img.png" alt="Gap Heat Map" width="70%">
+    <img src="heatmap.png" alt="Gap Heat Map" width="70%">
 </p>
 
 
