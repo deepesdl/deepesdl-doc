@@ -9,7 +9,7 @@ which allows users to create visualizations with optional masks to highlight spe
 #### Functions:
 <table>
   <tr>
-    <td><a href="1-plotting/plot-slice.md">plot_slice</a></td>
+    <td><a href="/1-plotting/plot-slice.md">plot_slice</a></td>
     <td>Renders a 2D slice of an <code>xarray.DataArray</code> with optional emphasis on specific features via masking.</td>
   </tr>
 </table>
@@ -20,7 +20,7 @@ The `insights` module offers tools for extracting and analyzing characteristics 
 `xarray.DataArray` objects. This module includes functions to assess the completeness and distribution of data within 
 the cube, helping users understand the dataset's quality and spatial-temporal coverage.
 The detailed workflow in order to analyze the specifics of a data cube is demonstrated in the following 
-[jupyter notebook](...) (Redacted due to peer review).
+[Jupyter Notebook](example.md#demo-notebook-1).
 
 #### Functions:
 <table>
