@@ -20,6 +20,7 @@ nav:
     - Introduction: ml-toolkit/introduction.md
     - Getting Started: ml-toolkit/getting-started.md
     - Example Use Case: ml-toolkit/example.md
+    - Python API: ml-toolkit/api-reference.md
   - Datasets:
     - List of datasets: datasets/datasets.md
     - xcube Data Stores: datasets/datastores.md
