@@ -41,8 +41,8 @@ temperature values.
 <p align="center">
 <img src="../img/xcubeviewer3.png" width="35%" height="35%">
 </p>
-<p align = "center"><i>
-ML prediction of missing Land Surface Temperature values from Air Temperature values (xcube viewer)</i>
+<p align = "center"><i><strong>
+ML prediction of missing Land Surface Temperature values from Air Temperature values (xcube viewer)</strong></i>
 </p>
 
 
@@ -77,8 +77,8 @@ and plots:
 <p align="center">
 <img src="../img/mltoolkit_scheme.png" width="30%" height="32%">
 </p>
-<p align = "center"><i>
-Machine Learning workflow on Analysis Ready Data Cubes</i>
+<p align = "center"><i><strong>
+Machine Learning workflow on Analysis Ready Data Cubes</strong></i>
 </p>
 
 
@@ -91,11 +91,11 @@ are predicted from consistent air temperature values.
   <tr>
     <td width="50%" style="border: none; text-align: center;">
       <img src="at.png" width="lst.png"/><br/>
-      <strong>Air Temperature</strong> 
+      <i><strong>Air Temperature</strong> </i>
     </td>
     <td width="50%" style="border: none; text-align: center;">
       <img src="lst.png" width="100%"/><br/>
-      <strong>Land Surface Temperature</strong> 
+      <i><strong>Land Surface Temperature</strong> </i>
     </td>
   </tr>
 </table>
@@ -170,11 +170,11 @@ testing integrity.
   <tr>
     <td width="50%" style="border: none; text-align: center;">
       <img src="./train_test_assignment_rnd.png" width="100%"/><br/>
-      <strong>Figure 1:</strong> Random Train-Test Assignment
+      <i><strong>Random Train-Test Assignment</strong> </i>
     </td>
     <td width="50%" style="border: none; text-align: center;">
       <img src="./train_test_assignment_bs.png" width="100%"/><br/>
-      <strong>Figure 2:</strong> Balanced Stratified Train-Test Assignment
+      <i><strong>Balanced Stratified Train-Test Assignment</strong> </i>
     </td>
   </tr>
 </table>
@@ -288,8 +288,9 @@ TensorBoard as another collaborative tool in this MLOPs space is currently evalu
 <img src="mlflow.png" width="85%" height="85%">
 </p>
 <p align = "center"><i>
-Collaborative Experiment Tracking with mlflow.</i>
+<strong>Collaborative Experiment Tracking with mlflow.</strong></i>
 </p>
+
 
 
 ## 2. Distributed Machine Learning
@@ -404,7 +405,7 @@ Notebook provides the implementation of Transfer Learning. This technique was il
 <img src="transfer_learning.png" width="75%" height="75%">
 </p>
 <p align = "center"><i>
-The Basic Concept of Transfer Learning.</i>
+<strong>The Basic Concept of Transfer Learning.</strong></i>
 </p>
 
 
@@ -480,10 +481,14 @@ plot_slice(
 
 
 ```
-Running this example results in an illustration as the following:
+Running this example results in an the following illustration, showing a heatmap of data gaps in the land surface temperature 
+variable over time. The number of available data ranges from 0 to 10, corresponding to the 10 frames in the analyzed cube:
 
 <p align="center">
     <img src="heatmap.png" alt="Gap Heat Map" width="70%">
+</p>
+<p align = "center"><i>
+<strong>Heatmap of available data in the land surface temperature variable over time.</strong></i>
 </p>
 
 
