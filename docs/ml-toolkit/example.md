@@ -75,7 +75,7 @@ and plots:
  
 
 <p align="center">
-<img src="../img/mltoolkit_scheme.png" width="30%" height="32%">
+<img src="../../img/mltoolkit_scheme.png" width="30%" height="32%">
 </p>
 <p align = "center"><i><strong>
 Machine Learning workflow on Analysis Ready Data Cubes</strong></i>
