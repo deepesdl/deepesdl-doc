@@ -402,7 +402,7 @@ Notebook provides the implementation of Transfer Learning. This technique was il
 6. [Transfer Learning](https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/transfer_learning.ipynb). 
 
 <p align="center">
-<img src="transfer_learning.png" width="75%" height="75%">
+<img src="../transfer_learning.png" width="75%" height="75%">
 </p>
 <p align = "center"><i>
 <strong>The Basic Concept of Transfer Learning.</strong></i>
