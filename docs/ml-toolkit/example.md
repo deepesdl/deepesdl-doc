@@ -504,7 +504,7 @@ areas in the cube as showcased in the following example:
 ### Demo Notebook
 8. [Gap Filling Process](https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/gapfilling_process.ipynb). 
 
-## 6. Coastal Predictions for Multidimensional Samples
+## 6. Predictions for Multidimensional Samples
 An alternative to [gap filling](#5-gapfilling) can be using simpler methods. For example, missing values can be imputed 
 by replacing them with the mean or a constant placeholder. After exploring the data, it might be evident that gaps 
 are not frequent. In some cases, in environmental modeling for specific regions, missing values may be intentional.
