@@ -45,5 +45,5 @@ plot_slice(
 Running this example results in an illustration as the following:
 
 <p align="center">
-    <img src="../heatmap.png" alt="Gap Heat Map" width="70%">
+    <img src="../../heatmap.png" alt="Gap Heat Map" width="70%">
 </p>
