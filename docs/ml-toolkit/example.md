@@ -334,7 +334,7 @@ train_set, test_set = MultiProcSampler(
 In the next step, the environment for training must be prepared by converting datasets to a format compatible with PyTorch, setting up a basic neural network model, and configuring 
 the training process. Since in this example 1D data points are utilized for training, the dimension names assigned correspond to a 1D Tuple as well.
 If the usage of multidimensional data samples is intended, please define the parameter sample_size of the `MultiProcSampler` class (e.g. `sample_size=[('time', 1), ('lat', 3), ('lon', 3)]`).
-Overlapping samples are also possible (`overlap=[('time', 0.), ('lat', 0.33), ('lon', 0.33)]`). For further details check out the corresponding definition in the [ml4xcube API](6-datasets/multiproc-sampler.md)
+Overlapping samples are also possible (`overlap=[('time', 0.), ('lat', 0.33), ('lon', 0.33)]`). For further details check out the corresponding definition in the [ml4xcube API](api-reference/6-datasets/multiproc-sampler.md)
 ```python
 import zarr 
 import torch

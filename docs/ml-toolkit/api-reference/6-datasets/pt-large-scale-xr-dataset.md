@@ -4,7 +4,7 @@
 networks in PyTorch. It supports dynamic processing and iteration over chunks of large datasets that cannot be fully 
 loaded into memory, making it ideal for environments with significant data volumes. The class allows for flexible data 
 manipulation including optional random chunk selection, dropping of `NaN` values, application of filtering masks, and 
-data filling strategies, contained in the [preprocessing module](../api-reference.md#5-preprocessing).
+data filling strategies, contained in the [preprocessing module](../../api-reference.md#5-preprocessing).
 
 ### Constructor
 ```python
@@ -70,11 +70,11 @@ This setup demonstrates how `PTXrDataset` is integrated into a PyTorch training 
 efficient and scalable processing of geospatial datasets for deep learning applications. 
 This functionality is critical for leveraging high-performance computing resources effectively, ensuring that large 
 datasets are handled in a manner that optimizes both memory usage and computational speed.
-The `map_fn` is a callback function as defined in [prep_dataloader](./prepare-dataloader.md). 
+The `map_fn` is a callback function as defined in [prep_dataloader](prepare-dataloader.md). 
 It allows to define the features as well as the dependent variable for the training process and include further preprocessing steps.
 
 ### Notes
 - `training.pytorch.Trainer` is able to handle empty chunks. Therefore raw data can be handed over to the `PTXrDataset` despite of gaps in the data.
-- Samples obtained from a chunk serve as a batch of data. If a consistent batch size is required leverage the [XrDataset](./xr-dataset.md) or the [MultiProcSampler](./multiproc-sampler.md) to prepare data accordingly.
+- Samples obtained from a chunk serve as a batch of data. If a consistent batch size is required leverage the [XrDataset](xr-dataset.md) or the [MultiProcSampler](multiproc-sampler.md) to prepare data accordingly.
 - This class efficiently handles large datasets by enabling the selective loading and processing of manageable data chunks.
 - `PTXrDataset` allows for high customization in how data is processed, which is vital for training deep learning models that require specific data formats or preprocessing steps.

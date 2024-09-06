@@ -31,7 +31,7 @@ print(split_dataset)
 ```
 
 <p align="center">
-<img src="../../train_test_assignment_bs.png" width="70%" height="70%">
+<img src="../../../train_test_assignment_bs.png" width="70%" height="70%">
 </p>
 <p align = "center"><i>
 Block Assignment of Train/Test Split</i>
