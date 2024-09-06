@@ -75,6 +75,6 @@ It allows to define the features as well as the dependent variable for the train
 
 ### Notes
 - `training.pytorch.Trainer` is able to handle empty chunks. Therefore raw data can be handed over to the `PTXrDataset` despite of gaps in the data.
-- Samples obtained from a chunk serve as a batch of data. If a consistent batch size is required leverage the [XrDataset](datasets/xr-dataset.md) or the [MultiProcSampler](datasets/multiproc-sampler.md) to prepare data accordingly.
+- Samples obtained from a chunk serve as a batch of data. If a consistent batch size is required leverage the [XrDataset](./xr-dataset.md) or the [MultiProcSampler](./multiproc-sampler.md) to prepare data accordingly.
 - This class efficiently handles large datasets by enabling the selective loading and processing of manageable data chunks.
 - `PTXrDataset` allows for high customization in how data is processed, which is vital for training deep learning models that require specific data formats or preprocessing steps.
