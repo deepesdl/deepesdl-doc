@@ -1,5 +1,5 @@
 # This environment file defines the dependencies for the datasetdocgen.py
-# script.
+# and datasetdocgen2.py scripts.
 
 name: deepesdl-doc
 channels:
