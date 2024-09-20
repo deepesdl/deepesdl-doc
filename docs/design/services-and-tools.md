@@ -77,7 +77,7 @@ xcube Server and Viewer.
 ## xcube Viewer
 
 The xcube Viewer 
-([`xcube-viewer`](https://github.com/dcs4cop/xcube-viewer))
+([`xcube-viewer`](https://github.com/xcube-dev/xcube-viewer))
 is a simple and very easy-to-use single-page web application 
 that fully exploits the APIs offered by xcube Server. It displays the 
 spatial images of the data cubes on a map at given time steps,

@@ -1,5 +1,5 @@
 # This environment file defines the dependencies for the datasetdocgen.py
-# script.
+# and datasetdocgen2.py scripts.
 
 name: deepesdl-doc
 channels:
@@ -9,3 +9,5 @@ dependencies:
   - click >=8.1
   - cartopy >=0.21.0
   - pyyaml >=6.0
+  - xcube
+  - tenacity
