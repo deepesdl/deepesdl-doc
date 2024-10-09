@@ -60,6 +60,22 @@ can select the desired kernel environment from it.
 
 ![img.png](../img/environment.png)
 
+If the selected kernel seems not to load, it could be due to caching of kernels
+which do not exist anymore. To remove cached non-existing environment kernels, 
+follow these steps:
+
+1. Open the terminal within the jupyter lab
+2. `$ rm -r .local/*`
+3. it is alright to get a message like: _"rm: cannot remove 
+   '.local/share/jupyter': Directory not empty"_ because you might have 
+    notebooks open, which are in the cache. Make therefor sure not to force 
+   the `rm` command!
+4. Restart your jupyterlab server by selecting *Hub control panel* from the
+   *File* menu within JupyterLab. Then click the `Stop my server` button and 
+   wait for your current server to shut down. Select the `Start my server`
+   button once it appears to return to the user JupyterLab profiles menu and 
+   restart your session. 
+
 To get a custom environment which suits your needs, please contact the DeepESDL
 team directly. 
 
