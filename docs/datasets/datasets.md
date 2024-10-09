@@ -8,7 +8,7 @@ fastest access.
 -   [xcube Data Stores](datastores.md)
 -   [Earth System Data Cube](ESDC.md)
 -   [Black Sea Cube](black-sea.md)
--   [Land Cover Cube](LC-1x2160x2160-1-0-0-zarr.md)
+-   [Land Cover Cube](LC-1x2025x2025-2-0-0-levels.md)
 -   [Ocean Cube](ocean-1M-9km-1x1080x1080-1-4-0-zarr.md)
 -   [SMOS freeze/thaw Cube](SMOS-snow-1x720x720-1-0-1-zarr.md)
 -   [SMOS ocean salinity Cube](SMOS-L2C-OS-20230101-20231231-1W-res0-1x1000x1000-levels.md)

@@ -26,7 +26,7 @@ nav:
     - xcube Data Stores: datasets/datastores.md
     - Earth System Data Cube: datasets/ESDC.md
     - Black Sea Cube: datasets/black-sea.md
-    - Land Cover Cube: datasets/LC-1x2160x2160-1-0-0-zarr.md
+    - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
     - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
     - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
     - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
