@@ -20,5 +20,5 @@ For the deep-esdl public bucket, you need to run
 
 It will create a new subfolder called cataloge/deepesdl. Move the files 
 that you want to the actual directory docs/datasets. Please make sure, that 
-the information is fetched correctly ad that the map of coverage 
+the information is fetched correctly and that the map of coverage 
 corresponds to your dataset. 
