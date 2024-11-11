@@ -3,40 +3,68 @@ site_url: https://deepesdl.readthedocs.io
 repo_url: https://github.com/deepesdl/deepesdl-doc
 edit_uri: edit/main/docs
 copyright: Copyright © 2022 by the DeepESDL Team
-theme: readthedocs  # alternative: mkdocs
+#theme: readthedocs  # alternative: mkdocs
 
 nav:
   - Home:
-    - About DeepESDL: index.md
+      - About DeepESDL: index.md
   - User guide:
-    - Overview: guide/overview.md
-    - JupyterLab: guide/jupyterlab.md
-    - xcube Viewer: guide/xcube-viewer.md
-    - Datacubes: guide/datacubes.md
-    - Datacube generation: guide/datacube-generation.md
-    - ML Toolkits: guide/ml-toolkits.md
-    - Further information: guide/further-information.md
+      - Overview: guide/overview.md
+      - JupyterLab: guide/jupyterlab.md
+      - xcube Viewer: guide/xcube-viewer.md
+      - Datacubes: guide/datacubes.md
+      - Datacube generation: guide/datacube-generation.md
+      - ML Toolkits: guide/ml-toolkits.md
+      - Further information: guide/further-information.md
   - ML Toolkit:
-    - Introduction: ml-toolkit/introduction.md
-    - Getting Started: ml-toolkit/getting-started.md
-    - Example Use Case: ml-toolkit/example.md
-    - Python API: ml-toolkit/api-reference.md
+      - Introduction: ml-toolkit/introduction.md
+      - Getting Started: ml-toolkit/getting-started.md
+      - Example Use Case: ml-toolkit/example.md
+      - Python API: ml-toolkit/api-reference.md
   - Datasets:
-    - List of datasets: datasets/datasets.md
-    - xcube Data Stores: datasets/datastores.md
-    - Earth System Data Cube: datasets/ESDC.md
-    - Black Sea Cube: datasets/black-sea.md
-    - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
-    - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
-    - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
-    - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
-    - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
-    - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
+      - List of datasets: datasets/datasets.md
+      - xcube Data Stores: datasets/datastores.md
+      - Earth System Data Cube: datasets/ESDC.md
+      - Black Sea Cube: datasets/black-sea.md
+      - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
+      - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
+      - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
+      - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
+      - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
+      - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
   - Design:
-    - Context: design/context.md
-    - Architecture: design/architecture.md
-    - Hub: design/hub.md
-    - Services and Tools: design/services-and-tools.md
+      - Context: design/context.md
+      - Architecture: design/architecture.md
+      - Hub: design/hub.md
+      - Services and Tools: design/services-and-tools.md
+
+theme:
+  name: material
+  #logo:
+  #favicon:
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.top
+    - navigation.indexes
+    - toc.permalink
+    - toc.follow
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 plugins:
   - search
