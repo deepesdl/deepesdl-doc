@@ -170,3 +170,31 @@ To access them:
 5.  The notebook is copied into your workspace, and you can run it and adjust 
     it according to your needs.
 
+## Team resources
+
+If you are using DeepESDL Jupyter Lab with others in a team, you can share 
+content with each other and access the team S3 bucket for data storage.
+
+### Team shared directory
+
+To access the team shared directory, you can mount it into your workspace. 
+This is a one-time action, and once mounted, it will persist in your workspace 
+unless you choose to remove the mount. If you are part of multiple teams, you 
+only need to mount the directory once; there’s no need to do so for each team 
+separately. 
+
+To mount the team shared directory:
+ 
+1.  Open the terminal in the DeepESDL Jupyter Lab via the Launcher.
+    
+2.  `$ ln -s /extra ~/team-shared`
+
+That’s it! You will now see the team shared directory in your workspace. 
+Please be aware that anyone in the team can see, add, modify, or delete 
+content in this directory.
+
+### Team shared S3 bucket
+
+How to make use of the DeepESDL Team shared bucket is demonstrated in the 
+example notebook **Save_cube_to_team_storage.ipynb**. The notebook is located 
+in the DeepESDL notebook catalog in the "team-shared" category. 
