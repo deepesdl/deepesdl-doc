@@ -1,6 +1,7 @@
 version: 2
 
-mkdocs: {}  # tell readthedocs to use mkdocs, not Sphinx
+mkdocs:
+  configuration: mkdocs.yml
 
 build:
   os: ubuntu-22.04
