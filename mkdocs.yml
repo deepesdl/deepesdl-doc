@@ -1,26 +1,36 @@
-site_name: DeepESDL Documentation
+site_name: DeepESDL Documentation (in development)
 repo_url: https://github.com/deepesdl/deepesdl-doc
-edit_uri: edit/main/docs
-copyright: Copyright © 2022 by the DeepESDL Team
+copyright: Copyright © 2025 by the DeepESDL Team
 #theme: readthedocs  # alternative: mkdocs
 
 nav:
-  - Home:
-      - About DeepESDL: index.md
+  #- Home: index.md
+  - About DeepESDL:
+      - Summary: about/summary.md
+      - News and Announcements: about/events_announcements.md
+      - Change Log: about/change_log.md
+  - Platform Design:
+      - Context: design/context.md
+      - Architecture: design/architecture.md
+      - Hub: design/hub.md
+      - Services and Tools: design/services-and-tools.md
   - User guide:
       - Overview: guide/overview.md
       - JupyterLab: guide/jupyterlab.md
-      - xcube Viewer: guide/xcube-viewer.md
+      - Visualisation:
+          - xcube Viewer: guide/xcube-viewer.md
+          - Lexcube Viewer: guide/lexcube-viewer.md
+          - 4D Viewer: guide/4d-viewer.md
       - Datacubes: guide/datacubes.md
       - Datacube generation: guide/datacube-generation.md
-      - ML Toolkits: guide/ml-toolkits.md
+      - ML Toolkits:
+          - Overview: guide/ml-toolkits.md
+          - Introduction: ml-toolkit/introduction.md
+          - Getting Started: ml-toolkit/getting-started.md
+          - Example Use Case: ml-toolkit/example.md
+          - Python API: ml-toolkit/api-reference.md
       - Further information: guide/further-information.md
-  - ML Toolkit:
-      - Introduction: ml-toolkit/introduction.md
-      - Getting Started: ml-toolkit/getting-started.md
-      - Example Use Case: ml-toolkit/example.md
-      - Python API: ml-toolkit/api-reference.md
-  - Datasets:
+  - Catalogue/ Datasets:
       - List of datasets: datasets/datasets.md
       - xcube Data Stores: datasets/datastores.md
       - Earth System Data Cube: datasets/ESDC.md
@@ -31,16 +41,25 @@ nav:
       - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
       - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
       - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
-  - Design:
-      - Context: design/context.md
-      - Architecture: design/architecture.md
-      - Hub: design/hub.md
-      - Services and Tools: design/services-and-tools.md
+  - Science Cases:
+      - SC#1: science_cases/case_1.md
+      - SC#n: science_cases/case_n.md
+  - Reproducible Research:
+      - Introduction: research/index.md
+      - Instructions: research/instructions.md
+      - Example: research/example.md
+  - Become a User: become_user/index.md
+  - Success Stories:
+      - Introduction: stories/index.md
+      - Project List: stories/list.md
+  - Dissemination:
+      - Events: dissemination/events.md
+      - Publications: dissemination/publications.md
 
 theme:
   name: material
-  #logo:
-  #favicon:
+  logo: img/logo/cube_small.png
+  favicon: img/logo/cube_small.png
   icon:
     repo: fontawesome/brands/github
   features:
@@ -74,3 +93,7 @@ markdown_extensions:
       permalink: "#"
       baselevel: 2
   - attr_list
+  - md_in_html
+
+extra_css:
+  - css/custom.css
