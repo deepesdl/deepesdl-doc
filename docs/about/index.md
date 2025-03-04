@@ -17,8 +17,8 @@ pipelines. For more information and access to the lab please visit the
 
 The DeepESDL documentation contains:
 
-- The [User Guide](guide/overview.md) for all DeepESDL services.
+- The [User Guide](../guide/overview.md) for all DeepESDL services.
   This is the starting point for new users.
-- An overview of [public, pre-generated data cubes](datasets/datasets.md)
+- An overview of [public, pre-generated data cubes](../datasets/datasets.md)
   available in DeepESDL with detailed metadata and specifications.
-- A [description of DeepESDL’s architecture](design/overview.md).
+- A [description of DeepESDL’s architecture](../design/index.md).

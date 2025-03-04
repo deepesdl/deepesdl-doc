@@ -1,15 +1,18 @@
 site_name: DeepESDL Documentation (in development)
 repo_url: https://github.com/deepesdl/deepesdl-doc
 copyright: Copyright © 2025 by the DeepESDL Team
+
 #theme: readthedocs  # alternative: mkdocs
 
 nav:
   #- Home: index.md
   - About DeepESDL:
+      - Overview: about/index.md
       - Summary: about/summary.md
       - News and Announcements: about/events_announcements.md
       - Change Log: about/change_log.md
   - Platform Design:
+      - Overview: design/index.md
       - Context: design/context.md
       - Architecture: design/architecture.md
       - Hub: design/hub.md
@@ -97,3 +100,5 @@ markdown_extensions:
 
 extra_css:
   - css/custom.css
+#extra:
+#  generator: false
