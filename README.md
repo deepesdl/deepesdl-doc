@@ -30,7 +30,7 @@ If you want to run the documentation locally to test your changes:
 
 
 
-## Building the docs
+## Building the docs for the legacy documentation (please don't use)
 
     $ conda install -c conda-forge mkdocs mkapi
 
