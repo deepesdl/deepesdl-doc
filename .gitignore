@@ -1,3 +1,5 @@
 site/
 .idea/
 .ipynb_checkpoints
+
+.projectile-cache.eld
