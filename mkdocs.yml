@@ -19,7 +19,9 @@ nav:
       - Services and Tools: design/services-and-tools.md
   - User guide:
       - Overview: guide/overview.md
-      - JupyterLab: guide/jupyterlab.md
+      - JupyterLab:
+          - Guide: guide/jupyterlab.md
+          - Notebook: guide/notebooks/test.ipynb
       - Visualisation:
           - xcube Viewer: guide/xcube-viewer.md
           - Lexcube Viewer: guide/lexcube-viewer.md
@@ -34,6 +36,7 @@ nav:
           - Python API: ml-toolkit/api-reference.md
       - Further information: guide/further-information.md
   - Catalogue/ Datasets:
+      - Catalogue: datasets/stac-catalog.md
       - List of datasets: datasets/datasets.md
       - xcube Data Stores: datasets/datastores.md
       - Earth System Data Cube: datasets/ESDC.md
@@ -70,6 +73,8 @@ theme:
     - navigation.indexes
     - toc.permalink
     - toc.follow
+    - navigation.prune
+
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -89,6 +94,9 @@ theme:
 
 plugins:
   - search
+  - mkdocs-jupyter:
+      execute: false
+      include_requirejs: true
   - mkapi
 
 markdown_extensions:
