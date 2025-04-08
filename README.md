@@ -15,6 +15,7 @@ The current [DeepESDL Documentation is under development](https://deepesdl.githu
    2. test your changes locally (see info below)
 3. When done, create a Pull Request to merge your contributions into the 
    dev-branch. A Brockmann Consult team member will review the changes.
+4. Once merged, a Brockmann Consult team member will delete the branch.
 
 
 Check the Material for mkdocs 
