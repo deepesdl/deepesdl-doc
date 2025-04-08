@@ -18,9 +18,9 @@ In order to publish a data cube in a public DeepESDL Viewer take the following s
 
 * Check if the data cube is ready for publication with the following tools
 
-     * **[xrlint](https://bcdev.github.io/xrlint/):** A tool to validate `xrarray.Dataset` with a set of recommended rules 
-     * **xcube Viewer extension:** in the JuypterLab use the dedicated Jupyter Notebook to test the representation of
-       the data cube in the Viewer (see `Visualize_data_with_xcube_viewer.ipynb`)
+     * **[xrlint](https://bcdev.github.io/xrlint/):** to validate the `xrarray.Dataset` with a set of recommended rules 
+     * **xcube Viewer extension:** in the JuypterLab use the dedicated Jupyter Notebook to test the presentation of
+       the data in the xcube Viewer (see `Visualize_data_with_xcube_viewer.ipynb`)
 
 * Store the data cube in team storage on S3 
   
@@ -28,6 +28,6 @@ In order to publish a data cube in a public DeepESDL Viewer take the following s
 
 * For the publication contact the DeepESDL team (`esdl-support@brockmann-consult.de`) and communicate whether 
 
-    * the data cube should be published in the Viewer and stored in a public DeepESDL bucket, or
-    * the data cube should only be available for visualisation purposes in the xcube Viewer
+    * the data cube should be published in the Viewer **and** stored in a public DeepESDL bucket, or
+    * the data cube should be published in the Viewer (visualisation only)
 
