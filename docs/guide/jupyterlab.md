@@ -194,8 +194,10 @@ in the DeepESDL notebook catalog in the "team-shared" category.
 
 ### Proxy server processes like Dashboards, WebServer UIs,...
 
-If you start a server process on a specific port (e.g. 8080) within your JupyterLab session, you can access it via
-the url `https://deep.earthsystemdatalab.net/user/<your-username>/proxy/<port>/`, e.g.
-user `joe` can access his server process on port 8080 at `https://deep.earthsystemdatalab.net/user/joe/proxy/8080/`.
+If you start a server process on a specific port (e.g. 8080) within your JupyterLab
+session, you can access it via the url 
+`https://deep.earthsystemdatalab.net/user/<your-username>/proxy/<port>/`, e.g.
+user `joe` can access his server process on port 8080 at 
+`https://deep.earthsystemdatalab.net/user/joe/proxy/8080/`.
 
 This url is only accessible as long as the JupyterLab session is running.
