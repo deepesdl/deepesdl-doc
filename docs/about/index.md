@@ -1,6 +1,11 @@
-<p align="center">
-    <img src="../img/logo.png" alt="DeepESDL Logo" style="height: 200px; width:300px;"/>
-</p>
+---
+hide:
+  - toc
+---
+
+![DeepESDL](../img/logo/logo_light.png){: .light-image .centered-logo style="max-width: 300px;" }
+![DeepESDL](../img/logo/logo_dark.png){: .dark-image .centered-logo style="max-width: 300px;" }
+
 
 # About DeepESDL
 

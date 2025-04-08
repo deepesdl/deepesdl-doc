@@ -88,8 +88,8 @@ theme:
         name: Switch to light mode
 
 plugins:
-  - search
   - mkapi
+  - search
 
 markdown_extensions:
   - toc:
@@ -97,6 +97,9 @@ markdown_extensions:
       baselevel: 2
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra_css:
   - css/custom.css

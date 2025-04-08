@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ![DeepESDL](img/logo/logo_light.png){: .light-image .centered-logo style="max-width: 300px;" }
 ![DeepESDL](img/logo/logo_dark.png){: .dark-image .centered-logo style="max-width: 300px;" }
 
