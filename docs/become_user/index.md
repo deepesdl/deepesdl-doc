@@ -1,6 +1,5 @@
 # via ESA Sponsorship
 
-
 To become a user of DeepESD apply for an ESA sponsorship via the [Network of Ressources (NoR)](https://nor-discover.org/).
 
 Take the following steps for the application process:
@@ -17,3 +16,4 @@ Take the following steps for the application process:
 # without ESA Sponsorship
 To use DeepESDL without an ESA Sponsorship write an email to `esdl-support@brockmann-consult.de` with your requirements
 and the colleagues from Brockmann Consult GmbH will come back to you with an offer.
+
