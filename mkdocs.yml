@@ -45,8 +45,9 @@ nav:
       - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
       - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
   - Science Cases:
-      - SC#1: science_cases/case_1.md
-      - SC#n: science_cases/case_n.md
+      - Land-Biosphere-Society: science_cases/land_biosphere.md
+      - Drought Effects: science_cases/drought_effects.md
+      - Ocean Carbon Cycle: science_cases/ocean.md
   - Reproducible Research:
       - Introduction: research/index.md
       - Instructions: research/instructions.md
@@ -97,6 +98,7 @@ markdown_extensions:
       baselevel: 2
   - attr_list
   - md_in_html
+  - pymdownx.blocks.caption
 
 extra_css:
   - css/custom.css
