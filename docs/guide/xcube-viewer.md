@@ -24,7 +24,7 @@ In order to publish a data cube in a public DeepESDL Viewer take the following s
 
 * Store the data cube in team storage on S3 
   
-    * for more information see `Upload_files_to_shared_team_s3_storage.ipynb`
+    * for more information see `Save_cube_to_team_storage.ipynb`
 
 * For the publication contact the DeepESDL team (`esdl-support@brockmann-consult.de`) and communicate whether 
 
