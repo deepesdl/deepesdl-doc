@@ -31,7 +31,46 @@ nav:
           - Introduction: ml-toolkit/introduction.md
           - Getting Started: ml-toolkit/getting-started.md
           - Example Use Case: ml-toolkit/example.md
-          - Python API: ml-toolkit/api-reference.md
+          - Python API:
+              - Overview: ml-toolkit/api-reference/index.md
+              - ml-toolkit/api-reference/1-plotting/plot-slice.md
+              - ml-toolkit/api-reference/2-insights/get-count-heat-map.md
+              - ml-toolkit/api-reference/2-insights/get-insights.md
+              - ml-toolkit/api-reference/3-gapfilling/gap-dataset.md
+              - ml-toolkit/api-reference/3-gapfilling/gap-filling.md
+              - ml-toolkit/api-reference/3-gapfilling/helper-helpingpredictor.md
+              - ml-toolkit/api-reference/4-splits/assign-block-split.md
+              - ml-toolkit/api-reference/4-splits/assign-rand-split.md
+              - ml-toolkit/api-reference/4-splits/create-split.md
+              - ml-toolkit/api-reference/5-preprocessing/apply-filter.md
+              - ml-toolkit/api-reference/5-preprocessing/assign-mask.md
+              - ml-toolkit/api-reference/5-preprocessing/drop-nan-values.md
+              - ml-toolkit/api-reference/5-preprocessing/fill-nan-values.md
+              - ml-toolkit/api-reference/5-preprocessing/get-range.md
+              - ml-toolkit/api-reference/5-preprocessing/get-statistics.md
+              - ml-toolkit/api-reference/5-preprocessing/normalize.md
+              - ml-toolkit/api-reference/5-preprocessing/standardize.md
+              - ml-toolkit/api-reference/6-datasets/multiproc-sampler.md
+              - ml-toolkit/api-reference/6-datasets/prepare-dataloader.md
+              - ml-toolkit/api-reference/6-datasets/pt-large-scale-xr-dataset.md
+              - ml-toolkit/api-reference/6-datasets/tf-large-scale-xr-dataset.md
+              - ml-toolkit/api-reference/6-datasets/xr-dataset.md
+              - ml-toolkit/api-reference/7-training/ddp-init.md
+              - ml-toolkit/api-reference/7-training/ddp-trainer.md
+              - ml-toolkit/api-reference/7-training/pytorch.md
+              - ml-toolkit/api-reference/7-training/sklearn.md
+              - ml-toolkit/api-reference/7-training/tensorflow.md
+              - ml-toolkit/api-reference/8-postprocessing/undo-normalizing.md
+              - ml-toolkit/api-reference/8-postprocessing/undo-standardizing.md
+              - ml-toolkit/api-reference/9-evaluation/evaluation.md
+              - ml-toolkit/api-reference/10-utils/assign-dims.md
+              - ml-toolkit/api-reference/10-utils/calculate-total-chunks.md
+              - ml-toolkit/api-reference/10-utils/get-chunk-by-index.md
+              - ml-toolkit/api-reference/10-utils/get-chunk-sizes.md
+              - ml-toolkit/api-reference/10-utils/get-dim-range.md
+              - ml-toolkit/api-reference/10-utils/iter-data-var-blocks.md
+              - ml-toolkit/api-reference/10-utils/rechunk-cube.md
+              - ml-toolkit/api-reference/10-utils/split-chunk.md
       - Further information: guide/further-information.md
   - Catalogue/ Datasets:
       - List of datasets: datasets/datasets.md
@@ -98,6 +137,9 @@ markdown_extensions:
       baselevel: 2
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.blocks.caption
 
 extra_css:

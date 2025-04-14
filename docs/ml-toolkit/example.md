@@ -210,7 +210,7 @@ introduced using the `callback parameter`, enabling further preprocessing flexib
 
 By default, missing values are omitted from the dataset. To apply alternative imputation strategies, adjust the `drop_nan`
 parameter of the `XrDataset`. For comprehensive guidance on these options, please consult the
-[ml4xcube API description](api-reference.md#6-datasets) description.
+[ml4xcube API description](api-reference/index.md#6-datasets) description.
 
 Following preprocessing, the data is allocated into training and testing sets based on the previously determined block
 split strategy, ensuring readiness for the subsequent training phase.
