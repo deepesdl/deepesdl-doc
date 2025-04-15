@@ -17,7 +17,7 @@ nav:
       - Architecture: design/architecture.md
       - Hub: design/hub.md
       - Services and Tools: design/services-and-tools.md
-  - User guide:
+  - User Guide:
       - Overview: guide/overview.md
       - JupyterLab: guide/jupyterlab.md
       - Visualisation:
@@ -66,16 +66,21 @@ theme:
   favicon: img/logo/cube_small.png
   icon:
     repo: fontawesome/brands/github
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
   features:
     - navigation.top
     - navigation.indexes
     - toc.permalink
     - toc.follow
+    - navigation.footer
+    - navigation.tabs
+   # - navigation.tabs.sticky
   palette:
     # Palette toggle for light mode
     - scheme: default
       primary: blue grey
-      accent: pink
+      accent: deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -83,10 +88,13 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: pink
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+ # font:
+  #  text: Nunito
+  custom_dir: docs/html
 
 plugins:
   - search
@@ -99,8 +107,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - css/custom.css
-#extra:
-#  generator: false
+
