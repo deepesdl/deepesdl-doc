@@ -22,6 +22,10 @@ nav:
       - JupyterLab:
           - Guide: guide/jupyterlab.md
           - Notebook: guide/notebooks/test.ipynb
+          - guide/notebooks/How_to_make_use_of_Dask_clusters.ipynb
+          - guide/notebooks/Visualise_data_with_xcube_viewer.ipynb
+          - guide/notebooks/Generate_CMEMS_cubes.ipynb
+          - guide/notebooks/Access_collections_from_xcube_geodb.ipynb
       - Visualisation:
           - xcube Viewer: guide/xcube-viewer.md
           - Lexcube Viewer: guide/lexcube-viewer.md
