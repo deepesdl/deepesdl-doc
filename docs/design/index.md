@@ -1,6 +1,15 @@
+---
+hide:
+  - toc
+---
+
 # DeepESDL Design Overview
 
-1. [Context](context.md)
-2. [Architecture](architecture.md)
-3. [Hub](hub.md)
-4. [Services and Tools](services-and-tools.md)
+<div class="grid cards" markdown>
+
+- :fontawesome-solid-binoculars: [**Context**](context.md)
+- :material-sitemap: [**Architecture**](architecture.md)
+- :material-hub-outline: [**Hub**](hub.md)
+- :material-tools: [**Services and Tools**](services-and-tools.md)
+
+</div>

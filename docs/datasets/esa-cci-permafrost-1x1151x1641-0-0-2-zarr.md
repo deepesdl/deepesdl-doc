@@ -15,7 +15,7 @@ ds = ml_dataset.get_dataset(0)
 
 ## Bounding box map
 
-![Bounding box map](esa-cci-permafrost-1x1151x1641-0-0-2-zarr.png)<br>
+![Bounding box map](img/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.png)<br>
 <span style="font-size: x-small">Map tiles and data from <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">the ODbL</a>.</span>
 
 ## Basic information
