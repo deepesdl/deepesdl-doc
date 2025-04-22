@@ -1,132 +1,143 @@
-{% extends "base.html" %}
-{% block tabs %}
-{{ super() }}
+<!-- This html overrides docs/index.md
+inspired by https://github.com/up42/up42-py/blob/master/docs/theme_override_home/home.html
+and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
+-->
+{% extends "base.html" %} {% block tabs %} {{ super() }}
 <style>
 
-    .md-main {
-        display: flex;
-    }
+  .md-main {
+      display: flex;
+  }
 
-    .md-container {
-        background-image: url('../img/home_background_2.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+  .md-container {
+      background-image: url('../img/home_background_2.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
 
-    .md-header,
-    .md-tabs {
-        background-color: #113170;
-    }
+  .md-header,
+  .md-tabs {
+      background-color: #113170;
+  }
 
-    .tx-container {
-        padding-top: .0rem;
-        height: 100%;
-    }
+  .tx-container {
+      padding-top: .0rem;
+      height: 100%;
+  }
 
-    .tx-hero {
-        margin: 32px 2.8rem;
-        color: var(--md-primary-bg-color);
-        justify-content: center;
-    }
+  .tx-hero {
+      margin: 32px 2.8rem;
+      color: var(--md-primary-bg-color);
+      justify-content: center;
+  }
 
-    .tx-hero h1 {
-        margin-bottom: 1rem;
-        color: currentColor;
-        font-weight: 700
-    }
+  .tx-hero h1 {
+      margin-bottom: 1rem;
+      color: currentColor;
+      font-weight: 700
+  }
 
-    .tx-hero__content {
-        margin: 0 auto;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 0.5rem;
-        border-radius: 1rem;
-        text-align: justify;
-    }
+  .tx-hero__content {
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 0.5rem;
+      border-radius: 1rem;
+      text-align: justify;
+  }
 
-    .tx-hero__image{
-        max-width:25rem;
-        max-height:25rem;
-    }
+  .tx-hero__image{
+      max-width:25rem;
+      max-height:25rem;
+  }
 
-    .tx-hero .md-button {
-        margin-top: .5rem;
-        margin-right: .5rem;
-        color: #113170;
-    }
+  .tx-hero .md-button {
+      margin-top: .5rem;
+      margin-right: .5rem;
+      color: #113170;
+  }
 
-    .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
-        color: #113170;
-        border-color: var(--md-primary-bg-color)
-    }
+  .tx-hero .md-button--primary {
+      background-color: var(--md-primary-bg-color);
+      color: #113170;
+      border-color: var(--md-primary-bg-color)
+  }
 
-    .tx-hero .md-button:focus,
-    .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
-        color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
-    }
+  .tx-hero .md-button:focus,
+  .tx-hero .md-button:hover {
+      background-color: var(--md-accent-fg-color);
+      color: var(--md-default-bg-color);
+      border-color: var(--md-accent-fg-color)
+  }
 
-    @media screen and (max-width:30em) {
-        .tx-hero h1 {
-            font-size: 1.4rem
-        }
-    }
+  @media screen and (max-width:30em) {
+      .tx-hero h1 {
+          font-size: 1.4rem
+      }
+  }
 
-    @media screen and (min-width:60em) {
-        .md-sidebar--secondary {
-            display: none
-        }
+  @media screen and (min-width:60em) {
+      .md-sidebar--secondary {
+          display: none
+      }
 
-        .tx-hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      .tx-hero {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
 
-        .tx-hero__content {
-            max-width: 22rem;
-            margin-top: 3.5rem;
-            margin-bottom: 3.5rem;
-            margin-left: 1.0rem;
-            margin-right: 4.0rem;
-            align-items: center;
-        }
-    }
+      .tx-hero__content {
+          max-width: 22rem;
+          margin-top: 3.5rem;
+          margin-bottom: 3.5rem;
+          margin-left: 1.0rem;
+          margin-right: 4.0rem;
+          align-items: center;
+      }
+  }
 </style>
 
 <section class="tx-container">
-    <div class="md-grid md-typeset">
-        <div class="tx-hero">
-            <div class="tx-hero__image">
-                <img src="../img/logo/logo_dark.png" draggable="false">
-            </div>
-            <div class="tx-hero__content">
-                <h1> DeepESDL </h1>
-                <p>Welcome to the online documentation of DeepESDL – ESA’s Deep Earth System
-                    Data Laboratory, a platform providing analysis-ready data cube in a powerful,
-                    virtual laboratory to the Earth Science research community. DeepESDL offers a
-                    full suite of services to facilitate data exploitation, share data and source
-                    code, and publish results. Special emphasize is put on improving the support
-                    for machine learning and artificial intelligence approaches, which includes
-                    the preparation of AI-ready datasets, providing a programming environment
-                    with relevant libraries and packages, and the resources to execute processing
-                    pipelines. For more information and access to the lab please visit the
-                    <a href="https://www.earthsystemdatalab.net/" title="DeepESDL Website">
-                        DeepESDL website
-                    </a>
-                    .</p>
-                <a href="../guide/overview" title="Overview" class="md-button md-button--primary">
-                    Go to User Guide
-                </a>
-            </div>
-        </div>
+  <div class="md-grid md-typeset">
+    <div class="tx-hero">
+      <div class="tx-hero__image">
+        <img src="../img/logo/logo_dark.png" draggable="false" />
+      </div>
+      <div class="tx-hero__content">
+        <h1>DeepESDL</h1>
+        <p>
+          Welcome to the online documentation of DeepESDL – ESA’s Deep Earth
+          System Data Laboratory, a platform providing analysis-ready data cube
+          in a powerful, virtual laboratory to the Earth Science research
+          community. DeepESDL offers a full suite of services to facilitate data
+          exploitation, share data and source code, and publish results. Special
+          emphasize is put on improving the support for machine learning and
+          artificial intelligence approaches, which includes the preparation of
+          AI-ready datasets, providing a programming environment with relevant
+          libraries and packages, and the resources to execute processing
+          pipelines. For more information and access to the lab please visit the
+          <a
+            href="https://www.earthsystemdatalab.net/"
+            title="DeepESDL Website">
+            DeepESDL website
+          </a>
+          .
+        </p>
+        <a
+          href="../guide/overview"
+          title="Overview"
+          class="md-button md-button--primary">
+          Go to User Guide
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
-<div style="
+<div
+  style="
   position: absolute;
   bottom: 80px;
   text-align: right;
@@ -137,14 +148,9 @@
   color: rgba(255, 255, 255, 0.5);
   z-index: 10;
 ">
-    Background image: Copernicus Climate Change Service, Climate Data Store, (2023): ERA5 hourly data on single levels
-    from 1940 to present. Mean air temperature 2m.
-    (modified to metres)
+  Background image: Copernicus Climate Change Service, Climate Data Store,
+  (2023): ERA5 hourly data on single levels from 1940 to present. Mean air
+  temperature 2m. (modified to metres)
 </div>
 
-{% endblock %}
-{% block content %}{% endblock %}
-
-
-
-
+{% endblock %} {% block content %}{% endblock %}

@@ -1,3 +1,7 @@
+<!-- This html overrides docs/index.md
+inspired by https://github.com/up42/up42-py/blob/master/docs/theme_override_home/home.html
+and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
+-->
 {% extends "base.html" %}
 {% block tabs %}
 {{ super() }}
@@ -10,6 +14,7 @@
     .md-container{
         background-color: var(--md-primary-fg-color);
     }
+
     .tx-container {
         padding-top: .0rem;
         height:100%;
@@ -44,15 +49,15 @@
     }
 
     .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
         color: var(--md-primary-fg-color);
+        background-color: var(--md-primary-bg-color);
         border-color: var(--md-primary-bg-color)
     }
 
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
         color: var(--md-default-bg-color);
+        background-color: var(--md-accent-fg-color);
         border-color: var(--md-accent-fg-color)
     }
     I
