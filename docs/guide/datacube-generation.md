@@ -6,7 +6,7 @@ resources you need from source input data and enable you to do your research.
 DeepESDL carefully adheres to the reproducibility of dataset resources. Therefore, 
 there are two approaches to generate datasets. 
 In the simpler one, the data is retrieved from an existing datastore without persisting the 
-dataset, usually using the [DeepESDL JupyterLab](jupyterlab.md). 
+dataset, usually using the [DeepESDL JupyterLab](jupyterlab/index.md). 
 If a dataset shall be persisted, maybe even re-published,and is furthermore based on input data that 
 needs to be e.g. downloaded beforehand or other preprocessing steps are 
 performed, then the cube generation recipe approach is recommended.
@@ -120,7 +120,7 @@ Below is an overview of the possible xcube data stores that can be
 used to create dynamic cubes together with the title of an example notebook, 
 if there is one available. A description of how the example notebooks can be 
 accessed is in section  
-[DeepESDL JupyterLab](jupyterlab.md#getting-started-notebooks).
+[DeepESDL JupyterLab](jupyterlab/index.md#getting-started-notebooks).
 
 | Data store ID | Content                               | Example Notebook        | Access                            |
 |---------------|---------------------------------------|-------------------------|-----------------------------------|

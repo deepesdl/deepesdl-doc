@@ -35,7 +35,7 @@ The command-line tools
 [`xcube gen`](https://xcube.readthedocs.io/en/latest/cli/xcube_gen.html) and 
 [`xcube gen2`](https://xcube.readthedocs.io/en/latest/cli/xcube_gen2.html)
 offer flexible data cube generation 
-that is made available via a dedicated [JupyterLab](../guide/jupyterlab.md) 
+that is made available via a dedicated [JupyterLab](../guide/jupyterlab/index.md) 
 profile. The tool reads data streams from one or more data stores, 
 then it resamples and combines them. The merged cube can then be 
 manipulated by user-provided Python code before the resulting 

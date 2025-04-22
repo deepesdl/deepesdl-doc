@@ -5,7 +5,7 @@
 This section provides a brief introduction for users to the basic features of
 the JupyterLab environment as offered by DeepESDL. 
 For more in-depth documentation on the various components, see the links in the
-section [Further Information](further-information.md).
+section [Further Information](../further-information.md).
 
 ## Logging in and starting the JupyterLab profile
 
@@ -58,7 +58,7 @@ If you wish to use a special set of python packages, you can adjust it in the
 top right corner of the notebook. Next, a drop-down menu will appear, and you 
 can select the desired kernel environment from it. 
 
-![img.png](../img/environment.png)
+![img.png](../../img/environment.png)
 
 If the selected kernel seems not to load, it could be due to caching of kernels
 which do not exist anymore. To remove cached non-existing environment kernels, 
@@ -134,7 +134,7 @@ Steps to create custom team conda environments:
 You can also modify an existing environment and rebuild it; the conda-store 
 will keep all the builds' logs.
 It will look similar to the screenshot below. 
-![conda-builds.png](../img/conda-builds.png)
+![conda-builds.png](../../img/conda-builds.png)
 
 The conda-build highlighted in green is the one, which you will use in you 
 DeepESDL JupyterLab, per default it is the latest successful build. If you 
@@ -152,7 +152,7 @@ started.
 To access them:
 
 1.  Head to the JupyterLab `Launcher`
-    ![img.png](../img/launcher.png)
+    ![img.png](../../img/launcher.png)
     If your `Launcher` is not visible right away, you can open it via the `plus` 
     button in the top left corner, which is highlighted in blue in the 
     screenshot.
@@ -161,11 +161,11 @@ To access them:
     Please select this tile. 
     
 3.  Once selected you see several example notebooks:
-    ![img_2.png](../img/catalog.png) 
+    ![img_2.png](../../img/catalog.png) 
     
 4.  Select one of them, and you will see a preview of the notebook, to execute 
     the selected notebook click on `EXECUTE NOTEBOOK` in the top right corner. 
-    ![img_3.png](../img/notebook.png)
+    ![img_3.png](../../img/notebook.png)
     
 5.  The notebook is copied into your workspace, and you can run it and adjust 
     it according to your needs.

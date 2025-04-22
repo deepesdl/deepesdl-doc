@@ -20,12 +20,24 @@ nav:
   - User guide:
       - Overview: guide/overview.md
       - JupyterLab:
-          - Guide: guide/jupyterlab.md
-          - Notebook: guide/notebooks/test.ipynb
-          - guide/notebooks/How_to_make_use_of_Dask_clusters.ipynb
-          - guide/notebooks/Visualise_data_with_xcube_viewer.ipynb
-          - guide/notebooks/Generate_CMEMS_cubes.ipynb
-          - guide/notebooks/Access_collections_from_xcube_geodb.ipynb
+          - Overview: guide/jupyterlab/index.md
+          - Example Notebooks:
+              - Overview: guide/jupyterlab/notebooks/index.md
+              - guide/jupyterlab/notebooks/Access_public_cubes.ipynb
+              - guide/jupyterlab/notebooks/Visualise_data_with_xcube_viewer.ipynb
+              - guide/jupyterlab/notebooks/Append_to_existing_cube.ipynb
+              - guide/jupyterlab/notebooks/Chunking_of_datasets.ipynb
+              - guide/jupyterlab/notebooks/Create_Atmospheric_Cubes_CDS.ipynb
+              - guide/jupyterlab/notebooks/Create_Zarr_With_Slices_SentinelHub.ipynb
+              - guide/jupyterlab/notebooks/Spatial_Regridding_and_Masking.ipynb
+              - guide/jupyterlab/notebooks/Save_cube_to_team_storage.ipynb
+              - guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage.ipynb
+              - guide/jupyterlab/notebooks/Access_collections_from_xcube_geodb.ipynb
+              - guide/jupyterlab/notebooks/Generate_C3S_CDS_cubes.ipynb
+              - guide/jupyterlab/notebooks/Generate_CCI_cubes.ipynb
+              - guide/jupyterlab/notebooks/Generate_CMEMS_cubes.ipynb
+              - guide/jupyterlab/notebooks/Generate_SentinelHub_cubes.ipynb
+              - guide/jupyterlab/notebooks/How_to_make_use_of_Dask_clusters.ipynb
       - Visualisation:
           - xcube Viewer: guide/xcube-viewer.md
           - Lexcube Viewer: guide/lexcube-viewer.md
