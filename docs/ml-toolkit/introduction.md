@@ -29,6 +29,6 @@ on one of the three well established open source ML libraries respectively:
 ## Overview
 1. [Getting Started](getting-started.md)    
 2. [Example Use Cases and Juypter Notebooks](example.md)
-3. [ml4xcube API](api-reference.md)
+3. [ml4xcube API](api-reference/index.md)
 
    

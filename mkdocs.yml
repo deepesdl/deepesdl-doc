@@ -5,7 +5,7 @@ copyright: Copyright © 2025 by the DeepESDL Team
 #theme: readthedocs  # alternative: mkdocs
 
 nav:
-  #- Home: index.md
+  - index.md
   - About DeepESDL:
       - Overview: about/index.md
       - Summary: about/summary.md
@@ -17,7 +17,7 @@ nav:
       - Architecture: design/architecture.md
       - Hub: design/hub.md
       - Services and Tools: design/services-and-tools.md
-  - User guide:
+  - User Guide:
       - Overview: guide/overview.md
       - JupyterLab:
           - Overview: guide/jupyterlab/index.md
@@ -49,7 +49,46 @@ nav:
           - Introduction: ml-toolkit/introduction.md
           - Getting Started: ml-toolkit/getting-started.md
           - Example Use Case: ml-toolkit/example.md
-          - Python API: ml-toolkit/api-reference.md
+          - Python API:
+              - Overview: ml-toolkit/api-reference/index.md
+              - ml-toolkit/api-reference/1-plotting/plot-slice.md
+              - ml-toolkit/api-reference/2-insights/get-count-heat-map.md
+              - ml-toolkit/api-reference/2-insights/get-insights.md
+              - ml-toolkit/api-reference/3-gapfilling/gap-dataset.md
+              - ml-toolkit/api-reference/3-gapfilling/gap-filling.md
+              - ml-toolkit/api-reference/3-gapfilling/helper-helpingpredictor.md
+              - ml-toolkit/api-reference/4-splits/assign-block-split.md
+              - ml-toolkit/api-reference/4-splits/assign-rand-split.md
+              - ml-toolkit/api-reference/4-splits/create-split.md
+              - ml-toolkit/api-reference/5-preprocessing/apply-filter.md
+              - ml-toolkit/api-reference/5-preprocessing/assign-mask.md
+              - ml-toolkit/api-reference/5-preprocessing/drop-nan-values.md
+              - ml-toolkit/api-reference/5-preprocessing/fill-nan-values.md
+              - ml-toolkit/api-reference/5-preprocessing/get-range.md
+              - ml-toolkit/api-reference/5-preprocessing/get-statistics.md
+              - ml-toolkit/api-reference/5-preprocessing/normalize.md
+              - ml-toolkit/api-reference/5-preprocessing/standardize.md
+              - ml-toolkit/api-reference/6-datasets/multiproc-sampler.md
+              - ml-toolkit/api-reference/6-datasets/prepare-dataloader.md
+              - ml-toolkit/api-reference/6-datasets/pt-large-scale-xr-dataset.md
+              - ml-toolkit/api-reference/6-datasets/tf-large-scale-xr-dataset.md
+              - ml-toolkit/api-reference/6-datasets/xr-dataset.md
+              - ml-toolkit/api-reference/7-training/ddp-init.md
+              - ml-toolkit/api-reference/7-training/ddp-trainer.md
+              - ml-toolkit/api-reference/7-training/pytorch.md
+              - ml-toolkit/api-reference/7-training/sklearn.md
+              - ml-toolkit/api-reference/7-training/tensorflow.md
+              - ml-toolkit/api-reference/8-postprocessing/undo-normalizing.md
+              - ml-toolkit/api-reference/8-postprocessing/undo-standardizing.md
+              - ml-toolkit/api-reference/9-evaluation/evaluation.md
+              - ml-toolkit/api-reference/10-utils/assign-dims.md
+              - ml-toolkit/api-reference/10-utils/calculate-total-chunks.md
+              - ml-toolkit/api-reference/10-utils/get-chunk-by-index.md
+              - ml-toolkit/api-reference/10-utils/get-chunk-sizes.md
+              - ml-toolkit/api-reference/10-utils/get-dim-range.md
+              - ml-toolkit/api-reference/10-utils/iter-data-var-blocks.md
+              - ml-toolkit/api-reference/10-utils/rechunk-cube.md
+              - ml-toolkit/api-reference/10-utils/split-chunk.md
       - Further information: guide/further-information.md
   - Catalogue/ Datasets:
       - List of datasets: datasets/datasets.md
@@ -63,8 +102,9 @@ nav:
       - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
       - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
   - Science Cases:
-      - SC#1: science_cases/case_1.md
-      - SC#n: science_cases/case_n.md
+      - Land-Biosphere-Society: science_cases/land_biosphere.md
+      - Drought Effects: science_cases/drought_effects.md
+      - Ocean Carbon Cycle: science_cases/ocean.md
   - Reproducible Research:
       - Introduction: research/index.md
       - Instructions: research/instructions.md
@@ -83,18 +123,22 @@ theme:
   favicon: img/logo/cube_small.png
   icon:
     repo: fontawesome/brands/github
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
   features:
     - navigation.top
     - navigation.indexes
     - toc.permalink
     - toc.follow
     - navigation.prune
-
+    - navigation.footer
+    - navigation.tabs
+    # - navigation.tabs.sticky
   palette:
     # Palette toggle for light mode
     - scheme: default
       primary: blue grey
-      accent: pink
+      accent: deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -102,10 +146,13 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: pink
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  # font:
+  #  text: Nunito
+  custom_dir: docs/html
 
 plugins:
   - search
@@ -120,8 +167,13 @@ markdown_extensions:
       baselevel: 2
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - css/custom.css
-#extra:
-#  generator: false

@@ -238,6 +238,7 @@ The xcube data stores framework is described in detail in the xcube
 [documentation](https://xcube.readthedocs.io/en/latest/dataaccess.html). 
 There you can have a look at the details of what is mandatory for a data 
 store. Furthermore, you can get inspiration from existing data store plugins:
+
 - [xcube-cds](https://github.com/dcs4cop/xcube-cds)
 - [xcube-cci](https://github.com/dcs4cop/xcube-cci)
 - [xcube-cmems](https://github.com/dcs4cop/xcube-cmems)
