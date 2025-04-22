@@ -1,4 +1,7 @@
 ---
 title: Home
-template: version2.html
+template: version1.html
+
+hide:
+    navigation.footer
 ---

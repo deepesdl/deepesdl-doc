@@ -5,7 +5,7 @@ copyright: Copyright © 2025 by the DeepESDL Team
 #theme: readthedocs  # alternative: mkdocs
 
 nav:
-  #- Home: index.md
+  - index.md
   - About DeepESDL:
       - Overview: about/index.md
       - Summary: about/summary.md
@@ -114,7 +114,7 @@ theme:
     - toc.follow
     - navigation.footer
     - navigation.tabs
-   # - navigation.tabs.sticky
+    # - navigation.tabs.sticky
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -131,7 +131,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
- # font:
+  # font:
   #  text: Nunito
   custom_dir: docs/html
 
@@ -150,9 +150,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.blocks.caption
   - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - css/custom.css
-

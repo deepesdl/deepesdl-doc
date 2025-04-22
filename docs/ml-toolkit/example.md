@@ -39,7 +39,7 @@ missing values of land surface temperature from consistent air
 temperature values.
 
 <p align="center">
-<img src="../../img/xcubeviewer3.png" width="35%" height="35%">
+<img src="../img/xcubeviewer3.png" width="35%" height="35%">
 </p>
 <p align = "center"><i><strong>
 ML prediction of missing Land Surface Temperature values from Air Temperature values (xcube viewer)</strong></i>
@@ -72,7 +72,7 @@ and plots:
 7. Use model to make predictions & plot results
 
 <p align="center">
-<img src="../../img/mltoolkit_scheme.png" width="30%" height="32%">
+<img src="../img/mltoolkit_scheme.png" width="30%" height="32%">
 </p>
 <p align = "center"><i><strong>
 Machine Learning workflow on Analysis Ready Data Cubes</strong></i>
@@ -86,11 +86,11 @@ are predicted from consistent air temperature values.
 <table align="center" style="border-collapse: collapse; margin: 0 auto;">
   <tr>
     <td width="50%" style="border: none; text-align: center;">
-      <img src="../at.png" width="lst.png"/><br/>
+      <img src="../img/at.png" width="lst.png"/><br/>
       <i><strong>Air Temperature</strong> </i>
     </td>
     <td width="50%" style="border: none; text-align: center;">
-      <img src="../lst.png" width="100%"/><br/>
+      <img src="../img/lst.png" width="100%"/><br/>
       <i><strong>Land Surface Temperature</strong> </i>
     </td>
   </tr>
@@ -169,11 +169,11 @@ testing integrity.
 <table align="center" style="border-collapse: collapse; margin: 0 auto;">
   <tr>
     <td width="50%" style="border: none; text-align: center;">
-      <img src="../train_test_assignment_rnd.png" width="100%"/><br/>
+      <img src="../img/train_test_assignment_rnd.png" width="100%"/><br/>
       <i><strong>Random Train-Test Assignment</strong> </i>
     </td>
     <td width="50%" style="border: none; text-align: center;">
-      <img src="../train_test_assignment_bs.png" width="100%"/><br/>
+      <img src="../img/train_test_assignment_bs.png" width="100%"/><br/>
       <i><strong>Balanced Stratified Train-Test Assignment</strong> </i>
     </td>
   </tr>
@@ -278,7 +278,7 @@ After conducting the entire [machine learning approach](#approach)
 the trained model can be used to make predictions for the missing land surface temperature values:
 
 <p align="center">
-<img src="../lst_filled.png" width="55%" height="35%">
+<img src="../img/lst_filled.png" width="55%" height="35%">
 </p>
 <p align = "center"><i>
 <strong>Land Surface Temperature Filled</strong></i>
@@ -292,7 +292,7 @@ Mlflow supports the MLOps pipelines particularly to log and evaluate experiment 
 TensorBoard as another collaborative tool in this MLOPs space is currently evaluated by the science teams and available as part of the TensorFlow conda kernel to individual users within their JupyterLab session.
 
 <p align="center">
-<img src="../mlflow.png" width="85%" height="85%">
+<img src="../img/mlflow.png" width="85%" height="85%">
 </p>
 <p align = "center"><i>
 <strong>Collaborative Experiment Tracking with mlflow.</strong></i>
@@ -413,7 +413,7 @@ Notebook provides the implementation of Transfer Learning. This technique was il
 6. [Transfer Learning](https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/transfer_learning.ipynb).
 
 <p align="center">
-<img src="../transfer_learning.png" width="75%" height="75%">
+<img src="../img/transfer_learning.png" width="75%" height="75%">
 </p>
 <p align = "center"><i>
 <strong>The Basic Concept of Transfer Learning.</strong></i>
@@ -496,7 +496,7 @@ Running this example results in an the following illustration, showing a heatmap
 variable over time. The number of available data ranges from 0 to 10, corresponding to the 10 frames in the analyzed cube:
 
 <p align="center">
-    <img src="../heatmap.png" alt="Gap Heat Map" width="70%">
+    <img src="../img/heatmap.png" alt="Gap Heat Map" width="70%">
 </p>
 <p align = "center"><i>
 <strong>Heatmap of available data in the land surface temperature variable over time.</strong></i>
@@ -532,7 +532,7 @@ The following notebooks demonstrate the workflow for land surface temperature pr
 10. [Machine Learning for Multidimensional Samples (TensorFlow)](https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/use_case_lst_tensorflow_nd.ipynb).
 
 <p align="center">
-<img src="../replace_gaps.png" width="60%" height="60%">
+<img src="../img/replace_gaps.png" width="60%" height="60%">
 </p>
 <p align = "center"><i>
 <strong>Filling areas outside the continent with constant value.</strong></i>
