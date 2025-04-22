@@ -73,6 +73,7 @@ nav:
               - ml-toolkit/api-reference/10-utils/split-chunk.md
       - Further information: guide/further-information.md
   - Catalogue/ Datasets:
+      - Catalogue: datasets/stac-catalog.md
       - List of datasets: datasets/datasets.md
       - xcube Data Stores: datasets/datastores.md
       - Earth System Data Cube: datasets/ESDC.md
