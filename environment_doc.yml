@@ -11,3 +11,4 @@ dependencies:
       - mkdocs-autorefs
       - mkapi
       - pymdown-extensions
+      - mkdocs-jupyter
