@@ -25,6 +25,7 @@ nav:
               - Overview: guide/jupyterlab/notebooks/index.md
               - guide/jupyterlab/notebooks/Access_public_cubes.ipynb
               - guide/jupyterlab/notebooks/Visualise_data_with_xcube_viewer.ipynb
+              - guide/jupyterlab/notebooks/Visualise_data_with_Lexcube.ipynb
               - guide/jupyterlab/notebooks/Append_to_existing_cube.ipynb
               - guide/jupyterlab/notebooks/Chunking_of_datasets.ipynb
               - guide/jupyterlab/notebooks/Create_Atmospheric_Cubes_CDS.ipynb
