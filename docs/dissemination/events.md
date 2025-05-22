@@ -23,17 +23,19 @@
 
 # General public and policy makers​
 
-|   Context | Context                                                              | Audience                                                                                                                                                    | Date         |
-| :-------- | :------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------- |
-|         1 | 1st German Science Conference for Space, DLR Bonn                    | German policy makers in the space sector, Bundeswehr etc.                                                                                                   | 27/09/2022   |
-|         2 | SPINN 2030, Agenda for Science, Saxony, Germany                      | Federal Government of Saxony Michael Kretschmer, Minister-President, Minister of Science, Rectors of all regional Universities and research institutions)   | 03/02/2023   |
-|         3 | AI 4 Good Organization                                               | UN AI4Good community, with more than 260 listeners                                                                                                          | 26/04/2023   |
-|         4 | Building Bridges Conference 2023 (Germany, Poland, Czech Republic)   | Petr Fiala, Prime Minister of the Czech Republic, Michael Kretschmer, Minister-President of Saxony etc.                                                     | 16/05/2023   |
-|         5 | Studium Universale, City of Leipzig                                  | General Public                                                                                                                                              | 29/01/2025   |
-|         6 | Uni Leipzig \- Vortrag: Die Welt von oben erkunden                   | General Public                                                                                                                                              | 14/01/2025   |
+| No | Context                                                              | Audience                                                                                                                                                    | Date         |
+|:---| :------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------- |
+| 1  | 1st German Science Conference for Space, DLR Bonn                    | German policy makers in the space sector, Bundeswehr etc.                                                                                                   | 27/09/2022   |
+| 2  | SPINN 2030, Agenda for Science, Saxony, Germany                      | Federal Government of Saxony Michael Kretschmer, Minister-President, Minister of Science, Rectors of all regional Universities and research institutions)   | 03/02/2023   |
+| 3  | AI 4 Good Organization                                               | UN AI4Good community, with more than 260 listeners                                                                                                          | 26/04/2023   |
+| 4  | Building Bridges Conference 2023 (Germany, Poland, Czech Republic)   | Petr Fiala, Prime Minister of the Czech Republic, Michael Kretschmer, Minister-President of Saxony etc.                                                     | 16/05/2023   |
+| 5  | Studium Universale, City of Leipzig                                  | General Public                                                                                                                                              | 29/01/2025   |
+| 6  | Uni Leipzig \- Vortrag: Die Welt von oben erkunden                   | General Public                                                                                                                                              | 14/01/2025   |
 
 # Trainings
 
-- University of Edinburgh, visit to ESRIN for ESA ScienceHub workshop in 13-17 May 2024​
-- ISPRS TCIV 2024 Tutorial: Uncovering Earth System Dynamics with multivariate EO Data and AI ​
-- University Leipzig, BV, ESRIN Science Hub Workshop - March 2025​
+| No | Workshop lead by                                                         | Audience                                                                                                | Date         |
+|:---|:-------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------|:-------------|
+| 1  | Brockmann Consult, University of Leipzig @ESRIN                          | University of Edinburgh                                                                                 | May 2024     |
+| 2  | University of Leipzig  @Fremantle, Perth, Australia                      | ISPRS TCIV 2024 Tutorial: Uncovering Earth System Dynamics with multivariate EO Data and AI             | October 2024 |
+| 3  | University of Leipzig, Brockmann Consult @ESRIN                          | ESRIN Science Hub Workshop                                                                              | March 2025   |
