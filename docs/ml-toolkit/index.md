@@ -1,4 +1,4 @@
-# DeepESDL ml4xcube - Machine Learning Toolkits for Data Cubes
+# ml4xcube - Machine Learning Toolkits for Data Cubes
 
 AI is becoming increasingly important in Earth observations as most parts 
 of the Earth system are continuously monitored by sensors and AI is able to 

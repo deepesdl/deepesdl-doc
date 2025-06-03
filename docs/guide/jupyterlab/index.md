@@ -1,4 +1,4 @@
-# DeepESDL JupyterLab
+# JupyterLab
 
 ## Basic usage
 
@@ -31,7 +31,6 @@ After choosing your environment, you will see a progress bar appearing for a few
 moments while it is started for you.
 The JupyterLab interface will then appear in your web browser, ready for
 use.
-
 
 ## Changing a JupyterLab profile
 
@@ -133,6 +132,7 @@ Steps to create custom team conda environments:
 You can also modify an existing environment and rebuild it; the conda-store 
 will keep all the builds' logs.
 It will look similar to the screenshot below. 
+
 ![conda-builds.png](../../img/conda-builds.png)
 
 The conda-build highlighted in green is the one, which you will use in you 
@@ -165,7 +165,7 @@ To access them:
 5.  The notebook is copied into your workspace, and you can run it and adjust 
     it according to your needs.
 
-## Team resources
+### Team resources
 
 If you are using DeepESDL Jupyter Lab with others in a team, you can share 
 content with each other and access the team S3 bucket for data storage.

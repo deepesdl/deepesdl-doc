@@ -1,4 +1,4 @@
-# DeepESDL Architecture
+# Architecture
 
 The following figure depicts the high-level concepts and the architecture 
 of the DeepESDL project. It comprises the internal [*DeepESDL Hub*](hub.md) 

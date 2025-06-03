@@ -1,13 +1,7 @@
----
-hide:
-  - toc
----
+# About DeepESDL
 
 ![DeepESDL](../img/logo/logo_light.png){: .light-image .centered-logo style="max-width: 300px;" }
 ![DeepESDL](../img/logo/logo_dark.png){: .dark-image .centered-logo style="max-width: 300px;" }
-
-
-# About DeepESDL
 
 Welcome to the online documentation of DeepESDL – ESA’s Deep Earth System
 Data Laboratory, a platform providing analysis-ready data cube in a powerful,

@@ -4,119 +4,6 @@ copyright: Copyright © 2025 by the DeepESDL Team
 
 #theme: readthedocs  # alternative: mkdocs
 
-nav:
-  - index.md
-  - About DeepESDL:
-      - Overview: about/index.md
-      - Summary: about/summary.md
-      - News and Announcements: about/events_announcements.md
-      - Change Log: about/change_log.md
-  - Platform Design:
-      - Overview: design/index.md
-      - Context: design/context.md
-      - Architecture: design/architecture.md
-      - Hub: design/hub.md
-      - Services and Tools: design/services-and-tools.md
-  - User Guide:
-      - Overview: guide/overview.md
-      - JupyterLab:
-          - Overview: guide/jupyterlab/index.md
-          - Example Notebooks:
-              - Overview: guide/jupyterlab/notebooks/index.md
-              - guide/jupyterlab/notebooks/Access_public_cubes.ipynb
-              - guide/jupyterlab/notebooks/Visualise_data_with_xcube_viewer.ipynb
-              - guide/jupyterlab/notebooks/Append_to_existing_cube.ipynb
-              - guide/jupyterlab/notebooks/Chunking_of_datasets.ipynb
-              - guide/jupyterlab/notebooks/Create_Atmospheric_Cubes_CDS.ipynb
-              - guide/jupyterlab/notebooks/Create_Zarr_With_Slices_SentinelHub.ipynb
-              - guide/jupyterlab/notebooks/Spatial_Regridding_and_Masking.ipynb
-              - guide/jupyterlab/notebooks/Save_cube_to_team_storage.ipynb
-              - guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage.ipynb
-              - guide/jupyterlab/notebooks/Access_collections_from_xcube_geodb.ipynb
-              - guide/jupyterlab/notebooks/Generate_C3S_CDS_cubes.ipynb
-              - guide/jupyterlab/notebooks/Generate_CCI_cubes.ipynb
-              - guide/jupyterlab/notebooks/Generate_CMEMS_cubes.ipynb
-              - guide/jupyterlab/notebooks/Generate_SentinelHub_cubes.ipynb
-              - guide/jupyterlab/notebooks/How_to_make_use_of_Dask_clusters.ipynb
-      - Visualisation:
-          - xcube Viewer: guide/xcube-viewer.md
-          - Lexcube Viewer: guide/lexcube-viewer.md
-          - 4D Viewer: guide/4d-viewer.md
-      - Datacubes: guide/datacubes.md
-      - Datacube generation: guide/datacube-generation.md
-      - ML Toolkits:
-          - Overview: guide/ml-toolkits.md
-          - Introduction: ml-toolkit/introduction.md
-          - Getting Started: ml-toolkit/getting-started.md
-          - Example Use Case: ml-toolkit/example.md
-          - Python API:
-              - Overview: ml-toolkit/api-reference/index.md
-              - ml-toolkit/api-reference/1-plotting/plot-slice.md
-              - ml-toolkit/api-reference/2-insights/get-count-heat-map.md
-              - ml-toolkit/api-reference/2-insights/get-insights.md
-              - ml-toolkit/api-reference/3-gapfilling/gap-dataset.md
-              - ml-toolkit/api-reference/3-gapfilling/gap-filling.md
-              - ml-toolkit/api-reference/3-gapfilling/helper-helpingpredictor.md
-              - ml-toolkit/api-reference/4-splits/assign-block-split.md
-              - ml-toolkit/api-reference/4-splits/assign-rand-split.md
-              - ml-toolkit/api-reference/4-splits/create-split.md
-              - ml-toolkit/api-reference/5-preprocessing/apply-filter.md
-              - ml-toolkit/api-reference/5-preprocessing/assign-mask.md
-              - ml-toolkit/api-reference/5-preprocessing/drop-nan-values.md
-              - ml-toolkit/api-reference/5-preprocessing/fill-nan-values.md
-              - ml-toolkit/api-reference/5-preprocessing/get-range.md
-              - ml-toolkit/api-reference/5-preprocessing/get-statistics.md
-              - ml-toolkit/api-reference/5-preprocessing/normalize.md
-              - ml-toolkit/api-reference/5-preprocessing/standardize.md
-              - ml-toolkit/api-reference/6-datasets/multiproc-sampler.md
-              - ml-toolkit/api-reference/6-datasets/prepare-dataloader.md
-              - ml-toolkit/api-reference/6-datasets/pt-large-scale-xr-dataset.md
-              - ml-toolkit/api-reference/6-datasets/tf-large-scale-xr-dataset.md
-              - ml-toolkit/api-reference/6-datasets/xr-dataset.md
-              - ml-toolkit/api-reference/7-training/ddp-init.md
-              - ml-toolkit/api-reference/7-training/ddp-trainer.md
-              - ml-toolkit/api-reference/7-training/pytorch.md
-              - ml-toolkit/api-reference/7-training/sklearn.md
-              - ml-toolkit/api-reference/7-training/tensorflow.md
-              - ml-toolkit/api-reference/8-postprocessing/undo-normalizing.md
-              - ml-toolkit/api-reference/8-postprocessing/undo-standardizing.md
-              - ml-toolkit/api-reference/9-evaluation/evaluation.md
-              - ml-toolkit/api-reference/10-utils/assign-dims.md
-              - ml-toolkit/api-reference/10-utils/calculate-total-chunks.md
-              - ml-toolkit/api-reference/10-utils/get-chunk-by-index.md
-              - ml-toolkit/api-reference/10-utils/get-chunk-sizes.md
-              - ml-toolkit/api-reference/10-utils/get-dim-range.md
-              - ml-toolkit/api-reference/10-utils/iter-data-var-blocks.md
-              - ml-toolkit/api-reference/10-utils/rechunk-cube.md
-              - ml-toolkit/api-reference/10-utils/split-chunk.md
-      - Further information: guide/further-information.md
-  - Catalogue/ Datasets:
-      - List of datasets: datasets/datasets.md
-      - xcube Data Stores: datasets/datastores.md
-      - Earth System Data Cube: datasets/ESDC.md
-      - Black Sea Cube: datasets/black-sea.md
-      - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
-      - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
-      - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
-      - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
-      - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
-      - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
-  - Science Cases:
-      - Land-Biosphere-Society: science_cases/land_biosphere.md
-      - Drought Effects: science_cases/drought_effects.md
-      - Ocean Carbon Cycle: science_cases/ocean.md
-  - Reproducible Research:
-      - Introduction: research/index.md
-      - Instructions: research/instructions.md
-      - Example: research/example.md
-  - Become a User: become_user/index.md
-  - Success Stories:
-      - Introduction: stories/index.md
-      - Project List: stories/list.md
-  - Dissemination:
-      - Events: dissemination/events.md
-      - Publications: dissemination/publications.md
-
 theme:
   name: material
   logo: img/logo/cube_small.png
@@ -164,7 +51,7 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: "#"
-      baselevel: 2
+      baselevel: 1
   - attr_list
   - md_in_html
   - admonition
@@ -177,3 +64,119 @@ markdown_extensions:
 
 extra_css:
   - css/custom.css
+
+not_in_nav:
+  index.md
+
+nav:
+  - index.md
+  - About DeepESDL:
+      - Overview: about/index.md
+      - Summary: about/summary.md
+      - News and Announcements: about/events_announcements.md
+      - Change Log: about/change_log.md
+  - Platform Design:
+      #- Overview: design/index.md
+      - Context: design/context.md
+      - Architecture: design/architecture.md
+      - Hub: design/hub.md
+      - Services and Tools: design/services-and-tools.md
+  - User Guide:
+      - Overview: guide/overview.md
+      - JupyterLab:
+          - guide/jupyterlab/index.md
+          - Example Notebooks:
+              - guide/jupyterlab/notebooks/index.md
+              - guide/jupyterlab/notebooks/Access_public_cubes.ipynb
+              - guide/jupyterlab/notebooks/Visualise_data_with_xcube_viewer.ipynb
+              - guide/jupyterlab/notebooks/Append_to_existing_cube.ipynb
+              - guide/jupyterlab/notebooks/Chunking_of_datasets.ipynb
+              - guide/jupyterlab/notebooks/Create_Atmospheric_Cubes_CDS.ipynb
+              - guide/jupyterlab/notebooks/Create_Zarr_With_Slices_SentinelHub.ipynb
+              - guide/jupyterlab/notebooks/Spatial_Regridding_and_Masking.ipynb
+              - guide/jupyterlab/notebooks/Save_cube_to_team_storage.ipynb
+              - guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage.ipynb
+              - guide/jupyterlab/notebooks/Access_collections_from_xcube_geodb.ipynb
+              - guide/jupyterlab/notebooks/Generate_C3S_CDS_cubes.ipynb
+              - guide/jupyterlab/notebooks/Generate_CCI_cubes.ipynb
+              - guide/jupyterlab/notebooks/Generate_CMEMS_cubes.ipynb
+              - guide/jupyterlab/notebooks/Generate_SentinelHub_cubes.ipynb
+              - guide/jupyterlab/notebooks/How_to_make_use_of_Dask_clusters.ipynb
+      - Visualisation:
+          - xcube Viewer: guide/xcube-viewer.md
+          - Lexcube Viewer: guide/lexcube-viewer.md
+          - 4D Viewer: guide/4d-viewer.md
+      - Datacubes: guide/datacubes.md
+      - Datacube generation: guide/datacube-generation.md
+      - ML Toolkits:
+          # - ml-toolkit/ml-toolkits.md
+          - ml-toolkit/index.md
+          - Getting Started: ml-toolkit/getting-started.md
+          - Example Use Case: ml-toolkit/example.md
+          - Python API:
+              - ml-toolkit/api-reference/index.md
+      #              - ml-toolkit/api-reference/1-plotting/plot-slice.md
+      #              - ml-toolkit/api-reference/2-insights/get-count-heat-map.md
+      #              - ml-toolkit/api-reference/2-insights/get-insights.md
+      #              - ml-toolkit/api-reference/3-gapfilling/gap-dataset.md
+      #              - ml-toolkit/api-reference/3-gapfilling/gap-filling.md
+      #              - ml-toolkit/api-reference/3-gapfilling/helper-helpingpredictor.md
+      #              - ml-toolkit/api-reference/4-splits/assign-block-split.md
+      #              - ml-toolkit/api-reference/4-splits/assign-rand-split.md
+      #              - ml-toolkit/api-reference/4-splits/create-split.md
+      #              - ml-toolkit/api-reference/5-preprocessing/apply-filter.md
+      #              - ml-toolkit/api-reference/5-preprocessing/assign-mask.md
+      #              - ml-toolkit/api-reference/5-preprocessing/drop-nan-values.md
+      #              - ml-toolkit/api-reference/5-preprocessing/fill-nan-values.md
+      #              - ml-toolkit/api-reference/5-preprocessing/get-range.md
+      #              - ml-toolkit/api-reference/5-preprocessing/get-statistics.md
+      #              - ml-toolkit/api-reference/5-preprocessing/normalize.md
+      #              - ml-toolkit/api-reference/5-preprocessing/standardize.md
+      #              - ml-toolkit/api-reference/6-datasets/multiproc-sampler.md
+      #              - ml-toolkit/api-reference/6-datasets/prepare-dataloader.md
+      #              - ml-toolkit/api-reference/6-datasets/pt-large-scale-xr-dataset.md
+      #              - ml-toolkit/api-reference/6-datasets/tf-large-scale-xr-dataset.md
+      #              - ml-toolkit/api-reference/6-datasets/xr-dataset.md
+      #              - ml-toolkit/api-reference/7-training/ddp-init.md
+      #              - ml-toolkit/api-reference/7-training/ddp-trainer.md
+      #              - ml-toolkit/api-reference/7-training/pytorch.md
+      #              - ml-toolkit/api-reference/7-training/sklearn.md
+      #              - ml-toolkit/api-reference/7-training/tensorflow.md
+      #              - ml-toolkit/api-reference/8-postprocessing/undo-normalizing.md
+      #              - ml-toolkit/api-reference/8-postprocessing/undo-standardizing.md
+      #              - ml-toolkit/api-reference/9-evaluation/evaluation.md
+      #              - ml-toolkit/api-reference/10-utils/assign-dims.md
+      #              - ml-toolkit/api-reference/10-utils/calculate-total-chunks.md
+      #              - ml-toolkit/api-reference/10-utils/get-chunk-by-index.md
+      #              - ml-toolkit/api-reference/10-utils/get-chunk-sizes.md
+      #              - ml-toolkit/api-reference/10-utils/get-dim-range.md
+      #              - ml-toolkit/api-reference/10-utils/iter-data-var-blocks.md
+      #              - ml-toolkit/api-reference/10-utils/rechunk-cube.md
+      #              - ml-toolkit/api-reference/10-utils/split-chunk.md
+      - Further information: guide/further-information.md
+  - Catalogue/ Datasets:
+      - datasets/index.md
+      - xcube Data Stores: datasets/datastores.md
+      - Earth System Data Cube: datasets/ESDC.md
+      - Black Sea Cube: datasets/black-sea.md
+      - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
+      - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
+      - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
+      - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
+      - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
+      - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
+  - Science Cases:
+      - Land-Biosphere-Society: science_cases/land_biosphere.md
+      - Drought Effects: science_cases/drought_effects.md
+      - Ocean Carbon Cycle: science_cases/ocean.md
+  - Reproducible Research:
+      - research/index.md
+      - Instructions: research/instructions.md
+      - Example: research/example.md
+  - Become a User: become_user/index.md
+  - Success Stories:
+      - Stories: stories/index.md
+      - Project List: stories/list.md
+  - Dissemination:
+      - Events: dissemination/events.md
+      - Publications: dissemination/publications.md

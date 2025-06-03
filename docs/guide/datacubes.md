@@ -16,4 +16,4 @@ follow the links within the dataset attributes for each variable and contact
 the data owners.
 
 To access the documentation of available datasets, please have a look in the 
-[datasets section](../datasets/datasets.md).
+[datasets section](../datasets/index.md).

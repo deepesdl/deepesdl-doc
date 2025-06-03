@@ -1,4 +1,4 @@
-# DeepESDL xcube Viewer
+# xcube Viewer
 
 The DeepESDL xcube Viewer is reachable at [viewer.earthsystemdatalab.net](https://viewer.earthsystemdatalab.net).
 
