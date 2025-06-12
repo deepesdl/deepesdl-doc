@@ -1,4 +1,6 @@
-# Papers acknowledging DeepESDL
+# Publications
+
+## Papers acknowledging DeepESDL
 
 Bao, S., Alonso, L., Wang, S., Gensheimer, J., De, R., & Carvalhais, N. (2023). Toward Robust Parameterizations in Ecosystem-Level Photosynthesis Models. *Journal of Advances in Modeling Earth Systems*, *15*(8), e2022MS003464. [https://doi.org/10.1029/2022MS003464](https://doi.org/10.1029/2022MS003464)  
 
@@ -11,7 +13,7 @@ Peters, J., Neumann, A., Jaeger, M., Gienapp, L., & Umlauft, J. (2025). ml4xcube
 Weynants, M., Ji, C., Linscheid, N., Weber, U., Mahecha, M. D., & Gans, F. (2024). Dheed: An ERA5 based global database of dry and hot extreme events from 1950 to 2022\. *Earth System Science Data Discussions*, 1–31. [https://doi.org/10.5194/essd-2024-396](https://doi.org/10.5194/essd-2024-396)  
 
 ​
-# Citations
+## Citations
 Rocha, J. C. (2022). Ecosystems are showing symptoms of resilience loss. *Environmental Research Letters*, *17*(6), 065013\. [https://doi.org/10.1088/1748-9326/ac73a8](https://doi.org/10.1088/1748-9326/ac73a8)  
 
 > “… used as proxies of primary productivity of marine and terrestrial ecosystems. These variables have been harmonized by the Earth System Data Lab, so all data layers share the same time (weekly) and spatial (0.25 degree) resolution [32]. ”​
@@ -21,7 +23,7 @@ Díaz, E., Adsuara, J. E., Martínez, Á. M., Piles, M., & Camps-Valls, G. (2022
 > “… In particular, we use six different biosphere and atmosphere global gridded products, which are collected and curated in the Earth System Data Lab (ESDL). “​
 
 ​
-# Papers reporting on DeepESDL
+## Papers reporting on DeepESDL
 ​
 Basel, A. M., Nguyen, K. T., Arnaud, E., & Craparo, A. C. W. (2023). *The foundations of big data sharing: A CGIAR international research organization perspective*. [https://doi.org/10.3389/fenvs.2023.1107393](https://doi.org/10.3389/fenvs.2023.1107393)  
 

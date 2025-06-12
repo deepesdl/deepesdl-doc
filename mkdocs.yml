@@ -4,6 +4,72 @@ copyright: Copyright © 2025 by the DeepESDL Team
 
 #theme: readthedocs  # alternative: mkdocs
 
+theme:
+  name: material
+  logo: img/logo/cube_small.png
+  favicon: img/logo/cube_small.png
+  icon:
+    repo: fontawesome/brands/github
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  features:
+    - navigation.top
+    - navigation.indexes
+    - toc.permalink
+    - toc.follow
+    - navigation.prune
+    - navigation.footer
+    - navigation.tabs
+    # - navigation.tabs.sticky
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  # font:
+  #  text: Nunito
+  custom_dir: docs/html
+
+extra_css:
+  - css/custom.css
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_requirejs: true
+  - mkapi
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      baselevel: 1
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+
+not_in_nav:
+  index.md
+
 nav:
   - index.md
   - About DeepESDL:
@@ -12,7 +78,7 @@ nav:
       - News and Announcements: about/events_announcements.md
       - Change Log: about/change_log.md
   - Platform Design:
-      - Overview: design/index.md
+      #- Overview: design/index.md
       - Context: design/context.md
       - Architecture: design/architecture.md
       - Hub: design/hub.md
@@ -20,9 +86,9 @@ nav:
   - User Guide:
       - Overview: guide/overview.md
       - JupyterLab:
-          - Overview: guide/jupyterlab/index.md
+          - guide/jupyterlab/index.md
           - Example Notebooks:
-              - Overview: guide/jupyterlab/notebooks/index.md
+              - guide/jupyterlab/notebooks/index.md
               - guide/jupyterlab/notebooks/Access_public_cubes.ipynb
               - guide/jupyterlab/notebooks/Visualise_data_with_xcube_viewer.ipynb
               - guide/jupyterlab/notebooks/Append_to_existing_cube.ipynb
@@ -45,12 +111,19 @@ nav:
       - Datacubes: guide/datacubes.md
       - Datacube generation: guide/datacube-generation.md
       - ML Toolkits:
-          - Overview: guide/ml-toolkits.md
-          - Introduction: ml-toolkit/introduction.md
+          # - ml-toolkit/ml-toolkits.md
+          - ml-toolkit/index.md
           - Getting Started: ml-toolkit/getting-started.md
-          - Example Use Case: ml-toolkit/example.md
+          - Example Use Cases:
+              - ml-toolkit/use_cases/index.md
+              - 1. Land Surface Temperature Prediction: ml-toolkit/use_cases/use_case_1.md
+              - 2. Distributed Machine Learning: ml-toolkit/use_cases/use_case_2.md
+              - 3. Transfer Learning: ml-toolkit/use_cases/use_case_3.md
+              - 4. Cube Insights: ml-toolkit/use_cases/use_case_4.md
+              - 5. Gap Filling: ml-toolkit/use_cases/use_case_5.md
+              - 6. Missing Values: ml-toolkit/use_cases/use_case_6.md
           - Python API:
-              - Overview: ml-toolkit/api-reference/index.md
+              - ml-toolkit/api-reference/index.md
               - ml-toolkit/api-reference/1-plotting/plot-slice.md
               - ml-toolkit/api-reference/2-insights/get-count-heat-map.md
               - ml-toolkit/api-reference/2-insights/get-insights.md
@@ -91,7 +164,7 @@ nav:
               - ml-toolkit/api-reference/10-utils/split-chunk.md
       - Further information: guide/further-information.md
   - Catalogue/ Datasets:
-      - List of datasets: datasets/datasets.md
+      - datasets/index.md
       - xcube Data Stores: datasets/datastores.md
       - Earth System Data Cube: datasets/ESDC.md
       - Black Sea Cube: datasets/black-sea.md
@@ -106,74 +179,13 @@ nav:
       - Drought Effects: science_cases/drought_effects.md
       - Ocean Carbon Cycle: science_cases/ocean.md
   - Reproducible Research:
-      - Introduction: research/index.md
+      - research/index.md
       - Instructions: research/instructions.md
       - Example: research/example.md
   - Become a User: become_user/index.md
   - Success Stories:
-      - Introduction: stories/index.md
+      - Stories: stories/index.md
       - Project List: stories/list.md
   - Dissemination:
       - Events: dissemination/events.md
       - Publications: dissemination/publications.md
-
-theme:
-  name: material
-  logo: img/logo/cube_small.png
-  favicon: img/logo/cube_small.png
-  icon:
-    repo: fontawesome/brands/github
-    previous: fontawesome/solid/angle-left
-    next: fontawesome/solid/angle-right
-  features:
-    - navigation.top
-    - navigation.indexes
-    - toc.permalink
-    - toc.follow
-    - navigation.prune
-    - navigation.footer
-    - navigation.tabs
-    # - navigation.tabs.sticky
-  palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: blue grey
-      accent: deep orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: deep orange
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  # font:
-  #  text: Nunito
-  custom_dir: docs/html
-
-plugins:
-  - search
-  - mkdocs-jupyter:
-      execute: false
-      include_requirejs: true
-  - mkapi
-
-markdown_extensions:
-  - toc:
-      permalink: "#"
-      baselevel: 2
-  - attr_list
-  - md_in_html
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.blocks.caption
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-extra_css:
-  - css/custom.css

@@ -22,19 +22,16 @@
   max-width: "1400px";
 }
 
-/* Make xarray dataset display cleaner and smaller */
-.xr-wrap,
-.xr-dataset,
-.xr-array,
-.xr-var-item,
-.xr-var-list,
-.xr-attrs,
-.xr-dim-list {
-  font-size: 0.8em !important;
-  font-family: monospace, sans-serif;
-  line-height: 1.3;
-} 
+.xr-wrap {
+  font-size: .7rem;
+}
 
+.jupyter-wrapper *, .jupyter-wrapper ::before, .jupyter-wrapper ::after {
+  box-sizing: border-box;
+}
+
+/* adjust representation of xr.Datasets, solution by:
+ https://github.com/danielfrg/mkdocs-jupyter/issues/164#issuecomment-1875664148 */
 .md-typeset pre.xr-text-repr-fallback {
   display: none;
 }
@@ -70,3 +67,17 @@
   font-weight: normal;
   grid-column: 1;
 }
+
+
+[data-md-color-scheme="slate"] {
+  --xr-font-color0: rgba(255, 255, 255, 1);
+  --xr-font-color2: rgba(255, 255, 255, 0.54);
+  --xr-font-color3: rgba(255, 255, 255, 0.38);
+  --xr-border-color: #1F1F1F;
+  --xr-disabled-color: #515151;
+  --xr-background-color: #111111;
+  --xr-background-color-row-even: #111111;
+  --xr-background-color-row-odd: #313131;
+}
+
+

@@ -1,6 +1,6 @@
+# Events
 
-
-# Conferences
+## Conferences
 
 |   No | Event Name                                              | Title                                                                                                                      | Date            |
 | :--- | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------- | :-------------- |
@@ -21,7 +21,7 @@
 |   15 | Stockholm Resilience Centre                             | “Seeing Earth through AI”                                                                                                  | 15-17/01/2025   |
 |   16 | 39th Annual AAAI Conference on Artifical Intelligence   | ml4xcube: Machine Learning Toolkits for Earth System Data Cubes                                                            | 26/02/2025      |
 
-# General public and policy makers​
+## General public and policy makers​
 
 | No | Context                                                              | Audience                                                                                                                                                    | Date         |
 |:---| :------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------- |
@@ -32,7 +32,7 @@
 | 5  | Studium Universale, City of Leipzig                                  | General Public                                                                                                                                              | 29/01/2025   |
 | 6  | Uni Leipzig \- Vortrag: Die Welt von oben erkunden                   | General Public                                                                                                                                              | 14/01/2025   |
 
-# Trainings
+## Trainings
 
 | No | Workshop lead by                                                         | Audience                                                                                                | Date         |
 |:---|:-------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------|:-------------|

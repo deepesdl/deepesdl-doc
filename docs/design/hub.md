@@ -1,4 +1,4 @@
-# DeepESDL Hub
+# Hub
 
 The DeepESDL Hub is based on the existing software named EOxHub, 
 which is also used to power, e.g., the 

@@ -1,4 +1,4 @@
-# DeepESDL ml4xcube - Machine Learning Toolkits for Data Cubes
+# ml4xcube - Machine Learning Toolkits for Data Cubes
 
 AI is becoming increasingly important in Earth observations as most parts 
 of the Earth system are continuously monitored by sensors and AI is able to 
@@ -8,7 +8,7 @@ ocean with unprecedented accuracy. In course of DeepESDL, the Earth System
 Data Lab (ESDL) capabilities have been extended to support the application of 
 machine learning (ML) methods on Earth System Data Cubes (ESDC). 
 
-Various Python-based [Jupyter Notebooks/Scripts](example.md) illustrate a use cases to 
+Various Python-based [Jupyter Notebooks/Scripts](use_cases/index.md) illustrate use cases to 
 demonstrate the capabilities of `ml4xcube`, utilizing state-of-the-art machine 
 learning libraries on ESDCs in the DeepESDL Hub environment. Each Jupyter 
 Notebook involves a self-contained workflow, markdown cells, 
@@ -28,7 +28,7 @@ on one of the three well established open source ML libraries respectively:
 
 ## Overview
 1. [Getting Started](getting-started.md)    
-2. [Example Use Cases and Juypter Notebooks](example.md)
+2. [Example Use Cases and Juypter Notebooks](use_cases/index.md)
 3. [ml4xcube API](api-reference/index.md)
 
    
