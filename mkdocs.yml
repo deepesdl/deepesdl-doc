@@ -103,6 +103,9 @@ nav:
               - guide/jupyterlab/notebooks/Generate_CCI_cubes.ipynb
               - guide/jupyterlab/notebooks/Generate_CMEMS_cubes.ipynb
               - guide/jupyterlab/notebooks/Generate_SentinelHub_cubes.ipynb
+              - guide/jupyterlab/notebooks/Access_data_from_nonsearchable_stac_catalog.ipynb
+              - guide/jupyterlab/notebooks/Access_data_from_Zenodo.ipynb
+              - guide/jupyterlab/notebooks/Access_Sentinel2_data_from_CDSE.ipynb
               - guide/jupyterlab/notebooks/How_to_make_use_of_Dask_clusters.ipynb
       - Visualisation:
           - xcube Viewer: guide/xcube-viewer.md
