@@ -1,0 +1,21 @@
+# Data 
+
+DeepESDL provides unified access to a wide range of Earth observation data sources.
+Using the xcube library, data is accessed lazily—directly from the original remote services—without being stored on our servers.
+In addition, you can also integrate your own datasets into the same analysis-ready cube framework for seamless analysis alongside public data.
+
+
+
+|  | Data Sources | Example Datasets/Collections                               | How to access |
+|------|--------------|------------------------------------------------------------|----------------|
+| <img src="https://climate.copernicus.eu/sites/default/files/inline-images/C3S_emblem.png" class="logo-icon-table" /> | **[Copernicus Climate Data Store (CDS)](https://cds.climate.copernicus.eu/)** | e.g. ERA5, Climate Projections, Sectoral Indices           | [Example Notebook](guide/jupyterlab/notebooks/Generate_C3S_CDS_cubes.ipynb) |
+| <img src="https://knowledge4policy.ec.europa.eu/sites/default/files/53443b17-0adb-44e1-8fd3-662fa7eda708.png" class="logo-icon-table" /> | **[Copernicus Marine Service (CMEMS)](https://marine.copernicus.eu/)** | e.g. Ocean currents, Sea Ice, Biogeochemical products      | [Example Notebook](guide/jupyterlab/notebooks/Generate_CMEMS_cubes.ipynb) |
+| <img src="https://www.eea.europa.eu/themes/landuse/copernicus-land-monitoring-logo/image" class="logo-icon-table" /> | **[Copernicus Land Monitoring Service (CLMS)](https://land.copernicus.eu/en/dataset-catalog)** | e.g. CORINE, HRL Vegetation, Hydrography                   | |
+| <img src="https://www.dlr.de/de/eoc/forschung-transfer/projekte-und-missionen/eopf-sentinel-zarr-samples-service/esa_eopf_logo_2025_color_esa_16x9.jpg/@@images/image-1000-d87d614b71d37583fc8cf99cfbf55b0d.jpeg" class="logo-icon-table" /> | **[EOPF Sample Service](https://zarr.eopf.copernicus.eu/)** | Sentinel sample datasets (Zarr format)                     | |
+| <img src="https://brand.esa.int/files/2020/05/ESA_logo_2020_Deep-scaled.jpg" class="logo-icon-table" /> | **[ESA Climate Data Centre (CCI)](https://climate.esa.int/en/data/#/dashboard)** | Essential Climate Variables (ECVs)                         | [Example Notebook](guide/jupyterlab/notebooks/Generate_CCI_cubes.ipynb) |
+| <img src="https://www.esa.int/eologos/images/smos.jpg" class="logo-icon-table" /> | **[ESA SMOS (Soil Moisture & Ocean Salinity)](https://earth.esa.int/eogateway/missions/smos)** | e.g. Soil moisture, Ocean salinity, Brightness temperature | |
+| <img src="https://gedi.umd.edu/wp-content/uploads/2020/10/GEDI_16_10.jpg" class="logo-icon-table" /> | **[Global Ecosystem Dynamics Investigation (GEDI)](https://gedi.umd.edu/)** | e.g. L2/L3 canopy height, biomass, elevation               | |
+| <img src="https://www.sentinel-hub.com/img/press/sentinel_hub_by_planet_logo_big.png" class="logo-icon-table" /> | **[Sentinel Hub](https://www.sentinel-hub.com/)** | e.g. Sentinel‑1/2/3/5P, Landsat, MODIS                     | [Example Notebook](guide/jupyterlab/notebooks/Generate_SentinelHub_cubes.ipynb) |
+| <img src="https://stacspec.org/public/images-original/STAC-04.png" class="logo-icon-table" /> | **[SpatioTemporal Assets Catalog (STAC)](https://stacspec.org/en/about/datasets/)** | e.g. Sentinel, Planet, PROBA‑V                             | |
+| <img src="https://about.zenodo.org/static/img/logos/zenodo-black-border.svg" class="logo-icon-table" /> | **[Zenodo](https://zenodo.org/)** | e.g. Copernicus/ESA research datasets                      | |
+| <img src="../img/logo/cube_small.png" class="logo-icon-table" /> | **deep esdl public data** | *(Please specify collections)*                             | |
