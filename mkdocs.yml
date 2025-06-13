@@ -1,5 +1,5 @@
 site_name: DeepESDL Documentation (in development)
-repo_url: https://github.com/deepesdl/deepesdl-doc
+# repo_url: https://github.com/deepesdl/deepesdl-doc
 copyright: Copyright © 2025 by the DeepESDL Team
 
 #theme: readthedocs  # alternative: mkdocs
@@ -45,7 +45,7 @@ extra_css:
   - css/custom.css
 
 plugins:
-  - search
+ # - search
   - mkdocs-jupyter:
       execute: false
       include_requirejs: true
@@ -65,24 +65,45 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-
-
-not_in_nav:
-  index.md
+not_in_nav: index.md
 
 nav:
   - index.md
+  - Data:
+      - datasets/index.md
+      - xcube Data Stores: datasets/datastores.md
+      - Earth System Data Cube: datasets/ESDC.md
+      - Black Sea Cube: datasets/black-sea.md
+      - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
+      - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
+      - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
+      - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
+      - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
+      - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
+  - Reproducible Research:
+      - research/index.md
+      - EarthCode: research/earthcode.md
+      - Science Cases:
+          - Land-Biosphere-Society: research/science_cases/land_biosphere.md
+          - Drought Effects: research/science_cases/drought_effects.md
+          - Ocean Carbon Cycle: research/science_cases/ocean.md
   - About DeepESDL:
-      - Overview: about/index.md
-      - Summary: about/summary.md
+      - about/index.md
       - News and Announcements: about/events_announcements.md
-      - Change Log: about/change_log.md
-  - Platform Design:
-      #- Overview: design/index.md
-      - Context: design/context.md
-      - Architecture: design/architecture.md
-      - Hub: design/hub.md
-      - Services and Tools: design/services-and-tools.md
+      - Platform Design:
+          #- Overview: design/index.md
+          - Context: about/design/context.md
+          - Architecture: about/design/architecture.md
+          - Hub: about/design/hub.md
+          - Services and Tools: about/design/services-and-tools.md
+      - Events: about/events.md
+      - Publications: about/publications.md
+  - Become a User:
+      - become_user/index.md
+      - Costs and Services: become_user/costs.md
+      - Success Stories:
+          - become_user/stories/index.md
+          - Project List: become_user/stories/list.md
   - User Guide:
       - Overview: guide/overview.md
       - JupyterLab:
@@ -163,29 +184,5 @@ nav:
               - ml-toolkit/api-reference/10-utils/rechunk-cube.md
               - ml-toolkit/api-reference/10-utils/split-chunk.md
       - Further information: guide/further-information.md
-  - Catalogue/ Datasets:
-      - datasets/index.md
-      - xcube Data Stores: datasets/datastores.md
-      - Earth System Data Cube: datasets/ESDC.md
-      - Black Sea Cube: datasets/black-sea.md
-      - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
-      - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
-      - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
-      - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
-      - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
-      - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
-  - Science Cases:
-      - Land-Biosphere-Society: science_cases/land_biosphere.md
-      - Drought Effects: science_cases/drought_effects.md
-      - Ocean Carbon Cycle: science_cases/ocean.md
-  - Reproducible Research:
-      - research/index.md
-      - Instructions: research/instructions.md
-      - Example: research/example.md
-  - Become a User: become_user/index.md
-  - Success Stories:
-      - Stories: stories/index.md
-      - Project List: stories/list.md
-  - Dissemination:
-      - Events: dissemination/events.md
-      - Publications: dissemination/publications.md
+
+
