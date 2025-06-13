@@ -5,7 +5,7 @@ of the DeepESDL project. It comprises the internal [*DeepESDL Hub*](hub.md)
 and *user projects* and the publicly visible parts. Both are served by a 
 common infrastructure and common resources.
 
-![DeepESDL High-level Design](../../../img/concept.png)
+![DeepESDL High-level Design](../../img/concept.png)
 
 Applications available to users within DeepESDL comprise:
 

@@ -20,4 +20,4 @@ The DeepESDL documentation contains:
   This is the starting point for new users.
 - An overview of [public, pre-generated data cubes](../datasets/datasets.md)
   available in DeepESDL with detailed metadata and specifications.
-- A [description of DeepESDL’s architecture](../design/index.md).
+- A [description of DeepESDL’s architecture](design/index.md).
