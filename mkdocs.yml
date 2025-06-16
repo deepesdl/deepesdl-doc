@@ -20,6 +20,8 @@ theme:
     - navigation.prune
     - navigation.footer
     - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
     # - navigation.tabs.sticky
   palette:
     # Palette toggle for light mode
