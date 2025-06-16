@@ -5,7 +5,7 @@ of the DeepESDL project. It comprises the internal [*DeepESDL Hub*](hub.md)
 and *user projects* and the publicly visible parts. Both are served by a 
 common infrastructure and common resources.
 
-![DeepESDL High-level Design](../img/concept.png)
+![DeepESDL High-level Design](../../img/concept.png)
 
 Applications available to users within DeepESDL comprise:
 
@@ -73,7 +73,7 @@ for DeepESDL. Examples are
   example in the ESA EuroDataCube project;
 * The xcube cube generator tools, xcube Server, xcube Viewer 
   are derived from already available components in the
-  [xcube Toolkit](./services-and-tools.md) 
+  [xcube Toolkit](services-and-tools.md) 
   developed and used in several activities by the development team;
 * The Cube 4D Viewer will be an adopted version of Earthwave’s 4D Viewer.
 
