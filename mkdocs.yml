@@ -45,7 +45,7 @@ extra_css:
   - css/custom.css
 
 plugins:
- # - search
+  # - search
   - mkdocs-jupyter:
       execute: false
       include_requirejs: true
@@ -87,6 +87,12 @@ nav:
           - Land-Biosphere-Society: research/science_cases/land_biosphere.md
           - Drought Effects: research/science_cases/drought_effects.md
           - Ocean Carbon Cycle: research/science_cases/ocean.md
+  - Become a User:
+      - become_user/index.md
+      - Costs and Services: become_user/costs.md
+      - Success Stories:
+          - become_user/stories/index.md
+          - Project List: become_user/stories/list.md
   - About DeepESDL:
       - about/index.md
       - News and Announcements: about/events_announcements.md
@@ -98,12 +104,6 @@ nav:
           - Services and Tools: about/design/services-and-tools.md
       - Events: about/events.md
       - Publications: about/publications.md
-  - Become a User:
-      - become_user/index.md
-      - Costs and Services: become_user/costs.md
-      - Success Stories:
-          - become_user/stories/index.md
-          - Project List: become_user/stories/list.md
   - User Guide:
       - Overview: guide/overview.md
       - JupyterLab:
@@ -124,6 +124,9 @@ nav:
               - guide/jupyterlab/notebooks/Generate_CCI_cubes.ipynb
               - guide/jupyterlab/notebooks/Generate_CMEMS_cubes.ipynb
               - guide/jupyterlab/notebooks/Generate_SentinelHub_cubes.ipynb
+              - guide/jupyterlab/notebooks/Access_data_from_nonsearchable_stac_catalog.ipynb
+              - guide/jupyterlab/notebooks/Access_data_from_Zenodo.ipynb
+              - guide/jupyterlab/notebooks/Access_Sentinel2_data_from_CDSE.ipynb
               - guide/jupyterlab/notebooks/How_to_make_use_of_Dask_clusters.ipynb
       - Visualisation:
           - xcube Viewer: guide/xcube-viewer.md
@@ -184,5 +187,3 @@ nav:
               - ml-toolkit/api-reference/10-utils/rechunk-cube.md
               - ml-toolkit/api-reference/10-utils/split-chunk.md
       - Further information: guide/further-information.md
-
-

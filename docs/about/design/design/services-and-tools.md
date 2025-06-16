@@ -35,18 +35,18 @@ The command-line tools
 [`xcube gen`](https://xcube.readthedocs.io/en/latest/cli/xcube_gen.html) and 
 [`xcube gen2`](https://xcube.readthedocs.io/en/latest/cli/xcube_gen2.html)
 offer flexible data cube generation 
-that is made available via a dedicated [JupyterLab](../guide/jupyterlab/index.md) 
+that is made available via a dedicated [JupyterLab](../../../guide/jupyterlab/index.md) 
 profile. The tool reads data streams from one or more data stores, 
 then it resamples and combines them. The merged cube can then be 
 manipulated by user-provided Python code before the resulting 
 cube is written into another data store, for example AWS S3.
 
-![xcube Generator schema](../img/ardc-gen.png)
+![xcube Generator schema](../../../img/ardc-gen.png)
 
 The current features of the xcube generation service are:
 
 * Read data streams from a variety of xcube data stores
-  (see [xcube Toolkit](./services-and-tools.md)).
+  (see [xcube Toolkit](services-and-tools.md)).
 * Perform spatial resampling of raw and rectified data streams to 
   a common spatial grid using standard coordinate reference systems, e.g., 
   EU LAEA (EPSG:3035).
@@ -84,7 +84,7 @@ spatial images of the data cubes on a map at given time steps,
 it can show a variable’s time series with error bars for any geometry and 
 show the details of a data cubes and its variables.
 
-![xcube Viewer](../img/xcube-viewer-2.png)
+![xcube Viewer](../../../img/xcube-viewer-2.png)
 
 The xcube Viewer provides several useful tools to explore data cubes. 
 For example:

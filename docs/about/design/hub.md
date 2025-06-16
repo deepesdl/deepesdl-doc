@@ -35,7 +35,7 @@ autoscaling groups using the managed Elastic Container Service (ECS) of AWS.
 This setup ensures, that only actually required resources are used and 
 thus need to be paid.
 
-![EoxHub](../img/eoxhub.png)
+![EoxHub](../../img/eoxhub.png)
 
 The figure above shows the App deployment in user Workspaces. 
 The sequence of steps is: The App or Notebook Developer pushes the 
