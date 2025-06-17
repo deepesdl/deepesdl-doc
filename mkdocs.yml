@@ -101,7 +101,7 @@ nav:
       - Success Stories:
           - become_user/stories/index.md
           - Project List: become_user/stories/list.md
-  - About DeepESDL:
+  - About:
       - about/index.md
       - News and Announcements: about/events_announcements.md
       - Platform Design:

@@ -1,0 +1,236 @@
+<!-- This html overrides docs/index.md
+inspired by https://github.com/up42/up42-py/blob/master/docs/theme_override_home/home.html
+and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
+-->
+{% extends "base.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+
+    .md-main {
+        display:flex
+    }
+
+    .md-container{
+        background-color: var(--md-primary-fg-color);
+    }
+
+    .tx-container {
+        padding-top: .0rem;
+        height:100%;
+    }
+
+
+    .tx-hero {
+        margin: 32px 2.8rem;
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        color: white;
+        font-weight: 700
+    }
+
+    .tx-hero__content {
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .tx-hero__image{
+        max-width:25rem;
+        max-height:25rem;
+    }
+
+    .tx-hero .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button--primary {
+        color: var(--md-primary-fg-color);
+        background-color: var(--md-primary-bg-color);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        color: var(--md-default-bg-color);
+        background-color: var(--md-accent-fg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+    I
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 22rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+    }
+</style>
+
+<section style="
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('img/img.png') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+">
+    <div style="max-width: 800px;">
+        <h1 style="font-size: 4rem; margin-bottom: 1rem;">DeepESDL</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 2rem;">
+            A virtual laboratory to the Earth Science research community.
+        </p>
+        <a href="##services" style="
+      padding: 1rem 2rem;
+      background-color: var(--md-primary-fg-color);
+      color: white;
+      font-size: 1rem;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: bold;
+    ">Explore 🌍</a>
+    </div>
+</section>
+
+
+
+<!-- About Section -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+    <div style="max-width: 800px; margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem; text-align: center;">About</h2>
+        <p style="font-size: 1.2rem; text-align: left;">
+            DeepESDL is a virtual laboratory offering analysis-ready Earth system data cubes for the scientific community.
+            It enables seamless data access, exploration, sharing, and publication through a powerful suite of integrated
+            services.
+        </p>
+    </div>
+    <div style="font-size: 1.2rem; text-align: center;">
+        <p style="margin-bottom: 1rem;">provided by</p>
+        <img src="https://www.brockmann-consult.de/calbigfe/images/BC-Logo_300dpi.png" alt="Company Logo" style="height: 80px;">
+    </div>
+</section>
+
+
+
+
+<!-- Tiles -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+    <h2 id="#services" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Services</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+
+        <!-- Viewer Tile -->
+        <a href="../guide/xcube-viewer" style="text-decoration: none; color: inherit;">
+            <div style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="img/img_viewer.png" alt="Viewer" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Viewer</h3>
+                <p style="font-size: .8rem;">Publish and visualize data directly in a personalized Viewer.</p>
+            </div>
+        </a>
+
+        <!-- Earth Code Tile -->
+        <a href="../research/earthcode" style="text-decoration: none; color: inherit;">
+            <div style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png" alt="Earth Code" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Earth Code</h3>
+                <p style="font-size: .8rem;">Share reproducible workflows and data in Earth Code.</p>
+            </div>
+        </a>
+
+        <!-- JupyterLab Tile -->
+        <a href="../guide/jupyterlab" style="text-decoration: none; color: inherit;">
+            <div style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="https://jupyter.org/assets/share.png" alt="JupyterLab" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">JupyterLab</h3>
+                <p style="font-size: .8rem;">Run analyses, visualize results with analysis-ready data using a powerful, cloud-hosted notebook environment.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- Data Section -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Data</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+        <div style="flex: 1 1 400px; text-align: left;">
+            <p style="font-size: 1.3rem;">
+                <strong>DeepESDL provides access to Earth observation data in a unified, analysis-ready framework.</strong>
+                Work with public and private datasets on demand—without downloads or preprocessing.
+            </p>
+            <p style="font-size: 1.3rem;">
+                👉  <a href="https://example.com/datasources" target="_blank" style="text-decoration: underline;">Browse available data sources</a>
+            </p>
+        </div>
+        <div style="flex: 1 1 500px;">
+            <img src="img/img_datastores.png" alt="Data Sources" style="width: 100%;">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Success Stories -->
+<section style="text-align: center; max-width: 1200px; margin: 0 auto; padding: 4rem 1rem;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Success Stories</h2>
+    <img src="https://placehold.co/1400x300/white/orange" alt="Place Holder"
+         style="display: block; margin: 0 auto 1.5rem; max-width: 100%;">
+</section>
+
+
+<!-- Become a User CTA -->
+<section id="become-user" style="text-align: center; max-width: 1200px; margin: 0 auto; padding: 4rem 1rem;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to join DeepESDL?</h2>
+    <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem;">
+        Join us to unlock the potential of Earth Observation data.
+    </p>
+    <a href="../become_user" style="
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--md-accent-fg-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+  ">Become a User</a>
+</section>
+
+
+{% endblock %}
+{% block content %}{% endblock %}
