@@ -1,4 +1,4 @@
-site_name: DeepESDL Documentation (in development)
+site_name: DeepESDL
 # repo_url: https://github.com/deepesdl/deepesdl-doc
 copyright: Copyright © 2025 by the DeepESDL Team
 
@@ -40,6 +40,14 @@ theme:
   # font:
   #  text: Nunito
   custom_dir: docs/html
+
+extra:
+  generator: false
+  social:
+    - icon: octicons/mail-16
+      link: mailto:esdl-support@brockmann-consult.de
+    - icon: fontawesome/brands/github
+      link: https://github.com/deepesdl/deepesdl-doc
 
 extra_css:
   - css/custom.css
