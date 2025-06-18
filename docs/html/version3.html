@@ -154,13 +154,32 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
             </div>
 
         </div>
-    </section>
-
     <!-- Provided By Section -->
-    <div style="font-size: 1.2rem; text-align: center;">
-        <p style="margin-bottom: 1rem;">provided by</p>
-        <img src="https://www.brockmann-consult.de/calbigfe/images/BC-Logo_300dpi.png" alt="Company Logo" style="height: 80px;">
+    <div style="
+  font-size: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+">
+        <p style="width: 100%; margin-bottom: 1rem;">provided by</p>
+
+        <a href="https://www.esa.int/" target="_blank">
+            <img src="https://esamultimedia.esa.int/docs/corporate/ESA_logo_2020_Deep.png" alt="ESA Logo" style="height: 80px;">
+        </a>
+
+        <a href="https://www.brockmann-consult.de/" target="_blank">
+            <img src="https://www.brockmann-consult.de/calbigfe/images/BC-Logo_300dpi.png" alt="Brockmann Consult Logo" style="height: 80px;">
+        </a>
+
+        <a href="https://eox.at/" target="_blank">
+            <img src="https://www.osgeo.org/wp-content/uploads/EOX_Logo.png" alt="EOX Logo" style="height: 80px;">
+        </a>
     </div>
+
+
 </section>
 
 
@@ -211,8 +230,8 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
                 <strong>DeepESDL provides access to Earth observation data in a unified, analysis-ready framework.</strong>
                 Work with public and private datasets on demand—without downloads or preprocessing.
             </p>
-            <p style="font-size: 1.3rem;">
-                👉  <a href="https://example.com/datasources" target="_blank" style="text-decoration: underline;">Browse available data sources</a>
+            <p class="md-typeset" style="font-size: 1.3rem; ">
+                👉  <a href="../data" target="_blank" >Browse data sources</a>
             </p>
         </div>
         <div style="flex: 1 1 500px;">
