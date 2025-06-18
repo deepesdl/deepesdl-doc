@@ -89,21 +89,4 @@
 }
 
 
-:root  > * {
-  --md-primary-fg-color:        #0a2f5d;
-  --md-primary-fg-color--light: #1a7bf5;
-  --md-primary-fg-color--dark: #010810;
-  --md-typeset-a-color: #1a7bf5;
-}
-
-:root  > * {
-  --md-primary-fg-color: #051e39;
-  --md-primary-fg-color--light: #1a7bf5;
-  --md-primary-fg-color--dark: #010810;
-}
-
-
-.md-typeset a{
-  color: var(--md-primary-fg-color--light);
-}
 
