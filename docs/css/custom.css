@@ -4,6 +4,14 @@
   text-align: center;
 }
 
+/* for logos in table -> Data page */
+.logo-icon-table {
+  max-height: 60px;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+}
+
 /* Hide the dark mode image by default */
 .dark-image {
   display: none;
@@ -19,7 +27,7 @@
 }
 
 .md-grid {
-  max-width: "1400px";
+  max-width: 1200px;
 }
 
 .xr-wrap {

@@ -20,25 +20,27 @@ theme:
     - navigation.prune
     #- navigation.footer
     - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs.sticky
   palette:
     # Palette toggle for light mode
     scheme: slate
     primary: custom
     accent: deep orange
-#    - scheme: default
-#      primary: white #blue grey
-#      accent: deep orange
-#      toggle:
-#        icon: material/brightness-7
-#        name: Switch to dark mode
-#    # Palette toggle for dark mode
-#    - scheme: slate
-#      primary: black #custom
-#      accent: deep orange
-#      toggle:
-#        icon: material/brightness-4
-#        name: Switch to light mode
+  #    - scheme: default
+  #      primary: white #blue grey
+  #      accent: deep orange
+  #      toggle:
+  #        icon: material/brightness-7
+  #        name: Switch to dark mode
+  #    # Palette toggle for dark mode
+  #    - scheme: slate
+  #      primary: black #custom
+  #      accent: deep orange
+  #      toggle:
+  #        icon: material/brightness-4
+  #        name: Switch to light mode
   # font:
   #  text: Nunito
   custom_dir: docs/html
@@ -80,16 +82,7 @@ not_in_nav: index.md
 nav:
   - index.md
   - Data:
-      - datasets/index.md
-      - xcube Data Stores: datasets/datastores.md
-      - Earth System Data Cube: datasets/ESDC.md
-      - Black Sea Cube: datasets/black-sea.md
-      - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
-      - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
-      - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
-      - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
-      - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
-      - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
+      - data/index.md
   - Reproducible Research:
       - research/index.md
       - EarthCode: research/earthcode.md
@@ -142,7 +135,18 @@ nav:
           - xcube Viewer: guide/xcube-viewer.md
           - Lexcube Viewer: guide/lexcube-viewer.md
           - 4D Viewer: guide/4d-viewer.md
-      - Datacubes: guide/datacubes.md
+      - Datacubes:
+          - guide/datacubes/index.md
+          - xcube Data Stores: datasets/datastores.md
+          - deepesdl-public:
+              - Earth System Data Cube: datasets/ESDC.md
+              - Black Sea Cube: datasets/black-sea.md
+              - Land Cover Cube: datasets/LC-1x2025x2025-2-0-0-levels.md
+              - Ocean Cube: datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
+              - SMOS freeze/thaw Cube: datasets/SMOS-snow-1x720x720-1-0-1-zarr.md
+              - Polar Cube: datasets/polar-100m-1x2048x2048-1-0-1-zarr.md
+              - Permafrost Cube: datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
+              - Hydrology Cube: datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
       - Datacube generation: guide/datacube-generation.md
       - ML Toolkits:
           # - ml-toolkit/ml-toolkits.md
