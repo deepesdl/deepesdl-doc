@@ -18,25 +18,27 @@ theme:
     - toc.permalink
     - toc.follow
     - navigation.prune
-    - navigation.footer
+    #- navigation.footer
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
   palette:
     # Palette toggle for light mode
-    - scheme: default
-      primary: blue grey
-      accent: deep orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: deep orange
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: slate
+    primary: custom
+    accent: deep orange
+#    - scheme: default
+#      primary: white #blue grey
+#      accent: deep orange
+#      toggle:
+#        icon: material/brightness-7
+#        name: Switch to dark mode
+#    # Palette toggle for dark mode
+#    - scheme: slate
+#      primary: black #custom
+#      accent: deep orange
+#      toggle:
+#        icon: material/brightness-4
+#        name: Switch to light mode
   # font:
   #  text: Nunito
   custom_dir: docs/html
