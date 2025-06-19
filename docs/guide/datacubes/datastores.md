@@ -5,7 +5,7 @@ The xcube data stores Framework is described in detail in the xcube
 In this section, the currently available data stores are presented with an 
 example for each of them. For more detailed examples, please refer to the 
 getting started notebook section of the jupyterlab 
-[user guide](../guide/jupyterlab/index.md#getting-started-notebooks).
+[user guide](../jupyterlab/index.md#getting-started-notebooks).
 
 -   [DeepESDL public datasets](#deepesdl-datasets-in-public-object-storage)
 -   [xcube CMEMS data store](#xcube-cmems-data-store)
@@ -18,7 +18,7 @@ getting started notebook section of the jupyterlab
 The DeepESDL Consortium provides a growing number of datasets which are made 
 analysis-ready and persisted in public object storage for easy access. 
 An overview of available persisted datasets is given section 
-[datasets](datasets.md). 
+[datasets](ESDC.md). 
 
 To access the DeepESDL persisted datasets, please follow the example: 
 

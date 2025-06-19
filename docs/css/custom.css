@@ -12,6 +12,9 @@
   margin: auto;
 }
 
+.md-header {
+  box-shadow: none !important;
+}
 
 .md-grid {
   max-width: 1400px;
@@ -65,6 +68,10 @@
 
 
 .md-typeset a{
+  color: #0b3e73;
+}
+
+.md-nav__item .md-nav__link--active{
   color: #0b3e73;
 }
 
