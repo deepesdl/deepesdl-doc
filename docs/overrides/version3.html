@@ -1,7 +1,4 @@
-<!-- This html overrides docs/index.md
-inspired by https://github.com/up42/up42-py/blob/master/docs/theme_override_home/home.html
-and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
--->
+
 {% extends "base.html" %}
 {% block tabs %}
 {{ super() }}
@@ -15,38 +12,10 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
         background-color: var(--md-primary-fg-color);
     }
 
-    .tx-container {
-        padding-top: .0rem;
-        height:100%;
-    }
-
-
-    .tx-hero {
-        margin: 32px 2.8rem;
-        color: var(--md-primary-bg-color);
-        justify-content: center;
-    }
-
-    .tx-hero h1 {
-        margin-bottom: 1rem;
-        color: currentColor;
-        font-weight: 700
-    }
-
     h2 {
         margin-bottom: 1rem;
         color: black; /*white;*/
         font-weight: 700
-    }
-
-    .tx-hero__content {
-        margin: 0 auto;
-        text-align: justify;
-    }
-
-    .tx-hero__image{
-        max-width:25rem;
-        max-height:25rem;
     }
 
     .tx-hero .md-button {
@@ -94,13 +63,29 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
             align-items: center;
         }
     }
+
+    .landingpage-button {
+        padding: 1rem 2rem;
+        background-color: #0b3e73;
+        color: white;
+        font-size: 1rem;
+        border-radius: 3px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .landingpage-button:hover {
+        background-color: var(--md-accent-fg-color);
+    }
 </style>
 
 <section style="
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: url('img/img.png') center center / cover no-repeat;
+  background: url('assets/img.png') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,15 +100,7 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
         <p style="font-size: 1.5rem; margin-bottom: 2rem;">
             A virtual laboratory to the Earth Science research community.
         </p>
-        <a href="##services" style="
-      padding: 1rem 2rem;
-      background-color: var(--md-primary-fg-color);
-      color: black; /*white;*/
-      font-size: 1rem;
-      border-radius: 3px;
-      text-decoration: none;
-      font-weight: bold;
-    ">Explore 🌍</a>
+        <a href="##services" class="landingpage-button">Explore</a>
     </div>
 </section>
 
@@ -154,31 +131,53 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
             </div>
 
         </div>
+
+
     <!-- Provided By Section -->
     <div style="
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 2rem;
+  padding: 2rem 1rem;
 ">
-        <p style="width: 100%; margin-bottom: 1rem;">provided by</p>
 
-        <a href="https://www.esa.int/" target="_blank">
-            <img src="https://esamultimedia.esa.int/docs/corporate/ESA_logo_2020_Deep.png" alt="ESA Logo" style="height: 80px;">
-        </a>
+        <!-- Supported by -->
+        <div style="flex: 1 1 250px;">
+            <p style="margin-bottom: 1rem;">Supported by</p>
+            <a href="https://rsc4earth.de/" target="_blank">
+                <img src="https://www.uni-leipzig.de/_assets/89f4369f29e16b23ff4835f5790afe07/Images/Icons/uni_leipzig_logo_v2.svg" alt="University of leipzig Logo" style="height: 60px; margin: 0.5rem;">
+            </a>
+            <a href="https://earthwave.co.uk/" target="_blank">
+                <img src="https://earthwave.co.uk/wp-content/uploads/2021/10/logo-200.png" alt="Earthwave Logo" style="height: 60px; margin: 0.5rem;">
+            </a>
+            <a href="https://www.biochem.mpg.de/en" target="_blank">
+                <img src="https://www.earthsystemdatalab.net/wp-content/uploads/2018/05/logo_mpi_one_size.png" alt="Max Planck Institute for Biogeochemistry Logo" style="height: 60px; margin: 0.5rem;">
+            </a>
+        </div>
 
-        <a href="https://www.brockmann-consult.de/" target="_blank">
-            <img src="https://www.brockmann-consult.de/calbigfe/images/BC-Logo_300dpi.png" alt="Brockmann Consult Logo" style="height: 80px;">
-        </a>
+        <!-- Operated by -->
+        <div style="flex: 1 1 250px;">
+            <p style="margin-bottom: 1rem;">Operated by</p>
+            <a href="https://www.brockmann-consult.de/" target="_blank">
+                <img src="assets/logo_bc.png" alt="Brockmann Consult Logo" style="height: 80px; margin: 0.5rem;">
+            </a>
+            <a href="https://eox.at/" target="_blank">
+                <img src="https://www.osgeo.org/wp-content/uploads/EOX_Logo.png" alt="EOX IT Services GmbH Logo" style="height: 80px; margin: 0.5rem;">
+            </a>
+        </div>
 
-        <a href="https://eox.at/" target="_blank">
-            <img src="https://www.osgeo.org/wp-content/uploads/EOX_Logo.png" alt="EOX Logo" style="height: 80px;">
-        </a>
+        <!-- Funded by -->
+        <div style="flex: 1 1 250px;">
+            <p style="margin-bottom: 1rem;">Funded by</p>
+            <a href="https://www.esa.int/" target="_blank">
+                <img src="https://esamultimedia.esa.int/docs/corporate/ESA_logo_2020_Deep.png" alt="ESA Logo" style="height: 80px; margin: 0.5rem;">
+            </a>
+        </div>
+
     </div>
-
 
 </section>
 
@@ -194,7 +193,7 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
         <!-- Viewer Tile -->
         <a href="../guide/xcube-viewer" style="text-decoration: none; color: inherit;">
             <div style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                <img src="img/img_viewer.png" alt="Viewer" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
+                <img src="assets/img_viewer.png" alt="Viewer" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
                 <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">Viewer</h3>
                 <p style="font-size: .8rem; color: black;">Publish and visualize data directly in a personalized Viewer.</p>
             </div>
@@ -228,25 +227,16 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
         <div style="flex: 1 1 400px; text-align: left;">
             <p style="font-size: 1.3rem;">
                 <strong>DeepESDL provides access to Earth observation data in a unified, analysis-ready framework.</strong>
-                Work with public and private datasets on demand—without downloads or preprocessing.
+                Work with public and private datasets on demand.
             </p>
             <p class="md-typeset" style="font-size: 1.3rem; ">
-                👉  <a href="../data" target="_blank" >Browse data sources</a>
+                <a href="../data" target="_blank" >Browse data sources</a>
             </p>
         </div>
         <div style="flex: 1 1 500px;">
-            <img src="img/img_datastores_light.png" alt="Data Sources" style="width: 100%;">
+            <img src="assets/img_datastores_light.png" alt="Data Sources" style="width: 100%;">
         </div>
     </div>
-</section>
-
-
-
-<!-- Success Stories -->
-<section style="text-align: center; max-width: 1200px; margin: 0 auto; padding: 4rem 1rem;">
-    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Success Stories</h2>
-    <img src="https://placehold.co/1400x500/white/orange" alt="Place Holder"
-         style="display: block; margin: 0 auto 1.5rem; max-width: 100%;">
 </section>
 
 
@@ -256,16 +246,7 @@ and https://github.com/tylerdotrar/mkdocs-coverpage/blob/main/assets/home.html
     <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem;">
         Join us to unlock the potential of Earth Observation data.
     </p>
-    <a href="../become_user" style="
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--md-accent-fg-color);
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 3px;
-    text-decoration: none;
-    font-weight: bold;
-  ">Become a User</a>
+    <a href="../become_user" class="landingpage-button">Become a User</a>
 </section>
 
 

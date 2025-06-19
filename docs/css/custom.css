@@ -12,19 +12,6 @@
   margin: auto;
 }
 
-/* Hide the dark mode image by default */
-.dark-image {
-  display: none;
-}
-
-/* Show the dark mode image and hide the light mode image when dark mode is active */
-[data-md-color-scheme="slate"] .light-image {
-  display: none;
-}
-
-[data-md-color-scheme="slate"] .dark-image {
-  display: block;
-}
 
 .md-grid {
   max-width: 1400px;
@@ -77,16 +64,22 @@
 }
 
 
-[data-md-color-scheme="slate"] {
-  --xr-font-color0: rgba(255, 255, 255, 1);
-  --xr-font-color2: rgba(255, 255, 255, 0.54);
-  --xr-font-color3: rgba(255, 255, 255, 0.38);
-  --xr-border-color: #1F1F1F;
-  --xr-disabled-color: #515151;
-  --xr-background-color: #111111;
-  --xr-background-color-row-even: #111111;
-  --xr-background-color-row-odd: #313131;
+.md-typeset a{
+  color: #0b3e73;
 }
 
+.md-button--accent {
+  background-color: #0b3e73;  /* your custom blue */
+  border-color: #0b3e73;
+  color: white!important;
+  border: none!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.md-button--accent:hover,
+.md-button--accent:focus {
+  background-color: var(--md-accent-fg-color);  /* deep orange */
+  color: white;
+}
 
 

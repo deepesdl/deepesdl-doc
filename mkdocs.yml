@@ -2,8 +2,6 @@ site_name: DeepESDL
 # repo_url: https://github.com/deepesdl/deepesdl-doc
 copyright: Copyright © 2025 by the DeepESDL Team
 
-#theme: readthedocs  # alternative: mkdocs
-
 theme:
   name: material
   logo: img/logo/cube_small.png
@@ -24,35 +22,24 @@ theme:
     - navigation.instant.progress
     - navigation.tabs.sticky
   palette:
-    # Palette toggle for light mode
-    #scheme: slate
-    #primary: custom
-    #accent: deep orange
-      - scheme: default
-        primary: white #blue grey
-        accent: deep orange
-  #      toggle:
-  #        icon: material/brightness-7
-  #        name: Switch to dark mode
-  #    # Palette toggle for dark mode
-  #    - scheme: slate
-  #      primary: black #custom
-  #      accent: deep orange
-  #      toggle:
-  #        icon: material/brightness-4
-  #        name: Switch to light mode
+      scheme: default
+      primary: white #blue grey
+      accent: deep orange
   # font:
   #  text: Nunito
-  custom_dir: docs/html
+  custom_dir: docs/overrides
 
 extra:
-  generator: false
+  generator: true #false
   social:
     - icon: octicons/mail-16
       link: mailto:esdl-support@brockmann-consult.de
       name: esdl-support@brockmann-consult.de
     - icon: fontawesome/brands/github
       link: https://github.com/deepesdl/deepesdl-doc
+  footer_links:
+    - text: "Imprint"
+      href: "../../imprint"
 
 extra_css:
   - css/custom.css
