@@ -39,7 +39,7 @@ extra:
       link: https://github.com/deepesdl/deepesdl-doc
   footer_links:
     - text: "Imprint"
-      href: "../../imprint"
+      href: "imprint"
 
 extra_css:
   - overrides/css/custom.css

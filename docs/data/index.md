@@ -15,10 +15,11 @@ which accesses data directly from remote services. This means you can work with 
 storage, and effort.
 
 In addition to public data sources, DeepESDL supports the integration of **your own datasets** into the same framework, 
-enabling seamless joint analysis and visualization. For guidance on integrating your own data, see [this guide]() *(link to be inserted)*.
+enabling seamless joint analysis and visualization. For guidance on integrating your own data, see
+[this guide](#want-to-use-your-own-data).
 
 
-[Get Started!](../guide/jupyterlab/notebooks/Access_public_cubes){ .md-button .md-button--accent }
+[Get Started!](../guide/jupyterlab/notebooks/Access_public_cubes.ipynb){ .md-button .md-button--accent }
 
 ---
 
@@ -44,5 +45,5 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 
 DeepESDL supports seamless integration of your own datasets into the analysis-ready cube environment. This allows joint 
 processing and comparison with public Earth observation data.  
-👉 [Learn how to integrate your own data](../guide/jupyterlab/Upload_files_to_shared_team_s3_storage)
+👉 [Learn how to integrate your own data](../guide/jupyterlab/Upload_files_to_shared_team_s3_storage.ipynb)
 
