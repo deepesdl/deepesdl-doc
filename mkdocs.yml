@@ -42,7 +42,7 @@ extra:
       href: "../../imprint"
 
 extra_css:
-  - css/custom.css
+  - overrides/css/custom.css
 
 plugins:
   # - search
