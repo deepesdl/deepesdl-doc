@@ -3,7 +3,9 @@ site_url: https://deepesdl.readthedocs.io
 repo_url: https://github.com/deepesdl/deepesdl-doc
 edit_uri: edit/main/docs
 copyright: Copyright © 2022 by the DeepESDL Team
-theme: readthedocs  # alternative: mkdocs
+theme:
+  name: readthedocs  # alternative: mkdocs
+  custom_dir: docs/overrides
 
 nav:
   - Home:

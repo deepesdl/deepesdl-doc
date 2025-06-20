@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+{{ super() }}
+<style>
+    .outdated-banner {
+        background-color: #ffcc00;
+        color: #000;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="outdated-banner">
+    This documentation is <strong>outdated</strong>. Please see the updated version
+    <a href="https://www.earthsystemdatalab.net/" target="_blank">here</a>.
+</div>
+{{ super() }}
+{% endblock %}
