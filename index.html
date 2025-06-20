@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -10,19 +11,19 @@
       
       
       
-        <link rel="next" href="guide/overview/">
+        <link rel="next" href="data/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.44">
+      <link rel="icon" href="img/logo/cube_small.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
-        <title>About DeepESDL - DeepESDL Documentation</title>
+        <title>Home - DeepESDL</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
@@ -48,6 +49,8 @@
     
       <link rel="stylesheet" href="css/mkapi-material.css">
     
+      <link rel="stylesheet" href="overrides/css/custom.css">
+    
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -62,23 +65,16 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="pink">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-orange">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#about-deepesdl" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -90,12 +86,11 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="DeepESDL Documentation" class="md-header__button md-logo" aria-label="DeepESDL Documentation" data-md-component="logo">
+    <a href="." title="DeepESDL" class="md-header__button md-logo" aria-label="DeepESDL" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="img/logo/cube_small.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -106,13 +101,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DeepESDL Documentation
+            DeepESDL
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About DeepESDL
+              Home
             
           </span>
         </div>
@@ -120,131 +115,444 @@
     </div>
     
       
-        <form class="md-header__option" data-md-component="palette">
-  
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/deepesdl/deepesdl-doc" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
-  </div>
-  <div class="md-source__repository">
-    GitHub
-  </div>
-</a>
-      </div>
     
   </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="data/" class="md-tabs__link">
+          
+  
+    
+  
+  Data
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="research/" class="md-tabs__link">
+          
+  
+    
+  
+  Reproducible Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="become_user/" class="md-tabs__link">
+          
+  
+    
+  
+  Become a User
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="about/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="guide/" class="md-tabs__link">
+          
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
   
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
+
         
       
+<style>
+
+    .md-main {
+        display:flex
+    }
+
+    .md-container{
+        background-color: var(--md-primary-fg-color);
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        color: black; /*white;*/
+        font-weight: 700
+    }
+
+    .tx-hero .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button--primary {
+        color: var(--md-primary-fg-color);
+        background-color: var(--md-primary-bg-color);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        color: var(--md-default-bg-color);
+        background-color: var(--md-accent-fg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+    I
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 22rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+    }
+
+    .landingpage-button {
+        padding: 1rem 2rem;
+        background-color: #0b3e73;
+        color: white;
+        font-size: 1rem;
+        border-radius: 3px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .landingpage-button:hover {
+        background-color: var(--md-accent-fg-color);
+    }
+</style>
+
+
+<section style="
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('assets/img.png') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  padding: 0 5%;
+  box-sizing: border-box;
+">
+
+    <div style="max-width: 800px;">
+        <h1 style="font-size: 4rem; margin-bottom: 1rem;">DeepESDL</h1>
+        <p style="font-size: 1.5rem; margin-bottom: 2rem;">
+            A virtual laboratory to the Earth Science research community.
+        </p>
+        <a href="##services" class="landingpage-button">Explore!</a>
+    </div>
+
+    <!-- Attribution -->
+    <div style="
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 0.4rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    max-width: 300px;
+    line-height: 1;
+  ">
+        Image: Copernicus Climate Change Service, Climate Data Store (2023): ERA5 hourly data
+        on single levels from 1940 to present. Mean air temperature 2m. (modified to metres)
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+
+    <!-- Section Heading -->
+    <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem;">About</h2>
+
+        <!-- Logo and Text Flex Container -->
+        <div style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+
+            <!-- Large Logo -->
+            <div style="flex: 0 0 350px; display: flex; justify-content: center;">
+                <img src="img/logo/logo_light.png" alt="DeepESDL Logo" style="max-width: 100%; height: auto;">
+            </div>
+
+            <!-- Descriptive Text -->
+            <div style="flex: 1 1 600px;">
+                <p style="font-size: 1.2rem; line-height: 1.6;">
+                    <strong>DeepESDL – ESA’s Deep Earth System Data Laboratory</strong>, a platform providing analysis-ready
+                    data cubes in a powerful virtual environment for the Earth Science research community. DeepESDL offers
+                    a full suite of services to facilitate data exploitation, share data and source code, and publish results.
+                    Special emphasis is placed on supporting machine learning and artificial intelligence approaches,
+                    including preparation of AI-ready datasets, integrated programming environments, and scalable processing
+                    resources.
+                </p>
+            </div>
+
+        </div>
+
+
+    <!-- Provided By Section -->
+    <div style="
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 1rem;
+">
+
+        <!-- Supported by -->
+        <div style="flex: 1 1 250px;">
+            <p style="margin-bottom: 1rem;">Supported by</p>
+            <a href="https://rsc4earth.de/" target="_blank">
+                <img src="https://www.uni-leipzig.de/_assets/89f4369f29e16b23ff4835f5790afe07/Images/Icons/uni_leipzig_logo_v2.svg" alt="University of leipzig Logo" style="height: 60px; margin: 0.5rem;">
+            </a>
+            <a href="https://earthwave.co.uk/" target="_blank">
+                <img src="https://earthwave.co.uk/wp-content/uploads/2021/10/logo-200.png" alt="Earthwave Logo" style="height: 60px; margin: 0.5rem;">
+            </a>
+            <a href="https://www.biochem.mpg.de/en" target="_blank">
+                <img src="https://www.earthsystemdatalab.net/wp-content/uploads/2018/05/logo_mpi_one_size.png" alt="Max Planck Institute for Biogeochemistry Logo" style="height: 60px; margin: 0.5rem;">
+            </a>
+        </div>
+
+        <!-- Operated by -->
+        <div style="flex: 1 1 250px;">
+            <p style="margin-bottom: 1rem;">Operated by</p>
+            <a href="https://www.brockmann-consult.de/" target="_blank">
+                <img src="assets/logo_bc.png" alt="Brockmann Consult Logo" style="height: 80px; margin: 0.5rem;">
+            </a>
+            <a href="https://eox.at/" target="_blank">
+                <img src="https://www.osgeo.org/wp-content/uploads/EOX_Logo.png" alt="EOX IT Services GmbH Logo" style="height: 80px; margin: 0.5rem;">
+            </a>
+        </div>
+
+        <!-- Funded by -->
+        <div style="flex: 1 1 250px;">
+            <p style="margin-bottom: 1rem;">Funded by</p>
+            <a href="https://www.esa.int/" target="_blank">
+                <img src="https://esamultimedia.esa.int/docs/corporate/ESA_logo_2020_Deep.png" alt="ESA Logo" style="height: 80px; margin: 0.5rem;">
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- Tiles -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+    <h2 id="#services" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Services</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+
+        <!-- Viewer Tile -->
+        <a href="guide/xcube-viewer" style="text-decoration: none; color: inherit;">
+            <div style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="assets/img_viewer.png" alt="Viewer" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">Viewer</h3>
+                <p style="font-size: .8rem; color: black;">Publish and visualize data directly in a personalized Viewer.</p>
+            </div>
+        </a>
+
+        <!-- Earth Code Tile -->
+        <a href="research/earthcode" style="text-decoration: none; color: inherit;">
+            <div style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png" alt="Earth Code" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">Earth Code</h3>
+                <p style="font-size: .8rem; color: black;">Share reproducible workflows and data in Earth Code.</p>
+            </div>
+        </a>
+
+        <!-- JupyterLab Tile -->
+        <a href="guide/jupyterlab" style="text-decoration: none; color: inherit;">
+            <div style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="https://jupyter.org/assets/share.png" alt="JupyterLab" style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">JupyterLab</h3>
+                <p style="font-size: .8rem; color: black;">Run analyses, visualize results with analysis-ready data using a powerful, cloud-hosted notebook environment.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- Data Section -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Data</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+        <div style="flex: 1 1 400px; text-align: left;">
+            <p style="font-size: 1.3rem;">
+                <strong>DeepESDL provides access to Earth observation data in a unified, analysis-ready framework.</strong>
+                Work with public and private datasets on demand.
+            </p>
+            <p class="md-typeset" style="font-size: 1.3rem; ">
+                <a href="data" >Browse data sources</a>
+            </p>
+        </div>
+        <div style="flex: 1 1 500px;">
+            <img src="assets/img_datastores_light.png" alt="Data Sources" style="width: 100%;">
+        </div>
+    </div>
+</section>
+
+
+<!-- Become a User CTA -->
+<section id="become-user" style="text-align: center; max-width: 1200px; margin: 0 auto; padding: 4rem 1rem;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to join DeepESDL?</h2>
+    <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem;">
+        Join us to unlock the potential of Earth Observation data.
+    </p>
+    <a href="become_user" class="landingpage-button">Become a User</a>
+</section>
+
+
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="." title="DeepESDL Documentation" class="md-nav__button md-logo" aria-label="DeepESDL Documentation" data-md-component="logo">
-      
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="DeepESDL" class="md-nav__button md-logo" aria-label="DeepESDL" data-md-component="logo">
+      
+  <img src="img/logo/cube_small.png" alt="logo">
 
     </a>
-    DeepESDL Documentation
+    DeepESDL
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/deepesdl/deepesdl-doc" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
-  </div>
-  <div class="md-source__repository">
-    GitHub
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -256,48 +564,22 @@
   
   
   
-    
-    
+    <li class="md-nav__item md-nav__item--active">
       
-        
-          
-        
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="." class="md-nav__link md-nav__link--active">
-              
   
   <span class="md-ellipsis">
     Home
+    
   </span>
   
 
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
-            <span class="md-nav__icon md-icon"></span>
-            Home
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
+      </a>
       
     </li>
   
@@ -312,197 +594,41 @@
     
     
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="data/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
-    User guide
+    Data
+    
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            User guide
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guide/overview/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guide/jupyterlab/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JupyterLab
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guide/xcube-viewer/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    xcube Viewer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guide/datacubes/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Datacubes
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guide/datacube-generation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Datacube generation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guide/ml-toolkits/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    ML Toolkits
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="guide/further-information/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Further information
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -517,128 +643,45 @@
     
     
       
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="research/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
-    ML Toolkit
+    Reproducible Research
+    
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            ML Toolkit
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ml-toolkit/introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ml-toolkit/getting-started/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Getting Started
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ml-toolkit/example/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Example Use Case
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ml-toolkit/api-reference/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Python API
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -653,266 +696,41 @@
     
     
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="become_user/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
-    Datasets
+    Become a User
+    
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Datasets
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/datasets/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    List of datasets
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/datastores/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    xcube Data Stores
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/ESDC/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Earth System Data Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/black-sea/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Black Sea Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/LC-1x2025x2025-2-0-0-levels/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Land Cover Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/ocean-1M-9km-1x1080x1080-1-4-0-zarr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Ocean Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/SMOS-snow-1x720x720-1-0-1-zarr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SMOS freeze/thaw Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/polar-100m-1x2048x2048-1-0-1-zarr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Polar Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/esa-cci-permafrost-1x1151x1641-0-0-2-zarr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Permafrost Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datasets/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hydrology Cube
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -927,128 +745,108 @@
     
     
       
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="about/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
-    Design
+    About
+    
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Design
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="design/context/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Context
-  </span>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-      </a>
+      
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
-    <li class="md-nav__item">
-      <a href="design/architecture/" class="md-nav__link">
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
         
   
+  
+    <a href="guide/" class="md-nav__link">
+      
+  
   <span class="md-ellipsis">
-    Architecture
+    User Guide
+    
   </span>
   
 
-      </a>
-    </li>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="design/hub/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Hub
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="design/services-and-tools/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Services and Tools
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1062,6 +860,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1072,23 +872,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about-deepesdl" class="md-nav__link">
-    <span class="md-ellipsis">
-      About DeepESDL
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1098,50 +881,6 @@
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-  <h1>About DeepESDL</h1>
-
-<p align="center">
-    <img src="img/logo.png" alt="DeepESDL Logo" style="height: 200px; width:300px;"/>
-</p>
-
-<h2 id="about-deepesdl">About DeepESDL<a class="headerlink" href="#about-deepesdl" title="Permanent link">#</a></h2>
-<p>Welcome to the online documentation of DeepESDL – ESA’s Deep Earth System 
-Data Laboratory, a platform providing analysis-ready data cube in a powerful, 
-virtual laboratory to the Earth Science research community. DeepESDL offers a 
-full suite of services to facilitate data exploitation, share data and source 
-code, and publish results. Special emphasize is put on improving the support 
-for machine learning and artificial intelligence approaches, which includes 
-the preparation of AI-ready datasets, providing a programming environment 
-with relevant libraries and packages, and the resources to execute processing 
-pipelines. For more information and access to the lab please visit the
-<a href="https://www.earthsystemdatalab.net/">DeepESDL website</a>.</p>
-<p>The DeepESDL documentation contains:</p>
-<ul>
-<li>The <a href="guide/overview/">User Guide</a> for all DeepESDL services. 
-  This is the starting point for new users.</li>
-<li>An overview of <a href="datasets/datasets/">public, pre-generated data cubes</a>
-  available in DeepESDL with detailed metadata and specifications.</li>
-<li>A <a href="design/overview/">description of DeepESDL’s architecture</a>.</li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
                 
               </article>
             </div>
@@ -1162,16 +901,37 @@ pipelines. For more information and access to the lab please visit the
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+    
     <div class="md-copyright__highlight">
-      Copyright © 2022 by the DeepESDL Team
+        Copyright © 2025 by the DeepESDL Team
+        
+        &nbsp;&nbsp;&nbsp;<a href="imprint" rel="noopener">Imprint</a>
+        
     </div>
+    
+</div>
+      
+        <div class="md-social">
   
+    
+    
+    
+    
+    <a href="mailto:esdl-support@brockmann-consult.de" target="_blank" rel="noopener" title="esdl-support@brockmann-consult.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2M1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"/></svg>
+    </a>
   
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/deepesdl/deepesdl-doc" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -1185,11 +945,13 @@ pipelines. For more information and access to the lab please visit the
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.indexes", "toc.permalink", "toc.follow"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.indexes", "toc.permalink", "toc.follow", "navigation.prune", "navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tabs.sticky"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="javascript/mkapi.js"></script>
       

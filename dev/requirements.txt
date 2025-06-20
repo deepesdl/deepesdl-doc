@@ -1,8 +1,0 @@
-# Version numbers are pinned exactly to ensure a reproducible build, as
-# recommended in
-# https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html .
-# We can't (yet) use a conda environment file for this: see
-# https://github.com/readthedocs/readthedocs.org/issues/3829 .
-
-mkdocs==1.4.0
-mkapi==1.0.14
