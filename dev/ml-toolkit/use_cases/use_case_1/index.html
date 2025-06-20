@@ -1,0 +1,1875 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../use_case_2/">
+      
+      
+      <link rel="icon" href="../../../img/logo/cube_small.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>1. Land Surface Temperature Prediction - DeepESDL</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/mkapi-common.css">
+    
+      <link rel="stylesheet" href="../../../css/mkapi-material.css">
+    
+      <link rel="stylesheet" href="../../../overrides/css/custom.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-land-surface-temperature-prediction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="DeepESDL" class="md-header__button md-logo" aria-label="DeepESDL" data-md-component="logo">
+      
+  <img src="../../../img/logo/cube_small.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DeepESDL
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Land Surface Temperature Prediction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../data/" class="md-tabs__link">
+          
+  
+    
+  
+  Data
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../research/" class="md-tabs__link">
+          
+  
+    
+  
+  Reproducible Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../become_user/" class="md-tabs__link">
+          
+  
+    
+  
+  Become a User
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../guide/" class="md-tabs__link">
+          
+  
+    
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DeepESDL" class="md-nav__button md-logo" aria-label="DeepESDL" data-md-component="logo">
+      
+  <img src="../../../img/logo/cube_small.png" alt="logo">
+
+    </a>
+    DeepESDL
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../data/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Data
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../research/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Reproducible Research
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../become_user/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Become a User
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../about/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../guide/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../guide/jupyterlab/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    JupyterLab
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../guide/xcube-viewer/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Visualisation
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../guide/datacubes/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Datacubes
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/datacube-generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datacube generation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    ML Toolkits
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            ML Toolkits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Example Use Cases
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_6_3" id="__nav_6_6_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_6_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Example Use Cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Land Surface Temperature Prediction
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Land Surface Temperature Prediction
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demo-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo Notebooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preliminary-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preliminary Condition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-load-earth-system-data-cube" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Load Earth System Data Cube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-land-mask-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Add land mask variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-train-test-split-on-geo-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Train-/ Test Split on Geo-Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-train-and-test-set-creation-and-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Train-/ and Test Set Creation and Preprocessing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-model-setup-optimizer-and-loss-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Model Setup, Optimizer and Loss Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-model-training-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Model Training and Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Tracking
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_case_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Distributed Machine Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_case_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Transfer Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_case_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Cube Insights
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_case_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Gap Filling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_case_6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Missing Values
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../api-reference/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Python API
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/further-information/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Further information
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#demo-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo Notebooks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preliminary-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preliminary Condition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-load-earth-system-data-cube" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Load Earth System Data Cube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-land-mask-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Add land mask variable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-train-test-split-on-geo-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Train-/ Test Split on Geo-Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-train-and-test-set-creation-and-preprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Train-/ and Test Set Creation and Preprocessing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-model-setup-optimizer-and-loss-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Model Setup, Optimizer and Loss Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-model-training-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Model Training and Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Results
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Tracking
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1-land-surface-temperature-prediction">1. Land Surface Temperature prediction<a class="headerlink" href="#1-land-surface-temperature-prediction" title="Permanent link">#</a></h1>
+<p>This generic use case aims at the prediction of land surface temperature
+values based on air temperature values derived from the ESDC
+(Sentinel 3 SLSTR and Terra MODIS sensor, s3 store).</p>
+<p>Satellite monitoring is highly sensitive to atmospheric conditions, in
+particular to cloud cover, leading to the loss of a significant part of data,
+especially at high latitudes. This may even affect some pixels of an image
+which are not cloudy, but strongly influenced by cloud cover, usually
+because they were cloudy shortly before the moment of sensing or because of
+cloud shadows (Sarafanov et al. 2020).
+Therefore, remotely sensed land surface temperature images are patchy and
+gaps need to be filled in to complete the data set.
+Here, we propose a shallow neural network (Linear Regression) to predict
+missing values of land surface temperature from consistent air
+temperature values.</p>
+<p align="center">
+<img src="../../img/xcubeviewer3.png" width="35%" height="35%">
+</p>
+<p align = "center"><i>
+ML prediction of missing Land Surface Temperature values from Air Temperature values (xcube viewer)</i>
+</p>
+
+<h2 id="demo-notebooks">Demo Notebooks<a class="headerlink" href="#demo-notebooks" title="Permanent link">#</a></h2>
+<p>All Jupyter Notebooks follow the same approach, involving five major sections supported by markdown cells, comments,
+and plots:</p>
+<ul>
+<li><a href="https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/use_case_lst_at_scikit-learn_mlflow.ipynb">Landsurface Temperature Prediction <em>scikit-learn</em></a></li>
+<li><a href="https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/use_case_lst_at_pytorch_mlflow.ipynb">Landsurface Temperature Prediction <em>PyTorch</em></a></li>
+<li><a href="https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/use_case_lst_at_tensorflow_tensorboard.ipynb">Landsurface Temperature Prediction <em>TensorFlow</em></a></li>
+</ul>
+<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">#</a></h2>
+<ol>
+<li>Import necessary libraries and mltools</li>
+<li>Load Earth System Data Cube (s3 object store)</li>
+<li>Initialize data mask</li>
+<li>Assign train/test split</li>
+<li>Preprocessing (filtering NaNs, standardization, normalization)</li>
+<li>Model set-up (linear regression with 1 node/ shallow neural network)</li>
+<li>Model training and validation over a number of epochs:<ul>
+<li>Training:<ul>
+<li>Generate training batches using existing data loading and transformation mechanisms from Keras and PyTorch (DataGenerator, DataLoader)</li>
+<li>Train model, and compute average epoch training loss</li>
+</ul>
+</li>
+<li>Validation:<ul>
+<li>Generate testing batches using existing data loading and transformation mechanisms from Keras and PyTorch (DataGenerator, DataLoader)</li>
+<li>Test model, and compute average epoch validation loss</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use model to make predictions &amp; plot results</li>
+</ol>
+<p align="center">
+<img src="../../img/mltoolkit_scheme.png" width="30%" height="32%">
+</p>
+<p align = "center"><i>
+Machine Learning workflow on Analysis Ready Data Cubes</i>
+</p>
+
+<h2 id="preliminary-condition">Preliminary Condition<a class="headerlink" href="#preliminary-condition" title="Permanent link">#</a></h2>
+<p>As initially described in the <a href="#demo-notebooks">demo cases</a>, the missing values of land surface temperature
+are predicted from consistent air temperature values.</p>
+<table align="center" style="border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <td width="50%" style="border: none; text-align: center;">
+      <img src="../../img/at.png" width="lst.png"/><br/>
+      <i>Air Temperature</i>
+    </td>
+    <td width="50%" style="border: none; text-align: center;">
+      <img src="../../img/lst.png" width="100%"/><br/>
+      <i>Land Surface Temperature</i>
+    </td>
+  </tr>
+</table>
+
+<h2 id="machine-learning-approach">Machine Learning Approach<a class="headerlink" href="#machine-learning-approach" title="Permanent link">#</a></h2>
+<p>In this section, the machine learning approach is briefly illustrated based on the
+<a href="https://github.com/deepesdl/ML-Toolkits/blob/master/Examples/use_case_lst_at_tensorflow_tensorboard.ipynb">TenorFlow notebook</a>.
+For comprehensive implementations, refer to the <a href="#demo-notebooks">demo notebooks</a> to see the full implementations.</p>
+<h3 id="1-load-earth-system-data-cube">1. Load Earth System Data Cube<a class="headerlink" href="#1-load-earth-system-data-cube" title="Permanent link">#</a></h3>
+<p>First, the <code>zarr</code> data cube is loaded from the s3 data store. The ESDC consists of three dimensions: longitude,
+latitude, and time. The focus will be on two variables: "land_surface_temperature" and "air_temperature_2m".</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">xcube.core.store</span><span class="w"> </span><span class="kn">import</span> <span class="n">new_data_store</span>
+
+<span class="c1"># Initialize the data store for accessing the s3 bucket</span>
+<span class="n">data_store</span> <span class="o">=</span> <span class="n">new_data_store</span><span class="p">(</span><span class="s2">&quot;s3&quot;</span><span class="p">,</span> <span class="n">root</span><span class="o">=</span><span class="s2">&quot;esdl-esdc-v2.1.1&quot;</span><span class="p">,</span> <span class="n">storage_options</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">anon</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+
+<span class="c1"># Open the dataset</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">data_store</span><span class="o">.</span><span class="n">open_data</span><span class="p">(</span><span class="s2">&quot;esdc-8d-0.083deg-184x270x270-2.1.1.zarr&quot;</span><span class="p">)</span>
+
+<span class="c1"># Select a smaller subset of the data for this demo case</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="s2">&quot;2002-05-21&quot;</span>
+<span class="n">end_time</span> <span class="o">=</span> <span class="s2">&quot;2002-08-01&quot;</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[[</span><span class="s2">&quot;land_surface_temperature&quot;</span><span class="p">,</span> <span class="s2">&quot;air_temperature_2m&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="n">start_time</span><span class="p">,</span> <span class="n">end_time</span><span class="p">))</span>
+</code></pre></div>
+<h3 id="2-add-land-mask-variable">2. Add land mask variable<a class="headerlink" href="#2-add-land-mask-variable" title="Permanent link">#</a></h3>
+<p>Fir the prediction of the land surface temperature values only terrestrial regions are relevant.
+Therefore, a land variable is assigned to the ESDC to exclude the oceanic regions.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">dask.array</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">da</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">global_land_mask</span><span class="w"> </span><span class="kn">import</span> <span class="n">globe</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ml4xcube.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">assign_mask</span>
+
+<span class="n">lon_grid</span><span class="p">,</span> <span class="n">lat_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span><span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">)</span>
+<span class="n">lm0</span>                <span class="o">=</span> <span class="n">da</span><span class="o">.</span><span class="n">from_array</span><span class="p">(</span><span class="n">globe</span><span class="o">.</span><span class="n">is_land</span><span class="p">(</span><span class="n">lat_grid</span><span class="p">,</span> <span class="n">lon_grid</span><span class="p">))</span>
+<span class="n">xdsm</span>               <span class="o">=</span> <span class="n">assign_mask</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">lm0</span><span class="p">)</span>
+<span class="n">xdsm</span>
+</code></pre></div>
+<h3 id="3-train-test-split-on-geo-data">3. Train-/ Test Split on Geo-Data<a class="headerlink" href="#3-train-test-split-on-geo-data" title="Permanent link">#</a></h3>
+<p>The <code>ml4xcube.splits</code> module provides two methods to split the data into training and test sets:
+random split and block split.</p>
+<p><em>1. Random Split</em></p>
+<p>The random split is a straight forward procedure in classical machine learning application to divide data in
+a train and a test set.
+Every data sample is assigned randomly with a predefined probability either to
+the train or the test.
+This approach can lead to issues due to spatio-temporal distances and auto-correlation within chunks.</p>
+<p><em>2. Block Split</em></p>
+<p>It is therefore mandatory to utilize techniques that respects the basic
+principles of geo-data way beyond naive random split method in
+the Earth system context. To avoid auto-correlation during the training
+phase of the model, data splitting should rather be guided by the block
+split strategy, which segments data
+into contiguous blocks based on geographical and temporal
+proximity, assigning data points from these blocks to either
+training or test sets with a specific probability. This strategy keeps
+closely related data points together, reducing information leakage
+across the train-test divide and enhancing
+testing integrity.</p>
+<table align="center" style="border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <td width="50%" style="border: none; text-align: center;">
+      <img src="../../img/train_test_assignment_rnd.png" width="100%"/><br/>
+      <i>Random Train-Test Assignment</i>
+    </td>
+    <td width="50%" style="border: none; text-align: center;">
+      <img src="../../img/train_test_assignment_bs.png" width="100%"/><br/>
+      <i>Balanced Stratified Train-Test Assignment</i>
+    </td>
+  </tr>
+</table>
+
+<p>For this case, the <code>assign_block_split</code> method is employed to allocate each data point to either the training or test set:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">ml4xcube.splits</span><span class="w"> </span><span class="kn">import</span> <span class="n">assign_rand_split</span><span class="p">,</span> <span class="n">assign_block_split</span>
+
+<span class="c1"># random splitting</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">xds = assign_rand_split(</span>
+<span class="sd">    ds    = xdsm,</span>
+<span class="sd">    split = 0.8</span>
+<span class="sd">)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># block splitting</span>
+<span class="n">xds</span> <span class="o">=</span> <span class="n">assign_block_split</span><span class="p">(</span>
+    <span class="n">ds</span>         <span class="o">=</span> <span class="n">xdsm</span><span class="p">,</span>
+    <span class="n">block_size</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;time&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;lon&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)],</span>
+    <span class="n">split</span>      <span class="o">=</span> <span class="mf">0.8</span>
+<span class="p">)</span>
+<span class="n">xds</span>
+</code></pre></div>
+<h3 id="4-train-and-test-set-creation-and-preprocessing">4. Train-/ and Test Set Creation and Preprocessing<a class="headerlink" href="#4-train-and-test-set-creation-and-preprocessing" title="Permanent link">#</a></h3>
+<p>In this step, data is preprocessed for training using the designated sampler. The dataset undergoes standardization and
+is segmented into manageable samples. The feature scaling strategy can be customized via the <code>scale_fn</code> parameter, which
+allows for normalization or can be set to None for manual adjustments. If <code>None</code>, a custom feature scaling function can be
+introduced using the <code>callback parameter</code>, enabling further preprocessing flexibility with costum functions.</p>
+<p>By default, missing values are omitted from the dataset. To apply alternative imputation strategies, adjust the <code>drop_nan</code>
+parameter of the <code>XrDataset</code>. For comprehensive guidance on these options, please consult the
+<a href="../../api-reference/#6-datasets">ml4xcube API description</a> description.</p>
+<p>Following preprocessing, the data is allocated into training and testing sets based on the previously determined block
+split strategy, ensuring readiness for the subsequent training phase.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ml4xcube.datasets.xr_dataset</span><span class="w"> </span><span class="kn">import</span> <span class="n">XrDataset</span>
+
+<span class="n">sampler</span>               <span class="o">=</span> <span class="n">XrDataset</span><span class="p">(</span><span class="n">ds</span><span class="o">=</span><span class="n">xds</span><span class="p">,</span> <span class="n">num_chunks</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">rand_chunk</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">to_pred</span><span class="o">=</span><span class="s1">&#39;land_surface_temperature&#39;</span><span class="p">)</span>
+<span class="n">train_data</span><span class="p">,</span> <span class="n">test_data</span> <span class="o">=</span> <span class="n">sampler</span><span class="o">.</span><span class="n">get_datasets</span><span class="p">()</span>
+
+<span class="c1"># Create TensorFlow 6-datasets for 7-training and testing</span>
+<span class="n">train_ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span><span class="o">.</span><span class="n">batch</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+<span class="n">test_ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span><span class="o">.</span><span class="n">batch</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="5-model-setup-optimizer-and-loss-definition">5. Model Setup, Optimizer and Loss Definition<a class="headerlink" href="#5-model-setup-optimizer-and-loss-definition" title="Permanent link">#</a></h3>
+<p>A simple linear regression model using TensorFlow is defined, followed by the setup of the optimizer and the loss function definition.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras</span><span class="w"> </span><span class="kn">import</span> <span class="n">layers</span> <span class="k">as</span> <span class="n">L</span>
+
+<span class="c1"># Define epoch and learning rate</span>
+<span class="n">lr</span>     <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Create model</span>
+<span class="n">inputs</span>      <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">Input</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;air_temperature_2m&quot;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,))</span>
+<span class="n">output</span>      <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;linear&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;land_surface_temperature&quot;</span><span class="p">)(</span><span class="n">inputs</span><span class="p">)</span>
+<span class="n">model</span>       <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">output</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s2">&quot;adam&quot;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s2">&quot;mean_squared_error&quot;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;mae&quot;</span><span class="p">])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">optimizer</span><span class="o">.</span><span class="n">learning_rate</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">lr</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="6-model-training-and-validation">6. Model Training and Validation<a class="headerlink" href="#6-model-training-and-validation" title="Permanent link">#</a></h3>
+<p>Finally, the model is trained using <code>train_ds</code> and validated with the <code>test_ds</code> dataset. Early stopping is employed to
+prevent overfitting. The best model weights, according to the validation score, are saved, and the trained model is
+returned, ready for predictions.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">ml4xcube.training.tensorflow</span><span class="w"> </span><span class="kn">import</span> <span class="n">Trainer</span>
+
+<span class="n">trainer</span> <span class="o">=</span> <span class="n">Trainer</span><span class="p">(</span>
+    <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+    <span class="n">train_data</span><span class="o">=</span><span class="n">train_ds</span><span class="p">,</span>
+    <span class="n">test_data</span><span class="o">=</span><span class="n">test_ds</span><span class="p">,</span>
+    <span class="n">early_stopping</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">patience</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">model_path</span><span class="o">=</span><span class="s2">&quot;best_model.keras&quot;</span><span class="p">,</span>
+    <span class="n">mlflow_run</span><span class="o">=</span><span class="n">mlflow</span><span class="p">,</span>
+    <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span>
+    <span class="n">create_loss_plot</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">trainer</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">#</a></h2>
+<p>After conducting the entire <a href="#approach">machine learning approach</a>
+the trained model can be used to make predictions for the missing land surface temperature values:</p>
+<p align="center">
+<img src="../../img/lst_filled.png" width="55%" height="35%">
+</p>
+<p align = "center"><i>
+Land Surface Temperature Filled</i>
+</p>
+
+<h2 id="model-tracking">Model Tracking<a class="headerlink" href="#model-tracking" title="Permanent link">#</a></h2>
+<p>Within the land surface temperature use cases model tracking is realized through the usage of <a href="https://www.tensorflow.org/tensorboard">TensorBoard</a> and
+<a href="https://mlflow.org/">mlflow</a>. These tools offer science teams an easy-to-use platform allowing to run and scale their Machine Learning workloads in a collaborative environment supporting versioning and sharing of parameters, models, artefacts, results, etc. within the team and potentially external users.
+Mlflow supports the MLOps pipelines particularly to log and evaluate experiment runs as well as to store models in a registry​. Persistent mlflow deployments are made available on team level to allow each team member to compare their experiments with those of the other team members and to use the trained models of others.
+TensorBoard as another collaborative tool in this MLOPs space is currently evaluated by the science teams and available as part of the TensorFlow conda kernel to individual users within their JupyterLab session.</p>
+<p align="center">
+<img src="../../img/mlflow.png" width="85%" height="85%">
+</p>
+<p align = "center"><i>
+Collaborative Experiment Tracking with mlflow</i>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+    <div class="md-copyright__highlight">
+        Copyright © 2025 by the DeepESDL Team
+        
+        &nbsp;&nbsp;&nbsp;<a href="../../imprint" target="_blank" rel="noopener">Imprint</a>
+        
+    </div>
+    
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:esdl-support@brockmann-consult.de" target="_blank" rel="noopener" title="esdl-support@brockmann-consult.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 14H1.75A1.75 1.75 0 0 1 0 12.25v-8.5C0 2.784.784 2 1.75 2M1.5 12.251c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V5.809L8.38 9.397a.75.75 0 0 1-.76 0L1.5 5.809zm13-8.181v-.32a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25v.32L8 7.88Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/deepesdl/deepesdl-doc" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.top", "navigation.indexes", "toc.permalink", "toc.follow", "navigation.prune", "navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascript/mkapi.js"></script>
+      
+    
+  </body>
+</html>
