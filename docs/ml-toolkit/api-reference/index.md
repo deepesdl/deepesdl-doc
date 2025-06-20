@@ -16,7 +16,7 @@ The `insights` module offers tools for extracting and analyzing characteristics 
 `xarray.DataArray` objects. This module includes functions to assess the completeness and distribution of data within
 the cube, helping users understand the dataset's quality and spatial-temporal coverage.
 The detailed workflow in order to analyze the specifics of a data cube is demonstrated in the following
-[Jupyter Notebook](../use_cases/example.md#demo-notebooks).
+[Jupyter Notebook](../use_cases/use_case_4.md).
 
 **Functions:**
 
@@ -29,7 +29,7 @@ The `ml4xcube.gapfilling` module is designed to address and rectify data gaps in
 particularly those represented in `xarray.Dataset` formats. The gap filling process is divided into three main submodules,
 each playing a crucial role in the preparation, processing, and application of sophisticated machine learning algorithms
 to ensure accurate and efficient data imputation. he entire gapfilling process is showcased in the following
-[Jupyter Notebook](../use_cases/example.md#5-gapfilling).
+[Jupyter Notebook](../use_cases/use_case_5.md).
 
 ### 3.1. helper.predictors
 
