@@ -71,13 +71,14 @@ nav:
   - index.md
   - Data:
       - data/index.md
- # - Reproducible Research:
-     # - research/index.md
-     # - EarthCode: research/earthcode.md
+  - Services:
+      - xcube Viewer: services/viewer.md
+      - EarthCode: services/earthcode.md
+      - JupyterLab: services/jupyter.md
   - Science Cases:
-      - Land-Biosphere-Society: research/science_cases/land_biosphere.md
-      - Drought Effects: research/science_cases/drought_effects.md
-      - Ocean Carbon Cycle: research/science_cases/ocean.md
+      - Land-Biosphere-Society: science_cases/land_biosphere.md
+      - Drought Effects: science_cases/drought_effects.md
+      - Ocean Carbon Cycle: science_cases/ocean.md
   - Become a User:
       - become_user/index.md
       #- Costs and Services: become_user/costs.md
@@ -123,7 +124,6 @@ nav:
           - xcube Viewer: guide/xcube-viewer.md
           - Lexcube Viewer: guide/lexcube-viewer.md
           - 4D Viewer: guide/4d-viewer.md
-      - EarthCode: guide/earthcode.md
       - Datacubes:
           - guide/datacubes/index.md
           - xcube Data Stores: guide/datacubes/datastores.md
