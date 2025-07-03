@@ -71,10 +71,8 @@ nav:
   - index.md
   - Data:
       - data/index.md
-  - Services:
-      - xcube Viewer: services/viewer.md
-      - EarthCode: services/earthcode.md
-      - JupyterLab: services/jupyter.md
+  - EarthCode:
+      - earthcode/index.md
   - Science Cases:
       - Land-Biosphere-Society: science_cases/land_biosphere.md
       - Drought Effects: science_cases/drought_effects.md
@@ -91,7 +89,6 @@ nav:
       - Events: about/events.md
       - Publications: about/publications.md
       - Platform Design:
-          #- Overview: design/index.md
           - Context: about/design/context.md
           - Architecture: about/design/architecture.md
           - Hub: about/design/hub.md
