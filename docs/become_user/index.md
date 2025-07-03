@@ -1,3 +1,8 @@
+---
+hide:
+  navigation.footer
+---
+
 # Become a User
 
 ## via ESA Sponsorship

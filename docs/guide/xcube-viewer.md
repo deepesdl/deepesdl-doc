@@ -2,14 +2,30 @@
 
 The DeepESDL xcube Viewer is reachable at [viewer.earthsystemdatalab.net](https://viewer.earthsystemdatalab.net).
 
-![img.png](../img/xcube-viewer.png)
+![Viewer Image](../img/img_viewer_2.png)
 
-The viewer contains public datasets only, but will later also provide user/team 
-cubes when logged in. The login will be the same as for the DeepESDL JupyterLab.
+The **xcube Viewer** is a browser-based visualization tool, built for exploring spatiotemporal Earth Observation
+data cubes. Optimized for handling large, multidimensional datasets it allows users to interactively view, analyze,
+and compare datasets directly in the browser. With a rich feature set tailored to the needs of earth system science, like
+
+* Interactive exploration of data cubes through time and space
+
+* Pixel-level statistics and time series for selected points or areas
+
+* Comparison of two variables side-by-side to identify correlations or divergences across time and space
+
+* Creation of new variables directly within the Viewer using expressions or operations on existing variables
+
+* Adjustable color scales, value ranges, and visualization styles to highlight relevant data features
+
+* Access to public datasets, with support for user- and team-specific cubes available upon 
+  login (using DeepESDL credentials)
+
+the Viewer plays a key role in both data-driven exploration and effective communication of results. Explore the
+DeepESDL xcube Viewer at [viewer.earthsystemdatalab.net](https://viewer.earthsystemdatalab.net).
 
 For a more detailed description of the viewer functionality, please refer to a dedicated section in the
-[xcube viewer documentation](https://xcube-dev.github.io/xcube-viewer).
-
+[xcube Viewer documentation](https://xcube-dev.github.io/xcube-viewer).
 
 
 ## Publish a dataset in a public DeepESDL Viewer

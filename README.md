@@ -4,17 +4,16 @@
 
 This repository contains the source files for the DeepESDL documentation.
 
-
-The current [DeepESDL Documentation is under development](https://deepesdl.github.io/deepesdl-doc/dev/).
+The current [DeepESDL Documentation](https://earthsystemdatalab.net/).
 
 ## To contribute to the new DeepESDL Documentation:
-1. Create new branch based on `dev` branch. This is your working branch.
+1. Create new branch based on `main` branch. This is your working branch.
 2. Add your new content to the dedicated Markdown file. Please make sure, that
    1. you save images in the folder you're working in,
       path: `{folder-name-of-chapter}/img/xxxx.png`
    2. test your changes locally (see info below)
-3. When done, create a Pull Request to merge your contributions into the 
-   dev-branch. A Brockmann Consult team member will review the changes.
+3. When done, create a Pull Request to merge your contributions into `main`. 
+   A Brockmann Consult team member will review the changes.
 4. Once merged, a Brockmann Consult team member will delete the branch.
 
 
