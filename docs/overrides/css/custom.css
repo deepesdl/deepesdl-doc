@@ -1,0 +1,92 @@
+.centered-logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* for logos in table -> Data page */
+.logo-icon-table {
+  max-height: 60px;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.md-header {
+  box-shadow: none !important;
+}
+
+.md-grid {
+  max-width: 1400px;
+}
+
+.xr-wrap {
+  font-size: .7rem;
+}
+
+.jupyter-wrapper *, .jupyter-wrapper ::before, .jupyter-wrapper ::after {
+  box-sizing: border-box;
+}
+
+/* adjust representation of xr.Datasets, solution by:
+ https://github.com/danielfrg/mkdocs-jupyter/issues/164#issuecomment-1875664148 */
+.md-typeset pre.xr-text-repr-fallback {
+  display: none;
+}
+
+.md-typeset ul.xr-sections, .jupyter-wrapper .jp-OutputArea-output dl.xr-attrs {
+  display: grid;
+}
+
+.md-typeset li.xr-var-item, .md-typeset ul.xr-var-list {
+  display: contents;
+}
+
+.md-typeset .xr-section-details {
+  display: none;
+}
+
+.md-typeset ul.xr-dim-list li {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.md-typeset ul.xr-dim-list {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.jupyter-wrapper .jp-OutputArea-output .xr-attrs dt {
+  padding: 0;
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+  width: auto;
+  font-weight: normal;
+  grid-column: 1;
+}
+
+
+.md-typeset a{
+  color: #0b3e73;
+}
+
+.md-nav__item .md-nav__link--active{
+  color: #0b3e73;
+}
+
+.md-button--accent {
+  background-color: #0b3e73;  /* your custom blue */
+  border-color: #0b3e73;
+  color: white!important;
+  border: none!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.md-button--accent:hover,
+.md-button--accent:focus {
+  background-color: var(--md-accent-fg-color);  /* deep orange */
+  color: white;
+}
+
+

@@ -1,0 +1,14 @@
+name: deepesdl-doc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11 # Adjust the version as needed
+  - pip
+  - pip:
+      - mkdocs
+      - mkdocs-material
+      - mkdocs-autorefs
+      - mkapi
+      - pymdown-extensions
+      - mkdocs-jupyter

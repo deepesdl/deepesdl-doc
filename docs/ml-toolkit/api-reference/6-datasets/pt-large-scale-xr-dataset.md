@@ -4,7 +4,7 @@
 networks in PyTorch. It supports dynamic processing and iteration over chunks of large datasets that cannot be fully 
 loaded into memory, making it ideal for environments with significant data volumes. The class allows for flexible data 
 manipulation including optional random chunk selection, dropping of `NaN` values, application of filtering masks, and 
-data filling strategies, contained in the [preprocessing module](../../api-reference.md#5-preprocessing).
+data filling strategies, contained in the [preprocessing module](../index.md#5-preprocessing).
 
 ### Constructor
 ```python

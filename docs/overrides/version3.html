@@ -1,0 +1,321 @@
+{% extends "base.html" %} {% block tabs %} {{ super() }}
+<style>
+
+  .md-main {
+      display:flex
+  }
+
+  .md-container{
+      background-color: var(--md-primary-fg-color);
+  }
+
+  h2 {
+      margin-bottom: 1rem;
+      color: black; /*white;*/
+      font-weight: 700
+  }
+
+  .tx-hero .md-button {
+      margin-top: .5rem;
+      margin-right: .5rem;
+      color: var(--md-primary-bg-color)
+  }
+
+  .tx-hero .md-button--primary {
+      color: var(--md-primary-fg-color);
+      background-color: var(--md-primary-bg-color);
+      border-color: var(--md-primary-bg-color)
+  }
+
+  .tx-hero .md-button:focus,
+  .tx-hero .md-button:hover {
+      color: var(--md-default-bg-color);
+      background-color: var(--md-accent-fg-color);
+      border-color: var(--md-accent-fg-color)
+  }
+  I
+  @media screen and (max-width:30em) {
+      .tx-hero h1 {
+          font-size: 1.4rem
+      }
+  }
+
+  @media screen and (min-width:60em) {
+      .md-sidebar--secondary {
+          display: none
+      }
+
+      .tx-hero {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .tx-hero__content {
+          max-width: 22rem;
+          margin-top: 3.5rem;
+          margin-bottom: 3.5rem;
+          margin-left: 1.0rem;
+          margin-right: 4.0rem;
+          align-items: center;
+      }
+  }
+
+  .landingpage-button {
+      padding: 1rem 2rem;
+      background-color: #0b3e73;
+      color: white;
+      font-size: 1rem;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+  }
+
+  .landingpage-button:hover {
+      background-color: var(--md-accent-fg-color);
+  }
+</style>
+
+<section
+  style="
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('assets/img.png') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+  padding: 0 5%;
+  box-sizing: border-box;
+">
+  <div style="max-width: 800px;">
+    <h1 style="font-size: 4rem; margin-bottom: 1rem;">DeepESDL</h1>
+    <p style="font-size: 1.5rem; margin-bottom: 2rem;">
+      A virtual laboratory to the Earth Science research community.
+    </p>
+    <a href="##services" class="landingpage-button">Explore!</a>
+  </div>
+
+  <!-- Attribution -->
+  <div
+    style="
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 0.4rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+    max-width: 300px;
+    line-height: 1;
+  ">
+    Image: Copernicus Climate Change Service, Climate Data Store (2023): ERA5
+    hourly data on single levels from 1940 to present. Mean air temperature 2m.
+    (modified to metres)
+  </div>
+</section>
+
+<!-- About Section -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+  <!-- Section Heading -->
+  <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem;">
+    About
+  </h2>
+
+  <!-- Logo and Text Flex Container -->
+  <div
+    style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <!-- Large Logo -->
+    <div style="flex: 0 0 350px; display: flex; justify-content: center;">
+      <img
+        src="img/logo/logo_light.png"
+        alt="DeepESDL Logo"
+        style="max-width: 100%; height: auto;" />
+    </div>
+
+    <!-- Descriptive Text -->
+    <div style="flex: 1 1 600px;">
+      <p style="font-size: 1.2rem; line-height: 1.6;">
+        <strong>DeepESDL – ESA’s Deep Earth System Data Laboratory</strong>, a
+        platform providing analysis-ready data cubes in a powerful virtual
+        environment for the Earth Science research community. DeepESDL offers a
+        full suite of services to facilitate data exploitation, share data and
+        source code, and publish results. Special emphasis is placed on
+        supporting machine learning and artificial intelligence approaches,
+        including preparation of AI-ready datasets, integrated programming
+        environments, and scalable processing resources.
+      </p>
+    </div>
+  </div>
+
+  <!-- Provided By Section -->
+  <div
+    style="
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 1rem;
+">
+    <!-- Supported by -->
+    <div style="flex: 1 1 250px;">
+      <p style="margin-bottom: 1rem;">Supported by</p>
+      <a href="https://rsc4earth.de/" target="_blank">
+        <img
+          src="https://www.uni-leipzig.de/_assets/89f4369f29e16b23ff4835f5790afe07/Images/Icons/uni_leipzig_logo_v2.svg"
+          alt="University of leipzig Logo"
+          style="height: 60px; margin: 0.5rem;" />
+      </a>
+      <a href="https://earthwave.co.uk/" target="_blank">
+        <img
+          src="https://earthwave.co.uk/wp-content/uploads/2021/10/logo-200.png"
+          alt="Earthwave Logo"
+          style="height: 60px; margin: 0.5rem;" />
+      </a>
+      <a href="https://www.bgc-jena.mpg.de/" target="_blank">
+        <img
+          src="https://www.nunataryuk.org/images/logos/partner_logos/BGC_logo_en_sh.png"
+          alt="Max Planck Institute for Biogeochemistry Logo"
+          style="height: 40px; margin: 0.5rem;" />
+      </a>
+    </div>
+
+    <!-- Operated by -->
+    <div style="flex: 1 1 250px;">
+      <p style="margin-bottom: 1rem;">Operated by</p>
+      <a href="https://www.brockmann-consult.de/" target="_blank">
+        <img
+          src="assets/logo_bc.png"
+          alt="Brockmann Consult Logo"
+          style="height: 80px; margin: 0.5rem;" />
+      </a>
+      <a href="https://eox.at/" target="_blank">
+        <img
+          src="https://www.osgeo.org/wp-content/uploads/EOX_Logo.png"
+          alt="EOX IT Services GmbH Logo"
+          style="height: 80px; margin: 0.5rem;" />
+      </a>
+    </div>
+
+    <!-- Funded by -->
+    <div style="flex: 1 1 250px;">
+      <p style="margin-bottom: 1rem;">Funded by</p>
+      <a href="https://www.esa.int/" target="_blank">
+        <img
+          src="https://esamultimedia.esa.int/docs/corporate/ESA_logo_2020_Deep.png"
+          alt="ESA Logo"
+          style="height: 80px; margin: 0.5rem;" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Tiles -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+  <h2 id="#services" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">
+    Services
+  </h2>
+
+  <div
+          style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+
+    <!-- Viewer Tile -->
+    <a href="guide/xcube-viewer" style="text-decoration: none; color: inherit;">
+      <div
+              style="width: 340px; height: 490px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img src="assets/img_viewer.png" alt="Viewer"
+                style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
+        <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
+          Viewer
+        </h3>
+        <p style="font-size: .8rem; color: black;">
+          Publish and visualize data directly in a personalized Viewer.
+        </p>
+      </div>
+    </a>
+
+    <!-- Earth Code Tile -->
+    <a href="/earthcode" style="text-decoration: none; color: inherit;">
+      <div
+              style="width: 340px; height: 490px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img
+                src="https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png"
+                alt="Earth Code"
+                style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
+        <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
+          Earth Code
+        </h3>
+        <p style="font-size: .8rem; color: black;">
+          Share reproducible workflows and data in Earth Code.
+        </p>
+      </div>
+    </a>
+
+    <!-- JupyterLab Tile -->
+    <a href="guide/jupyterlab" style="text-decoration: none; color: inherit;">
+      <div
+              style="width: 340px; height: 490px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img
+                src="https://jupyter.org/assets/share.png"
+                alt="JupyterLab"
+                style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
+        <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
+          JupyterLab
+        </h3>
+        <p style="font-size: .8rem; color: black;">
+          Run analyses, visualize results with analysis-ready data using a
+          powerful, cloud-hosted notebook environment.
+        </p>
+      </div>
+    </a>
+  </div>
+
+</section>
+<!-- Data Section -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
+  <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">
+    Data
+  </h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <div style="flex: 1 1 400px; text-align: left;">
+      <p style="font-size: 1.3rem;">
+        <strong
+          >DeepESDL provides access to Earth observation data in a unified,
+          analysis-ready framework.</strong
+        >
+        Work with public and private datasets on demand.
+      </p>
+      <p class="md-typeset" style="font-size: 1.3rem; ">
+        <a href="data">Browse data sources</a>
+      </p>
+    </div>
+    <div style="flex: 1 1 500px;">
+      <img
+        src="assets/img_datastores_light.png"
+        alt="Data Sources"
+        style="width: 100%;" />
+    </div>
+  </div>
+</section>
+
+<!-- Become a User CTA -->
+<section
+  id="become-user"
+  style="text-align: center; max-width: 1200px; margin: 0 auto; padding: 4rem 1rem;">
+  <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">
+    Ready to join DeepESDL?
+  </h2>
+  <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem;">
+    Join us to unlock the potential of Earth Observation data.
+  </p>
+  <a href="become_user" class="landingpage-button">Become a User</a>
+</section>
+
+{% endblock %} {% block content %}{% endblock %}
