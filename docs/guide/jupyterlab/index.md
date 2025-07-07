@@ -1,4 +1,4 @@
-# JupyterLab
+# DeepESDL JupyterLab
 
 ## Basic usage
 
