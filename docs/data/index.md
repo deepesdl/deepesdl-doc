@@ -6,7 +6,7 @@ hide:
 
 # Data
 
-DeepESDL provides access to a broad range of Earth observation datasets through a unified, analysis-ready 
+DeepESDL provides access to a broad range of Earth System datasets through a unified, analysis-ready 
 data cube framework. Whether you're working on climate research, land use monitoring, or marine studies, DeepESDL helps 
 you access, integrate, and analyze diverse data sources—without the need for heavy local storage or complex preprocessing.
 
@@ -44,6 +44,6 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 ## Want to Use Your Own Data?
 
 DeepESDL supports seamless integration of your own datasets into the analysis-ready cube environment. This allows joint 
-processing and comparison with public Earth observation data.  
+processing and comparison with public Earth System data.  
 👉 [Learn how to integrate your own data](../guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage.ipynb)
 
