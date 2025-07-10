@@ -1,6 +1,6 @@
 ---
 title: Home
-template: version3.html
+template: landingpage.html
 
 hide:
     navigation.footer
