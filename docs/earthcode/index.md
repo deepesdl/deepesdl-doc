@@ -1,11 +1,12 @@
 ---
 hide:
   navigation.footer
+  
 ---
 
-# Earth Code
+# EarthCODE
 
-![EarthCode](https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png){: .centered-logo style="max-width: 300px;" }
+![EarthCODE](https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png){: .centered-logo style="max-width: 300px;" }
 
 [EarthCODE](https://esa-earthcode.github.io/documentation/Getting%20started%20with%20EarthCODE/) is
 a strategic initiative by the European Space Agency (ESA) to support Earth System Science through

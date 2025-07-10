@@ -23,7 +23,7 @@ resources.
         <div style="flex: 1 1 250px;">
             <p style="margin-bottom: 1rem;">Operated by</p>
             <a href="https://www.brockmann-consult.de/" target="_blank">
-                <img src="../overrides/assets/logo_bc.png" alt="Brockmann Consult Logo" style="height: 60px; margin: 0.5rem;">
+                <img src="../overrides/assets/logo_bc_horizontal.png" alt="Brockmann Consult Logo" style="height: 60px; margin: 0.5rem;">
             </a>
             <a href="https://eox.at/" target="_blank">
                 <img src="https://www.osgeo.org/wp-content/uploads/EOX_Logo.png" alt="EOX IT Services GmbH Logo" style="height: 60px; margin: 0.5rem;">
@@ -38,7 +38,7 @@ resources.
             <a href="https://earthwave.co.uk/" target="_blank">
                 <img src="https://earthwave.co.uk/wp-content/uploads/2021/10/logo-200.png" alt="Earthwave Logo" style="height: 60px; margin: 0.5rem;">
             </a>
-            <a href="https://www.biochem.mpg.de/en" target="_blank">
+            <a href="https://www.bgc-jena.mpg.de/" target="_blank">
                 <img src="https://www.nunataryuk.org/images/logos/partner_logos/BGC_logo_en_sh.png" alt="Max Planck Institute for Biogeochemistry Logo" style="height: 40px; margin: 0.5rem;">
             </a>
         </div>

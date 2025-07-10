@@ -27,5 +27,5 @@ Díaz, E., Adsuara, J. E., Martínez, Á. M., Piles, M., & Camps-Valls, G. (2022
 ​
 Basel, A. M., Nguyen, K. T., Arnaud, E., & Craparo, A. C. W. (2023). *The foundations of big data sharing: A CGIAR international research organization perspective*. [https://doi.org/10.3389/fenvs.2023.1107393](https://doi.org/10.3389/fenvs.2023.1107393)  
 
-Sudmanns, M., Augustin ,Hannah, Killough ,Brian, Giuliani ,Gregory, Tiede ,Dirk, Leith ,Alex, Yuan ,Fang, & and Lewis, A. (2023). Think global, cube local: An Earth Observation Data Cube’s contribution to the Digital Earth vision. *Big Earth Data*, *7*(3), 831–859. [https://doi.org/10.1080/20964471.2022.2099236](https://doi.org/10.1080/20964471.2022.2099236)  
+Sudmanns, M., Augustin, H., Killough, B., Giuliani, G., Tiede, D., Leith, A., Yuan, F., & and Lewis, A. (2023). Think global, cube local: An Earth Observation Data Cube’s contribution to the Digital Earth vision. *Big Earth Data*, *7*(3), 831–859. [https://doi.org/10.1080/20964471.2022.2099236](https://doi.org/10.1080/20964471.2022.2099236)  
 
