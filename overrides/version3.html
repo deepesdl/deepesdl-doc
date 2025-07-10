@@ -140,7 +140,7 @@
 
     <!-- Descriptive Text -->
     <div style="flex: 1 1 600px;">
-      <p style="font-size: 1.2rem; line-height: 1.6;">
+      <p style="font-size: 1rem; line-height: 1.6;">
         <strong>DeepESDL – ESA’s Deep Earth System Data Laboratory</strong>, a
         platform providing analysis-ready data cubes in a powerful virtual
         environment for the Earth Science research community. DeepESDL offers a
@@ -156,7 +156,7 @@
   <!-- Provided By Section -->
   <div
     style="
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -179,7 +179,7 @@
           alt="Earthwave Logo"
           style="height: 60px; margin: 0.5rem;" />
       </a>
-      <a href="https://www.biochem.mpg.de/en" target="_blank">
+      <a href="https://www.bgc-jena.mpg.de/" target="_blank">
         <img
           src="https://www.nunataryuk.org/images/logos/partner_logos/BGC_logo_en_sh.png"
           alt="Max Planck Institute for Biogeochemistry Logo"
@@ -192,7 +192,7 @@
       <p style="margin-bottom: 1rem;">Operated by</p>
       <a href="https://www.brockmann-consult.de/" target="_blank">
         <img
-          src="assets/logo_bc.png"
+          src="assets/logo_bc_horizontal.png"
           alt="Brockmann Consult Logo"
           style="height: 80px; margin: 0.5rem;" />
       </a>
@@ -219,22 +219,53 @@
 
 <!-- Tiles -->
 <section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
-  <h2
-    id="#services"
-    style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">
+  <h2 id="#services" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">
     Services
   </h2>
 
   <div
-    style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+          style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+
+    <!-- DeepESDL Hub Tile -->
+    <a href="/services" style="text-decoration: none; color: inherit;">
+      <div
+              style="width: 340px; height: 490px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img
+                src="../img/logo/logo_notext.png"
+                alt="DeepESDL Hub"
+                style="height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
+        <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
+          DeepESDL Hub
+        </h3>
+        <p style="font-size: .8rem; color: black;">
+          Analyse, publish and collaborate in the DeepESDL Hub for reproducible research.
+        </p>
+      </div>
+    </a>
+
+    <!-- Earth Code Tile -->
+    <a href="/earthcode" style="text-decoration: none; color: inherit;">
+      <div
+              style="width: 340px; height: 490px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img
+                src="https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png"
+                alt="EarthCODE"
+                style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
+        <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
+          EarthCODE
+        </h3>
+        <p style="font-size: .8rem; color: black;">
+          Share reproducible workflows and data in EarthCODE.
+        </p>
+      </div>
+    </a>
+
     <!-- Viewer Tile -->
     <a href="guide/xcube-viewer" style="text-decoration: none; color: inherit;">
       <div
-        style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img
-          src="assets/img_viewer.png"
-          alt="Viewer"
-          style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
+              style="width: 340px; height: 490px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <img src="assets/img_viewer.png" alt="Viewer"
+             style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
         <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
           Viewer
         </h3>
@@ -243,44 +274,9 @@
         </p>
       </div>
     </a>
-
-    <!-- Earth Code Tile -->
-    <a href="guide/earthcode" style="text-decoration: none; color: inherit;">
-      <div
-        style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img
-          src="https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png"
-          alt="Earth Code"
-          style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
-        <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
-          Earth Code
-        </h3>
-        <p style="font-size: .8rem; color: black;">
-          Share reproducible workflows and data in Earth Code.
-        </p>
-      </div>
-    </a>
-
-    <!-- JupyterLab Tile -->
-    <a href="guide/jupyterlab" style="text-decoration: none; color: inherit;">
-      <div
-        style="width: 340px; height: 460px; background-color: #f5f5f5; padding: 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-        <img
-          src="https://jupyter.org/assets/share.png"
-          alt="JupyterLab"
-          style="width: 100%; height: 180px; object-fit: cover; margin-bottom: 1.5rem;" />
-        <h3 style="margin-bottom: 1rem; font-size: 1.3rem; color: black;">
-          JupyterLab
-        </h3>
-        <p style="font-size: .8rem; color: black;">
-          Run analyses, visualize results with analysis-ready data using a
-          powerful, cloud-hosted notebook environment.
-        </p>
-      </div>
-    </a>
   </div>
-</section>
 
+</section>
 <!-- Data Section -->
 <section style="padding: 4rem 1rem; max-width: 1200px; margin: auto;">
   <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">
@@ -288,14 +284,14 @@
   </h2>
   <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
     <div style="flex: 1 1 400px; text-align: left;">
-      <p style="font-size: 1.3rem;">
+      <p style="font-size: 1.1rem;">
         <strong
-          >DeepESDL provides access to Earth observation data in a unified,
+          >DeepESDL provides access to Earth System data in a unified,
           analysis-ready framework.</strong
         >
         Work with public and private datasets on demand.
       </p>
-      <p class="md-typeset" style="font-size: 1.3rem; ">
+      <p class="md-typeset" style="font-size: 1.1rem; ">
         <a href="data">Browse data sources</a>
       </p>
     </div>
@@ -315,7 +311,7 @@
   <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">
     Ready to join DeepESDL?
   </h2>
-  <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem;">
+  <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 2.5rem;">
     Join us to unlock the potential of Earth Observation data.
   </p>
   <a href="become_user" class="landingpage-button">Become a User</a>
