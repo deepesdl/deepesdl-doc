@@ -4,14 +4,11 @@
 
 ## Installation
 
-Get started with `ml4xcube` effortlessly by installing it directly through pip:
-```bash
-pip install ml4xcube
-```
-or conda:
-```bash
-conda install -c conda-forge ml4xcube
-```
+Get started with `ml4xcube` effortlessly by using the newest stable `xcube` kernel in DeepESDL (e.g. `xcube-1.11.0`) .
+
+When working with [custom team environment](../guide/jupyterlab/index.md#creating-custom-team-python-environment), 
+add `ml4xcube` to the list of dependencies.
+
 
 ## Features
 
