@@ -45,5 +45,5 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 
 DeepESDL supports seamless integration of your own datasets into the analysis-ready cube environment. This allows joint 
 processing and comparison with public Earth System data.  
-👉 [Learn how to integrate your own data](../guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage.ipynb)
+👉 [Learn how to integrate your own data.](../guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage.ipynb)
 

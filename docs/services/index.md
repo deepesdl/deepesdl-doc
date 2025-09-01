@@ -9,7 +9,6 @@ hide:
 
 If you are a registered user, access the DeepESDL Hub [here](https://deep.earthsystemdatalab.net).
 
----
 
 ## Service Highlights of DeepESDL
 
