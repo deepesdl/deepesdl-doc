@@ -25,8 +25,8 @@ theme:
       scheme: default
       primary: white #blue grey
       accent: deep orange
-  # font:
-  #  text: Nunito
+  font:
+    text: Nunito
   custom_dir: docs/overrides
 
 extra:
