@@ -11,7 +11,7 @@ DeepESDL has been among the first platforms that integrated with ESA's emerging 
 outputs of  research projects reusable and reproducible beyond the lifetime of the activities. To this end, the DeepESDL
 team has developed tools and integrations to publish workflows encoded in Jupyter notebooks and the resulting datasets 
 in the EarthCODE catalogue and potentially also in ESA's Project Results Repository (PRR). By implementing their 
-research on DeepESDL, users can hence make sure to meet ESA's requirements for a FAIR publication of results. 
+research on DeepESDL, users can ensure that they meet ESA's requirements for a FAIR publication of results. 
 The following projects have been or are still successfully doing research enabled by DeepESDL. 
 
 ## Projects
@@ -26,14 +26,14 @@ activities affect coastal waters and vice versa, supporting more informed decisi
 Ultimately, BalticAIMS focused on enhancing the capacity of regional authorities and stakeholders to plan sustainably
 for the interconnected land-sea system.
 
-Baltic AIMS uses DeepESDL a one stop provider for all required cloud service including  compute. storage, data
-dissemination, and Viewer as a Service.
+Baltic AIMS uses DeepESDL as a one-stop provider for all required cloud services, including compute, storage, 
+data dissemination, and Viewer as a Service.
 
 [![Logo Baltic Aims](img/BalticAIMS_1.jpg){style="max-width:800px; width:100%; height:auto;"}](https://viewer.balticaims.eu/)
 
-[Website](https://www.syke.fi/en/projects/eo-applications-integrated-maritime-and-territorial-spatial-planning-baltic-balticaims)
+[Baltic AIMS website](https://www.syke.fi/en/projects/balticaims)
 
-[Baltic AIMS viewer](https://viewer.balticaims.eu/)
+[Baltic AIMS Viewer](https://viewer.balticaims.eu/)
 
 ----------
 
@@ -81,10 +81,13 @@ DeepESDL has been supporting these events by providing a ready-to-use, collabora
 computational resources, and on-site expertise for the efficient implementation of scientific workflows into scalable
 software.
 
-[May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/)
 [February 2024](https://eo4society.esa.int/event/sciencehubchallengefeb2024)
+
+[May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/)
+
 [March 2025](https://sciencehub.esa.int/2025/02/28/training-on-carbon-and-extremes-science-with-the-deepesdl-platform/)
 
+[July 2025](https://sciencehub.esa.int/2025/07/14/science-hub-challenges-july-2025/)
 
 
 --------
@@ -142,7 +145,7 @@ For the project, the xcube library has been extended by a multistore, which enab
 
 *Coming soon.*
 
----------
+
 
 
 
