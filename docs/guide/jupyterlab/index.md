@@ -165,7 +165,7 @@ To access them:
 5.  The notebook is copied into your workspace, and you can run it and adjust 
     it according to your needs.
 
-### Team resources
+## Team resources
 
 If you are using DeepESDL Jupyter Lab with others in a team, you can share 
 content with each other and access the team S3 bucket for data storage.
@@ -193,7 +193,7 @@ How to make use of the DeepESDL Team shared bucket is demonstrated in the
 example notebook **Save_cube_to_team_storage.ipynb**. The notebook is located
 in the DeepESDL notebook catalog in the "team-shared" category.
 
-### Proxy server processes like Dashboards, WebServer UIs,...
+## Proxy server processes like Dashboards, WebServer UIs,...
 
 If you start a server process on a specific port (e.g. 8080) within your JupyterLab
 session, you can access it via the url 

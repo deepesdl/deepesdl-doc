@@ -1,6 +1,6 @@
-# Science Demonstration Case “Ocean” 
+# Science Case **“Ocean”** 
 
-Authors: Julia Klima, Jannes Kruse, Jonas Neumann
+**Authors:** Julia Klima, Jannes Kruse, Jonas Neumann
 
 A novel approach was explored to understanding the ocean carbon cycle through
 the utilization of a recently developed, uniformly structured data cube

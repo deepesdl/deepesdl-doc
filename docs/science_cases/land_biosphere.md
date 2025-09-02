@@ -1,6 +1,8 @@
-# Science Demonstration Case “Land-Biosphere-Society”
+# Science Case **“Land-Biosphere-Society”**: Diagnosing syndroms of biosphere-atmosphere-socioeconomic change.
 
-Authors: Wanton Li, Gregory Duveiller, Fabian Gans, Jeroen Smits, Guido Kraemer, Dorothea Frank, Miguel Mahecha, Ulrich Weber, Mirco Migliavacca, Andrey Ceglar, Markus Reichstein: Diagnosing syndroms of biosphere-atmosphere-socioeconomic change.
+**Authors:** Wanton Li, Gregory Duveiller, Fabian Gans, Jeroen Smits, Guido Kraemer, Dorothea Frank, Miguel Mahecha, Ulrich Weber, Mirco Migliavacca, Andrey Ceglar, Markus Reichstein
+
+
 
 While previous work (Kraemer et al. 2020) to create an index of the Earth System
 focussed on describing the different spheres (Atmosphere - Biosphere - Society)

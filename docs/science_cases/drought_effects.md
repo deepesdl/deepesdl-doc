@@ -1,6 +1,6 @@
-# Linear estimation of drought effects on productivity 
+# Science Case **“Drought Effect”**: Linear estimation of drought effects on productivity
 
-Authors: Chaonan Ji
+**Authors:** Chaonan Ji
 
 
 The rationale for the demonstration case on climate extremes is the following:
