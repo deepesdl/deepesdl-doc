@@ -260,6 +260,26 @@
     
     
       <li class="md-tabs__item">
+        <a href="../references/events/" class="md-tabs__link">
+          
+  
+    
+  
+  References
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../about/" class="md-tabs__link">
           
   
@@ -626,11 +646,58 @@
     
       
         
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../references/events/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
           
-        
-      
-        
-      
         
       
         
@@ -682,8 +749,6 @@
       
         
           
-        
-      
         
       
         
@@ -814,96 +879,95 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 <tr>
 <th></th>
 <th>Data Source</th>
-<th>Datasets / Collections</th>
-<th>Tags</th>
+<th>Example</th>
 <th>How to Access</th>
+<th>Plugin repository</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img alt="CDS" class="logo-icon-table" src="https://climate.copernicus.eu/sites/default/files/custom-uploads/branding/C3S%E2%80%93POS%E2%80%93LINE.png" /></td>
+<td><img alt="CDS" class="logo-icon-table" src="img/cds_logo.png" width="120" /></td>
 <td><strong><a href="https://cds.climate.copernicus.eu/">Copernicus Climate Data Store (CDS)</a></strong></td>
-<td>ERA5, Climate Projections, Sectoral Indices</td>
-<td><code>climate</code> <code>reanalysis</code> <code>forecast</code></td>
+<td><code>new_data_store("cds")</code></td>
 <td><a href="../guide/jupyterlab/notebooks/Generate_C3S_CDS_cubes/">Example Notebook</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-cds">Github</a></td>
 </tr>
 <tr>
-<td><img alt="CMEMS" class="logo-icon-table" src="https://knowledge4policy.ec.europa.eu/sites/default/files/53443b17-0adb-44e1-8fd3-662fa7eda708.png" /></td>
+<td><img alt="CMEMS" class="logo-icon-table" src="img/cmems_logo_2.png" width="110" /></td>
 <td><strong><a href="https://marine.copernicus.eu/">Copernicus Marine Service (CMEMS)</a></strong></td>
-<td>Ocean physics, ocean color, forecasts</td>
-<td><code>ocean</code> <code>marine</code> <code>forecast</code></td>
+<td><code>new_data_store("cmems")</code></td>
 <td><a href="../guide/jupyterlab/notebooks/Generate_CMEMS_cubes/">Example Notebook</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-cmems">Github</a></td>
 </tr>
 <tr>
-<td><img alt="CLMS" class="logo-icon-table" src="img/logo_clms.png" /></td>
+<td><img alt="CLMS" class="logo-icon-table logo-icon-table-clms" src="img/logo_clms.png" width="150" /></td>
 <td><strong><a href="https://land.copernicus.eu/en/dataset-catalog">Copernicus Land Monitoring Service (CLMS)</a></strong></td>
-<td>Dynamic Land Cover, CORINE</td>
-<td><code>land use</code> <code>vegetation</code></td>
-<td><em>Coming soon</em></td>
+<td><code>new_data_store("clms")</code></td>
+<td><a href="https://github.com/xcube-dev/xcube-clms/blob/main/examples/notebooks/CLMS_lazy_load.ipynb">Example Notebook <br/>(external link)</a><br/> <a href="https://github.com/xcube-dev/xcube-clms/blob/main/examples/notebooks/CLMS_preload.ipynb">Example Notebook <br/>(external link)</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-clms">Github</a></td>
 </tr>
 <tr>
-<td><img alt="EOPF" class="logo-icon-table" src="https://www.dlr.de/de/eoc/forschung-transfer/projekte-und-missionen/eopf-sentinel-zarr-samples-service/esa_eopf_logo_2025_color_esa_16x9.jpg/@@images/image-1000-d87d614b71d37583fc8cf99cfbf55b0d.jpeg" /></td>
-<td><strong><a href="https://zarr.eopf.copernicus.eu/">EOPF Sample Service</a></strong></td>
-<td>Sentinel datasets in Zarr format</td>
-<td><code>sentinel</code> <code>sample</code> <code>zarr</code></td>
-<td><em>Coming soon</em></td>
-</tr>
-<tr>
-<td><img alt="ESA CCI" class="logo-icon-table" src="https://brand.esa.int/files/2020/05/ESA_logo_2020_Deep-scaled.jpg" /></td>
-<td><strong><a href="https://climate.esa.int/en/data/#/dashboard">ESA Climate Data Centre (CCI)</a></strong></td>
-<td>Essential Climate Variables (ECVs)</td>
-<td><code>climate</code> <code>ECVs</code> <code>environment</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Generate_CCI_cubes/">Example Notebook</a></td>
-</tr>
-<tr>
-<td><img alt="SMOS" class="logo-icon-table" src="https://www.esa.int/eologos/images/smos.jpg" /></td>
-<td><strong><a href="https://earth.esa.int/eogateway/missions/smos">ESA SMOS</a></strong></td>
-<td>Soil Moisture &amp; Ocean Salinity</td>
-<td><code>soil-moisture</code> <code>salinity</code> <code>satellite</code></td>
-<td><em>Coming soon</em></td>
-</tr>
-<tr>
-<td><img alt="GEDI" class="logo-icon-table" src="https://gedi.umd.edu/wp-content/uploads/2020/10/GEDI_16_10.jpg" /></td>
-<td><strong><a href="https://gedi.umd.edu/">Global Ecosystem Dynamics Investigation (GEDI)</a></strong></td>
-<td>Canopy height, biomass, elevation</td>
-<td><code>canopy height</code> <code>biomass</code> <code>lidar</code></td>
-<td><em>Coming soon</em></td>
-</tr>
-<tr>
-<td><img alt="Sentinel Hub" class="logo-icon-table" src="https://www.sentinel-hub.com/img/press/sentinel_hub_by_planet_logo_big.png" /></td>
-<td><strong><a href="https://www.sentinel-hub.com/">Sentinel Hub</a></strong></td>
-<td>Sentinel‑1/2/3/5P, Landsat, MODIS</td>
-<td><code>satellite</code> <code>optical</code> <code>radar</code> <code>multi-source</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Generate_SentinelHub_cubes/">Example Notebook</a></td>
-</tr>
-<tr>
-<td><img alt="STAC" class="logo-icon-table" src="https://stacspec.org/public/images-original/STAC-04.png" /></td>
-<td><strong><a href="https://stacspec.org/en/about/datasets/">SpatioTemporal Asset Catalog (STAC)</a></strong></td>
-<td>Sentinel, Planet, PROBA‑V</td>
-<td><code>catalog</code> <code>search</code> <code>satellite</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Access_data_from_nonsearchable_stac_catalog/">General Example Notebook</a>, <a href="../guide/jupyterlab/notebooks/Access_Sentinel2_data_from_CDSE/">CDSE Example Notebook</a></td>
-</tr>
-<tr>
-<td><img alt="Zenodo" class="logo-icon-table" src="https://about.zenodo.org/static/img/logos/zenodo-black-border.svg" /></td>
-<td><strong><a href="https://zenodo.org/">Zenodo</a></strong></td>
-<td>Scientific open data (various)</td>
-<td><code>general</code> <code>open-data</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Access_data_from_Zenodo/">Example Notebook</a></td>
-</tr>
-<tr>
-<td><img alt="DeepESDL" class="logo-icon-table" src="../img/logo/cube_small.png" /></td>
-<td><strong>DeepESDL Public Data Cubes</strong></td>
-<td>Pre-packaged ESDL data cubes</td>
-<td><code>analysis-ready</code> <code>multi-source</code></td>
+<td><img alt="DeepESDL" class="logo-icon-table" src="../img/logo/cube_small.png" width="60" /></td>
+<td><strong><a href="../guide/datacubes/ESDC">DeepESDL Public Data Cubes</a></strong></td>
+<td><code>new_data_store("s3", root="deep-esdl-public")</code></td>
 <td><a href="../guide/jupyterlab/notebooks/Access_public_cubes/">Example Notebook</a></td>
+<td></td>
+</tr>
+<tr>
+<td><img alt="EOPF" class="logo-icon-table" src="https://www.dlr.de/de/eoc/forschung-transfer/projekte-und-missionen/eopf-sentinel-zarr-samples-service/esa_eopf_logo_2025_color_esa_16x9.jpg/@@images/image-1000-d87d614b71d37583fc8cf99cfbf55b0d.jpeg" width="90" /></td>
+<td><strong><a href="https://zarr.eopf.copernicus.eu/">EOPF Sample Service</a></strong></td>
+<td><code>new_data_store("eopf-zarr")</code></td>
+<td><a href="https://github.com/EOPF-Sample-Service/xcube-eopf/blob/main/examples/sentinel_2.ipynb">Example Notebook <br/>(external link)</a></td>
+<td><a href="https://github.com/EOPF-Sample-Service/xcube-eopf">Github</a></td>
+</tr>
+<tr>
+<td><img alt="ESA CCI" class="logo-icon-table" src="https://brand.esa.int/files/2020/05/ESA_logo_2020_Deep-scaled.jpg" width="120" /></td>
+<td><strong><a href="https://climate.esa.int/en/data/#/dashboard">ESA Climate Data Centre (CCI)</a></strong></td>
+<td><code>new_data_store("cciodp")</code><br/><code>new_data_store("ccizarr")</code></td>
+<td><a href="../guide/jupyterlab/notebooks/Generate_CCI_cubes/">Example Notebook</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-cci">Github</a></td>
+</tr>
+<tr>
+<td><img alt="SMOS" class="logo-icon-table" src="https://www.esa.int/eologos/images/smos.jpg" width="140" /></td>
+<td><strong><a href="https://earth.esa.int/eogateway/missions/smos">ESA SMOS</a></strong></td>
+<td><code>new_data_store("smos")</code></td>
+<td><a href="https://github.com/xcube-dev/xcube-smos/blob/main/notebooks/demo-store.ipynb">Example Notebook <br/>(external link)</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-smos">Github</a></td>
+</tr>
+<tr>
+<td><img alt="GEDI" class="logo-icon-table" src="https://gedi.umd.edu/wp-content/uploads/2020/10/GEDI_16_10.jpg" width="90" /></td>
+<td><strong><a href="https://gedi.umd.edu/">Global Ecosystem Dynamics Investigation (GEDI)</a></strong></td>
+<td><code>new_data_store("gedi")</code></td>
+<td><a href="https://github.com/xcube-dev/xcube-gedidb/blob/main/examples/notebooks/gedi_data_store.ipynb">Example Notebook <br/>(external link)</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-gedi">Github</a></td>
+</tr>
+<tr>
+<td><img alt="Sentinel Hub" class="logo-icon-table" src="https://www.sentinel-hub.com/img/press/sentinel_hub_by_planet_logo_big.png" width="100" /></td>
+<td><strong><a href="https://www.sentinel-hub.com/">Sentinel Hub</a></strong></td>
+<td><code>new_data_store("sentinelhub")</code></td>
+<td><a href="../guide/jupyterlab/notebooks/Generate_SentinelHub_cubes/">Example Notebook</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-sh">Github</a></td>
+</tr>
+<tr>
+<td><img alt="STAC" class="logo-icon-table" src="https://stacspec.org/public/images-original/STAC-04.png" width="100" /></td>
+<td><strong><a href="https://stacspec.org/en/about/datasets/">SpatioTemporal Asset Catalog (STAC)</a></strong></td>
+<td><code>new_data_store("stac")</code><br/><code>new_data_store("stac-cdse")</code><br/><code>new_data_store("stac-cdse-ardc")</code></td>
+<td><a href="../guide/jupyterlab/notebooks/Access_data_from_nonsearchable_stac_catalog/">General Example Notebook</a>,<br/> <a href="../guide/jupyterlab/notebooks/Access_Sentinel2_data_from_CDSE/">CDSE Example Notebook</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-stac">Github</a></td>
+</tr>
+<tr>
+<td><img alt="Zenodo" class="logo-icon-table" src="https://about.zenodo.org/static/img/logos/zenodo-black-border.svg" width="100" /></td>
+<td><strong><a href="https://zenodo.org/">Zenodo</a></strong></td>
+<td><code>new_data_store("zenodo")</code></td>
+<td><a href="../guide/jupyterlab/notebooks/Access_data_from_Zenodo/">Example Notebook</a></td>
+<td><a href="https://github.com/xcube-dev/xcube-zenodo">Github</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="want-to-use-your-own-data">Want to Use Your Own Data?<a class="headerlink" href="#want-to-use-your-own-data" title="Permanent link">#</a></h2>
 <p>DeepESDL supports seamless integration of your own datasets into the analysis-ready cube environment. This allows joint 
 processing and comparison with public Earth System data.<br />
-👉 <a href="../guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage/">Learn how to integrate your own data</a></p>
+👉 <a href="../guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage/">Learn how to integrate your own data.</a></p>
 
 
 

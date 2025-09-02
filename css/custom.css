@@ -4,21 +4,36 @@
   text-align: center;
 }
 
-/* for logos in table -> Data page */
+/*
+!* for logos in table -> Data page *!
+*/
 .logo-icon-table {
-  max-height: 60px;
-  max-width: 200px;
-  display: block;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: none !important;
 }
+
+table td:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon-table-clms {
+  margin-top: 10px !important;
+}
+
+
 
 .md-header {
   box-shadow: none !important;
 }
 
+/*
 .md-grid {
   max-width: 1400px;
-}
+}  */
 
 .xr-wrap {
   font-size: .7rem;
