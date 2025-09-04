@@ -29,8 +29,6 @@ for the interconnected land-sea system.
 Baltic AIMS uses DeepESDL as a one-stop provider for all required cloud services, including compute, storage, 
 data dissemination, and Viewer as a Service.
 
-[![Logo Baltic Aims](img/BalticAIMS_1.jpg){style="max-width:800px; width:100%; height:auto;"}](https://viewer.balticaims.eu/)
-
 [Baltic AIMS website](https://www.syke.fi/en/projects/balticaims)
 
 [Baltic AIMS Viewer](https://viewer.balticaims.eu/)
