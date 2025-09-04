@@ -1,4 +1,4 @@
-## Further information
+# Further information
 
  - The [JupyterLab documentation](https://jupyterlab.readthedocs.io/):
    an in-depth user guide for the JupyterLab interface.
