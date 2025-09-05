@@ -2,7 +2,7 @@
 
 The DeepESDL xcube Viewer is reachable at [viewer.earthsystemdatalab.net](https://viewer.earthsystemdatalab.net).
 
-![Viewer Image](../img/img_viewer_2.png)
+![Viewer Image](../../img/img_viewer_2.png)
 
 The **xcube Viewer** is a browser-based visualization tool, built for exploring spatiotemporal Earth System
 data cubes. Optimized for handling large, multidimensional datasets it allows users to interactively view, analyze,

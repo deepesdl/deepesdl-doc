@@ -20,9 +20,14 @@ the data owners.
 Data access is possible in two main manners within DeepESDL. xcube
 data stores provide on-the-fly access to datasets via the data stores framework.
 Other datasets are made anaylsis-ready and persisted in object storage for
-fastest access.
+fastest access. The xcube data stores framework is described in detail in the xcube
+[documentation](https://xcube.readthedocs.io/en/latest/dataaccess.html).
 
--   [xcube Data Stores](datastores.md)
+An own section is dedicated to the **[data store overview](../../data)**.
+
+The DeepESDL Consortium also provides a growing number of datasets which are made analysis-ready
+and persisted in public object storage for easy access. Details on die data cubes are provided on the followong pages:
+
 -   [Earth System Data Cube](ESDC.md)
 -   [Black Sea Cube](black-sea.md)
 -   [Land Cover Cube](LC-1x2025x2025-2-0-0-levels.md)

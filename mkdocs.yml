@@ -96,7 +96,8 @@ nav:
   - User Guide:
       - guide/index.md
       - JupyterLab:
-          - Navigating DeepESDL JupyterLab: guide/jupyterlab/index.md
+          - guide/jupyterlab/index.md
+          - Navigating DeepESDL JupyterLab: guide/jupyterlab/jupyterlab.md
           - Example Notebooks:
               - guide/jupyterlab/notebooks/index.md
               - Generic Notebooks:
@@ -126,12 +127,13 @@ nav:
                   - guide/jupyterlab/notebooks/science-cases/ocean_carbon_cycle.ipynb
 
       - Visualisation:
-          - xcube Viewer: guide/xcube-viewer.md
-          - Lexcube Viewer: guide/lexcube-viewer.md
-          - 4D Viewer: guide/4d-viewer.md
-      - Datacubes:
+          - guide/visualisation/index.md
+          - xcube Viewer: guide/visualisation/xcube-viewer.md
+          - Lexcube Viewer: guide/visualisation/lexcube-viewer.md
+          - 4D Viewer: guide/visualisation/4d-viewer.md
+      - Data:
           - guide/datacubes/index.md
-          - xcube Data Stores: guide/datacubes/datastores.md
+         # - xcube Data Stores: guide/datacubes/datastores.md
           - deepesdl-public:
               - Earth System Data Cube: guide/datacubes/ESDC.md
               - Black Sea Cube: guide/datacubes/black-sea.md

@@ -20,11 +20,11 @@ If you are a registered user, access the DeepESDL Hub [here](https://deep.earths
 * Access to relevant [datasets](../data/index.md) including Copernicus Services, Sentinel products, 
   CCI products and more, in a common data model through xcube data stores. 
 * Integration of feature data with geodb 
-* Visualization in Jupyter Notebooks with [xcube Viewer](../guide/xcube-viewer.md) and
-  [Lexcube](../guide/lexcube-viewer.md) 
+* Visualization in Jupyter Notebooks with [xcube Viewer](../guide/visualisation/xcube-viewer.md) and
+  [Lexcube](../guide/visualisation/lexcube-viewer.md) 
 * [Catalogue](../guide/jupyterlab/notebooks/index.md) of ready-to-use notebooks for common workflows 
 * Integrated Development Environment VSCode 
-* Dissemination of data sets in public [xcube Viewer](../guide/xcube-viewer.md) application
+* Dissemination of data sets in public [xcube Viewer](../guide/visualisation/xcube-viewer.md) application
   at [viewer.earthsystemdatalab.net](https://viewer.earthsystemdatalab.net) 
 
 <br>

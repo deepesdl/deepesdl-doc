@@ -1,6 +1,6 @@
 # Lexcube: Interactive 3D Data Cube Visualization
 
-![Demo GIF](img/lexcube-demo.gif)
+![Demo GIF](../img/lexcube-demo.gif)
 
 Lexcube is an interactive 3D data cube visualization tool. It exists in two versions:
 
@@ -15,7 +15,7 @@ To give geospatial context, GeoJSON vectors can be overlaid over the cube. On Le
 
 At any point, you can create a print template from your currently visualized cube for crafting a corresponding paper cube:
 
-![Paper cube crafting demonstration](img/lexcube-print-template.png)
+![Paper cube crafting demonstration](../img/lexcube-print-template.png)
 
 ## Lexcube.org
 

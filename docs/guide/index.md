@@ -3,10 +3,55 @@
 This user guide helps you to get started with the main components of
 DeepESDL.
 
-The growing set of DeepESDL's general functionalities comprises:
+<br>
 
-1. [DeepESDL JupyterLab](jupyterlab/index.md)
-2. [DeepESDL visualisation](xcube-viewer.md)
-3. [DeepESDL datacubes](datacubes/index.md)
-4. [DeepESDL datacube generation](datacube-generation.md)
-5. [ML Toolkits](../ml-toolkit/index.md)
+<div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: left;">
+
+  <a href="/guide/jupyterlab" style="text-decoration: none; color: inherit;">
+    <div class="card">
+      <h3>
+        DeepESDL JupyterLab
+      </h3>
+      <p>
+        Learn how to navigate the DeepESDL JupyterLab and get an overview of the Example Notebooks.
+      </p>
+    </div>
+  </a>
+
+  <a href="/guide/visualisation" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        Visualisation
+      </h3>
+      <p>
+        Get an overview of all the visualisation options within DeepESDL.
+      </p>
+    </div>
+  </a>
+
+  <a href="/guide/datacubes" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        Data
+      </h3>
+      <p>
+        See how to access your data of interest within DeepESDL.
+      </p>
+    </div>
+  </a>
+
+  <a href="/guide/ml-toolkit" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        Machine Learning
+      </h3>
+      <p>
+        <code>ml4xcube</code> - The machine learning toolkit for data cubes.
+      </p>
+    </div>
+  </a>
+
+</div>
+
+<br>
+
