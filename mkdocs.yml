@@ -133,7 +133,7 @@ nav:
           - 4D Viewer: guide/visualisation/4d-viewer.md
       - Data:
           - guide/datacubes/index.md
-         # - xcube Data Stores: guide/datacubes/datastores.md
+          - xcube Data Stores: guide/datacubes/datastores.md
           - deepesdl-public:
               - Earth System Data Cube: guide/datacubes/ESDC.md
               - Black Sea Cube: guide/datacubes/black-sea.md

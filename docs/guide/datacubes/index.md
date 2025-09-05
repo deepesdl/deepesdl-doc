@@ -1,18 +1,18 @@
 # DeepESDL data cubes
 
-DeepESDL provides a growing list of relevant variables for Earth System Science. 
-Most of them have been derived from Earth Observation, but the compilation also 
+DeepESDL provides a growing list of relevant variables for Earth System Science.
+Most of them have been derived from Earth Observation, but the compilation also
 includes model or re-analysis data if deemed useful.
-DeepESDL is very grateful to all data owners for kindly providing the datasets 
-and allowing us to process, and redistribute them free of charge. 
-All data cubes generated and distributed by DeepESDL come without any warranty, 
+DeepESDL is very grateful to all data owners for kindly providing the datasets
+and allowing us to process, and redistribute them free of charge.
+All data cubes generated and distributed by DeepESDL come without any warranty,
 neither from the owners, from the DeepESDL, nor from ESA.
 
-During ingestion into the DeepESDL, datasets are typically transformed in 
-space and 
-time to fit to the common grid of the data cube, a process that necessarily 
-modifies the original data. If you are looking for the original data, please 
-follow the links within the dataset attributes for each variable and contact 
+During ingestion into the DeepESDL, datasets are typically transformed in
+space and
+time to fit to the common grid of the data cube, a process that necessarily
+modifies the original data. If you are looking for the original data, please
+follow the links within the dataset attributes for each variable and contact
 the data owners.
 
 # Datasets
@@ -20,14 +20,9 @@ the data owners.
 Data access is possible in two main manners within DeepESDL. xcube
 data stores provide on-the-fly access to datasets via the data stores framework.
 Other datasets are made anaylsis-ready and persisted in object storage for
-fastest access. The xcube data stores framework is described in detail in the xcube
-[documentation](https://xcube.readthedocs.io/en/latest/dataaccess.html).
+fastest access.
 
-An own section is dedicated to the **[data store overview](../../data)**.
-
-The DeepESDL Consortium also provides a growing number of datasets which are made analysis-ready
-and persisted in public object storage for easy access. Details on die data cubes are provided on the followong pages:
-
+-   [xcube Data Stores](datastores.md)
 -   [Earth System Data Cube](ESDC.md)
 -   [Black Sea Cube](black-sea.md)
 -   [Land Cover Cube](LC-1x2025x2025-2-0-0-levels.md)
