@@ -7,7 +7,7 @@ DeepESDL.
 
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: left;">
 
-  <a href="/guide/jupyterlab" style="text-decoration: none; color: inherit;">
+  <a href="./jupyterlab/" style="text-decoration: none; color: inherit;">
     <div class="card">
       <h3>
         DeepESDL JupyterLab
@@ -18,7 +18,7 @@ DeepESDL.
     </div>
   </a>
 
-  <a href="/guide/visualisation" style="text-decoration: none; color: inherit;">
+  <a href="./visualisation/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
         Visualisation
@@ -29,7 +29,7 @@ DeepESDL.
     </div>
   </a>
 
-  <a href="/guide/datacubes" style="text-decoration: none; color: inherit;">
+  <a href="./datacubes/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
         Data
@@ -40,7 +40,7 @@ DeepESDL.
     </div>
   </a>
 
-  <a href="/guide/ml-toolkit" style="text-decoration: none; color: inherit;">
+  <a href="../ml-toolkit/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
         Machine Learning

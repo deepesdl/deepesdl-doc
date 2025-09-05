@@ -9,7 +9,7 @@ section [Further Information](../further-information.md).
 
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: left;">
 
-  <a href="/guide/jupyterlab/jupyterlab" style="text-decoration: none; color: inherit;">
+  <a href="./jupyterlab/" style="text-decoration: none; color: inherit;">
     <div class="card">
       <h3>
         Introduction
@@ -20,7 +20,7 @@ section [Further Information](../further-information.md).
     </div>
   </a>
 
-  <a href="/guide/jupyterlab/notebooks" style="text-decoration: none; color: inherit;">
+  <a href="./notebooks/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
         Example Notebooks
