@@ -26,8 +26,6 @@ directly from satellite imagery data, with the use of Sentinel-1 imagery
 obtained in 2015-2016 and a completely independent damage model (Fig. 1),
 generated with an ice-sheet model inversion based on measurements of
 ice thickness and surface velocity obtained during the same period.
-The frequent acquisition of Sentinel-1 data over Antarctica makes it
-an excellent tool for building a time series of ice damage.
 
 <figure markdown="span">
     ![](img/polar_fig1.png)
@@ -67,3 +65,39 @@ a trainable pix2pix decoder.
     </figcaption>
 </figure>
 
+By looking at Fig. 3, showing the evolution of the accuracy and of the loss
+of the neural network during the training and the validation phase, we noticed
+that the learning process was very fast and the overfitting was minimal,
+when compared to the corresponding results using different setups and
+different training strategies (not shown here). We didn't notice
+any striking difference in the performances of the neural network between
+the three different assumptions on the ice temperature vertical profile.
+
+<figure markdown="span">
+    ![](img/polar_fig3.png)
+    ![](img/polar_fig4.png)
+    <figcaption>
+        Fig. 3: Accuracy and Loss of the neural network trained
+        on the Sentinel-1 imagery described above and on the damage model
+        that assumes the observed surface temperature as valid at any depth,
+        without vertical gradient. 
+    </figcaption>
+
+Given these initial results, this method looks very promising.
+The frequent acquisition of Sentinel-1 data over Antarctica makes it
+an excellent tool for building a time series of ice damage, without the need
+for coincident ice thickness and surface velocity measurements, that are often
+not available.
+
+Future expansions of this work include and are not limited to:
+- Extending the areas of investigation to include other ice shelves, such as
+Amundsen and Getz, on the other side of Antarctica.
+- Investigating a strategy to preserve some high-resolution information, 
+when smoothing the imagery data to match the damage models resolution (500 m).
+- Separately training the neural network on imagery with different polarisation
+and satellite orbit direction.
+- Augmenting Sentinel-1 imagery with other datasets, such as Sentinel-2 and
+Landsat-8 optical imagery or ice surface velocity maps.
+- Investigating potential modifications to the neural network architecture,
+for example reducing the capacity at the bottleneck layer, adjusting
+the loss function or using larger and overlapping tiles.
