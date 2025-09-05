@@ -19,7 +19,7 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 [this guide](#want-to-use-your-own-data).
 
 
-[Get Started!](../guide/jupyterlab/notebooks/Access_public_cubes.ipynb){ .md-button .md-button--accent }
+[Get Started!](../guide/jupyterlab/notebooks/Access_public_cubes.ipynb){ .md-button }
 
 ---
 

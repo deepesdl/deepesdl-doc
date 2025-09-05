@@ -5,9 +5,6 @@ the JupyterLab environment as offered by DeepESDL.
 For more in-depth documentation on the various components, see the links in the
 section [Further Information](../further-information.md).
 
-Visit the [DeepESDL Status Dashboad](https://status.eox.at/public-dashboards/3e50e8113b48432ca25e02a964f84d72) to check 
-out the current status of the DeepESDL services.
-
 <br>
 
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: left;">
@@ -18,7 +15,7 @@ out the current status of the DeepESDL services.
         Introduction
       </h3>
       <p>
-        Learn how to navigate the DeepESDL Jupyter Lab.
+        Learn how to navigate the DeepESDL JupyterLab.
       </p>
     </div>
   </a>
@@ -35,4 +32,18 @@ out the current status of the DeepESDL services.
     </div>
   </a>
 
+  <a href="https://status.eox.at/public-dashboards/3e50e8113b48432ca25e02a964f84d72" style="text-decoration: none; color: inherit;" target="_blank">
+    <div class="card"> 
+      <h3>
+        Status Dashboad
+      </h3>
+      <p>
+        Visit the DeepESDL Status Dashboad to check 
+        the current status of the DeepESDL services.
+      </p>
+    </div>
+  </a>
+
 </div>
+
+<br>
