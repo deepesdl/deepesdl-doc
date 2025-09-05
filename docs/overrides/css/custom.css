@@ -4,14 +4,8 @@
   text-align: center;
 }
 
-/*
-!* for logos in table -> Data page *!
-*/
+/*DATA section: for logos in table -> Data page*/
 .logo-icon-table {
-/*  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: none !important;*/
   display: block;
   margin: 0 auto;
 }
@@ -81,7 +75,7 @@
 }
 
 .md-button--accent {
-  background-color: #0b3e73;  /* your custom blue */
+  background-color: #0b3e73;
   border-color: #0b3e73;
   color: white!important;
   border: none!important;
@@ -90,26 +84,13 @@
 
 .md-button--accent:hover,
 .md-button--accent:focus {
-  background-color: var(--md-accent-fg-color);  /* deep orange */
+  background-color: var(--md-accent-fg-color);
   color: white;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*USER GUIDE: Selectors for Grid structures in User Guide*/
 
  .card {
    width: 300px;
@@ -120,11 +101,6 @@
    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
    transition: all 0.3s ease; /* smooth effect */
  }
-
-/*.card:hover {
-  background-color: #ece9e9;  !* light cyan *!
-}*/
-
 
 /* h3 underline animation */
 .card h3 {
