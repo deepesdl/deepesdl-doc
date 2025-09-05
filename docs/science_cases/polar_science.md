@@ -23,17 +23,18 @@ the temperature vertical profile are made.
 
 This study aimed at training a neural network to assess ice damage levels
 directly from satellite imagery data, with the use of Sentinel-1 imagery
-obtained in 2015-2016 and a completely independent damage model, generated
-with an ice-sheet model inversion based on measurements of ice thickness and
-surface velocity obtained during the same period. The frequent acquisition of
-Sentinel-1 data over Antarctica makes it an excellent tool
-for building a time series of ice damage.
+obtained in 2015-2016 and a completely independent damage model (Fig. 1),
+generated with an ice-sheet model inversion based on measurements of
+ice thickness and surface velocity obtained during the same period.
+The frequent acquisition of Sentinel-1 data over Antarctica makes it
+an excellent tool for building a time series of ice damage.
 
 <figure markdown="span">
     ![](img/polar_fig1.png)
     <figcaption>
-        The three ice damage models for Amery Ice Shelf, that depend
-        on the assumption on the ice temperature vertical profile.
+        Fig. 1: The three pre-generated input ice damage models for
+        Amery Ice Shelf, that depend on the assumption
+        on the ice temperature vertical profile.
     </figcaption>
 </figure>
 
@@ -56,13 +57,13 @@ to access this data directly and run the example JupyterNotebook without
 retriggering the SentinelHub query/preprocessing/download steps.
 
 The neural network was implemented using TensorFlow and Keras, incorporating
-within a U-Net architecture a pre-trained MobileNetV2 encoder and a trainable
-pix2pix decoder.
+within a U-Net architecture (Fig. 2) a pre-trained MobileNetV2 encoder and
+a trainable pix2pix decoder.
 
 <figure markdown="span">
     ![](img/polar_fig2.png)
     <figcaption>
-        The U-Net architecture used.
+        Fig. 2: The U-Net architecture used.
     </figcaption>
 </figure>
 
