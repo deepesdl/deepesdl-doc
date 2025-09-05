@@ -2,7 +2,7 @@
 
 ## Automatic ice damage detection from Sentinel-1 radar imagery
 
-Authors: Andrea Incatasciato, Martin Wearing, Livia Jakob, Noel Gourmelen
+**Authors:** Andrea Incatasciato, Martin Wearing, Livia Jakob, Noel Gourmelen
 
 The level of ice damage (or inversely, its stiffness) plays a key role in
 controlling its resistance against the gravitational flow into the ocean.
@@ -21,7 +21,7 @@ surface damage, such as fractures and crevasses. These surface damages serve
 as proxies for internal ice stresses, provided certain assumptions about
 the temperature vertical profile are made. 
 
-This study aims at training a neural network to assess ice damage levels
+This study aimed at training a neural network to assess ice damage levels
 directly from satellite imagery data, with the use of Sentinel-1 imagery
 obtained in 2015-2016 and a completely independent damage model, generated
 with an ice-sheet model inversion based on measurements of ice thickness and
@@ -32,7 +32,37 @@ for building a time series of ice damage.
 <figure markdown="span">
     ![](img/polar_fig1.png)
     <figcaption>
-        The U-Net architecture employed within the project.
+        The three ice damage models for Amery Ice Shelf, that depend
+        on the assumption on the ice temperature vertical profile.
+    </figcaption>
+</figure>
+
+The area of investigation was Amery Ice Shelf and the imagery used for training
+and testing the neural network was acquired during the Spring/Summer months
+of 2015 and 2016. We used contains co-polarised imagery,
+obtained with either IW (Interferometric Wide) and EW (Extra Wide) swath modes,
+and in either high and medium resolution (between 10 m and 40 m).
+We also did not distinguish the orbital direction of the satellite
+at the moment of the acquisition.
+
+The query, preprocessing and download of the imagery data was performed through
+SentinelHub. The use of SentinelHub was made possible by the DeepESDL
+Early Adopters scheme, which provided access to SentinelHub Processing Units.
+The retrieved Sentinel-1 data was organised into a data cube format,
+with the static ice damage masks added as additional variables. We included
+three masks, one for each assumption on the ice temperature vertical profile.
+This data cube were published to an S3 data store, allowing future users
+to access this data directly and run the example JupyterNotebook without
+retriggering the SentinelHub query/preprocessing/download steps.
+
+The neural network was implemented using TensorFlow and Keras, incorporating
+within a U-Net architecture a pre-trained MobileNetV2 encoder and a trainable
+pix2pix decoder.
+
+<figure markdown="span">
+    ![](img/polar_fig2.png)
+    <figcaption>
+        The U-Net architecture used.
     </figcaption>
 </figure>
 
