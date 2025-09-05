@@ -1,4 +1,4 @@
-site_name: DeepESDL
+site_name: Earth System Data Lab
 # repo_url: https://github.com/deepesdl/deepesdl-doc
 copyright: Copyright © 2025 by the DeepESDL Team
 
@@ -49,6 +49,7 @@ plugins:
   - mkdocs-jupyter:
       execute: false
       include_requirejs: true
+      ignore_h1_titles: True
   - mkapi
 
 markdown_extensions:
@@ -96,31 +97,41 @@ nav:
       - guide/index.md
       - JupyterLab:
           - guide/jupyterlab/index.md
+          - Navigating DeepESDL JupyterLab: guide/jupyterlab/jupyterlab.md
           - Example Notebooks:
               - guide/jupyterlab/notebooks/index.md
-              - guide/jupyterlab/notebooks/Access_public_cubes.ipynb
-              - guide/jupyterlab/notebooks/Visualise_data_with_xcube_viewer.ipynb
-              - guide/jupyterlab/notebooks/Append_to_existing_cube.ipynb
-              - guide/jupyterlab/notebooks/Chunking_of_datasets.ipynb
-              - guide/jupyterlab/notebooks/Create_Atmospheric_Cubes_CDS.ipynb
-              - guide/jupyterlab/notebooks/Create_Zarr_With_Slices_SentinelHub.ipynb
-              - guide/jupyterlab/notebooks/Spatial_Regridding_and_Masking.ipynb
-              - guide/jupyterlab/notebooks/Save_cube_to_team_storage.ipynb
-              - guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage.ipynb
-              - guide/jupyterlab/notebooks/Access_collections_from_xcube_geodb.ipynb
-              - guide/jupyterlab/notebooks/Generate_C3S_CDS_cubes.ipynb
-              - guide/jupyterlab/notebooks/Generate_CCI_cubes.ipynb
-              - guide/jupyterlab/notebooks/Generate_CMEMS_cubes.ipynb
-              - guide/jupyterlab/notebooks/Generate_SentinelHub_cubes.ipynb
-              - guide/jupyterlab/notebooks/Access_data_from_nonsearchable_stac_catalog.ipynb
-              - guide/jupyterlab/notebooks/Access_data_from_Zenodo.ipynb
-              - guide/jupyterlab/notebooks/Access_Sentinel2_data_from_CDSE.ipynb
-              - guide/jupyterlab/notebooks/How_to_make_use_of_Dask_clusters.ipynb
+              - Generic Notebooks:
+                  - guide/jupyterlab/notebooks/generic-notebooks/Access_public_cubes.ipynb
+                  - guide/jupyterlab/notebooks/generic-notebooks/Visualise_data_with_xcube_viewer.ipynb
+              - Datacube Generation:
+                  - guide/jupyterlab/notebooks/datacube-generation/Append_to_existing_cube.ipynb
+                  - guide/jupyterlab/notebooks/datacube-generation/Chunking_of_datasets.ipynb
+                  - guide/jupyterlab/notebooks/datacube-generation/Create_Atmospheric_Cubes_CDS.ipynb
+                  - guide/jupyterlab/notebooks/datacube-generation/Create_Zarr_With_Slices_SentinelHub.ipynb
+                  - guide/jupyterlab/notebooks/datacube-generation/Spatial_Regridding_and_Masking.ipynb
+              - Team Storage:
+                  - guide/jupyterlab/notebooks/team-storage/Save_cube_to_team_storage.ipynb
+                  - guide/jupyterlab/notebooks/team-storage/Upload_files_to_shared_team_s3_storage.ipynb
+              - xcube Datastores:
+                  - guide/jupyterlab/notebooks/xcube-datastores/Access_collections_from_xcube_geodb.ipynb
+                  - guide/jupyterlab/notebooks/xcube-datastores/Generate_C3S_CDS_cubes.ipynb
+                  - guide/jupyterlab/notebooks/xcube-datastores/Generate_CCI_cubes.ipynb
+                  - guide/jupyterlab/notebooks/xcube-datastores/Generate_CMEMS_cubes.ipynb
+                  - guide/jupyterlab/notebooks/xcube-datastores/Generate_SentinelHub_cubes.ipynb
+                  - guide/jupyterlab/notebooks/xcube-datastores/Access_data_from_nonsearchable_stac_catalog.ipynb
+                  - guide/jupyterlab/notebooks/xcube-datastores/Access_data_from_Zenodo.ipynb
+                  - guide/jupyterlab/notebooks/xcube-datastores/Access_Sentinel2_data_from_CDSE.ipynb
+              - Dask Processing:
+                  - guide/jupyterlab/notebooks/dask-processing/How_to_make_use_of_Dask_clusters.ipynb
+              - Science Cases:
+                  - guide/jupyterlab/notebooks/science-cases/ocean_carbon_cycle.ipynb
+
       - Visualisation:
-          - xcube Viewer: guide/xcube-viewer.md
-          - Lexcube Viewer: guide/lexcube-viewer.md
-          - 4D Viewer: guide/4d-viewer.md
-      - Datacubes:
+          - guide/visualisation/index.md
+          - xcube Viewer: guide/visualisation/xcube-viewer.md
+          - Lexcube Viewer: guide/visualisation/lexcube-viewer.md
+          - 4D Viewer: guide/visualisation/4d-viewer.md
+      - Data:
           - guide/datacubes/index.md
           - xcube Data Stores: guide/datacubes/datastores.md
           - deepesdl-public:
