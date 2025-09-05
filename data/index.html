@@ -20,7 +20,7 @@
     
     
       
-        <title>Data - DeepESDL</title>
+        <title>Data - Earth System Data Lab</title>
       
     
     
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="DeepESDL" class="md-header__button md-logo" aria-label="DeepESDL" data-md-component="logo">
+    <a href=".." title="Earth System Data Lab" class="md-header__button md-logo" aria-label="Earth System Data Lab" data-md-component="logo">
       
   <img src="../img/logo/cube_small.png" alt="logo">
 
@@ -107,7 +107,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DeepESDL
+            Earth System Data Lab
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -343,12 +343,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="DeepESDL" class="md-nav__button md-logo" aria-label="DeepESDL" data-md-component="logo">
+    <a href=".." title="Earth System Data Lab" class="md-nav__button md-logo" aria-label="Earth System Data Lab" data-md-component="logo">
       
   <img src="../img/logo/cube_small.png" alt="logo">
 
     </a>
-    DeepESDL
+    Earth System Data Lab
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -871,7 +871,7 @@ storage, and effort.</p>
 <p>In addition to public data sources, DeepESDL supports the integration of <strong>your own datasets</strong> into the same framework, 
 enabling seamless joint analysis and visualization. For guidance on integrating your own data, see
 <a href="#want-to-use-your-own-data">this guide</a>.</p>
-<p><a class="md-button md-button--accent" href="../guide/jupyterlab/notebooks/Access_public_cubes/">Get Started!</a></p>
+<p><a class="md-button" href="../guide/jupyterlab/notebooks/Access_public_cubes.ipynb">Get Started!</a></p>
 <hr />
 <h2 id="available-data-sources">Available Data Sources<a class="headerlink" href="#available-data-sources" title="Permanent link">#</a></h2>
 <table>
@@ -889,14 +889,14 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 <td><img alt="CDS" class="logo-icon-table" src="img/cds_logo.png" width="120" /></td>
 <td><strong><a href="https://cds.climate.copernicus.eu/">Copernicus Climate Data Store (CDS)</a></strong></td>
 <td><code>new_data_store("cds")</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Generate_C3S_CDS_cubes/">Example Notebook</a></td>
+<td><a href="../guide/jupyterlab/notebooks/xcube-datastores/Generate_C3S_CDS_cubes/">Example Notebook</a></td>
 <td><a href="https://github.com/xcube-dev/xcube-cds">Github</a></td>
 </tr>
 <tr>
 <td><img alt="CMEMS" class="logo-icon-table" src="img/cmems_logo_2.png" width="110" /></td>
 <td><strong><a href="https://marine.copernicus.eu/">Copernicus Marine Service (CMEMS)</a></strong></td>
 <td><code>new_data_store("cmems")</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Generate_CMEMS_cubes/">Example Notebook</a></td>
+<td><a href="../guide/jupyterlab/notebooks/xcube-datastores/Generate_CMEMS_cubes/">Example Notebook</a></td>
 <td><a href="https://github.com/xcube-dev/xcube-cmems">Github</a></td>
 </tr>
 <tr>
@@ -910,7 +910,7 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 <td><img alt="DeepESDL" class="logo-icon-table" src="../img/logo/cube_small.png" width="60" /></td>
 <td><strong><a href="../guide/datacubes/ESDC">DeepESDL Public Data Cubes</a></strong></td>
 <td><code>new_data_store("s3", root="deep-esdl-public")</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Access_public_cubes/">Example Notebook</a></td>
+<td><a href="../guide/jupyterlab/notebooks/generic-notebooks/Access_public_cubes/">Example Notebook</a></td>
 <td></td>
 </tr>
 <tr>
@@ -924,7 +924,7 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 <td><img alt="ESA CCI" class="logo-icon-table" src="https://brand.esa.int/files/2020/05/ESA_logo_2020_Deep-scaled.jpg" width="120" /></td>
 <td><strong><a href="https://climate.esa.int/en/data/#/dashboard">ESA Climate Data Centre (CCI)</a></strong></td>
 <td><code>new_data_store("cciodp")</code><br/><code>new_data_store("ccizarr")</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Generate_CCI_cubes/">Example Notebook</a></td>
+<td><a href="../guide/jupyterlab/notebooks/xcube-datastores/Generate_CCI_cubes/">Example Notebook</a></td>
 <td><a href="https://github.com/xcube-dev/xcube-cci">Github</a></td>
 </tr>
 <tr>
@@ -945,21 +945,21 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 <td><img alt="Sentinel Hub" class="logo-icon-table" src="https://www.sentinel-hub.com/img/press/sentinel_hub_by_planet_logo_big.png" width="100" /></td>
 <td><strong><a href="https://www.sentinel-hub.com/">Sentinel Hub</a></strong></td>
 <td><code>new_data_store("sentinelhub")</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Generate_SentinelHub_cubes/">Example Notebook</a></td>
+<td><a href="../guide/jupyterlab/notebooks/xcube-datastores/Generate_SentinelHub_cubes/">Example Notebook</a></td>
 <td><a href="https://github.com/xcube-dev/xcube-sh">Github</a></td>
 </tr>
 <tr>
 <td><img alt="STAC" class="logo-icon-table" src="https://stacspec.org/public/images-original/STAC-04.png" width="100" /></td>
 <td><strong><a href="https://stacspec.org/en/about/datasets/">SpatioTemporal Asset Catalog (STAC)</a></strong></td>
 <td><code>new_data_store("stac")</code><br/><code>new_data_store("stac-cdse")</code><br/><code>new_data_store("stac-cdse-ardc")</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Access_data_from_nonsearchable_stac_catalog/">General Example Notebook</a>,<br/> <a href="../guide/jupyterlab/notebooks/Access_Sentinel2_data_from_CDSE/">CDSE Example Notebook</a></td>
+<td><a href="../guide/jupyterlab/notebooks/xcube-datastores/Access_data_from_nonsearchable_stac_catalog/">General Example Notebook</a>,<br/> <a href="../guide/jupyterlab/notebooks/xcube-datastores/Access_Sentinel2_data_from_CDSE/">CDSE Example Notebook</a></td>
 <td><a href="https://github.com/xcube-dev/xcube-stac">Github</a></td>
 </tr>
 <tr>
 <td><img alt="Zenodo" class="logo-icon-table" src="https://about.zenodo.org/static/img/logos/zenodo-black-border.svg" width="100" /></td>
 <td><strong><a href="https://zenodo.org/">Zenodo</a></strong></td>
 <td><code>new_data_store("zenodo")</code></td>
-<td><a href="../guide/jupyterlab/notebooks/Access_data_from_Zenodo/">Example Notebook</a></td>
+<td><a href="../guide/jupyterlab/notebooks/xcube-datastores/Access_data_from_Zenodo/">Example Notebook</a></td>
 <td><a href="https://github.com/xcube-dev/xcube-zenodo">Github</a></td>
 </tr>
 </tbody>
@@ -967,7 +967,7 @@ enabling seamless joint analysis and visualization. For guidance on integrating 
 <h2 id="want-to-use-your-own-data">Want to Use Your Own Data?<a class="headerlink" href="#want-to-use-your-own-data" title="Permanent link">#</a></h2>
 <p>DeepESDL supports seamless integration of your own datasets into the analysis-ready cube environment. This allows joint 
 processing and comparison with public Earth System data.<br />
-👉 <a href="../guide/jupyterlab/notebooks/Upload_files_to_shared_team_s3_storage/">Learn how to integrate your own data.</a></p>
+👉 <a href="../guide/jupyterlab/notebooks/team-storage/Upload_files_to_shared_team_s3_storage/">Learn how to integrate your own data.</a></p>
 
 
 
