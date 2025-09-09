@@ -109,6 +109,7 @@ nav:
                   - guide/jupyterlab/notebooks/datacube-generation/Create_Atmospheric_Cubes_CDS.ipynb
                   - guide/jupyterlab/notebooks/datacube-generation/Create_Zarr_With_Slices_SentinelHub.ipynb
                   - guide/jupyterlab/notebooks/datacube-generation/Spatial_Regridding_and_Masking.ipynb
+                  - guide/jupyterlab/notebooks/datacube-generation/Integrate_vector_raster_data_with_geodb_and_xcube-stac.ipynb
               - Team Storage:
                   - guide/jupyterlab/notebooks/team-storage/Save_cube_to_team_storage.ipynb
                   - guide/jupyterlab/notebooks/team-storage/Upload_files_to_shared_team_s3_storage.ipynb
