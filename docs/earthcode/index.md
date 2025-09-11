@@ -229,7 +229,7 @@ from deep_code.tools.publish import Publisher
     publisher.publish_all() # publish both dataset and the workflow
 ```
 
-## Quickstart Example
+## 🚀 Quickstart Example
 
 Follow these steps to publish your first dataset and workflow:
 
@@ -281,3 +281,50 @@ Follow these steps to publish your first dataset and workflow:
     ```
     deep-code publish dataset_config.yaml workflow_config.yaml
     ```
+   
+## 🛠️ Troubleshooting
+
+Here are some common issues and fixes when using deep-code:
+
+1. Authentication failed for 'https://github.com/.../'
+
+    - Ensure your .gitaccess file exists and is in the directory where you run 
+      deep-code.
+    - Verify the file format (no extra spaces, correct keys github-username and 
+      github-token).
+    - Check that your GitHub PAT includes the repo scope.
+
+2. FileNotFoundError: dataset_config.yaml not found
+
+    - Make sure you provide the correct path when running deep-code publish.
+    - Use relative or absolute paths, e.g.:
+
+   ```
+    deep-code publish ./configs/dataset_config.yaml ./configs/workflow_config.yaml
+   ```
+
+3. AccessDenied when reading S3 data
+
+    - Verify that your AWS credentials are set correctly (AWS_ACCESS_KEY_ID, 
+   AWS_SECRET_ACCESS_KEY).
+
+    - Check that the S3_USER_STORAGE_BUCKET and AWS_DEFAULT_REGION environment 
+   variables are set.
+
+    - If running inside DeepESDL, skip S3 config (it’s managed internally).
+   
+4. Notebook environment mismatch
+
+    - Ensure the jupyter_kernel_info in your workflow YAML matches the environment 
+   you actually used.
+
+    - The env_file should point to a valid environment YAML (conda/virtualenv).
+   
+5. My pull request to EarthCODE failed
+
+    - Check the logs printed by deep-code publish.
+
+    - Sometimes validation fails if:
+      osc_themes doesn’t match a valid OSC theme or cf_parameter is not recognized.
+
+    - Required metadata fields are missing.
