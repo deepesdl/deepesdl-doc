@@ -78,7 +78,7 @@ who should be granted these permissions.
 
 Steps to create custom team conda environments:
 
-1.  Head over to https://deep.earthsystemdatalab.net/conda-store
+1.  Head over to <https://deep.earthsystemdatalab.net/conda-store>
 2.  Login with your GitHub Account which you also use to access the DeepESDL
     JupyterLab
 3.  On the left-hand side you see a list of namespaces. You can create a new 

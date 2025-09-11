@@ -1,4 +1,4 @@
-# **Land-Biosphere-Society**: Diagnosing syndromes of biosphere-atmosphere-socioeconomic change.
+# **Land-Biosphere-Society**: Diagnosing syndromes of biosphere-atmosphere-socioeconomic change
 
 <div class="author-box">
   <div class="author-left">

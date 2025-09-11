@@ -75,8 +75,8 @@
 }
 
 .md-button--accent {
-  background-color: #0b3e73;
-  border-color: #0b3e73;
+  background-color: #0b3e73!important;
+  border-color: #0b3e73!important;
   color: white!important;
   border: none!important;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -88,6 +88,11 @@
   color: white;
 }
 
+.md-header__content .md-button {
+  font-size: 0.55rem;  /* slightly larger text */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 
 /*USER GUIDE: Selectors for Grid structures in User Guide*/
@@ -170,3 +175,50 @@
   flex-shrink: 0;
   text-align: right;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.md-header-nav__button {
+  background-color: #4f46e5; !* Indigo *!
+  color: white !important;
+  padding: 0.4em 1em;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.md-header-nav__button:hover {
+  background-color: #4338ca; !* Darker indigo *!
+}*/
+
+
+/*
+.md-header-nav__button {
+  background-color: #0b3e73;
+  border-color: #0b3e73;
+  color: white!important;
+  border: none!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.md-header-nav__button:hover,
+.md-header-nav__button:focus {
+  background-color: var(--md-accent-fg-color);
+  color: white;
+}*/
