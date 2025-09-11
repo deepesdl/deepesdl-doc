@@ -1,8 +1,11 @@
-# Science Demonstration Case “Polar Science”
+# **Polar Science**: Automatic ice damage detection from Sentinel-1 radar imagery
 
-## Automatic ice damage detection from Sentinel-1 radar imagery
+<div class="author-box">
+  <div class="author-left">
+    <strong>Authors:</strong> Andrea Incatasciato, Martin Wearing, Livia Jakob, Noel Gourmelen
+  </div>
+</div>
 
-**Authors:** Andrea Incatasciato, Martin Wearing, Livia Jakob, Noel Gourmelen
 
 The level of ice damage (or inversely, its stiffness) plays a key role in
 controlling its resistance against the gravitational flow into the ocean.
@@ -73,15 +76,43 @@ different training strategies (not shown here). We didn't notice
 any striking difference in the performances of the neural network between
 the three different assumptions on the ice temperature vertical profile.
 
-<figure markdown="span">
-    ![](img/polar_fig3.png)
-    ![](img/polar_fig4.png)
-    <figcaption>
-        Fig. 3: Accuracy and Loss of the neural network trained
-        on the Sentinel-1 imagery described above and on the damage model
-        that assumes the observed surface temperature as valid at any depth,
-        without vertical gradient. 
-    </figcaption>
+<figure class="my-figure">
+  <style>
+    .my-figure { margin: 0; }
+    .my-figure .row {
+      display: flex;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .my-figure .row img {
+      flex: 1 1 calc(50% - 0.325rem);
+      max-width: calc(50% - 0.325rem);
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .my-figure .row img {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <div class="row">
+    <img src="../img/polar_fig3.png">
+    <img src="../img/polar_fig4.png">
+  </div>
+
+  <figcaption>
+    Fig. 3: Accuracy and Loss of the neural network trained on the Sentinel-1 imagery described above
+    and on the damage model that assumes the observed surface temperature as valid at any depth,
+    without vertical gradient.
+  </figcaption>
+</figure>
+
+    
 
 Given these initial results, this method looks very promising.
 The frequent acquisition of Sentinel-1 data over Antarctica makes it
@@ -90,6 +121,7 @@ for coincident ice thickness and surface velocity measurements, that are often
 not available.
 
 Future expansions of this work include and are not limited to:
+
 - Extending the areas of investigation to include other ice shelves, such as
 Amundsen and Getz, on the other side of Antarctica.
 - Investigating a strategy to preserve some high-resolution information, 
