@@ -228,3 +228,56 @@ from deep_code.tools.publish import Publisher
     )
     publisher.publish_all() # publish both dataset and the workflow
 ```
+
+## Quickstart Example
+
+Follow these steps to publish your first dataset and workflow:
+
+1. **Create a `.gitaccess` file** in your project directory with your GitHub credentials:
+
+   ```text
+   github-username: my-username
+   github-token: ghp_xxx123yourPATxxx
+   ```
+
+2. Write dataset metadata (dataset_config.yaml):
+
+   ```
+    dataset_id: wildfire-sample
+    collection_id: wildfire-collection
+    osc_themes: [wildfires]
+    documentation_link: https://example.org/wildfire-docs
+    access_link: https://my-bucket.s3.eu-west-2.amazonaws.com/wildfire
+    dataset_status: ongoing
+    osc_region: global
+    cf_parameter: burned_area
+   ```
+   
+3. Write workflow metadata (workflow_config.yaml):
+
+    ```
+    workflow_id: wildfire-analysis-v1
+    properties:
+      title: "Wildfire Analysis Workflow"
+      description: "Analyzes burned area from EO data."
+      keywords: ["wildfire", "burned area", "remote sensing"]
+      themes: ["land"]
+      license: "CC-BY-4.0"
+      jupyter_kernel_info:
+        name: "python3"
+        python_version: "3.11"
+        env_file: "environment.yaml"
+    jupyter_notebook_url: https://github.com/my-org/my-repo/blob/main/workflow.ipynb
+    contact:
+      name: "Jane Doe"
+      organization: "Example Institute"
+      links:
+        rel: "about"
+        type: "text/html"
+        href: "https://example.org"
+   ```
+
+4. Publish to EarthCODE:
+    ```
+    deep-code publish dataset_config.yaml workflow_config.yaml
+    ```
