@@ -35,7 +35,7 @@ DeepESDL.
         Data
       </h3>
       <p>
-        See how to access your data of interest within DeepESDL.
+        Learn how to access your data of interest within DeepESDL.
       </p>
     </div>
   </a>
