@@ -67,6 +67,7 @@ Replace your-git-user and your-personal-access-token with your actual GitHub use
 NOTE: If you are working inside DeepESDL, skip this section.
 
 By default, deep-code assumes datasets are stored in:
+
 - deepesdl-public bucket, or
 - a DeepESDL-specific team S3 bucket.
 
