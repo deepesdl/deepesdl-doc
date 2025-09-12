@@ -244,7 +244,7 @@ from deep_code.tools.publish import Publisher
 
 Follow these steps to publish your first dataset and workflow:
 
-1. **Create a `.gitaccess` file** in your project directory with your GitHub credentials:
+1. Create a `.gitaccess` file in your project directory with your GitHub credentials:
 
    ```yaml
    github-username: my-username
