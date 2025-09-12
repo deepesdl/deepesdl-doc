@@ -305,7 +305,7 @@ Here are some common issues and fixes when using deep-code:
 
 3. AccessDenied when reading S3 data
 
-    - Verify that your AWS credentials are set correctly (AWS_ACCESS_KEY_ID, 
+    - Verify that your AWS credentials are set correctly (S3_USER_STORAGE_KEY, 
    AWS_SECRET_ACCESS_KEY).
 
     - Check that the S3_USER_STORAGE_BUCKET and AWS_DEFAULT_REGION environment 
