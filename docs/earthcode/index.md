@@ -85,7 +85,7 @@ load_dotenv()  # take environment variables
 
 ### 3. Metadata Input Files
 
-To publish with deep-code, you need two simple YAML metadata files:
+To publish with deep-code, you need two YAML metadata files:
 
 1. Dataset metadata (dataset_config.yaml)
 
