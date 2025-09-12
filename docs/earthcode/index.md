@@ -197,11 +197,14 @@ catalog.
 
 ##### Usage
 
+```
 deep-code publish DATASET_CONFIG WORKFLOW_CONFIG [--environment ENVIRONMENT]
+```
+
 
 ##### Arguments
 
-```
+```text
 DATASET_CONFIG - Path to the dataset configuration YAML file
 (e.g., dataset-config.yaml)
 
@@ -211,7 +214,7 @@ WORKFLOW_CONFIG - Path to the workflow configuration YAML file
 
 ##### Options
 
-```yaml
+```
 --environment, -e - Target catalog environment: production (default) | staging | testing
 ```
 
@@ -219,7 +222,7 @@ WORKFLOW_CONFIG - Path to the workflow configuration YAML file
 
 `deep-code` can also be used directly from Python or inside a Jupyter Notebook:
 
-```
+```shell
 from deep_code.tools.publish import Publisher
 
     publisher = Publisher(
@@ -242,7 +245,7 @@ Follow these steps to publish your first dataset and workflow:
 
 2. Write dataset metadata (dataset_config.yaml):
 
-   ```
+   ```yaml
     dataset_id: wildfire-sample
     collection_id: wildfire-collection
     osc_themes: [wildfires]
@@ -250,12 +253,13 @@ Follow these steps to publish your first dataset and workflow:
     access_link: https://my-bucket.s3.eu-west-2.amazonaws.com/wildfire
     dataset_status: ongoing
     osc_region: global
+    osc_status: completed 
     cf_parameter: burned_area
    ```
    
 3. Write workflow metadata (workflow_config.yaml):
 
-    ```
+    ```yaml
     workflow_id: wildfire-analysis-v1
     properties:
       title: "Wildfire Analysis Workflow"
@@ -278,7 +282,7 @@ Follow these steps to publish your first dataset and workflow:
    ```
 
 4. Publish to EarthCODE:
-    ```
+    ```shell
     deep-code publish dataset_config.yaml workflow_config.yaml
     ```
    
@@ -308,8 +312,7 @@ Here are some common issues and fixes when using deep-code:
     - Verify that your AWS credentials are set correctly (S3_USER_STORAGE_KEY, 
    S3_USER_STORAGE_SECRET).
 
-    - Check that the S3_USER_STORAGE_BUCKET and AWS_DEFAULT_REGION environment 
-   variables are set.
+    - Check that the S3_USER_STORAGE_BUCKET environment variables are set.
 
     - If running inside DeepESDL, skip S3 config (it’s managed internally).
    
