@@ -238,7 +238,7 @@ Follow these steps to publish your first dataset and workflow:
 
 1. **Create a `.gitaccess` file** in your project directory with your GitHub credentials:
 
-   ```text
+   ```yaml
    github-username: my-username
    github-token: ghp_xxx123yourPATxxx
    ```
