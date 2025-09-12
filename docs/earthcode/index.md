@@ -118,7 +118,7 @@ Notes:
 
 ##### Workflow Metadata
 
-Define your workflow metadata in another YAML file:
+Define your workflow metadata in seperate YAML file:
 
 ```yaml
 workflow_id: A unique identifier for your workflow
