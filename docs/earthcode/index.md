@@ -24,7 +24,7 @@ More specifically,
 - A single sign-on (SSO) mechanism makes it convenient to work with both platforms
 - DeepESDL offers dedicated open-source tools to ensure an efficient and fully compliant publication process to EarthCODE.
 
-The main tool to achieve a seamless EarthCODE integration for our users is [`deep-code`](https://github.com/deepesdl/deep-code).
+The main tool to achieve a seamless EarthCODE integration for DeepESDL users is [`deep-code`](https://github.com/deepesdl/deep-code).
 
 ## deep-code
 deep-code is a lightweight Python tool for publishing datasets and scientific 
