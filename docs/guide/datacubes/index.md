@@ -18,8 +18,8 @@ the data owners.
 
 Data access is possible in two main manners within DeepESDL. [xcube
 data stores](https://xcube.readthedocs.io/en/latest/dataaccess.html#available-data-stores) 
-provide [**on-the-fly**](on-the-fly) access to datasets via the data stores framework.
-Other datasets are made [**anaylsis-ready** and **persisted**](analysis-ready) in object storage for
+provide [**on-demand**](on-demand) access to datasets via the data stores framework.
+Other datasets are [**persisted**](pre-generated) in object storage for
 fastest access.
 
 An overview of all data sources can be found [**here**](../../data).

@@ -1,5 +1,18 @@
 # Events
 
+The Earth System Data Lab is designed to support researchers by providing advanced tools and resources that streamline
+their work and enhance collaboration. To promote awareness and encourage adoption, we actively showcase the platform at
+key scientific conferences, where we engage with the research community and demonstrate its capabilities.
+
+We also offer hands-on training sessions tailored to the needs of research groups and collaborative projects, ensuring
+users can fully leverage the platform's features in their workflows. In addition, our online webinars provide accessible
+opportunities for learning and engagement, with live demonstrations, expert guidance, and interactive Q&A sessions.
+
+Through these activities, we aim to make the platform an integral part of the research ecosystem, empowering 
+scientists to work more efficiently and collaboratively.
+
+Take a look below to explore the events we've participated in so far.
+
 ## Conferences
 
 | Date     | Event Name                                                                        | Title                                                                                                                     |

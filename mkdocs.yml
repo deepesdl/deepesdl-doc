@@ -86,9 +86,9 @@ nav:
   - Become a User:
       - become_user/index.md
   - References:
+      - Success Stories: references/stories.md
       - Events: references/events.md
       - Publications: references/publications.md
-      - Success Stories: references/stories.md
   - About:
       - about/index.md
       - Platform Design:
@@ -138,9 +138,9 @@ nav:
           - 4D Viewer: guide/visualisation/4d-viewer.md
       - Data:
           - guide/datacubes/index.md
-          - On-the-fly:
+          - On-demand:
               - guide/datacubes/on-the-fly/index.md
-          - Analysis-ready:
+          - Pre-generated:
               - guide/datacubes/analysis-ready/index.md
               - Earth System Data Cube: guide/datacubes/analysis-ready/ESDC.md
               - Black Sea Cube: guide/datacubes/analysis-ready/black-sea.md

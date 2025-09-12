@@ -18,7 +18,7 @@ getting started notebook section of the jupyterlab
 The DeepESDL Consortium provides a growing number of datasets which are made 
 analysis-ready and persisted in public object storage for easy access. 
 An overview of available persisted datasets is given section 
-[datasets](analysis-ready/ESDC.md). 
+[datasets](pre-generated/ESDC.md). 
 
 To access the DeepESDL persisted datasets, please follow the example: 
 

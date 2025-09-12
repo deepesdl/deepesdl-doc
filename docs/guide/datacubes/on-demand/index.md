@@ -4,12 +4,12 @@
 Dynamically create your own data cubes from data sources from the underlying source data at the time of request.
 This makes it possible to select specific variables, define spatial and temporal subsets, 
 and always work with the most up-to-date data.
-On-the-fly generation is more flexible than persisted cubes, 
+On-demand generation is more flexible than persisted cubes, 
 but may require longer preparation times, depending on dataset size and configuration.
 
 ## Data Access 
 
-Through xcube, several datastores can be accessed for creating on-the-fly cubes.
+Through xcube, several datastores can be accessed for creating on-demand cubes.
 For details on configuration and usage of each datastore, please refer to the [xcube documentation](https://xcube.readthedocs.io/en/latest/dataaccess.html#available-data-stores) or
 the [example notebooks](../../jupyterlab/notebooks/xcube-datastores).
 
