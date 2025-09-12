@@ -74,6 +74,20 @@
   color: #0b3e73;
 }
 
+.md-button {
+  background-color: white!important;
+  border-color: #0b3e73!important;
+  color: #0b3e73!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.md-button:hover,
+.md-button:focus {
+  background-color: var(--md-accent-fg-color)!important;
+  color: white!important;
+  border-color: var(--md-accent-fg-color)!important;
+}
+
 .md-button--accent {
   background-color: #0b3e73!important;
   border-color: #0b3e73!important;

@@ -29,6 +29,17 @@ DeepESDL.
     </div>
   </a>
 
+  <a href="./earthcode/" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        EarthCode
+      </h3>
+      <p>
+        <code>deep-code</code> - Integration with EathCODE.
+      </p>
+    </div>
+  </a>
+
   <a href="./datacubes/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
@@ -47,6 +58,17 @@ DeepESDL.
       </h3>
       <p>
         <code>ml4xcube</code> - The machine learning toolkit for data cubes.
+      </p>
+    </div>
+  </a>
+
+  <a href="../further-information/" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        Further information
+      </h3>
+      <p>
+        Further links to documentations and tutorials.
       </p>
     </div>
   </a>

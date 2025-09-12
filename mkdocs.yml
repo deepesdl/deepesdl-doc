@@ -130,12 +130,13 @@ nav:
               - Science Cases:
                   - guide/jupyterlab/notebooks/science-cases/Land_Biosphere_Society.ipynb
                   - guide/jupyterlab/notebooks/science-cases/Ocean_Carbon_Cycle.ipynb
-
       - Visualisation:
           - guide/visualisation/index.md
           - xcube Viewer: guide/visualisation/xcube-viewer.md
           - Lexcube Viewer: guide/visualisation/lexcube-viewer.md
           - 4D Viewer: guide/visualisation/4d-viewer.md
+      - EarthCODE:
+          - guide/earthcode/index.md
       - Data:
           - guide/datacubes/index.md
           - On-demand:
