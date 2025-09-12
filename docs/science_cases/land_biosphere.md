@@ -5,6 +5,9 @@
     <strong>Authors:</strong>  Wanton Li, Gregory Duveiller, Fabian Gans, Jeroen Smits, Guido Kraemer, Dorothea Frank,
 Miguel Mahecha, Ulrich Weber, Mirco Migliavacca, Andrey Ceglar, Markus Reichstein
   </div>
+  <div class="author-right">
+    <a href="../../guide/jupyterlab/notebooks/science-cases/land_biosphere_society/" class="md-button">Access Workflow</a>
+  </div>
 </div>
 
 While previous work (Kraemer et al. 2020) to create an index of the Earth System

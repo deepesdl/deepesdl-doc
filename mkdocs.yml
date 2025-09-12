@@ -30,8 +30,6 @@ theme:
   #  text: Nunito
   custom_dir: docs/overrides
 
-
-
 extra:
   generator: true #false
   social:
@@ -81,8 +79,8 @@ nav:
   - EarthCODE:
       - earthcode/index.md
   - Science Cases:
-      - Land-Biosphere-Society: science_cases/land_biosphere.md
       - Drought Effects: science_cases/drought_effects.md
+      - Land-Biosphere-Society: science_cases/land_biosphere.md
       - Ocean Carbon Cycle: science_cases/ocean.md
       - Polar Science: science_cases/polar_science.md
   - Become a User:
@@ -130,7 +128,8 @@ nav:
               - Dask Processing:
                   - guide/jupyterlab/notebooks/dask-processing/How_to_make_use_of_Dask_clusters.ipynb
               - Science Cases:
-                  - guide/jupyterlab/notebooks/science-cases/ocean_carbon_cycle.ipynb
+                  - guide/jupyterlab/notebooks/science-cases/Land_Biosphere_Society.ipynb
+                  - guide/jupyterlab/notebooks/science-cases/Ocean_Carbon_Cycle.ipynb
 
       - Visualisation:
           - guide/visualisation/index.md
