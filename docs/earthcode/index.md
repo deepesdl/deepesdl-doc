@@ -92,7 +92,14 @@ To publish with deep-code, you need two YAML metadata files:
 
 2. Workflow metadata (workflow_config.yaml)
 
-These metadata files are used to generate valid STAC Items following the EarthCODE 
+The templates for the metadata files can be automatically generated using the cli 
+command.
+
+```shell
+deep-code generate-config
+```
+
+The metadata files are used to generate valid STAC Items following the EarthCODE 
 Open Science Catalog (OSC) convention, and
 automatically submit a pull request to register them in the catalog.
 
@@ -174,7 +181,7 @@ Generates starter configuration templates for publishing to EarthCODE openscienc
 
 ##### Usage
 
-```
+```shell
 deep-code generate-config [OPTIONS]
 ```
 
@@ -198,14 +205,14 @@ catalog.
 
 ##### Usage
 
-```
+```shell
 deep-code publish DATASET_CONFIG WORKFLOW_CONFIG [--environment ENVIRONMENT]
 ```
 
 
 ##### Arguments
 
-```text
+```
 DATASET_CONFIG - Path to the dataset configuration YAML file
 (e.g., dataset-config.yaml)
 
@@ -223,7 +230,7 @@ WORKFLOW_CONFIG - Path to the workflow configuration YAML file
 
 `deep-code` can also be used directly from Python or inside a Jupyter Notebook:
 
-```shell
+```jupyter
 from deep_code.tools.publish import Publisher
 
     publisher = Publisher(
