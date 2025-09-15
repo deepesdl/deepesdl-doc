@@ -21,21 +21,21 @@ The following projects have been or are still successfully doing research enable
 The BalticAIMS project set out to strengthen spatial planning across land and sea in the Baltic region by
 helping planners coordinate actions that minimize human impacts and promote environmental health. It aimed to bring
 together diverse environmental observations—such as satellite imagery, on-site measurements and model outputs—into a
-unified perspective on coastal and terrestrial processes EO Science for Society. By delivering this integrated view, the project sought to deepen understanding of how land-based
-activities affect coastal waters and vice versa, supporting more informed decisions.
-Ultimately, BalticAIMS focused on enhancing the capacity of regional authorities and stakeholders to plan sustainably
-for the interconnected land-sea system.
+unified perspective on coastal and terrestrial processes EO Science for Society. By delivering this integrated view, 
+the project sought to deepen understanding of how land-based activities affect coastal waters and vice versa, 
+supporting more informed decisions. Ultimately, BalticAIMS focused on enhancing the capacity of regional authorities 
+and stakeholders to plan sustainably for the interconnected land-sea system.
 
 Baltic AIMS uses DeepESDL as a one-stop provider for all required cloud services, including compute, storage, 
 data dissemination, and Viewer as a Service.
 
-[Baltic AIMS website](https://www.syke.fi/en/projects/balticaims)
-
+**Further information:** [Baltic AIMS website](https://www.syke.fi/en/projects/balticaims), 
 [Baltic AIMS Viewer](https://viewer.balticaims.eu/)
+
 
 ----------
 
-###  DeepExtremes
+### DeepExtremes
 
 The DeepExtremes project aimed at an improved understanding of simultaneous heat and drought events around the world by
 combining long-term climate records with satellite observations. To this end, key episodes have been examined in detail
@@ -47,14 +47,13 @@ A key result have been numerous so-called minicubes distributed all over the wor
 from various soures. These minicubes have been generated within DeepESDL and will now be ingested into ESA's emerging
 EarthCODE catalogue and then persisted in the ESA's novel Project Results Repository (PRR).
 
-[EO4Society Website](https://eo4society.esa.int/projects/deep-extremes) 
-
+**Further information:** [EO4Society Website](https://eo4society.esa.int/projects/deep-extremes),
 [RSC4Earth Website](https://rsc4earth.de/project/deepextremes)
 
 
 --------
 
-### OBSGESSION ###
+### OBSGESSION
 
 *Coming soon.*
 
@@ -73,12 +72,9 @@ DeepESDL has been supporting these events by providing a ready-to-use, collabora
 computational resources, and on-site expertise for the efficient implementation of scientific workflows into scalable
 software.
 
-[February 2024](https://eo4society.esa.int/event/sciencehubchallengefeb2024) 
-
-[May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/) 
-
-[March 2025](https://sciencehub.esa.int/2025/02/28/training-on-carbon-and-extremes-science-with-the-deepesdl-platform/) 
-
+**Further information:** [February 2024](https://eo4society.esa.int/event/sciencehubchallengefeb2024), 
+[May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/),
+[March 2025](https://sciencehub.esa.int/2025/02/28/training-on-carbon-and-extremes-science-with-the-deepesdl-platform/), 
 [July 2025](https://sciencehub.esa.int/2025/07/14/science-hub-challenges-july-2025/)
 
 
@@ -86,7 +82,20 @@ software.
 
 ### DeepFeatures
 
-*Coming soon.*
+The land surface influences climate by regulating exchanges of water, energy, and carbon with the atmosphere, making it
+essential to track changes under climate change. Satellites offer long-term, global observations that reveal shifts in
+vegetation, soil moisture, land cover, and temperature, which can be analyzed using both statistical methods and modern
+AI techniques. In this project, AI is applied to combine hundreds of spectral indices (SIs) into a smaller set of features
+that capture ecosystem dynamics across space and time. These features are organized in a Feature Data Cube, enabling more
+efficient analysis and supporting studies of vegetation, water, and climate adaptation.
+
+A key outcome has been the creation of multiple medium-sized data cubes across Europe, containing Sentinel-2 L2A data
+and relevant variables from different sources for validation and analysis. In addition, smaller training cubes have
+been generated to train the AI models. These data products, generated within DeepESDL, will be integrated into ESA’s 
+emerging EarthCODE catalogue.
+
+**Further information:** [DeepFeatures Website](https://rsc4earth.de/project/deepfeatures/)
+
 
 ---------
 
@@ -106,10 +115,8 @@ The EO4Health Resilience project is using DeepESDL services to collaboratively d
 integrate data sets. Moreover, the Virtual Laboratory has been implemented leveraging xcube viewer as a service,
 specifically benefitting from its potential for extensions, customisation, and tailoring.
 
-[EO4Health Website](https://eo4health.esa.int/) 
-
+**Further information:** [EO4Health Website](https://eo4health.esa.int/),
 [EO4Health Virtual Observatory](https://eo4health.api.brockmann-consult.de/api/viewer/)
-
 
 
 ---------
@@ -127,24 +134,21 @@ ensuring EO products directly inform and improve carbon cycle science.
 EO-LINCS uses DeepESDL as collaborative development environment for the science partners and for data access and processing.
 For the project, the xcube library has been extended by a multistore, which enables users to easily create data cubes from multiple sources.
 
-[EO-LINCS website](https://www.eo-lincs.org/) 
-
+**Further information:** [EO-LINCS website](https://www.eo-lincs.org/),
 [xcube Multistore](https://xcube-dev.github.io/xcube-multistore/)
+
 
 ---------
 
 ### WQ Forecasting
 
 This project developed software that includes the forecast processor authored for the Forecasting Water Quality from 
-Space study proposed by and granted to Brockmann Consult GmbH in reply to ESA's Invitation to Tender for Future EO-1 EO 
-Science for Society Permanently Open Call for Proposals.
-
-The objective of the study is to provide time series forecasts of chlorophyll concentration. 
+Space study. The objective of the study is to provide time series forecasts of chlorophyll concentration. 
 Predicted chlorophyll concentration is derived from EO-based retrievals of chlorophyll concentration and 
 several covariates, which are routinely provided by reanalysis and forecast services based on biological, 
 chemical, physical, and meteorological models.
 
-[WQ Forecasting website](https://zenodo.org/records/16812988)
+**Further information:** [WQ Forecasting website](https://zenodo.org/records/16812988)
 
 
 

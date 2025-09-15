@@ -6,11 +6,9 @@ To use the DeepESDL JupyterLab environment, navigate to
 <https://deep.earthsystemdatalab.net/> with a web browser (a recent version of
 Firefox, Chrome, or Safari is recommended).
 
-Before first usage, we will have to register you with the system. Currently,
-we are not operational yet and still in testing phase. There is the
-possibility to register already as an Early Adopter. To this, we kindly ask you
-to write as an email at `esdl-support@brockmann-consult.de` and we will see
-if we can already onboard you.
+Before you can start using the JupyterLab, you need to be onboarded first.
+To this, we kindly ask you to write as an email at `esdl-support@brockmann-consult.de` 
+and we will see if we can already onboard you.
 
 DeepESDL uses a GitHub to authenticate, so if you are already registered as a
 DeepESDL user, please use your GitHub account to log in.
