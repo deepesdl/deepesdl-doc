@@ -10,7 +10,7 @@ DeepESDL.
   <a href="./jupyterlab/" style="text-decoration: none; color: inherit;">
     <div class="card">
       <h3>
-        DeepESDL JupyterLab
+        JupyterLab
       </h3>
       <p>
         Learn how to navigate the DeepESDL JupyterLab and get an overview of the Example Notebooks.
@@ -40,7 +40,7 @@ DeepESDL.
     </div>
   </a>
 
-  <a href="./datacubes/" style="text-decoration: none; color: inherit;">
+  <a href="data/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
         Data

@@ -28,5 +28,3 @@ If you are a registered user, access the DeepESDL Hub [here](https://deep.earths
   at [viewer.earthsystemdatalab.net](https://viewer.earthsystemdatalab.net) 
 
 <br>
-<br>
-![DeepESDL](../img/concept.png){: .centered-logo}

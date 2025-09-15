@@ -5,7 +5,7 @@ hide:
 
 # Become a User via the Network of Resources
 
-To become a user of DeepESDL, purchase a subscription via the [Network of Ressources (NoR)](https://nor-discover.org/).
+To become a user of DeepESDL, purchase a subscription via the [Network of Ressources (NoR)](https://nor-discover.org/)
 and consider applying for an ESA sponsorship.
 
 **Take the following steps for the application process:**

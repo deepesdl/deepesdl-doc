@@ -4,7 +4,9 @@
   text-align: center;
 }
 
+
 /*DATA section: for logos in table -> Data page*/
+
 .logo-icon-table {
   display: block;
   margin: 0 auto;
@@ -66,6 +68,9 @@
 }
 
 
+
+/*BUTTONS and LINKS*/
+
 .md-typeset a{
   color: #0b3e73;
 }
@@ -107,6 +112,16 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+
+
+/* HEADER ICON */
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+  height: 2rem;
+  width: 2rem;
+}
+
 
 
 /*USER GUIDE: Selectors for Grid structures in User Guide*/
@@ -190,49 +205,3 @@
   text-align: right;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.md-header-nav__button {
-  background-color: #4f46e5; !* Indigo *!
-  color: white !important;
-  padding: 0.4em 1em;
-  border-radius: 9999px;
-  font-weight: 500;
-  transition: background 0.2s ease;
-}
-
-.md-header-nav__button:hover {
-  background-color: #4338ca; !* Darker indigo *!
-}*/
-
-
-/*
-.md-header-nav__button {
-  background-color: #0b3e73;
-  border-color: #0b3e73;
-  color: white!important;
-  border: none!important;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.md-header-nav__button:hover,
-.md-header-nav__button:focus {
-  background-color: var(--md-accent-fg-color);
-  color: white;
-}*/

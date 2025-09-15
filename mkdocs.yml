@@ -138,19 +138,19 @@ nav:
       - EarthCODE:
           - guide/earthcode/index.md
       - Data:
-          - guide/datacubes/index.md
+          - guide/data/index.md
           - On-demand:
-              - guide/datacubes/on-the-fly/index.md
+              - guide/data/on-demand/index.md
           - Pre-generated:
-              - guide/datacubes/analysis-ready/index.md
-              - Earth System Data Cube: guide/datacubes/analysis-ready/ESDC.md
-              - Black Sea Cube: guide/datacubes/analysis-ready/black-sea.md
-              - Land Cover Cube: guide/datacubes/analysis-ready/LC-1x2025x2025-2-0-0-levels.md
-              - Ocean Cube: guide/datacubes/analysis-ready/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
-              - SMOS freeze/thaw Cube: guide/datacubes/analysis-ready/SMOS-snow-1x720x720-1-0-1-zarr.md
-              - Polar Cube: guide/datacubes/analysis-ready/polar-100m-1x2048x2048-1-0-1-zarr.md
-              - Permafrost Cube: guide/datacubes/analysis-ready/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
-              - Hydrology Cube: guide/datacubes/analysis-ready/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
+              - guide/data/pre-generated/index.md
+              - Earth System Data Cube: guide/data/analysis-ready/ESDC.md
+              - Black Sea Cube: guide/data/analysis-ready/black-sea.md
+              - Land Cover Cube: guide/data/analysis-ready/LC-1x2025x2025-2-0-0-levels.md
+              - Ocean Cube: guide/data/analysis-ready/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md
+              - SMOS freeze/thaw Cube: guide/data/analysis-ready/SMOS-snow-1x720x720-1-0-1-zarr.md
+              - Polar Cube: guide/data/analysis-ready/polar-100m-1x2048x2048-1-0-1-zarr.md
+              - Permafrost Cube: guide/data/analysis-ready/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md
+              - Hydrology Cube: guide/data/analysis-ready/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md
       # - Datacube generation: guide/datacube-generation.md
       - ML Toolkits:
           - ml-toolkit/index.md

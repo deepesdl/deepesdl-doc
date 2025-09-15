@@ -4,16 +4,16 @@
 The DeepESDL Consortium provides a growing number of datasets which are made
 analysis-ready and persisted in public object storage for easy access:
 
--   [Earth System Data Cube](analysis-ready/ESDC.md)
--   [Black Sea Cube](analysis-ready/black-sea.md)
--   [Land Cover Cube](analysis-ready/LC-1x2025x2025-2-0-0-levels.md)
--   [Ocean Cube](analysis-ready/ocean-1M-9km-1x1080x1080-1-4-0-zarr.md)
--   [SMOS freeze/thaw Cube](analysis-ready/SMOS-snow-1x720x720-1-0-1-zarr.md)
--   [SMOS ocean salinity Cube](analysis-ready/SMOS-L2C-OS-20230101-20231231-1W-res0-1x1000x1000-levels.md)
--   [SMOS soil moistrue Cube](analysis-ready/SMOS-L2C-SM-20230101-20231231-1W-res0-1x1000x1000-levels.md)
--   [Polar Cube](analysis-ready/polar-100m-1x2048x2048-1-0-1-zarr.md)
--   [Permafrost Cube](analysis-ready/esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md)
--   [Hydrology Cube](analysis-ready/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md)
+-   [Earth System Data Cube](ESDC.md)
+-   [Black Sea Cube](black-sea.md)
+-   [Land Cover Cube](LC-1x2025x2025-2-0-0-levels.md)
+-   [Ocean Cube](ocean-1M-9km-1x1080x1080-1-4-0-zarr.md)
+-   [SMOS freeze/thaw Cube](SMOS-snow-1x720x720-1-0-1-zarr.md)
+-   [SMOS ocean salinity Cube](SMOS-L2C-OS-20230101-20231231-1W-res0-1x1000x1000-levels.md)
+-   [SMOS soil moistrue Cube](SMOS-L2C-SM-20230101-20231231-1W-res0-1x1000x1000-levels.md)
+-   [Polar Cube](polar-100m-1x2048x2048-1-0-1-zarr.md)
+-   [Permafrost Cube](esa-cci-permafrost-1x1151x1641-0-0-2-zarr.md)
+-   [Hydrology Cube](hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.md)
 
 
 
