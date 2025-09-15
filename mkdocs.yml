@@ -48,6 +48,7 @@ nav:
       - Land-Biosphere-Society: science_cases/land_biosphere.md
       - Drought Effects: science_cases/drought_effects.md
       - Ocean Carbon Cycle: science_cases/ocean.md
+      - Timeseries Prediction: science_cases/timeseries_prediction.md
   - Reproducible Research:
       - Introduction: research/index.md
       - Instructions: research/instructions.md
@@ -98,6 +99,7 @@ markdown_extensions:
       baselevel: 2
   - attr_list
   - md_in_html
+  - tables
 
 extra_css:
   - css/custom.css
