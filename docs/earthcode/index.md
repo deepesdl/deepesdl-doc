@@ -23,3 +23,9 @@ More specifically,
 - the usage of DeepESDL for [publishing in EarthCODE](../guide/earthcode) is [sponsored by ESA](../become_user) through the Network of Resources.
 - A single sign-on (SSO) mechanism makes it convenient to work with both platforms.
 - DeepESDL offers dedicated open-source tools to ensure an efficient and fully compliant publication process to EarthCODE.
+
+<br>
+
+Visit the [User Guide](../guide/earthcode) to learn how to integrate DeepESDL within EarthCODE.
+
+<br>
