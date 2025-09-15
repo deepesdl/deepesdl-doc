@@ -101,17 +101,6 @@ endeavour not only showcases the versatility of transformer models but also
 highlights their potential in addressing complex, real-world forecasting
 challenges.
 
-<!-- Model sizes used. pt2-1.4B corresponds roughly to the originally withheld version of GPT-2. -->
-
-<!-- | Model      | Embedding Size | Number of Heads | Number of Layers | Used? | -->
-<!-- |------------|---------------:|----------------:|-----------------:|-------| -->
-<!-- | gpt2-527k  |            128 |               2 |                2 | yes   | -->
-<!-- | gpt2-3.4M  |            256 |               4 |                4 | yes   | -->
-<!-- | gpt2-25.7M |            512 |               8 |                8 | yes   | -->
-<!-- | gpt2-85.8M |            768 |              12 |               12 | yes   | -->
-<!-- | gpt2-303M  |           1024 |              16 |               24 | yes   | -->
-<!-- | gpt2-709M  |           1280 |              20 |               36 | no    | -->
-<!-- | gpt2-1.4B  |           1600 |              25 |               48 | no    | -->
 
 <figure markdown="span">
     ![](img/timeseries_prediction_fig1.png)
@@ -146,13 +135,15 @@ challenges.
     </figcaption>
 </figure>
 
-In conclusion, the successful adaptation of the GPT-2 model for environmental
-predictions demonstrates the remarkable versatility of transformer architectures
-beyond their original design for text. By making key modifications to the input
-and output layers, we enabled GPT-2 to process multivariate environmental data
-and predict kNDVI, a crucial indicator of vegetation health. Despite the
-challenge of training large-scale models with limited resources, we achieved
-highly accurate results by carefully scaling down the model size and evaluating
+## Conclusion
+
+The successful adaptation of the GPT-2 model for environmental predictions
+demonstrates the remarkable versatility of transformer architectures beyond
+their original design for text. By making key modifications to the input and
+output layers, we enabled GPT-2 to process multivariate environmental data and
+predict kNDVI, a crucial indicator of vegetation health. Despite the challenge
+of training large-scale models with limited resources, we achieved highly
+accurate results by carefully scaling down the model size and evaluating
 trade-offs between complexity and performance. Our experiments reveal that
 smaller models can perform comparably well, underscoring the importance of
 efficiency in resource management for environmental forecasting tasks.
