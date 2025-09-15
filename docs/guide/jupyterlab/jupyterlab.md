@@ -55,13 +55,13 @@ If the selected kernel seems not to load, it could be due to caching of kernels
 which do not exist anymore. To remove cached non-existing environment kernels,
 follow these steps:
 
-1. Open the terminal within the jupyter lab
+1. Open the terminal within the JupyterLab.
 2. `$ rm -r .local/*`
-3. it is alright to get a message like: _"rm: cannot remove
+3. It is alright to get a message like: _"rm: cannot remove
    '.local/share/jupyter': Directory not empty"_ because you might have
    notebooks open, which are in the cache. Make therefor sure not to force
    the `rm` command!
-4. Restart your jupyterlab server by selecting *Hub control panel* from the
+4. Restart your JupyterLab server by selecting *Hub control panel* from the
    *File* menu within JupyterLab. Then click the `Stop my server` button and
    wait for your current server to shut down. Select the `Start my server`
    button once it appears to return to the user JupyterLab profiles menu and
@@ -78,14 +78,14 @@ who should be granted these permissions.
 
 Steps to create custom team conda environments:
 
-1.  Head over to https://deep.earthsystemdatalab.net/conda-store
+1.  Head over to <https://deep.earthsystemdatalab.net/conda-store>.
 2.  Login with your GitHub Account which you also use to access the DeepESDL
-    JupyterLab
+    JupyterLab.
 3.  On the left-hand side you see a list of namespaces. You can create a new 
     environment in your own user namespace or if you have sufficient 
-    permissions also in a team namespace
+    permissions also in a team namespace.
 4.  Click on the Plus-sign next to namespace for which you want to create an 
-    environment
+    environment.
 5.  In the top section, set a meaningful name for your environment.
 6.  You may either choose to use the GUI to add packages or switch to YAML view
     and write your env configuration in yaml style
@@ -110,7 +110,7 @@ Steps to create custom team conda environments:
 7.  Once you are happy with your environment hit save and grab a coffee. It
     will take some time to create your custom environment.
 8.  After submission, it will appear in the overview under your namespace on
-    https://deep.earthsystemdatalab.net/conda-store/
+    <https://deep.earthsystemdatalab.net/conda-store/>.
 9.  You can click on the name of your newly created environment and see its
     status. There are three different statuses: Building, Completed, Failed
 10. Once the build is completed, refresh your jupyterhub browser window
@@ -154,7 +154,7 @@ To access them:
 
 ## Team resources
 
-If you are using DeepESDL Jupyter Lab with others in a team, you can share
+If you are using DeepESDL JupyterLab with others in a team, you can share
 content with each other and access the team S3 bucket for data storage.
 
 ### Team shared directory

@@ -10,7 +10,7 @@ DeepESDL.
   <a href="./jupyterlab/" style="text-decoration: none; color: inherit;">
     <div class="card">
       <h3>
-        DeepESDL JupyterLab
+        JupyterLab
       </h3>
       <p>
         Learn how to navigate the DeepESDL JupyterLab and get an overview of the Example Notebooks.
@@ -29,13 +29,24 @@ DeepESDL.
     </div>
   </a>
 
-  <a href="./datacubes/" style="text-decoration: none; color: inherit;">
+  <a href="./earthcode/" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        EarthCode
+      </h3>
+      <p>
+        <code>deep-code</code> - Integration with EathCODE.
+      </p>
+    </div>
+  </a>
+
+  <a href="data/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
         Data
       </h3>
       <p>
-        See how to access your data of interest within DeepESDL.
+        Learn how to access your data of interest within DeepESDL.
       </p>
     </div>
   </a>
@@ -47,6 +58,17 @@ DeepESDL.
       </h3>
       <p>
         <code>ml4xcube</code> - The machine learning toolkit for data cubes.
+      </p>
+    </div>
+  </a>
+
+  <a href="../further-information/" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        Further information
+      </h3>
+      <p>
+        Further links to documentations and tutorials.
       </p>
     </div>
   </a>

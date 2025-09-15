@@ -47,16 +47,10 @@ A key result have been numerous so-called minicubes distributed all over the wor
 from various soures. These minicubes have been generated within DeepESDL and will now be ingested into ESA's emerging
 EarthCODE catalogue and then persisted in the ESA's novel Project Results Repository (PRR).
 
-[EO4Society Website](https://eo4society.esa.int/projects/deep-extremes)
+[EO4Society Website](https://eo4society.esa.int/projects/deep-extremes) 
 
 [RSC4Earth Website](https://rsc4earth.de/project/deepextremes)
 
-
---------
-
-### ESA CCI RECCAP2
-
-*Coming soon.*
 
 --------
 
@@ -79,11 +73,11 @@ DeepESDL has been supporting these events by providing a ready-to-use, collabora
 computational resources, and on-site expertise for the efficient implementation of scientific workflows into scalable
 software.
 
-[February 2024](https://eo4society.esa.int/event/sciencehubchallengefeb2024)
+[February 2024](https://eo4society.esa.int/event/sciencehubchallengefeb2024) 
 
-[May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/)
+[May 2024](https://sciencehub.esa.int/2024/05/09/3rd-earth-system-science-challenge/) 
 
-[March 2025](https://sciencehub.esa.int/2025/02/28/training-on-carbon-and-extremes-science-with-the-deepesdl-platform/)
+[March 2025](https://sciencehub.esa.int/2025/02/28/training-on-carbon-and-extremes-science-with-the-deepesdl-platform/) 
 
 [July 2025](https://sciencehub.esa.int/2025/07/14/science-hub-challenges-july-2025/)
 
@@ -112,7 +106,7 @@ The EO4Health Resilience project is using DeepESDL services to collaboratively d
 integrate data sets. Moreover, the Virtual Laboratory has been implemented leveraging xcube viewer as a service,
 specifically benefitting from its potential for extensions, customisation, and tailoring.
 
-[EO4Health Website](https://eo4health.esa.int/)
+[EO4Health Website](https://eo4health.esa.int/) 
 
 [EO4Health Virtual Observatory](https://eo4health.api.brockmann-consult.de/api/viewer/)
 
@@ -133,7 +127,7 @@ ensuring EO products directly inform and improve carbon cycle science.
 EO-LINCS uses DeepESDL as collaborative development environment for the science partners and for data access and processing.
 For the project, the xcube library has been extended by a multistore, which enables users to easily create data cubes from multiple sources.
 
-[EO-LINCS website](https://www.eo-lincs.org/)
+[EO-LINCS website](https://www.eo-lincs.org/) 
 
 [xcube Multistore](https://xcube-dev.github.io/xcube-multistore/)
 
@@ -141,7 +135,19 @@ For the project, the xcube library has been extended by a multistore, which enab
 
 ### WQ Forecasting
 
-*Coming soon.*
+This project developed software that includes the forecast processor authored for the Forecasting Water Quality from 
+Space study proposed by and granted to Brockmann Consult GmbH in reply to ESA's Invitation to Tender for Future EO-1 EO 
+Science for Society Permanently Open Call for Proposals.
+
+The objective of the study is to provide time series forecasts of chlorophyll concentration. 
+Predicted chlorophyll concentration is derived from EO-based retrievals of chlorophyll concentration and 
+several covariates, which are routinely provided by reanalysis and forecast services based on biological, 
+chemical, physical, and meteorological models.
+
+[WQ Forecasting website](https://zenodo.org/records/16812988)
+
+
+
 
 
 

@@ -9,7 +9,7 @@ ds = store.open_data('esdc-8d-0.25deg-1x720x1440-3.0.1.zarr')
 
 ## Bounding box map
 
-![Bounding box map](img/ESDC.png)<br>
+![Bounding box map](../img/ESDC.png)<br>
 <span style="font-size: x-small">Map tiles and data from <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">the ODbL</a>.</span>
 
 ## Basic information

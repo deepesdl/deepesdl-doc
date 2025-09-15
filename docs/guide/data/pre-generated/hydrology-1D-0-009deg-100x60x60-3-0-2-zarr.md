@@ -9,7 +9,7 @@ ds = store.open_data('hydrology-1D-0.009deg-100x60x60-3.0.2.zarr')
 
 ## Bounding box map
 
-![Bounding box map](img/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.png)<br>
+![Bounding box map](../img/hydrology-1D-0-009deg-100x60x60-3-0-2-zarr.png)<br>
 <span style="font-size: x-small">Map tiles and data from <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">the ODbL</a>.</span>
 
 ## Basic information

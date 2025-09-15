@@ -9,7 +9,7 @@ ds = store.open_data('SMOS-snow-1x720x720-1.0.1.zarr')
 
 ## Bounding box map
 
-![Bounding box map](img/SMOS-snow-1x720x720-1-0-1-zarr.png)<br>
+![Bounding box map](../img/SMOS-snow-1x720x720-1-0-1-zarr.png)<br>
 <span style="font-size: x-small">Map tiles and data from <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">the ODbL</a>.</span>
 
 ## Basic information
