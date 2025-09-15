@@ -11,7 +11,7 @@ but may require longer preparation times, depending on dataset size and configur
 
 Through xcube, several datastores can be accessed for creating on-demand cubes.
 For details on configuration and usage of each datastore, please refer to the [xcube documentation](https://xcube.readthedocs.io/en/latest/dataaccess.html#available-data-stores) or
-the [example notebooks](../../jupyterlab/notebooks/xcube-datastores).
+the [example notebooks](../../jupyterlab/notebooks/xcube-datastores/Generate_C3S_CDS_cubes.ipynb).
 
 - [Copernicus Climate Data Store (CDS)](../../jupyterlab/notebooks/xcube-datastores/Generate_C3S_CDS_cubes.ipynb)
 - [Copernicus Marine Service (CMEMS)](../../jupyterlab/notebooks/xcube-datastores/Generate_CMEMS_cubes.ipynb)
