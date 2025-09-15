@@ -32,10 +32,10 @@ DeepESDL.
   <a href="./earthcode/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
-        EarthCode
+        EarthCODE
       </h3>
       <p>
-        <code>deep-code</code> - Integration with EathCODE.
+        <code>deep-code</code> - Integration with EarthCODE.
       </p>
     </div>
   </a>
