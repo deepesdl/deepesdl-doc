@@ -1,4 +1,4 @@
-# Analysis-ready data cubes
+# Pre-generated data cubes
 ## DeepESDL datasets in public object storage
 
 The DeepESDL Consortium provides a growing number of datasets which are made
