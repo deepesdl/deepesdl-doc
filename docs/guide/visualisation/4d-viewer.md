@@ -6,7 +6,7 @@ The 4D-Viewer tool was built to enable reconstructions of geo-spatial data and i
 
 The publicly hosted instance of the 4D-Viewer tool is at [https://4dviewer.com/](https://4dviewer.com/).
 
-The DeepESDL project enabled xcube served data sources to be viewed within the 4dviewer tool.
+The DeepESDL project enabled xcube served data sources to be viewed within the 4d-viewer tool.
 
 ## The User Interface
 
@@ -82,14 +82,14 @@ To reload the config in a future session, simply open the application and use:
 
 ## xcube Server - 4D-Viewer Integration
 
-The following components and services must be running and correctly configured for data to be loaded from an xcube server into the 4dviewer
+The following components and services must be running and correctly configured for data to be loaded from an xcube server into the 4d-viewer
 
 * Base xcube server (with appropriate data available)
 * The xcube server must have the xcube-4d-viewer [plugin](https://github.com/Virtuagraphics/xcube-4d-viewer) installed.
 * The 4d-viewer [gateway](https://pypi.org/project/gateway-4d-viewer/) must be configured to register the above xcube server instance (see the provided example below)
 * The 4d-viewer must be configured to use the above instance of the 4d-viewer gateway.
 
-### A Self Service Example - Hosting xcube Data Locally with the 4DViewer
+### A Self Service Example - Hosting xcube Data Locally with the 4D-Viewer
 
-An example repo has been created that provides a reproducible, dockerised environment for running and configurating all of the above services. At the time of writing, this is the simplest way for a user to see their own data in the 4D-Viewer via xcube data structures.
-The repo contains the setup guide: [local_xcube_4dviewer](https://github.com/hortonal/local_xcube_4dviewer)
+An example repo has been created that provides a reproducible, dockerised environment for running and configuring all of the above services. At the time of writing, this is the simplest way for a user to see their own data in the 4D-Viewer via xcube data structures.
+The repo contains the setup guide: [local_xcube_4d-viewer](https://github.com/hortonal/local_xcube_4dviewer)
