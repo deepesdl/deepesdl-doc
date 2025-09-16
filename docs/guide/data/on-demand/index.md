@@ -1,4 +1,4 @@
-# On-the-fly
+# On-demand data cubes
 ## xcube data stores
 
 Dynamically create your own data cubes from data sources from the underlying source data at the time of request.

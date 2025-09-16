@@ -55,7 +55,16 @@ EarthCODE catalogue and then persisted in the ESA's novel Project Results Reposi
 
 ### OBSGESSION
 
-*Coming soon.*
+The OBSGESSION project, funded under the EU Horizon programme, aims to advance the understanding of
+biodiversity change by combining Earth Observation methods, in-situ measurements, and ecological modelling. A central
+focus lies on identifying both direct and indirect drivers of biodiversity dynamics and improving the sharing of
+knowledge to support ecosystem and biodiversity management.
+
+As part of the project, DeepESDL was employed to enable scalable data access and processing in support of the
+generation of Essential Biodiversity Variables (EBVs) for selected pilot sites. These EBVs provide metrics for
+monitoring biodiversity change.
+
+**Further information:** [OBSGESSION website](https://obsgession.eu/)
 
 ---------
 
