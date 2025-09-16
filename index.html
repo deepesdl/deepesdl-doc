@@ -217,7 +217,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="science_cases/drought_effects/" class="md-tabs__link">
+        <a href="science_cases/" class="md-tabs__link">
           
   
     
@@ -334,106 +334,41 @@
 
   h2 {
       margin-bottom: 1rem;
-      color: black; /*white;*/
+      color: black;
       font-weight: 700
   }
 
-/*
-  .tx-hero .md-button {
-      margin-top: .5rem;
-      margin-right: .5rem;
-      color: var(--md-primary-bg-color)
+
+  .tx-hero {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0 5%;
+    background: url('assets/img.png') center left / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
   }
 
-  .tx-hero .md-button--primary {
-      color: var(--md-primary-fg-color);
-      background-color: var(--md-primary-bg-color);
-      border-color: var(--md-primary-bg-color)
+  .tx-hero-content {
+    max-width: 800px;
   }
 
-  .tx-hero .md-button:focus,
-  .tx-hero .md-button:hover {
-      color: var(--md-default-bg-color);
-      background-color: var(--md-accent-fg-color);
-      border-color: var(--md-accent-fg-color)
-  }
-  I
-  @media screen and (max-width:30em) {
-      .tx-hero h1 {
-          font-size: 1.4rem
-      }
+  .tx-hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
   }
 
-  @media screen and (min-width:60em) {
-      .md-sidebar--secondary {
-          display: none
-      }
-
-      .tx-hero {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
-
-      .tx-hero__content {
-          max-width: 22rem;
-          margin-top: 3.5rem;
-          margin-bottom: 3.5rem;
-          margin-left: 1.0rem;
-          margin-right: 4.0rem;
-          align-items: center;
-      }
-  }*/
-
-  .landingpage-button {
-      padding: 1rem 2rem;
-      background-color: #0b3e73;
-      color: white;
-      font-size: 1rem;
-      border-radius: 3px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      transition: background-color 0.3s ease;
+  .tx-hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .landingpage-button:hover {
-      background-color: #0B3E73DF;
-  }
-
-  p {
-    line-height: 1.5;
-  }
-
-</style>
-
-<section
-  style="
-  position: relative;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: url('assets/img.png') center center / cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: white;
-  text-align: left;
-  padding: 0 5%;
-  box-sizing: border-box;
-">
-  <div style="max-width: 800px;">
-    <h1 style="font-size: 4rem; margin-bottom: 1rem;">Earth System <br>Data Lab</h1>
-    <p style="font-size: 1.5rem; margin-bottom: 2rem;">
-      A virtual laboratory to the Earth Science research community.
-    </p>
-    <a href="##services" class="landingpage-button">Explore!</a>
-  </div>
-
-  <!-- Attribution -->
-  <div
-    style="
+  .tx-hero-attribution {
     position: absolute;
     bottom: 20px;
     right: 30px;
@@ -442,7 +377,69 @@
     text-align: right;
     max-width: 300px;
     line-height: 1;
-  ">
+  }
+
+  @media screen and (max-width:30em) {
+    .tx-hero h1 {
+      font-size: 3rem
+    }
+  }
+
+  .landingpage-button {
+    padding: 1rem 2rem;
+    background-color: #0b3e73;
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .landingpage-button:hover {
+    background-color: #0B3E73DF;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+/*  @media screen and (min-width:60em) {
+    .md-sidebar--secondary {
+      display: none
+    }
+
+    .tx-hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tx-hero-content {
+      max-width: 22rem;
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+      margin-left: 1.0rem;
+      margin-right: 4.0rem;
+      align-items: center;
+    }
+  }*/
+
+
+</style>
+
+<section class="tx-hero">
+  <div class="tx-hero-content">
+    <h1>Earth System <br>Data Lab</h1>
+    <p>
+      A virtual laboratory to the Earth Science research community.
+    </p>
+    <a href="##services" class="landingpage-button">Explore!</a>
+  </div>
+
+  <!-- Attribution -->
+  <div class="tx-hero-attribution">
     Image: Copernicus Climate Change Service, Climate Data Store (2023): ERA5
     hourly data on single levels from 1940 to present. Mean air temperature 2m.
     (modified to metres)
@@ -863,6 +860,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -886,7 +887,7 @@
         
   
   
-    <a href="science_cases/drought_effects/" class="md-nav__link">
+    <a href="science_cases/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
