@@ -1,6 +1,14 @@
-# Science Demonstration Case “Ocean” 
+# **Ocean Carbon Cycle** 
 
-Authors: Julia Klima, Jannes Kruse, Jonas Neumann
+<div class="author-box">
+  <div class="author-left">
+    <strong>Authors:</strong> Julia Klima, Jannes Kruse, Jonas Neumann
+  </div>
+  <div class="author-right">
+    <a href="../../guide/jupyterlab/notebooks/science-cases/Ocean_Carbon_Cycle/" class="md-button">Access Workflow</a>
+  </div>
+</div>
+
 
 A novel approach was explored to understanding the ocean carbon cycle through
 the utilization of a recently developed, uniformly structured data cube

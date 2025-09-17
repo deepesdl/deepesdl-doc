@@ -1,11 +1,12 @@
 ---
 hide:
   navigation.footer
+  
 ---
 
-# Earth Code
+# EarthCODE
 
-![EarthCode](https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png){: .centered-logo style="max-width: 300px;" }
+![EarthCODE](https://discourse-earthcode.eox.at/uploads/default/original/1X/19dc5eaefd1525be9147c7f0bff396482b3df848.png){: .centered-logo style="max-width: 300px;" }
 
 [EarthCODE](https://esa-earthcode.github.io/documentation/Getting%20started%20with%20EarthCODE/) is
 a strategic initiative by the European Space Agency (ESA) to support Earth System Science through
@@ -19,12 +20,12 @@ DeepESDL is supporting EarthCODE and both platforms have been fully integrated.
 
 More specifically,
 
-- the usage of DeepESDL for publishing in EarthCODE is sponsored by ESA through the Network of Resources.
-- A single sign-on (SSO) mechanism makes it convenient to work with both platforms
+- the usage of DeepESDL for [publishing in EarthCODE](../guide/earthcode/index.md) is [sponsored by ESA](../become_user/index.md) through the Network of Resources.
+- A single sign-on (SSO) mechanism makes it convenient to work with both platforms.
 - DeepESDL offers dedicated open-source tools to ensure an efficient and fully compliant publication process to EarthCODE.
 
-The main tool to achieve a seamless EarthCODE integration for our users is [`deep-code`](https://github.com/deepesdl/deep-code).
-It is a lightweight Python tool that offers a structured way to publish datasets and scientific workflows directly
-from DeepESDL to the EarthCODE platform. The tool includes both a command-line interface (CLI) and a Python API.
+<br>
 
-More information on how to use `deep-code` for publishing with DeepESDL and EarthCODE will be shared soon. 
+Visit the [User Guide](../guide/earthcode/index.md) to learn how to integrate DeepESDL within EarthCODE.
+
+<br>

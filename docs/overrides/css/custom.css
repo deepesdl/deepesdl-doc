@@ -4,21 +4,22 @@
   text-align: center;
 }
 
-/* for logos in table -> Data page */
+
+/*DATA section: for logos in table -> Data page*/
+
 .logo-icon-table {
-  max-height: 60px;
-  max-width: 200px;
   display: block;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.logo-icon-table-clms {
+  margin-top: 10px !important;
 }
 
 .md-header {
   box-shadow: none !important;
 }
 
-.md-grid {
-  max-width: 1400px;
-}
 
 .xr-wrap {
   font-size: .7rem;
@@ -67,6 +68,9 @@
 }
 
 
+
+/*BUTTONS and LINKS*/
+
 .md-typeset a{
   color: #0b3e73;
 }
@@ -75,9 +79,23 @@
   color: #0b3e73;
 }
 
+.md-button {
+  background-color: white!important;
+  border-color: #0b3e73!important;
+  color: #0b3e73!important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.md-button:hover,
+.md-button:focus {
+  background-color: var(--md-accent-fg-color)!important;
+  color: white!important;
+  border-color: var(--md-accent-fg-color)!important;
+}
+
 .md-button--accent {
-  background-color: #0b3e73;  /* your custom blue */
-  border-color: #0b3e73;
+  background-color: #0b3e73!important;
+  border-color: #0b3e73!important;
   color: white!important;
   border: none!important;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -85,8 +103,105 @@
 
 .md-button--accent:hover,
 .md-button--accent:focus {
-  background-color: var(--md-accent-fg-color);  /* deep orange */
+  background-color: var(--md-accent-fg-color);
   color: white;
 }
 
+.md-header__content .md-button {
+  font-size: 0.55rem;  /* slightly larger text */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+/* HEADER ICON */
+
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+
+
+/*USER GUIDE: Selectors for Grid structures in User Guide*/
+
+ .card {
+   width: 300px;
+   height: 280px;
+   background-color: #f5f5f5;
+   padding: 1.5rem;
+   text-align: left;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   transition: all 0.3s ease; /* smooth effect */
+ }
+
+/* h3 underline animation */
+.card h3 {
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto 0.5rem auto;
+  font-size: 1rem;
+  color: black;
+}
+
+.card h3::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(--md-accent-fg-color);
+  transition: width 0.3s ease;
+}
+
+.card:hover h3::before {
+  width: 100%;
+}
+
+.card p {
+  color: #41454a;
+  text-align: left;"
+  line-height: 1.5;
+  font-size: .7rem;
+}
+
+.card--image {
+  position: relative;
+}
+
+.card--image h3 {
+  position: absolute;
+  bottom: 2rem;
+  left: 1.5rem;
+  margin: 0;
+}
+
+.card--image img{
+  max-height: 150px;
+}
+
+
+/* SCIENCE CASES: Author and Button Box */
+.author-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding: 0.75rem 0;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.author-left {
+  flex: 1;
+  text-align: left;
+}
+
+.author-right {
+  flex-shrink: 0;
+  text-align: right;
+}
 
