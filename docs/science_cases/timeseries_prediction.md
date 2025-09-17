@@ -1,8 +1,12 @@
 # Transformer based forecast of productivity in DeepESDL (Kraemer et al. in prep)
 
-Authors: Guido Kraemer
+<div class="author-box">
+  <div class="author-left">
+    <strong>Authors:</strong> Guido Kraemer
+  </div>
+</div>
 
-## Introduction/Problem/Objectives
+## Introduction
 Given the intricate relationship between vegetation health and climate
 variables, developing robust deep learning architectures for environmental
 predictions is crucial. In this project, we chose the GPT architecture as our
