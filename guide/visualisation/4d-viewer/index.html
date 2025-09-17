@@ -544,6 +544,8 @@
       
         
       
+        
+      
     
     
       
@@ -1130,6 +1132,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#xcube-server-4d-viewer-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      xcube Server - 4D-Viewer Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="xcube Server - 4D-Viewer Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-self-service-example-hosting-xcube-data-locally-with-the-4d-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Self Service Example - Hosting xcube Data Locally with the 4D-Viewer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1470,6 +1496,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#xcube-server-4d-viewer-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      xcube Server - 4D-Viewer Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="xcube Server - 4D-Viewer Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-self-service-example-hosting-xcube-data-locally-with-the-4d-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Self Service Example - Hosting xcube Data Locally with the 4D-Viewer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1490,6 +1540,7 @@
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
 <p>The 4D-Viewer tool was built to enable reconstructions of geo-spatial data and its evolution through time.</p>
 <p>The publicly hosted instance of the 4D-Viewer tool is at <a href="https://4dviewer.com/">https://4dviewer.com/</a>.</p>
+<p>The DeepESDL project enabled xcube served data sources to be viewed within the 4d-viewer tool.</p>
 <h2 id="the-user-interface">The User Interface<a class="headerlink" href="#the-user-interface" title="Permanent link">#</a></h2>
 <p>4D worlds are built from a series of layers and potentially child layers. A typically workflow would start by adding a "Terrain" layer - i.e. a rendered Digital Elevation Model. E.g.:</p>
 <p><img alt="4d viewer - adding data layers" src="../../img/4d-viewer/layer-add.jpg" /></p>
@@ -1536,6 +1587,17 @@ Additionally, one can select which dimension slices to show. E.g. the examples b
 <ul>
 <li>File -&gt; Open file... -&gt; select local configuration file</li>
 </ul>
+<h2 id="xcube-server-4d-viewer-integration">xcube Server - 4D-Viewer Integration<a class="headerlink" href="#xcube-server-4d-viewer-integration" title="Permanent link">#</a></h2>
+<p>The following components and services must be running and correctly configured for data to be loaded from an xcube server into the 4d-viewer</p>
+<ul>
+<li>Base xcube server (with appropriate data available)</li>
+<li>The xcube server must have the xcube-4d-viewer <a href="https://github.com/Virtuagraphics/xcube-4d-viewer">plugin</a> installed.</li>
+<li>The 4d-viewer <a href="https://pypi.org/project/gateway-4d-viewer/">gateway</a> must be configured to register the above xcube server instance (see the provided example below)</li>
+<li>The 4d-viewer must be configured to use the above instance of the 4d-viewer gateway.</li>
+</ul>
+<h3 id="a-self-service-example-hosting-xcube-data-locally-with-the-4d-viewer">A Self Service Example - Hosting xcube Data Locally with the 4D-Viewer<a class="headerlink" href="#a-self-service-example-hosting-xcube-data-locally-with-the-4d-viewer" title="Permanent link">#</a></h3>
+<p>An example repo has been created that provides a reproducible, dockerised environment for running and configuring all of the above services. At the time of writing, this is the simplest way for a user to see their own data in the 4D-Viewer via xcube data structures.
+The repo contains the setup guide: <a href="https://github.com/hortonal/local_xcube_4dviewer">local_xcube_4d-viewer</a></p>
 
 
 
