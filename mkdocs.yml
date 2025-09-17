@@ -144,6 +144,7 @@ nav:
               - guide/data/on-demand/index.md
           - Pre-generated:
               - guide/data/pre-generated/index.md
+              - Catalogue: guide/data/pre-generated/stac-catalog.md
               - Earth System Data Cube: guide/data/pre-generated/ESDC.md
               - Black Sea Cube: guide/data/pre-generated/black-sea.md
               - Land Cover Cube: guide/data/pre-generated/LC-1x2025x2025-2-0-0-levels.md
