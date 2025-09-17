@@ -53,6 +53,17 @@ can support the discovery of new insights.
     </div>
   </a>
 
+  <a href="timeseries_prediction/" style="text-decoration: none; color: inherit;">
+    <div class="card"> 
+      <h3>
+        Time Series Prediciton
+      </h3>
+      <p>
+        Transformer based forecast of productivity in DeepESDL.
+      </p>
+    </div>
+  </a>
+
 </div>
 
 <br>
