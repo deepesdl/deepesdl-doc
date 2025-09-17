@@ -83,6 +83,7 @@ nav:
       - Drought Effects: science_cases/drought_effects.md
       - Land-Biosphere-Society: science_cases/land_biosphere.md
       - Ocean Carbon Cycle: science_cases/ocean.md
+      - Time Series Prediction: science_cases/timeseries_prediction.md
       - Polar Science: science_cases/polar_science.md
   - Become a User:
       - become_user/index.md
