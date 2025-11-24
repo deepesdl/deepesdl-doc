@@ -4,6 +4,9 @@
   <div class="author-left">
     <strong>Authors:</strong> Andrea Incatasciato, Martin Wearing, Livia Jakob, Noel Gourmelen
   </div>
+  <div class="author-right">
+    <a href="../../guide/jupyterlab/notebooks/science-cases/polar-science/Polar_Case_step1_damage_mask_preparation/" class="md-button">Access Workflow</a>
+  </div>
 </div>
 
 

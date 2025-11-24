@@ -132,6 +132,9 @@ nav:
               - Science Cases:
                   - guide/jupyterlab/notebooks/science-cases/Land_Biosphere_Society.ipynb
                   - guide/jupyterlab/notebooks/science-cases/Ocean_Carbon_Cycle.ipynb
+                  - guide/jupyterlab/notebooks/science-cases/polar-science/Polar_Case_step1_damage_mask_preparation.ipynb
+                  - guide/jupyterlab/notebooks/science-cases/polar-science/Polar_Case_step2_imagery_download.ipynb
+                  - guide/jupyterlab/notebooks/science-cases/polar-science/Polar_Case_step3_cnn_training.ipynb
       - Visualisation:
           - guide/visualisation/index.md
           - xcube Viewer: guide/visualisation/xcube-viewer.md
@@ -205,3 +208,6 @@ nav:
               - ml-toolkit/api-reference/10-utils/rechunk-cube.md
               - ml-toolkit/api-reference/10-utils/split-chunk.md
       - Further information: guide/further-information.md
+
+hooks:
+  - docs\hooks\update_notebooks.py
