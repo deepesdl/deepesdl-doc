@@ -42,7 +42,7 @@ can support the discovery of new insights.
     </div>
   </a>
 
-  <a href="polar/" style="text-decoration: none; color: inherit;">
+  <a href="polar_science/" style="text-decoration: none; color: inherit;">
     <div class="card"> 
       <h3>
         Polar
