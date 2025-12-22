@@ -1047,6 +1047,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1077,6 +1079,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1085,26 +1089,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-visualise-data-with-xcube-viewer-in-your-workspace" class="md-nav__link">
+  <a href="#scenario-1-open-xcube-viewer-for-persisted-datasets" class="md-nav__link">
     <span class="md-ellipsis">
-      How to visualise data with xcube viewer in your workspace
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to visualise data with xcube viewer in your workspace">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-deepesdl-example-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      A DeepESDL example notebook
+      Scenario 1: Open xcube Viewer for persisted datasets
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-2-open-xcube-viewer-for-in-memory-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Open xcube Viewer for in-memory datasets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-3-use-custom-a-server-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Use custom a server configuration
+    </span>
+  </a>
   
 </li>
       
@@ -1677,6 +1684,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1685,26 +1694,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-visualise-data-with-xcube-viewer-in-your-workspace" class="md-nav__link">
+  <a href="#scenario-1-open-xcube-viewer-for-persisted-datasets" class="md-nav__link">
     <span class="md-ellipsis">
-      How to visualise data with xcube viewer in your workspace
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to visualise data with xcube viewer in your workspace">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-deepesdl-example-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      A DeepESDL example notebook
+      Scenario 1: Open xcube Viewer for persisted datasets
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-2-open-xcube-viewer-for-in-memory-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Open xcube Viewer for in-memory datasets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenario-3-use-custom-a-server-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Use custom a server configuration
+    </span>
+  </a>
   
 </li>
       
@@ -1723,8 +1735,6 @@
                   
 
 
-
-  <h1>Visualise data with xcube viewer</h1>
 
 <script>
 (function (global, factory) {
@@ -2169,13 +2179,14 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="how-to-visualise-data-with-xcube-viewer-in-your-workspace">How to visualise data with xcube viewer in your workspace<a class="anchor-link" href="#how-to-visualise-data-with-xcube-viewer-in-your-workspace">¶</a></h2><h3 id="a-deepesdl-example-notebook">A DeepESDL example notebook<a class="anchor-link" href="#a-deepesdl-example-notebook">¶</a></h3><p>This notebook demonstrates how to use the features of the xcube JupyterLab integration.
+<h1 id="how-to-visualise-data-with-xcube-viewer-in-your-workspace">How to visualise data with xcube Viewer in your workspace<a class="anchor-link" href="#how-to-visualise-data-with-xcube-viewer-in-your-workspace">¶</a></h1><p><strong>A DeepESDL example notebook</strong></p>
+<p>This notebook demonstrates how to use the features of the xcube JupyterLab integration.
 The notebook demonstrates three scenarios how xcube Viewer is utilized in JupyterLab.
 In particular, we open xcube Viewer for any <code>xarray.Dataset</code> instances</p>
 <ol>
 <li>persisted in deepesdl public s3 storage (saved datasets)</li>
 <li>opened or otherwise created in this Notebook (in-memory datasets)</li>
-<li>using a configuration file for customising stlyes.</li>
+<li>using a configuration file for customising styles.</li>
 </ol>
 <p>To explore the xcube viewer functionalities, please checkout the documentation: <a href="https://xcube.readthedocs.io/en/latest/viewer.html#functionality">https://xcube.readthedocs.io/en/latest/viewer.html#functionality</a></p>
 <p>Please, also refer to the <a href="https://earthsystemdatalab.net/guide/jupyterlab">DeepESDL documentation</a> and visit the platform's <a href="https://www.earthsystemdatalab.net/">website</a> for further information!</p>
@@ -7171,7 +7182,7 @@ Attributes: (12/23)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p><strong>Scenario 1</strong>: Open xcube Viewer for a dataset instances persisted from a certain source (saved datasets).</p>
+<h2 id="scenario-1-open-xcube-viewer-for-persisted-datasets">Scenario 1: Open xcube Viewer for persisted datasets<a class="anchor-link" href="#scenario-1-open-xcube-viewer-for-persisted-datasets">¶</a></h2><p>Open xcube Viewer for a dataset instances persisted from a certain source (saved datasets).</p>
 <p><strong>For the functionalities of xcube viewer please head over to the documentation:</strong> <a href="https://xcube.readthedocs.io/en/latest/viewer.html#functionality">https://xcube.readthedocs.io/en/latest/viewer.html#functionality</a></p>
 </div>
 </div>
@@ -7406,7 +7417,7 @@ Viewer: https://deep.earthsystemdatalab.net/user/clarasb/proxy/8000/viewer/?serv
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p><strong>Scenario 2</strong>: Open xcube Viewer for a dataset instances opened or otherwise created in this Notebook (in-memory datasets).</p>
+<h2 id="scenario-2-open-xcube-viewer-for-in-memory-datasets"><strong>Scenario 2</strong>: Open xcube Viewer for in-memory datasets<a class="anchor-link" href="#scenario-2-open-xcube-viewer-for-in-memory-datasets">¶</a></h2><p>Open xcube Viewer for a dataset instances opened or otherwise created in this Notebook (in-memory datasets).</p>
 </div>
 </div>
 </div>
@@ -8576,7 +8587,7 @@ Viewer: https://deep.earthsystemdatalab.net/user/clarasb/proxy/8001/viewer/?serv
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<p><strong>Scenario 3</strong>: Use custom server configuration to start server and pass it to the viewer constructor. In this example, we have create a local file with the configuration and load it as a dictionary and pass it to the viewer.</p>
+<h2 id="scenario-3-use-custom-a-server-configuration"><strong>Scenario 3</strong>: Use custom a server configuration<a class="anchor-link" href="#scenario-3-use-custom-a-server-configuration">¶</a></h2><p>Use custom server configuration to start server and pass it to the viewer constructor. In this example, we have create a local file with the configuration and load it as a dictionary and pass it to the viewer.</p>
 <p>The configuration file is pointing to your team storage as input source. If you don't have anything stored in your team S3 storage, the viewer will not be able to display any data. Please check other example notebooks and create some sample datasets in your team storage to visualize the content.</p>
 <p>The custom configuration allows you to predefined your value ranges, the colormaps that should be used as well as which bands should be used to create an RGB image, then the RGB switch in the viewer will display the RGB image.</p>
 <p>If you do not have a server-config.yaml file in your directory, please create one with the following content:</p>

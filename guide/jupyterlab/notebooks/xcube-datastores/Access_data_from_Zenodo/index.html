@@ -1330,6 +1330,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Access data from Zenodo
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1340,6 +1352,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-lazy-access-of-a-tif-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of lazy access of a tif file
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-lazy-access-of-a-netcdf-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of lazy access of a netcdf file
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-preload-access-of-a-zipped-zarr-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of preload access of a zipped zarr file
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1760,6 +1818,41 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-lazy-access-of-a-tif-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of lazy access of a tif file
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-lazy-access-of-a-netcdf-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of lazy access of a netcdf file
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-of-preload-access-of-a-zipped-zarr-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of preload access of a zipped zarr file
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2330,7 +2423,7 @@ store_params</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="example-of-lazy-access-of-a-tif-file">Example of lazy access of a tif file<a class="anchor-link" href="#example-of-lazy-access-of-a-tif-file">¶</a></h1><p>We initiate a zenodo <a href="https://xcube.readthedocs.io/en/latest/dataaccess.html#data-store-framework">data store</a>. Note that the <code>xcube-zenodo</code> plugin is recognized after installation by setting the first argument to <code>"zenodo"</code> in the <code>new_data_store</code> function. To specify the data source, we set the <code>root</code> parameter to the record ID, which can be found in the URL of the corresponding Zenodo publication page. Let's have a look at the data published with the title "Canopy height and biomass map for Europe": <a href="https://zenodo.org/records/8154445">https://zenodo.org/records/8154445</a> with the record ID <code>root="8154445"</code>.</p>
+<h2 id="example-of-lazy-access-of-a-tif-file">Example of lazy access of a tif file<a class="anchor-link" href="#example-of-lazy-access-of-a-tif-file">¶</a></h2><p>We initiate a zenodo <a href="https://xcube.readthedocs.io/en/latest/dataaccess.html#data-store-framework">data store</a>. Note that the <code>xcube-zenodo</code> plugin is recognized after installation by setting the first argument to <code>"zenodo"</code> in the <code>new_data_store</code> function. To specify the data source, we set the <code>root</code> parameter to the record ID, which can be found in the URL of the corresponding Zenodo publication page. Let's have a look at the data published with the title "Canopy height and biomass map for Europe": <a href="https://zenodo.org/records/8154445">https://zenodo.org/records/8154445</a> with the record ID <code>root="8154445"</code>.</p>
 </div>
 </div>
 </div>
@@ -3771,7 +3864,7 @@ Attributes:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="example-of-lazy-access-of-a-netcdf-file">Example of lazy access of a netcdf file<a class="anchor-link" href="#example-of-lazy-access-of-a-netcdf-file">¶</a></h1><p>We can also use the zenodo data store to open NetCDF files. To do this we need to initiate a new data store with the corresponding record ID. In the below example we use "Atlas of Tides, North West European Shelf, from NEMO tide and surge model.": <a href="https://zenodo.org/records/13882297">https://zenodo.org/records/13882297</a> with the record ID <code>root="13882297"</code>.</p>
+<h2 id="example-of-lazy-access-of-a-netcdf-file">Example of lazy access of a netcdf file<a class="anchor-link" href="#example-of-lazy-access-of-a-netcdf-file">¶</a></h2><p>We can also use the zenodo data store to open NetCDF files. To do this we need to initiate a new data store with the corresponding record ID. In the below example we use "Atlas of Tides, North West European Shelf, from NEMO tide and surge model.": <a href="https://zenodo.org/records/13882297">https://zenodo.org/records/13882297</a> with the record ID <code>root="13882297"</code>.</p>
 </div>
 </div>
 </div>
@@ -5250,7 +5343,7 @@ Wall time: 300 ms
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="example-of-preload-access-of-a-zipped-zarr-file">Example of preload access of a zipped zarr file<a class="anchor-link" href="#example-of-preload-access-of-a-zipped-zarr-file">¶</a></h1><p>We can also use the zenodo data store to access zipped zarr files from zenodo. The compressed files will be downloaded, unpacked and the the Zarr files will be made available, which can be subsequently used by the data store as usual.The data is downloaded into a directory called "zenodo_cache" in you currend working directory.</p>
+<h2 id="example-of-preload-access-of-a-zipped-zarr-file">Example of preload access of a zipped zarr file<a class="anchor-link" href="#example-of-preload-access-of-a-zipped-zarr-file">¶</a></h2><p>We can also use the zenodo data store to access zipped zarr files from zenodo. The compressed files will be downloaded, unpacked and the the Zarr files will be made available, which can be subsequently used by the data store as usual.The data is downloaded into a directory called "zenodo_cache" in you currend working directory.</p>
 </div>
 </div>
 </div>

@@ -1193,6 +1193,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1223,36 +1225,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#create-ndvi-time-series-for-eurocrop-field-geometries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create NDVI time series for EuroCrop field geometries
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Create NDVI time series for EuroCrop field geometries">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-deepesdl-example-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      A DeepESDL example notebook
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#study-area" class="md-nav__link">
@@ -1867,36 +1847,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#create-ndvi-time-series-for-eurocrop-field-geometries" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create NDVI time series for EuroCrop field geometries
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Create NDVI time series for EuroCrop field geometries">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-deepesdl-example-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      A DeepESDL example notebook
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#study-area" class="md-nav__link">
@@ -2015,8 +1973,6 @@
                   
 
 
-
-  <h1>Integrate vector raster data with geodb and xcube stac</h1>
 
 <script>
 (function (global, factory) {
@@ -2461,7 +2417,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="create-ndvi-time-series-for-eurocrop-field-geometries">Create NDVI time series for EuroCrop field geometries<a class="anchor-link" href="#create-ndvi-time-series-for-eurocrop-field-geometries">¶</a></h2><h3 id="a-deepesdl-example-notebook">A DeepESDL example notebook<a class="anchor-link" href="#a-deepesdl-example-notebook">¶</a></h3><p>This notebooks shows an example on how to use <a href="https://xcube-geodb.readthedocs.io/en/latest/index.html"><code>xcube-geodb</code></a> and <code>xcube-stac</code> to combine vector and raster data. In this examples NDVI time series will be extracted for agricultural fields in a study area in Lower Saxony (Germany). The field geometries are accessed from a <code>xcube-geodb</code> database containing <a href="https://www.eurocrops.tum.de/countries.html">EuroCrops</a> data collections and the NDVI is retreived from Sentinel-2 L2A data, accessed via <code>xcube-stac</code>.</p>
+<h1 id="create-ndvi-time-series-for-eurocrop-field-geometries">Create NDVI time series for EuroCrop field geometries<a class="anchor-link" href="#create-ndvi-time-series-for-eurocrop-field-geometries">¶</a></h1><p><strong>A DeepESDL example notebook</strong></p>
+<p>This notebooks shows an example on how to use <a href="https://xcube-geodb.readthedocs.io/en/latest/index.html"><code>xcube-geodb</code></a> and <code>xcube-stac</code> to combine vector and raster data. In this examples NDVI time series will be extracted for agricultural fields in a study area in Lower Saxony (Germany). The field geometries are accessed from a <code>xcube-geodb</code> database containing <a href="https://www.eurocrops.tum.de/countries.html">EuroCrops</a> data collections and the NDVI is retreived from Sentinel-2 L2A data, accessed via <code>xcube-stac</code>.</p>
 <p><strong>Note:</strong>
 In order to access data from xcube geoDB, you need credentials. <strong>If you want to store feature data in xcubes geoDB or access existing data, please contact the DeepESDL team.</strong> If the DeepESDL team has created access for you already, your credentials are saved as env variables.
 The Sentinel-2 data can be accessed via S3, where key and secret can be obtained following the <a href="https://documentation.dataspace.copernicus.eu/APIs/S3.html#generate-secrets">CDSE access documentation to EO data via S3</a>. The store object will receive the key and secret upon initialization, as demonstrated below.</p>

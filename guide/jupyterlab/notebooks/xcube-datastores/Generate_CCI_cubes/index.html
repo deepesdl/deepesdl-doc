@@ -1239,6 +1239,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1269,6 +1271,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1277,44 +1281,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generate-cci-data-cubes" class="md-nav__link">
+  <a href="#1-xcube-data-store-cciodp" class="md-nav__link">
     <span class="md-ellipsis">
-      Generate CCI data cubes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Generate CCI data cubes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-deepesdl-example-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      A DeepESDL example notebook
+      1. xcube data store cciodp
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#1-xcube-data-store" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#2-xcube-data-store-ccizarr" class="md-nav__link">
     <span class="md-ellipsis">
-      1. xcube data store
+      2. xcube data store ccizarr
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-xcube-data-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. xcube data store
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1827,6 +1807,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1835,44 +1817,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generate-cci-data-cubes" class="md-nav__link">
+  <a href="#1-xcube-data-store-cciodp" class="md-nav__link">
     <span class="md-ellipsis">
-      Generate CCI data cubes
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Generate CCI data cubes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-deepesdl-example-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      A DeepESDL example notebook
+      1. xcube data store cciodp
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#1-xcube-data-store" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#2-xcube-data-store-ccizarr" class="md-nav__link">
     <span class="md-ellipsis">
-      1. xcube data store
+      2. xcube data store ccizarr
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-xcube-data-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. xcube data store
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1891,8 +1849,6 @@
                   
 
 
-
-  <h1>Generate CCI cubes</h1>
 
 <script>
 (function (global, factory) {
@@ -2337,7 +2293,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="generate-cci-data-cubes">Generate CCI data cubes<a class="anchor-link" href="#generate-cci-data-cubes">¶</a></h2><h3 id="a-deepesdl-example-notebook">A DeepESDL example notebook<a class="anchor-link" href="#a-deepesdl-example-notebook">¶</a></h3><p>This notebook demonstrates how to access CCI data via two dedicated xcube stores, which provide dynamic data cube views into each gridded data set. More information on the data sets offered can be found in the <a href="https://climate.esa.int/en/odp/#/dashboard">Open Data Portal</a> of the <a href="https://climate.esa.int/en/esa-climate/esa-cci/">ESA Climate Change Initiative</a> (CCI).</p>
+<h1 id="generate-cci-data-cubes">Generate CCI data cubes<a class="anchor-link" href="#generate-cci-data-cubes">¶</a></h1><p><strong>A DeepESDL example notebook</strong></p>
+<p>This notebook demonstrates how to access CCI data via two dedicated xcube stores, which provide dynamic data cube views into each gridded data set. More information on the data sets offered can be found in the <a href="https://climate.esa.int/en/odp/#/dashboard">Open Data Portal</a> of the <a href="https://climate.esa.int/en/esa-climate/esa-cci/">ESA Climate Change Initiative</a> (CCI).</p>
 <p>The xcube data store <code>cciodp</code> provides direct access to the datasets of the Open Data Portal. On the other hand, the xcube data store <code>ccizarr</code> is a subset of the <code>cciodp</code> store and contains CCI data that is already available in cloud-ready format, resulting in better data access performance. The store is regularly updated with new data. Details on the functionality of the two data stores can be found in the <a href="https://xcube.readthedocs.io/en/latest/dataaccess.html#esa-climate-data-centre-cciodp">xcube documentation</a>.</p>
 <p>Please, also refer to the <a href="https://earthsystemdatalab.net/guide/jupyterlab">DeepESDL documentation</a> and visit the platform's <a href="https://www.earthsystemdatalab.net/">website</a> for further information!</p>
 <p>Brockmann Consult, 2025</p>
@@ -2444,7 +2401,7 @@ plt.rcParams["figure.figsize"] = 16, 8</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="1-xcube-data-store-cciodp">1. xcube data store <code>cciodp</code><a class="anchor-link" href="#1-xcube-data-store-cciodp">¶</a></h3>
+<h3 id="1-xcube-data-store-cciodp">1. xcube data store <strong>cciodp</strong><a class="anchor-link" href="#1-xcube-data-store-cciodp">¶</a></h3>
 </div>
 </div>
 </div>
@@ -3934,7 +3891,7 @@ Attributes:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="2-xcube-data-store-ccizarr">2. xcube data store <code>ccizarr</code><a class="anchor-link" href="#2-xcube-data-store-ccizarr">¶</a></h3><p><strong>Some of the CCI data is already available in a cloud-ready format, and new data is added on a regular basis. To access this data, select the <code>ccizarr</code> store instead of the <code>cciodp</code> store.</strong></p>
+<h3 id="2-xcube-data-store-ccizarr">2. xcube data store <strong>ccizarr</strong><a class="anchor-link" href="#2-xcube-data-store-ccizarr">¶</a></h3><p><strong>Some of the CCI data is already available in a cloud-ready format, and new data is added on a regular basis. To access this data, select the <code>ccizarr</code> store instead of the <code>cciodp</code> store.</strong></p>
 </div>
 </div>
 </div>
