@@ -1,0 +1,31 @@
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - xcube=1.11.0
+  - xcube-cds
+  - xcube-sh
+  - xcube-cmems >= 0.1.6
+  - xcube-cci
+  - xcube-smos >= 0.3.1
+  - xcube-zenodo
+  - xcube-clms
+  - xcube-stac >= 1.1.0
+  - xcube_geodb
+  - xrlint
+  - boto3
+  - cartopy
+  - ipykernel
+  - h5netcdf
+  - rechunker
+  - seaborn
+  - zappend
+  - gcsfs
+  - pip
+  - plotly
+  - coiled
+  - ml4xcube
+  - flox
+  - pyopenssl >= 23.2.0
+  - pydap >= 3.4.0,<= 3.5.3
+name: users-deepesdl-xcube-1.11.0
