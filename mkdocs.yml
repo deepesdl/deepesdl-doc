@@ -41,6 +41,8 @@ extra:
   footer_links:
     - text: "Imprint"
       href: "/imprint/"
+    - text: "Privacy Policy"
+      href: "/privacy-policy/"
 
 
 extra_css:
@@ -210,4 +212,4 @@ nav:
       - Further information: guide/further-information.md
 
 hooks:
-  - docs\hooks\update_notebooks.py
+  - docs/hooks/update_notebooks.py
