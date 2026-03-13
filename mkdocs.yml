@@ -1,6 +1,6 @@
 site_name: Earth System Data Lab
 # repo_url: https://github.com/deepesdl/deepesdl-doc
-copyright: Copyright © 2025 by the DeepESDL Team
+copyright: Copyright © 2026 by the DeepESDL Team
 
 theme:
   name: material
@@ -16,7 +16,6 @@ theme:
     - toc.permalink
     - toc.follow
     - navigation.prune
-    #- navigation.footer
     - navigation.tabs
     - navigation.top
     - navigation.instant
@@ -24,14 +23,12 @@ theme:
     - navigation.tabs.sticky
   palette:
     scheme: default
-    primary: white #blue grey
+    primary: white
     accent: deep orange
-  #font:
-  #  text: Nunito
   custom_dir: docs/overrides
 
 extra:
-  generator: true #false
+  generator: true
   social:
     - icon: octicons/mail-16
       link: mailto:esdl-support@brockmann-consult.de
@@ -44,12 +41,10 @@ extra:
     - text: "Privacy Policy"
       href: "/privacy-policy/"
 
-
 extra_css:
   - overrides/css/custom.css
 
 plugins:
-  # - search
   - mkdocs-jupyter:
       execute: false
       include_requirejs: true

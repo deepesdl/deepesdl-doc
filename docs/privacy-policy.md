@@ -1,189 +1,197 @@
-# Privacy-Policy
-## 1. An overview of data protection
-### General
+# Privacy Policy
 
-The following gives a simple overview of what happens to your personal information when you visit our website. Personal 
-information is any data with which you could be personally identified. Detailed information on the subject of data 
-protection can be found in our privacy policy found below.
+## 1. Controller (Art. 4 No. 7 GDPR)
 
-### Data collection on our website
+The controller responsible for data processing on this website is:
 
-_Who is responsible for the data collection on this website?_
+**Brockmann Consult GmbH**
 
-The data collected on this website are processed by the website operator. The operator’s contact details can be found 
-in the website’s required legal notice.
-
-_How do we collect your data?_
-
-Some data are collected when you provide it to us. This could, for example, be data you enter on a contact form.
-
-Other data are collected automatically by our IT systems when you visit the website. These data are primarily technical 
-data such as the browser and operating system you are using or when you accessed the page. These data are collected 
-automatically as soon as you enter our website.
-
-_What do we use your data for?_
-
-Part of the data is collected to ensure the proper functioning of the website. Other data can be used to analyze how 
-visitors use the site.
-
-_What rights do you have regarding your data?_
-
-You always have the right to request information about your stored data, its origin, its recipients, and the purpose 
-of its collection at no charge. You also have the right to request that it be corrected, blocked, or deleted. You can 
-contact us at any time using the address given in the legal notice if you have further questions about the issue of 
-privacy and data protection. You may also, of course, file a complaint with the competent regulatory authorities.
-
-## 2. General information and mandatory information
-###  Data protection
-
-The operators of this website take the protection of your personal data very seriously. We treat your personal data as 
-confidential and in accordance with the statutory data protection regulations and this privacy policy.
-
-If you use this website, various pieces of personal data will be collected. Personal information is any data with which
-you could be personally identified. This privacy policy explains what information we collect and what we use it for. 
-It also explains how and for what purpose this happens.
-
-Please note that data transmitted via the internet (e.g. via email communication) may be subject to security breaches. 
-Complete protection of your data from third-party access is not possible.
-
-### Notice concerning the party responsible for this website
-
-The party responsible for processing data on this website is:  
-
-Brockmann Consult GmbH  
-Chrysanderstr. 1  
-21029 Hamburg  
+Chrysanderstraße 1</br>
+21029 Hamburg</br>
 Germany
 
-Telephone:  +49 40 696 389 300  
-Email: info@brockmann-consult.de  
+Phone: +49 40 696 389 300</br>
+Fax: +49 40 696 389 399
 
-The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and 
-means of processing personal data (names, email addresses, etc.).
+E-Mail: info@brockmann-consult.de</br>
+Internet: www.brockmann-consult.de
 
-### Revocation of your consent to the processing of your data
+(See also our Imprint for further legal information.)
 
-Many data processing operations are only possible with your express consent. You may revoke your consent at any time 
-with future effect. An informal email making this request is sufficient. The data processed before we receive your
-request may still be legally processed.
+---
 
-### Right to file complaints with regulatory authorities
+## 2. General Information on Data Processing
 
-If there has been a breach of data protection legislation, the person affected may file a complaint with the competent
-regulatory authorities. The competent regulatory authority for matters related to data protection legislation is the 
-data protection officer of the German state in which our company is headquartered. A list of data protection officers
-and their contact details can be found at the following link:
-https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.
+We take the protection of your personal data very seriously. Personal data is processed in accordance with:
 
-### Right to data portability
+* The **General Data Protection Regulation (GDPR)**
+* The German **Federal Data Protection Act (BDSG)**
 
-You have the right to have data which we process based on your consent or in fulfillment of a contract automatically
-delivered to yourself or to a third party in a standard, machine-readable format. If you require the direct transfer 
-of data to another responsible party, this will only be done to the extent technically feasible.
+This website serves as technical documentation for a project developed by our company. We do not operate contact forms, newsletters, user accounts, or tracking/analytics tools.
 
-### SSL or TLS encryption
+However, certain data processing occurs automatically when you visit this website due to technical necessity.
 
-This site uses SSL or TLS encryption for security reasons and for the protection of the transmission of confidential 
-content, such as the inquiries you send to us as the site operator. You can recognize an encrypted connection in your
-browser’s address line when it changes from “https://” to “https://” and the lock icon is displayed in your browser’s 
-address bar.
+---
 
-If SSL or TLS encryption is activated, the data you transfer to us cannot be read by third parties.
+## 3. Hosting via GitHub Pages
 
-### Information, blocking, deletion
+This website is hosted using **GitHub Pages**, a service provided by:
 
-As permitted by law, you have the right to be provided at any time with information free of charge about any of your 
-personal data that is stored as well as its origin, the recipient and the purpose for which it has been processed. 
-You also have the right to have this data corrected, blocked or deleted. You can contact us at any time using the 
-address given in our legal notice if you have further questions on the topic of personal data.
+GitHub, Inc.
+88 Colin P. Kelly Jr. Street
+San Francisco, CA 94107
+USA
 
-### Opposition to promotional emails
+When you access this website, technical connection data is automatically processed by GitHub. This may include:
 
-We hereby expressly prohibit the use of contact data published in the context of website legal notice requirements with
-regard to sending promotional and informational materials not expressly requested. The website operator reserves the 
-right to take specific legal action if unsolicited advertising material, such as email spam, is received.
-
-## 3. Data collection on our website
-###  Cookies
-
-Some of our web pages use cookies. Cookies do not harm your computer and do not contain any viruses. Cookies help make
-our website more user-friendly, efficient, and secure. Cookies are small text files that are stored on your computer 
-and saved by your browser.
-
-Most of the cookies we use are so-called “session cookies.” They are automatically deleted after your visit. Other 
-cookies remain in your device’s memory until you delete them. These cookies make it possible to recognize your browser
-when you next visit the site.
-
-You can configure your browser to inform you about the use of cookies so that you can decide on a case-by-case basis 
-whether to accept or reject a cookie. Alternatively, your browser can be configured to automatically accept cookies 
-under certain conditions or to always reject them, or to automatically delete cookies when closing your browser. 
-Disabling cookies may limit the functionality of this website.
-
-Cookies which are necessary to allow electronic communications or to provide certain functions you wish to use
-(such as the shopping cart) are stored pursuant to Art. 6 paragraph 1, letter f of DSGVO. The website operator has a
-legitimate interest in the storage of cookies to ensure an optimized service provided free of technical errors. If 
-other cookies (such as those used to analyze your surfing behavior) are also stored, they will be treated separately
-in this privacy policy.
-
-### Server log files
-
-The website provider automatically collects and stores information that your browser automatically transmits to us in 
-“server log files”. These are:
-
-* Browser type and browser version
-* Operating system used
-* Referrer URL
-* Host name of the accessing computer
-* Time of the server request
 * IP address
+* Browser type and version
+* Operating system
+* Referrer URL
+* Date and time of access
+* Requested pages/files
 
-These data will not be combined with data from other sources.
+This data is processed to ensure the secure and stable delivery of the website.
 
-The basis for data processing is Art. 6 (1) (f) DSGVO, which allows the processing of data to fulfill a contract or for
-measures preliminary to a contract.
+### Legal Basis
 
-### Contact form
+The legal basis for this processing is:
 
-Should you send us questions via the contact form, we will collect the data entered on the form, including the contact 
-details you provide, to answer your question and any follow-up questions. We do not share this information without your
-permission.
+* **Art. 6(1)(f) GDPR** (legitimate interest)
 
-We will, therefore, process any data you enter onto the contact form only with your consent per Art. 6 (1)(a) DSGVO. 
-You may revoke your consent at any time. An informal email making this request is sufficient. The data processed before
-we receive your request may still be legally processed.
+Our legitimate interest lies in providing a secure and technically functional website.
 
-We will retain the data you provide on the contact form until you request its deletion, revoke your consent for its 
-storage, or the purpose for its storage no longer pertains (e.g. after fulfilling your request). Any mandatory 
-statutory provisions, especially those regarding mandatory data retention periods, remain unaffected by this provision.
+### Data Transfers to Third Countries
 
-## 4. Newsletter
-### Newsletter data
+GitHub is based in the United States. Personal data may therefore be transferred to a third country.
 
-If you would like to receive our newsletter, we require a valid email address as well as information that allows us to 
-verify that you are the owner of the specified email address and that you agree to receive this newsletter.
-No additional data is collected or is only collected on a voluntary basis. We only use this data to send the requested
-information and do not pass it on to third parties.
+Such transfers are safeguarded by:
 
-We will, therefore, process any data you enter onto the contact form only with your consent per Art. 6 (1) (a) DSGVO. 
-You can revoke consent to the storage of your data and email address as well as their use for sending the newsletter at
-any time, e.g. through the “unsubscribe” link in the newsletter. The data processed before we receive your request may
-still be legally processed.
+* The EU-U.S. Data Privacy Framework (if applicable), and/or
+* Standard Contractual Clauses (SCCs) pursuant to Art. 46 GDPR
 
-The data provided when registering for the newsletter will be used to distribute the newsletter until you cancel your
-subscription when said data will be deleted. Data we have stored for other purposes (e.g. email addresses for the
-members area) remain unaffected.
+Further information can be found in GitHub’s Privacy Statement:
+[https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
 
-## 5. Plugins and tools
-### Google Web Fonts
+---
 
-For uniform representation of fonts, this page uses web fonts provided by Google. When you open a page, your browser 
-loads the required web fonts into your browser cache to display texts and fonts correctly.
+## 4. Public GitHub Repository
 
-For this purpose your browser has to establish a direct connection to Google servers. Google thus becomes aware that 
-our web page was accessed via your IP address. The use of Google Web fonts is done in the interest of a uniform and 
-attractive presentation of our website. This constitutes a justified interest pursuant to Art. 6 (1) (f) DSGVO.
+The source code and documentation content of this website are stored in a public GitHub repository.
 
-If your browser does not support web fonts, a standard font is used by your computer.
+If you voluntarily interact with the repository (e.g., by opening issues, submitting pull requests, or commenting), your GitHub username and any data you provide will be publicly visible.
 
-Further information about handling user data, can be found at https://developers.google.com/fonts/faq and in Google’s 
-privacy policy at https://www.google.com/policies/privacy/.
+The processing of such data is carried out by GitHub in accordance with GitHub’s own privacy policy.
+
+---
+
+## 5. Server Log Files
+
+When visiting this website, the hosting provider (GitHub Pages) automatically collects and stores information in so-called server log files.
+
+These data are not merged with other data sources and are used solely for:
+
+* Ensuring system security
+* Preventing misuse
+* Maintaining technical stability
+
+We do not have direct access to all server log data processed by GitHub.
+
+---
+
+## 6. Use of Google Fonts
+
+This website uses **Google Fonts** to ensure consistent and visually appealing typography.
+
+Google Fonts is a service provided by:
+
+Google Ireland Limited
+Gordon House, Barrow Street
+Dublin 4
+Ireland
+
+When Google Fonts are loaded from Google servers, your IP address may be transmitted to Google.
+
+### Legal Basis
+
+The legal basis for this processing is:
+
+* **Art. 6(1)(f) GDPR** (legitimate interest in consistent website presentation)
+
+### Data Transfer
+
+Google may process data in the United States. Transfers are safeguarded through:
+
+* EU-U.S. Data Privacy Framework (if applicable), and/or
+* Standard Contractual Clauses (Art. 46 GDPR)
+
+Further information:
+[https://policies.google.com/privacy](https://policies.google.com/privacy)
+
+---
+
+## 7. External Images and Third-Party Content
+
+This website may embed images or other static resources hosted by third-party providers.
+
+When such content is loaded, your IP address may be transmitted to the respective provider for technical delivery.
+
+The legal basis for this processing is:
+
+* **Art. 6(1)(f) GDPR** (legitimate interest in presenting documentation content)
+
+We recommend reviewing the privacy policies of the respective third-party providers.
+
+---
+
+## 8. Cookies
+
+This website does not intentionally use tracking cookies, analytics tools, or marketing cookies.
+
+However, technically necessary cookies may be set by the hosting provider (GitHub) to ensure proper delivery and security of the website.
+
+Such cookies are processed on the basis of:
+
+* § 25(2) TTDSG (strictly necessary cookies)
+* Art. 6(1)(f) GDPR
+
+---
+
+## 9. Data Retention
+
+We do not store personal data ourselves.
+
+Data processed by GitHub or other service providers is retained in accordance with their respective data retention policies.
+
+---
+
+## 10. Your Rights Under the GDPR
+
+You have the following rights under the GDPR:
+
+* Right of access (Art. 15 GDPR)
+* Right to rectification (Art. 16 GDPR)
+* Right to erasure (Art. 17 GDPR)
+* Right to restriction of processing (Art. 18 GDPR)
+* Right to data portability (Art. 20 GDPR)
+* Right to object (Art. 21 GDPR)
+
+To exercise your rights, please contact us at the address provided above.
+
+---
+
+## 11. Right to Lodge a Complaint
+
+You have the right to lodge a complaint with a supervisory authority, in particular in the Member State of your habitual residence, place of work, or place of the alleged infringement.
+
+The competent supervisory authority in Germany can be found at:
+[https://www.bfdi.bund.de](https://www.bfdi.bund.de)
+
+---
+
+## 12. Updates to This Privacy Policy
+
+We reserve the right to amend this Privacy Policy to ensure compliance with legal requirements or to reflect changes in our services.
+
+Last updated: March 2026
+
