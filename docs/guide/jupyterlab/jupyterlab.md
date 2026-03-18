@@ -128,6 +128,13 @@ wish to make a different build the one to be used in DeepESDL JupyterLab,
 change it in the EDIT to the desired conda-build.
 On the bottom of the page you have the possibility to delete the environment.
 
+!!! warning
+
+    Each build consumes storage space, and every modification to an environment creates a new saved build. To help 
+    manage storage more effectively, consider creating new environments with distinct names rather than repeatedly 
+    editing the same one. This makes cleanup much easier, since entire environments can be deleted, whereas individual 
+    build versions within an environment cannot.
+
 ## Getting-started notebooks
 
 You can find example notebooks in DeepESDL JupyterLab to help you to get
@@ -139,7 +146,7 @@ To access them:
     ![img.png](../../img/launcher.png)
     If your `Launcher` is not visible right away, you can open it via the `plus`
     button in the top left corner, which is highlighted in blue in the
-    screenshot.
+    screenshot. 
 2.  On the bottom of the Launcher you see a tile called `CATALOG DeeESDL`.
     Please select this tile.
 3.  Once selected you see several example notebooks:

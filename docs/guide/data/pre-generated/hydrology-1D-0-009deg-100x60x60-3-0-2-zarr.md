@@ -3,7 +3,11 @@
 ## How to open this dataset in DeepESDL JupyterLab
 ```python
 from xcube.core.store import new_data_store
-store = new_data_store("s3", root="deep-esdl-public", storage_options=dict(anon=True))
+store = new_data_store("s3",
+                       root="deep-esdl-public",
+                       storage_options=dict(anon=False,
+                                            key=S3_USER_STORAGE_KEY,
+                                            secret=S3_USER_STORAGE_SECRET))
 ds = store.open_data('hydrology-1D-0.009deg-100x60x60-3.0.2.zarr')
 ```
 
