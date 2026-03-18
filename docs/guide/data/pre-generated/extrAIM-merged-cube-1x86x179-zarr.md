@@ -3,7 +3,11 @@
 ## How to open this dataset in DeepESDL JupyterLab
 ```python
 from xcube.core.store import new_data_store
-store = new_data_store("s3", root="deep-esdl-public", storage_options=dict(anon=True))
+store = new_data_store("s3",
+                       root="deep-esdl-public",
+                       storage_options=dict(anon=False,
+                                            key=S3_USER_STORAGE_KEY,
+                                            secret=S3_USER_STORAGE_SECRET))
 ds = store.open_data('extrAIM-merged-cube-1x86x179.zarr')
 ```
 

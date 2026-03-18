@@ -25,8 +25,11 @@ dedicated example [Jupyter Notebook](../../jupyterlab/notebooks/generic-notebook
 Initializing the xcube datastore for s3 object storage:
 ```python
 from xcube.core.store import new_data_store
-store = new_data_store("s3", 
-                       root="deep-esdl-public")
+store = new_data_store("s3",
+                       root="deep-esdl-public",
+                       storage_options=dict(anon=False,
+                                            key=S3_USER_STORAGE_KEY,
+                                            secret=S3_USER_STORAGE_SECRET))
 ```
 List all available datasets:
 
