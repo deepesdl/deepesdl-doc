@@ -5,16 +5,7 @@
 }
 
 
-/*DATA section: for logos in table -> Data page*/
 
-.logo-icon-table {
-  display: block;
-  margin: 0 auto;
-}
-
-.logo-icon-table-clms {
-  margin-top: 10px !important;
-}
 
 .md-header {
   box-shadow: none !important;
