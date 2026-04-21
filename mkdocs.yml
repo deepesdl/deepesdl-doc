@@ -49,7 +49,7 @@ plugins:
       execute: false
       include_requirejs: true
       ignore_h1_titles: True
-  - mkapi
+#  - mkapi
 
 markdown_extensions:
   - toc:
