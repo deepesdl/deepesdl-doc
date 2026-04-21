@@ -1,14 +1,16 @@
-# About DeepESDL
+# About
 
 ![DeepESDL](../img/logo/logo_light.png){: .centered-logo style="max-width: 300px;" }
 
-Welcome to DeepESDL – ESA’s Deep Earth System Data Laboratory</strong>, a platform providing analysis-ready
-data cubes in a powerful virtual environment for the Earth Science research community. DeepESDL offers
-a full suite of services to facilitate data exploitation, share data and source code, and publish results.
-Special emphasis is placed on supporting machine learning and artificial intelligence approaches,
-including preparation of AI-ready datasets, integrated programming environments, and scalable processing
-resources.
+**DeepESDL – the Deep Earth System Data Laboratory** provides access to a wide range of Earth Science data
+in analysis-ready data cubes and a virtual lab for analysis and processing. Fully integrated into [EarthCODE](../earthcode/index.md), 
+it offers a comprehensive suite of services for sharing and publishing results, workflows, and experiments. 
+Particular emphasis is placed on machine learning and artificial intelligence, including AI-ready datasets, 
+integrated programming environments, and access to cloud and GPU computing resources.
 
+DeepESDL was originally developed in an [ESA](https://www.esa.int/)-funded project with support from [University of Leipzig](https://rsc4earth.de/),
+[Earthwave](https://earthwave.co.uk/) and the [Max Planck Institute for Biochemistry](https://www.bgc-jena.mpg.de/), and is now offered as a service through 
+the [Network of Resources](https://nor-discover.org/).
 
   <!-- Provided By Section -->
   <div
@@ -28,45 +30,13 @@ resources.
         <img
           src="../overrides/assets/logo_bc_horizontal.png"
           alt="Brockmann Consult Logo"
-          style="height: 60px; margin: 0.5rem;" />
+          style="height: 80px; margin: 0.5rem;" />
       </a>
       <a href="https://eox.at/" target="_blank">
         <img
           src="https://www.osgeo.org/wp-content/uploads/EOX_Logo.png"
           alt="EOX IT Services GmbH Logo"
-          style="height: 60px; margin: 0.5rem;" />
-      </a>
-    </div>
-    <!-- Supported by -->
-    <div style="flex: 1 1 250px;">
-      <p style="margin-bottom: 2.3rem;">Supported by</p>
-      <a href="https://rsc4earth.de/" target="_blank">
-        <img
-                src="https://www.uni-leipzig.de/_assets/89f4369f29e16b23ff4835f5790afe07/Images/Icons/uni_leipzig_logo_v2.svg"
-                alt="University of leipzig Logo"
-                style="height: 60px; margin: 0.5rem;" />
-      </a>
-      <a href="https://earthwave.co.uk/" target="_blank">
-        <img
-                src="https://earthwave.co.uk/wp-content/uploads/2021/10/logo-200.png"
-                alt="Earthwave Logo"
-                style="height: 60px; margin: 0.5rem;" />
-      </a>
-      <a href="https://www.bgc-jena.mpg.de/" target="_blank">
-        <img
-                src="https://www.nunataryuk.org/images/logos/partner_logos/BGC_logo_en_sh.png"
-                alt="Max Planck Institute for Biogeochemistry Logo"
-                style="height: 40px; margin: 0.5rem;" />
-      </a>
-    </div>
-    <!-- Funded by -->
-    <div style="flex: 1 1 250px;">
-      <p style="margin-bottom: 0rem;">Funded by</p>
-      <a href="https://www.esa.int/" target="_blank">
-        <img
-          src="https://esamultimedia.esa.int/docs/corporate/ESA_logo_2020_Deep.png"
-          alt="ESA Logo"
-          style="height: 130px; margin: 0.5rem;" />
+          style="height: 80px; margin: 0.5rem;" />
       </a>
     </div>
   </div>

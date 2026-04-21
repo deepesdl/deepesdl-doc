@@ -73,6 +73,7 @@
 .md-button {
   background-color: white!important;
   border-color: #0b3e73!important;
+  border-radius: .3rem!important;
   color: #0b3e73!important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -153,7 +154,7 @@
 
 .card p {
   color: #41454a;
-  text-align: left;"
+  text-align: left;
   line-height: 1.5;
   font-size: .7rem;
 }
