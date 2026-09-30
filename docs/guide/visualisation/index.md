@@ -2,7 +2,7 @@
 
 DeepESDL provides multiple options to share and display dataset. Visualization datasets in Jupyter Notebooks 
 with [xcube Viewer](/xcube-viewer) and [Lexcube](/lexcube-viewer) or visualise data sets in public xcube Viewer 
-application at [viewer.earthsystemdatalab.net](viewer.earthsystemdatalab.net).
+application at [viewer.earthsystemdatalab.net](https://viewer.earthsystemdatalab.net).
 
 <br>
 

@@ -1,4 +1,7 @@
 site/
 .idea/
 .ipynb_checkpoints
+__pycache__/
 
+# Downloaded font assets
+docs/assets/fonts/*.ttf

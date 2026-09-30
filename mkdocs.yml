@@ -6,10 +6,7 @@ theme:
   name: material
   logo: img/logo/cube_small.png
   favicon: img/logo/cube_small.png
-  icon:
-    repo: fontawesome/brands/github
-    previous: fontawesome/solid/angle-left
-    next: fontawesome/solid/angle-right
+  font: false
   features:
     - navigation.top
     - navigation.indexes
@@ -36,13 +33,13 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/deepesdl/deepesdl-doc
   footer_links:
-    - text: "Imprint"
-      href: "/imprint/"
-    - text: "Privacy Policy"
-      href: "/privacy-policy/"
+    - text: Imprint
+      href: https://www.brockmann-consult.de/imprint/
+    - text: Privacy Policy
+      href: https://www.brockmann-consult.de/privacy-policy-documentation-pages/
 
 extra_css:
-  - overrides/css/custom.css
+  - stylesheet/extra.css
 
 plugins:
   - mkdocs-jupyter:
@@ -208,3 +205,4 @@ nav:
 
 hooks:
   - docs/hooks/update_notebooks.py
+  - docs/hooks/download_fonts.py
