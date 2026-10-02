@@ -1,7 +1,7 @@
 /* Roboto font */
 @font-face {
   font-family: "Roboto";
-  src: url("../assets/fonts/Roboto.ttf") format("truetype");
+  src: url("../assets/downloaded/fonts/Roboto.ttf") format("truetype");
   font-style: normal;
   font-weight: 100 900;
   font-stretch: 75% 100%;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-Italic.ttf") format("truetype");
+  src: url("../assets/downloaded/fonts/Roboto-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: 100 900;
   font-stretch: 75% 100%;

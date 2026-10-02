@@ -3,5 +3,5 @@ site/
 .ipynb_checkpoints
 __pycache__/
 
-# Downloaded font assets
-docs/assets/fonts/*.ttf
+# Downloaded assets
+docs/assets/downloaded/fonts/
